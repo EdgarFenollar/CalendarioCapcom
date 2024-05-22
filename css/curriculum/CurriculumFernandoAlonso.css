@@ -1,0 +1,319 @@
+body{
+    font-family: Verdana;
+    background-image: url(../../img/curriculum/imgalonso/coche1.jpg);
+    color: white;
+}
+h1{
+    text-align: center;
+}
+img{
+    position: relative;
+    left: 40px;
+    width: 80%;
+}
+/* La clase lista pers es para la edición de la lista donde pone los méritos académicos y personales que es el segundo recuadro a la izquierda de la página*/
+.listapers{
+    position: relative;
+    width: 35%;
+    left: 45px;
+    top: 70px;
+    text-align: left;
+    border: 2px solid white;
+    float: left;
+    border-radius: 35px 35px 35px 35px;
+    background-color: rgba(61, 60, 60, 0.685);
+}
+.listaprof{
+    border: 2px solid white;
+    position: relative;
+    width: 35%;
+    bottom: 90px;
+    padding-right: 15px;
+}
+.lista1{
+    position: relative;
+    top: 65px;
+    left: 45px;
+}
+.lista2{
+    position: relative;
+    left: 60px;
+}
+/* Foto1 engloba toda la parte de la foto y la lista profesional que está al lado del parrafo y la lista personal a la derecha*/
+.foto1{
+    position: relative;
+    border: 5px solid white;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    width: 25%;
+    right: 45px;
+    float: right;
+    clear: left;
+    border-radius: 35px 35px 35px 35px;
+    background-color: rgba(65, 63, 63, 0.589);
+}
+/* Las fotos de los trofeos en la fila de la lista de los campeonatos del mundo*/
+.trofeo{
+    position: relative;
+    width: 9%;
+}
+.titulo1{
+    position: relative;
+    top: 70px;
+    left: 45px;
+}
+/* El parrafo bibliográfico que está al principio del curriculum*/
+.parrafo1{
+    position: relative;
+    width: 35%;
+    left: 45px;
+    top: 70px;
+    border: 2px solid white;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    clear: left;
+    border-radius: 35px 35px 35px 35px;
+    background-color: rgba(73, 69, 69, 0.781);
+}
+/* Esta es la clase del recuadro en negro que pone "Equipos en los que ha corrido"*/
+.tabla1{
+    position: relative;
+    left: 300px;
+    width: 50%;
+    clear: both;
+    text-align: center;
+    font-size: 25px;
+    border: 10px dotted black;
+    background-color: rgba(0, 0, 0, 0.596);
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+/* Las clases que salen debajo son las fotos de los equipos en los que ha corrido*/
+.minardi{
+    position: relative;
+    left: 45px;
+    width: 35%;
+    border: 5px solid black;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    clear: both;
+    border-radius: 0px 35px 0px 35px;
+    background-color: rgba(175, 172, 172, 0.733);
+    color: black;
+}
+.renault{
+    position: relative;
+    width: 35%;
+    right: 45px;
+    border: 8px dashed #75c5ff;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    float: right;
+    clear: both;
+    background-color: rgba(200, 242, 255, 0.616);
+    color: black;
+}
+.mclaren1{
+    position: relative;
+    left: 45px;
+    width: 35%;
+    border: 5px solid grey;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    clear: both;
+    border-radius: 35px 35px 35px 35px;
+    background-color: rgba(212, 210, 210, 0.589);
+    color: black;
+}
+.mclaren2{
+    position: relative;
+    right: 45px;
+    width: 35%;
+    border: 5px dashed orange;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    float: right;
+    clear: both;
+    background-color: rgba(243, 206, 138, 0.644);
+    color: black;
+}
+.ferrari{
+    position: relative;
+    left: 45px;
+    width: 35%;
+    border: 10px dotted red;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    clear: both;
+    background-color: rgba(247, 156, 156, 0.658);
+    color: black;
+}
+.aston{
+    position: relative;
+    right: 45px;
+    width: 35%;
+    border: 5px solid #006b2d;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    float: right;
+    clear: right;
+    bottom: 35px;
+    border-radius: 35px 0px 35px 0px;
+    background-color: rgba(168, 202, 168, 0.664);
+    color: black;
+    
+}
+/* Todas las clases debajo de esta representan los textos que están al lado de las fotos de los equipos en los que ha corrido*/
+.minardi2{
+    position: relative;
+    right: 200px;
+    width: 35%;
+    text-align: center;
+    float: right;
+    bottom: 250px;
+    border: 5px solid rgb(26, 24, 22);
+    background-color: rgba(29, 28, 27, 0.329);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.renault2{
+    position: relative;
+    width: 35%;
+    text-align: center;
+    clear: both;
+    bottom: 350px;
+    left: 200px;
+    border: 5px solid rgb(62, 202, 226);
+    background-color: rgba(59, 165, 197, 0.329);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.mclaren3{
+    position: relative;
+    right: 200px;
+    width: 35%;
+    text-align: center;
+    bottom: 250px;
+    float: right;
+    border: 5px solid rgb(139, 137, 135);
+    background-color: rgba(139, 136, 132, 0.329);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.mclaren4{
+    position: relative;
+    width: 35%;
+    text-align: center;
+    clear: both;
+    left: 200px;
+    bottom: 250px;
+    border: 5px solid rgb(241, 112, 5);
+    background-color: rgba(236, 122, 16, 0.329);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.ferrari2{
+    position: relative;
+    right: 200px;
+    width: 35%;
+    text-align: center;
+    bottom: 300px;
+    float: right;
+    border: 5px solid rgb(224, 17, 9);
+    background-color: rgba(241, 77, 72, 0.329);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.aston2{
+    position: relative;
+    left: 200px;
+    width: 35%;
+    text-align: center;
+    float: left;
+    border: 5px solid rgb(1, 70, 1);
+    background-color: rgba(8, 59, 8, 0.5);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/* Esta es la clase de la foto del Renault R29 que está justo debajo de la lista personal*/
+.r2009{
+    position: relative;
+    width: 70%;
+    right: 90px;
+    text-align: left;
+    float: left;
+    clear: both;
+    bottom: 180px;
+    text-align: center;
+}
+/* Bandera al lado del titulo*/
+.oviedo{
+    position: relative;
+    width: 3%;
+    left: 650px;
+    clear: both;
+    bottom: 50px;
+}
+/* La clase del video*/
+.video{
+    position: relative;
+    top: 100px;
+    left: 350px;
+}
+/*El texto con recuadro morado encima del video*/
+.texto{
+    position: relative;
+    left: 100px;
+    width: 35%;
+    clear: both;
+    border: 10px dashed purple;
+    border-radius: 20px 20px 20px 20px; 
+    background-color: rgba(128, 0, 128, 0.26);
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font-size: 25px;
+}
+/* La etiqueta del video*/
+iframe{
+    clear: both;
+    position: relative;
+    left: 50px;
+    width: 50%;
+}

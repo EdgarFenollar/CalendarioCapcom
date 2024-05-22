@@ -1,0 +1,158 @@
+/*Etiquetas de la página*/
+html{
+    font-family: Arial;
+}
+body{
+    background-color: rgb(255, 137, 156);
+}
+
+header{
+    position: relative;
+    text-align: center;
+}
+
+footer{
+    position: relative;
+    margin-top: 100px;
+}
+
+section{
+    position: relative;
+}
+
+img{
+    position: relative;
+    border-radius: 30px;
+}
+
+i:hover{
+    text-decoration: 3px underline blue;
+    transition: 0.4s all ease;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+/*Clases de la página*/
+.parrafo1{
+    position: relative;
+    margin-left: 25px;
+    left: 450px;
+}
+.parrafo1:hover{
+    text-decoration: 3px underline blue;
+    transition: 0.4s all ease;
+    cursor: pointer;
+}
+
+.seccion1{
+    position: relative;
+    border: 2px solid black;
+    width: 30%;
+    left: 620px;
+    top: 50px;
+    border-radius: 50px;
+}
+
+.seccion1:hover{
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.632);
+    transition: 0.4s all ease;
+}
+
+.parrafo2{
+    position: relative;
+    text-align: justify;
+    padding-left: 15px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.img1{
+    position: relative;
+    left: 150px;
+    padding: 10px;
+}
+
+.seccion2{
+    position: relative;
+    width: 32%;
+    border: 2px solid black;
+    margin-top: 100px;
+    float: right;
+    margin-right: 25px;
+    border-radius: 50px;
+}
+
+.seccion2:hover{
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.632);
+    transition: 0.4s all ease;
+}
+
+.img2{
+    position: relative;
+    padding: 10px;
+    left: 100px;
+}
+
+.parrafo3{
+    position: relative;
+    text-align: justify;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.seccion3{
+    position: relative;
+    width: 30%;
+    border: 2px solid black;
+    margin-top: 100px;
+    margin-left: 25px;
+    border-radius: 50px;
+}
+
+.seccion3:hover{
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.632);
+    transition: 0.4s all ease;
+}
+
+.img3{
+    position: relative;
+    padding: 10px;
+    left: 150px;
+}
+
+.parrafo4{
+    position: relative;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.pie{
+    position: relative;
+    border: 3px dashed black;
+    text-align: center;
+    width: 35%;
+    padding: 20px;
+    left: 620px;
+    font-size: 20px;
+}
+
+.cabecera:hover{
+    color: white;
+    background-color: rgb(246, 83, 110);
+    transition: 0.4s all ease;
+    cursor: pointer;
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.632);
+}
+
+.pie:hover{
+    border-color: white;
+    background-color: red;
+    transition: 0.4s all ease;
+    cursor: pointer;
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.632);
+}
+.autor:hover{
+    font-size: 35px;
+    transition: 0.4s all ease;
+    cursor: pointer;
+}

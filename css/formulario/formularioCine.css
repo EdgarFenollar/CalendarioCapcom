@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../../img/formulario/formulario/3a02037aa20214adb873b52e27a143f8.jpg");
+    background-size: cover;
+    border-image: auto;
+}
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    border: 15px #201d1d;
+    border-style: solid;
+    background-color: rgba(234, 241, 230, 0.42);
+    border-radius: 90px;
+    padding: 40px;
+    margin: 40px;
+    margin-right: 150px;
+    margin-left: 150px;
+    box-shadow: rgba(255, 255, 255, 0.56) 0px 10px 20px 4px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.h1{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 100px;
+  color: aliceblue;
+}
+
+.form-group {
+    margin-bottom: 20px;;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="date"],
+.form-group input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.texto{
+    margin-left: 5%;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    margin-top: -4.5%;
+}
+
+.pelicula{
+    border : 20px;
+    padding: 0 30px 0 15px;
+    width: 400px;
+    height: 42px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    
+}
+
+.payment-methods {
+    display: flex;
+}
+.payment-methods label {
+    margin-right: 10px;
+}
+
+.payment-methods {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-methods label {
+    margin-bottom: 5px;
+}
+.payment-methods {
+    display: flex;
+    align-items: center;
+}
+
+.payment-methods label {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.fa-brands {
+    margin-left: 5px;
+}
+
+#aceptar-privacidad{
+    margin-left:-200px;
+    margin-top: 3%;
+}
+
+#aceptar-cookies{
+    margin-left:-200px;
+    
+}
+
+.boton{
+    margin-top: 10px;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/juego/estilosJuegoPokemon.css">
+    <link rel="shortcut icon" href="../../img/juego/juegoPokemon/favicon.ico" type="image/x-icon">
+    <title>Juego Pokemon</title>
+</head>
+
+<body onload="generarSiluetaPokemon()">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../../html/formulario/formularioPokemon.html" id="logIn">Log In</a></li>
+                <li><a href="./juegoPokemon.html">Inicio</a></li>
+                <li><a href="https://www.wikidex.net/wiki/Lista_de_Pokémon">Pokédex</a></li>
+                <li>
+                    <a href="#">Otros Trabajos</a>
+                    <ul>
+                        <li><a href="../../html/curriculum/CurriculoJunichiMasuda.html">Curriculum</a></li>
+                        <li><a href="../frase/frasesPokemon.html">Frases</a></li>
+                        <li><a href="../escala/EscalaPokemon.html">Escala</a></li>
+                        <li><a href="../dialogo/dialogoPokemon.html">Dialogo</a></li>
+                        <li><a href="../comparativa/comparativaPokemon.html">Comparativa</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <img src="../../img/juego/juegoPokemon/logoNav.gif" alt="logo">
+        </nav>
+    </header>
+    <aside>
+        <h1>INFO</h1>
+
+        <h3>¿Cómo funciona?</h3>
+        <p>
+            El juego consiste en acertar el nombre del Pokémon. Una vez acertado tendrás que clicar en "Enviar
+            Respuesta". En el caso de que la respuesta sea correcta, aumentara en 1 el total de Pokémon acertados.
+            Por otro lado, si tu respuesta es incorrecta, se restará 1 de tus 3 vidas, si llegas a 0 será "Game
+            Over".<br>
+            <br>
+            Después de enviar la respuesta independientemente de tu resultado (a no ser que sea "Game Over") deberás
+            clicar en "Continuar" para seguir jugando. En el caso de que pierdas todas las vidas y no puedas continuar,
+            tendrás que clicar en "Nueva Partida".
+        </p>
+
+        <h3>¿Cómo ganar?</h3>
+        <p>
+            Para ganar tendrás que acertar los 151 Pokémon principales. Cuando obtengas en el apartado "Pokémon
+            Acertados" el dígito 151 habrás ganado.
+        </p>
+
+        <h3>¿Cómo influyen las rachas?</h3>
+        <p>
+            Este juego tiene rachas, si aciertas 5 Pokémon seguidos activas la racha. Una vez activada la racha, el
+            total de Pokémon acertados aumentará de 2 en 2. Si fallas, rompes la racha, los Pokémon volverán a aumentar
+            de 1 en 1.
+        </p>
+
+        <h3>Puntos a tener en cuenta:</h3>
+        <p>
+            Los nombres de los Pokémon deben escribirse de forma exacta y la primera letra debe estar en mayúscula, en
+            el caso contrario se detectará como error y perderás una vida.<br>
+            <br>
+            Hay Pokémon que constan en su nombre con símbolos y espacios, esos Pokémon deberán escribirse de otra forma,
+            he aquí una lista con esos Pokémon especiales.
+        </p>
+        <section>
+            <ul>
+                <li>
+                    Nidoran♀ &#9205 NidoranHembra
+                </li>
+                <li>
+                    Nidoran♂ &#9205 NidoranMacho
+                </li>
+                <li>
+                    Farfetch'd &#9205 Farfetch
+                </li>
+                <li>
+                    Mr. Mime &#9205 MrMime
+                </li>
+            </ul>
+        </section>
+        <p>
+            <strong>Nota:</strong> para salir del menú de información haz clic en la imagen superior de la izquierda que pone "i".
+        </p>
+    </aside>
+    <main>
+        <section id="atributos">
+            <img src="../../img/juego/juegoPokemon/info.webp" alt="info" id="info" onclick="mostrarMenuAyuda()">
+            <p>
+                <span id="racha"></span>
+                <img src="../../img/juego/juegoPokemon/racha.gif" alt="racha" id="rachaImg">
+            </p>
+            <section id="vidas">
+                <img src="../../img/juego/juegoPokemon/corazon.webp" alt="vida1" id="vida1">
+                <img src="../../img/juego/juegoPokemon/corazon.webp" alt="vida2" id="vida2">
+                <img src="../../img/juego/juegoPokemon/corazon.webp" alt="vida3" id="vida3">
+            </section>
+        </section>
+        <h1>Who's That Pokémon?</h1>
+        <figure>
+            <img alt="ImagenPokemon" id="pokemon" src="">
+            <figcaption></figcaption>
+        </figure>
+        <input type="text" id="pokemonInput">
+        <section id="opciones">
+            <button type="button" onclick="anyadirImgPokemon('pokemonInput')">Enviar Respuesta</button>
+            <button type="button" onclick="continuar()">Continuar</button>
+            <button type="button" onclick="nuevaPartida()">Nueva Partida</button>
+        </section>
+        <p>
+            <span>Pokémon Acertados: </span>
+            <span id="totalAciertos">0</span>
+        </p>
+    </main>
+    <footer>
+        <p>Trabajo realizado por Aitor Agulló Duque</p>
+    </footer>
+</body>
+<script src="../../js/juego/funcionesJuegoPokemon.js"></script>
+
+</html>

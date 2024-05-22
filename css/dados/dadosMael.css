@@ -1,0 +1,201 @@
+*{
+    font-family: cursive;
+    color: white;
+}
+
+/* Para que la pagina solo ocupe toda la pantalla, sin scroll */
+html,body{
+    height: 100%;
+    margin: 0;
+    min-width: 1250px;
+}
+
+/* Fondo de pantalla entre otras cosas */
+body{
+    background-image: url(./../../img/dados/cine/fondo.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center, center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+    color: white;
+}
+
+/* Estilo del titulo */
+header{
+    /* Borde */
+    border: 1px solid black;
+    /* Sombreado */
+    box-shadow: 1px 10px 30px black;
+    background-color: rgba(0, 0, 0, 0.479);
+    width: 65%;
+    top: 0;
+    padding: 10px 50px 10px 50px;
+    text-align: center;
+    letter-spacing: 5px;
+    word-spacing: 8px;
+    transition-duration: 0.75s;
+}
+
+/* Animacion cuando el raton se situa encima */
+header:hover{
+    transform: translateY(-5px);
+}
+
+main, #selectorDePersonaje, #ganador{
+    border: 1px solid black;
+    /* Sombreado */
+    box-shadow: 1px 10px 30px black;
+    background-color: rgba(0, 0, 0, 0.479);
+
+    padding: 10px 50px 10px 50px;
+    width: 65%;
+    height: 70%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedorPersonajes{
+    width: 75%;
+    height: 75%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid black;
+    grid-template-columns: repeat(3,2fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ocultamos el main */
+main{
+    display: none;
+}
+
+/* Fijamos una posición fija del footer en la parte inferior de la web */
+footer{
+    border: 1px solid black;
+    /* Sombreado */
+    box-shadow: 1px 10px 30px black;
+    background-color: rgba(0, 0, 0, 0.479);
+
+    padding: 10px 50px 10px 50px;
+    width: 65%;
+    font-weight: bold;
+    text-align: center;
+    bottom: 0;
+}
+
+/* Contenedor de los dados */
+#contenedorDados{
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px;
+}
+
+/* Imagen de los dados de los jugadores */
+.dadosJugador1, .dadosJugador2{
+    display: none;
+    width: 90%;
+    margin: 10px;
+}
+
+/* Interfaz inferior de los jugadores */
+#interfaz{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    height: auto;
+}
+
+/* Marcador de las tiradas */
+#marcador, #Resultados{
+    word-spacing: 20px;
+    text-align: center;
+}
+
+/* Botones select para seleccionar los dados */
+#player1, #player2{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Boton para realizar las tiradas */
+#boton{
+    border: 1px solid rgba(255, 255, 255, 0.397);
+    height: 50px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 0.5s;
+}
+
+#boton:hover{
+    transform: scale(1.05);
+}
+
+/* Contenedor de los dados de cada jugador */
+#dadosP1, #dadosP2{
+    width: 461px;
+    padding: 15px;
+    border: solid black 1px;
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.6);
+    grid-template-columns: repeat(5,2fr);
+    text-align: center;
+    align-items: center;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    margin: 10px;
+}
+
+.imagenJugador, .seleccionJugador, .imagenJugadorPersonal{
+    width: 150px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.seleccionJugador{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    left: 50px;
+}
+
+.imagenJugador:hover, .seleccionJugador:hover, .imagenJugadorPersonal:hover{
+    transform: scale(1.1);
+}
+
+#ganador{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border: 1px solid black;
+    /* Sombreado */
+    box-shadow: 1px 10px 30px black;
+    background-color: rgba(0, 0, 0, 0.479);
+
+    padding: 10px 50px 10px 50px;
+    width: 65%;
+    height: 40%;
+}

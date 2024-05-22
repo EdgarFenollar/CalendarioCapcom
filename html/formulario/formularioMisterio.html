@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario: Misterio</title>
+        <link rel="stylesheet" href="..\..\css\formulario\StyleFormularioMisterio.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Formulario <span>Misterio</span></h1>
+        </header>
+        <main>
+            <form action="">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <label>Nombre: <br />
+                    <input type="text" name ="nombre" size="30" maxlength="30"> <label><br />
+                    <label>Primer apellido: <br />
+                    <input type="text" name ="apellido01" size="30" maxlength="30"> <label><br />
+                    <label>Segundo apellido: <br />
+                    <input type="text" name ="apellido02" size="30" maxlength="30"> <label><br />
+                    <label>Teléfono: <br />
+                    <input type="number" name ="telefono" size="30" maxlength="30"> <label><br />
+                    <label>Correo electrónico: <br />
+                    <input type="text" name ="email" size="30" maxlength="50"> <label><br />
+                    <label>Fecha de nacimiento: <br />
+                    <input type="date" name ="fecNac"> <label><br />
+                </fieldset>
+
+                <fieldset>
+                    <legend>Dirección</legend>
+                    <select name="calleEleccion" size="1" multiple ="multiple">
+                        <option value="calle" selected ="selected">Calle</option>
+                        <option value="avenida">Avenida</option>
+                        <option value="plaza">Plaza</option>
+                        <option value="partida">Partida</option>
+                    </select>
+                    <input type="text" name ="calle" /><label><br />
+                    <label>Número: <br />
+                    <input type="number" name ="num" /><label><br />
+                    <label>Piso/puerta: <br />
+                    <input type="text" name ="piso" /><label><br />
+                    <label>Código Postal: <br />
+                    <input type="number" name ="zipCode" /><label><br />
+                    <label>Población: <br />
+                    <input type="text" name ="poblacion" /><label><br />  
+                    <label>Porvincia: <br />
+                    <input type="text" name ="provincia" /><label><br />          
+                </fieldset>
+
+                <fieldset>
+                    <legend>Método de pago</legend>
+                    <p>Por favor, seleccione su método de pago:
+                        <br />
+                        <input type="radio" name="metPago" value="visa" /> VISA
+                        <input type="radio" name="metPago" value="mastercard" /> Mastercard
+                        <input type="radio" name="metPago" value="paypal" checked="checked" /> Paypal
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿Aceptas las coockies?</legend>
+                    <input type="radio" name ="coockies" value="si" checked="checked"/>Sí, acepto
+                    <input type="radio" name ="coockies" value="no" /> No acepto
+                </fieldset>
+            </form>
+
+        </main>
+        <footer>
+            <p>Isaac Sánchez Vilches @ Lenguajes de Marca</p>
+        </footer>
+    </body>
+</html>

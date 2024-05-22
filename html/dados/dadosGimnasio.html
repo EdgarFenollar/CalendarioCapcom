@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de Dados</title>
+  <style>
+
+    #resultado {/*Como es solo para centrar lo preferí hacer aquí.*/
+      font-size: 20px; 
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Dados del Gimnasio</h1>
+  <button id="btnLanzar">Lanzar Dado</button>
+  <div id="resultado"></div>
+
+  <script>
+    // Definimos la función para lanzar un dado
+    function lanzarDado() {
+      return Math.floor(Math.random() * 6) + 1; //Número aleatorio entre 1 y 6
+    }
+
+   
+    function ejercicio() {
+
+      var dado = lanzarDado(); 
+
+      var ejercicioRealizado = "";
+
+      switch (dado) {
+        case 1:
+        ejercicioRealizado ="Correr en la caminadora";
+        break;
+
+        case 2:
+        ejercicioRealizado ="Levantamiento de pesas";
+        break;
+
+        case 3:
+        ejercicioRealizado ="Hacer abdominales";
+        break;
+
+        case 4:
+        ejercicioRealizado ="Saltar la cuerda";
+        break;
+
+        case 5:
+        ejercicioRealizado ="Flexiones de brazos";
+        break;
+
+        case 6:
+        ejercicioRealizado ="Estiramiento";
+        break;
+      }
+
+      document.getElementById("resultado").innerHTML = "Tu puntuación es de" + dado + ". ¡Tu castigo es de: " + ejercicioRealizado + "!";
+    }
+
+    function jugar() {
+      ejercicio(); //llamamos a la función jugar
+    }
+
+    //El windows.onload hace una especie de sobrecarga al principio de ejecutar.
+    window.onload = function() {
+      document.getElementById("btnLanzar").onclick = jugar;
+    };
+    //El js al ser tan poca cantidad intente reducir la cantidad de ficheros.
+  </script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    background-color: rgb(185, 186, 186);
+}
+
+/*Cabecera*/
+header {
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 0%;
+    font-size: 1rem;
+}
+
+header h1 {
+    padding: 20px;
+}
+
+/*Barra de navegación*/
+nav {
+    float: left;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+}
+
+nav img {
+    width: 40px;
+    float: right;
+    margin: 10px;
+    cursor: pointer;
+}
+
+nav img:hover {
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background: #b13a3a;
+}
+
+/* menu desplegable */
+
+nav ul ul {
+    float: none;
+    width: 150px;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    padding: 0px;
+}
+
+nav ul ul a {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    width: 105px;
+}
+
+nav ul ul a:hover {
+    background-color: #b35f5f;
+}
+
+nav ul li:hover>ul {
+    display: block;
+    z-index: 100;
+}
+
+/*footer*/
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    text-align: center;
+    padding: 15px 0px;
+    width: 100%;
+    font-size: x-small;
+    position: relative;
+    bottom: 0%;
+}
+
+/*fuentes*/
+@font-face {
+    font-family: pokemonMain;
+    src: url(../../font/dialogo/fuentesPokemon/pokemonMain.ttf);
+}
+
+@font-face {
+    font-family: fontRizzo;
+    src: url(../../font/dialogo/fuentesPokemon/pokemonRizzo.ttf);
+}
+
+@font-face {
+    font-family: fontN;
+    src: url(../../font/dialogo/fuentesPokemon/pokemonN.ttf);
+}
+
+/*main*/
+main {
+    width: 100%;
+    color: #fff;
+    clear: both;
+}
+
+main h2{
+    text-align: center;
+    font-family: pokemonMain;
+    color: black;
+}
+
+article{
+    margin: 20px 0px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+article img {
+    width: 15%;
+    height: 15%;
+    border: 2px solid black;
+    border-radius: 100%;
+}
+
+.box2{
+    margin-left: 50%;
+}
+
+dialog {
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    color: white;
+}
+
+.boc1{
+    background-color: #3a8b48;
+    border-radius: 50px;
+    font-family: fontN;
+}
+
+.boc1::before{
+    content: "";
+    background-color: #3a8b48;
+    border-top-left-radius: 100%;
+    width: 2em;
+    height: 1em;
+    position: absolute;
+    left: -4%;
+}
+
+.boc2{
+    background-color: rgb(36, 77, 90);
+    font-family: fontRizzo;
+    justify-content: end
+}
+
+.boc2::after{
+    content: "";
+    background-color: rgb(36, 77, 90);
+    border-top-right-radius: 100%;
+    width: 2em;
+    height: 1em;
+    position: absolute;
+    right: -4%;
+}
+
+dialog p{
+    margin: 2rem;
+    font-size: .7rem;
+}
+
+.pelea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#fondoPelea{
+    width: 100%;
+    position: relative;
+    filter:blur(3px);
+    z-index: 1;
+}
+
+.peleaMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+}
+
+.peleaMain img{
+    width: 50%;
+}

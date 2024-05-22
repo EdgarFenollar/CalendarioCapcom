@@ -1,0 +1,79 @@
+footer{
+    margin-left: 6%;
+    margin-top: -1%;
+   font-size: 30px;
+}
+.videoyoutube{
+    display: flex;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+@font-face {
+    font-family: fuente1;
+    src: url(../../font/comparativa/fuentecomparativa.otf);
+}
+
+h1{
+    /* Se centra el título y le da fuente y tamaño */
+    text-align: center;
+    font-size: 500%;
+    margin-left: 600px;
+    margin-right: 600px;
+    margin-bottom: 150px;
+    display: flex;
+    font-family: fuente1;
+}
+.conjuntodecajascomp{
+    /* pone las 2 cajas paralelas */
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 60px;
+    padding-bottom: 40px;
+}
+
+
+.caja1{
+     /* le da un diseño a la caja , sombreado, borde, fuente.... */
+    box-shadow: rgb(0, 0, 0) 10px 10px 10px;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: rgba(240, 224, 238, 0.959);
+    transition: all ease 0.5s;
+    width: 10%;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.caja1:hover {
+    transform: translateY(-30px);
+    box-shadow: 10px 10px 10px 10px #000000;
+}
+
+.logos {
+    /* cambia tamaño de los logos */
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    padding-right: 10px;
+    padding-left: 10px; 
+}
+
+.enlace-instagram{
+    color:black;
+    text-decoration:none;
+    transition: all ease 1s;
+   
+    
+}
+
+.enlace-instagram:hover{
+    color:rgb(183, 0, 255);
+    text-decoration:none;
+}

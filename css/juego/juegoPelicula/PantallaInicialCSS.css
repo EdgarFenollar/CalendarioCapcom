@@ -1,0 +1,74 @@
+*{
+    font-family: cursive;
+}
+
+/* Para que la pagina solo ocupe toda la pantalla, sin scroll */
+html,body{
+    height: 100%;
+    margin: 0;
+}
+
+/* Fondo de pantalla entre otras cosas */
+body{
+    background-image: url(./../../../img/juego/juegoPelicula/fondo.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center, center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Estilo del titulo */
+header{
+    /* Borde */
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.336);
+    /* Sombreado */
+    box-shadow: 1px 10px 30px white;
+    top: 0;
+    padding: 10px 50px 10px 50px;
+    text-align: center;
+    letter-spacing: 5px;
+    word-spacing: 8px;
+}
+
+/* Animacion cuando el raton se situa encima */
+header:hover{
+    transform: translateY(-10px);
+    transition-duration: 0.75s;
+}
+/* Animacion de movimiento cuando el raton se quita de encima del titulo */
+header:not(:hover){
+    transform: translateY(10px);
+    transition-duration: 0.75s;
+}
+
+/* Fijamos una posición fija del footer en la parte inferior de la web */
+footer{
+    color: white;
+    position: absolute;
+    font-weight: bold;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+/* Mensaje parpadeante que parpadea cada 3 segundos */
+#mensajeInicio {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 4px;
+    word-spacing: 5px;
+    animation: blinker 3s linear infinite;
+}
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+}

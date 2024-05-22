@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../css/juego/JuegoRol/EstilosLocalizaciones/estiloLocalizacion.css">
+    <title>Afueras del Castillo</title>
+</head>
+<body onload="cargarAtributosPersonaje(); cambiarAfuerasCastillo()">
+    <!--Musica-->
+    <audio id="musicaFondo" src="../../../../musica/juegoRol/canciones/3-04. Dragon.mp3" controls="false"></audio>
+      
+    <header>
+        <nav id="barra">
+            <div class="wrapper">
+                <img id="iconoBarra" src="../../../../img/juego/JuegoRol/Iconos/logoER.png" alt="IconoER"/>
+                <img id="logoBarra" src="../../../../img/juego/JuegoRol/Iconos/Elden-Ring-Logo-PNG-Photo.png" alt="LogoER">
+                <div id="botonesBarra">
+                    <ul class="nav-links">
+                        <li><a href="#" onclick="sonidoBoton(); reiniciar()">Reiniciar</a></li>
+                        <li><a href="#" onclick="musica(); sonidoBoton()">Musica On/Off</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="textoYEleccionesLago">
+            <img class="cenefa" src="../../../../img/juego/JuegoRol/Decoraciones/cenefaHojas.png" alt="cenefaHojas">
+            <div class="parrafos">
+            <p>Te encuentras frente a un misterioso cofre adornado con intrincados grabados
+                 y cerrado con un pesado candado. La madera parece antigua y desgastada por el tiempo, 
+                 pero el brillo de las joyas incrustadas en su superficie sugiere que su contenido podría ser de gran valor. <br>
+            </p>
+            <p>La tentación de abrirlo y descubrir su secreto te llama con fuerza,
+                pero una voz interior te advierte sobre los peligros que podrían acechar en su interior.
+                ¿Deberías arriesgarte a desafiar el desconocido y abrir el cofre, o sería más sabio seguir adelante
+                 dejar que su contenido permanezca oculto para siempre?
+            </p>
+            <p>La decisión te pertenece. ¿Te atreverás a abrir el cofre y enfrentar lo que oculta,
+                o optarás por la prudencia y continuar tu camino sin perturbar su misterio?</p>
+            <p>¿Qué harás ahora?</p>
+            <p><strong>Abrir el coffre: </strong>Intentas abrir el cofre con delicadeza, intentando concentrarte en la cerradura, que es algo antigua.<br>
+                 <strong> [Tirada de sabiduria dificultad 15]</strong>
+            </p>
+            <p><strong>Pasar del cofre: </strong>Dejas pasar el cofre y su contenido, quien sabe si te hubiera servido en un futuro.<br>
+                 <strong> [Automatico]</strong></p>
+                
+                    
+            </div>
+            <img class="cenefa" src="../../../../img/juego/JuegoRol/Decoraciones/cenefaHojas.png" alt="cenefaHojas">
+        </div>
+    
+
+        <div id="opcionesCofre">
+            <button class="eleccion" onclick="abrirCofre()">Abrir el cofre</button>
+            <button class="eleccion" onclick="irCastillo()">Seguir al castillo</button>
+        </div>
+
+
+        <div id="infoPersonaje">
+            <img class="cenefa" src="../../../../img/juego/JuegoRol/Decoraciones/cenefaHojas.png" alt="cenefaHojas">
+            <h3>Personaje</h3>
+            <div id="atributos">
+                <p>Nombre: <span id="nombre"></span></p>
+                <p>Fuerza: <span id="fuerza"></span></p>
+                <p>Destreza: <span id="destreza"></span></p>
+                <p>Constitución: <span id="constitucion"></span></p>
+                <p>Inteligencia: <span id="inteligencia"></span></p>
+                <p>Sabiduría: <span id="sabiduria"></span></p>
+                <p>Carisma: <span id="carisma"></span></p>
+                <p>Vida: <span id="vida"></span></p>
+            </div>
+            <img class="cenefa" src="../../../../img/juego/JuegoRol/Decoraciones/cenefaHojas.png" alt="cenefaHojas">
+        </div>
+
+        <div id="muertePersonaje" style="display: none;">
+            <img src="../../../../img/juego/JuegoRol/Fondos/muerte.png" alt="Muerte del personaje">
+        </div>
+        
+    </main>
+
+    <footer>
+        Lenguaje de Marcas | Omar Llinares
+    </footer>
+
+    <script src="../../../../js/juego/juegoRolJavaScript.js"></script>
+
+</body>
+
+</html>

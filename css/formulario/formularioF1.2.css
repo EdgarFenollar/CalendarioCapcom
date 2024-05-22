@@ -1,0 +1,158 @@
+/*Esta página usará el sistema de posicionamiento GRID, por la cúal no se verán añadidas etiquetas de los posicionamientos Flex ni Float*/
+
+@font-face{                         /*Creación de la fuente que se va a usar en la página del formulario*/
+    font-family: f1regular;
+    src: url('../../font/fuentesF1/formula1regular.ttf') format('truetype');
+}
+html{                               /*Estilos de la página completa, solo contiene la foto del fondo y la fuente de la página*/
+    font-family: f1regular;
+    background-image: url('../../img/formulario/formularioF1/fondo1.jpg');
+    color: white;
+}
+.titulo1{
+    position: relative;
+    text-decoration: underline #52eedd;
+}
+.listapers{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.cur{
+    position: relative;
+    width: 50%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.233);
+    text-decoration: underline red;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    border-bottom: none;
+    box-shadow: 6px 0px 6px white;
+}
+.dia{
+    position: relative;
+    border: 2px solid white;
+    width: 50%;
+    text-decoration: underline blue;
+    color: white;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.233);
+    text-align: center;
+    bottom: 32px;
+    border-top: none;
+    border-bottom: none;
+    box-shadow: 6px 0px 6px white;
+}
+.esc{
+    text-decoration: underline lime;
+    color: white;
+    position: relative;
+    border: 2px solid white;
+    width: 50%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.233);
+    text-align: center;
+    border-bottom: none;
+    border-top: none;
+    bottom: 64px;
+    box-shadow: 6px 0px 6px white;
+}
+.com{
+    text-decoration: underline orange;
+    color: white;
+    position: relative;
+    border: 2px solid white;
+    width: 50%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.233);
+    text-align: center;
+    border-top: none;
+    border-bottom: none;
+    bottom: 96px;
+    box-shadow: 6px 0px 6px white;
+}
+.res{
+    text-decoration: underline purple;
+    color: white;
+    position: relative;
+    border: 2px solid white;
+    width: 50%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.233);
+    text-align: center;
+    border-top: none;
+    border-bottom: none;
+    bottom: 128px;
+    box-shadow: 6px 0px 6px white;
+}
+.fra{
+    text-decoration: underline skyblue;
+    color: white;
+    position: relative;
+    border: 2px solid white;
+    width: 50%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.233);
+    text-align: center;
+    border-top: none;
+    bottom: 160px;
+    box-shadow: 6px 6px 6px white;
+}
+.parrafos1{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.parrafo1{
+    position: relative;
+    width: 55%;
+    border: 2px solid skyblue;
+    border-radius: 0px 25px 0px 25px;
+    background-color: rgba(0, 0, 0, 0.499);
+    padding: 20px;
+}
+.parrafo2{
+    position: relative;
+    width: 50%;
+    border: 2px solid skyblue;
+    border-radius: 25px 0px 25px 0px;
+    background-color: rgba(0, 0, 0, 0.499);
+    padding: 20px;
+}
+.titulolista{
+    position: relative;
+    width: 35%;
+    left: 400px;
+    border: 2px solid #6a5acd;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.607);
+    border-radius: 25px 25px 25px 25px;
+}
+.seccion2{
+    position: relative;
+    top: 60px;
+}
+footer{
+    position: relative;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    width: 35%;
+    padding: 5px;
+    background-color: greenyellow;
+    text-decoration: underline red;
+    color: black;
+    left: 350px;
+    border: 2px solid black;
+}
+.autor{
+    text-decoration: underline blue;
+    color: black;
+}
+.autor:hover{
+    background-color: purple;
+    color: white;
+    text-decoration: underline lime;
+    transition: 0.2 all ease;
+}

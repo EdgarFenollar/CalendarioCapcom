@@ -1,0 +1,114 @@
+/*Etiquetas de html de la página*/
+@font-face {
+    font-family: f1regular;
+    src: url('../../../font/fuentesF1/formula1regular.ttf') format('truetype');
+}
+
+html{
+    font-family: f1regular;
+    background-image: url('../../../img/juego/JuegoF1/fondo1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body{
+    color: white;
+}
+img{
+    position: relative;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+section{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+main{
+    display: grid;
+    position: relative;
+    align-content: center;
+    justify-content: center;
+}
+footer{
+    position: relative;
+    display: grid;
+    align-content: end;
+    justify-content: end;
+}
+/*Etiquetas de las clases y de los ids de la página*/
+.link{
+    color: white;
+}
+.cabecera{
+    position: relative;
+    margin-left: 25px;
+}
+.depor:hover{
+    text-decoration: underline red;
+    color: white;
+    background-color: black;
+    transition: 0.4s all ease;
+}
+.parrafo1{
+    position: relative;
+    width: 35%;
+    margin-left: 150px;
+    border: 2px solid black;
+    padding: 5px;
+    box-shadow: 10px 0px 10px 2px rgba(0, 0, 0, 0.7);
+    left: 100px;
+    /* bottom: 90px; */
+    background-color: rgba(0, 0, 0, 0.579);
+}
+.final{
+    position: relative;
+    width: 35%;
+    border: 2px solid black;
+    padding: 5px;
+    bottom: 115px;
+    right: 150px;
+    box-shadow: 10px 0px 10px 2px rgba(0, 0, 0, 0.7);
+    justify-self: end;
+    background-color: rgba(0, 0, 0, 0.579);
+}
+.RC{
+    position: relative;
+    font-size: 35px;
+    text-align: center;
+    left: 50px;
+    text-decoration: center;
+}
+.RC:hover{
+    color: green;
+    transition: 0.4s all ease;
+    transform: translateY(-10px);
+}
+.podio{
+    position: relative;
+    width: 30%;
+    border: 4px solid black;
+    justify-self: center;
+    margin-left: 80px;
+}
+.podio:hover{
+    transition: 0.4s all ease;
+    width: 35%;
+}
+#boton{
+    position: relative;
+    left: 500px;
+    bottom: 100px;
+    font-size: 25px;
+    border: 3px solid black;
+    width: 25%;
+    padding: 5px;
+    text-align: center;
+    background-color: rgba(47, 79, 79, 0.43);
+}
+#boton:hover{
+    box-shadow: 0px 10px 10px 2px rgba(0, 0, 0, 0.7);
+    transform: translateY(-10px);
+    transition: 0.4s all ease;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/formulario/formularioInversión.css">
+        <title>Formulario de Inversión</title>
+    </head>
+
+    <body>
+
+        <main>
+            <div class="container">
+                <div class="bienvenido">
+                    <h3>Bienvenido a la comunidad inversora.</h3>
+                </div>
+                <div class="elformulario">
+                    <form action="#">
+                        <h1>Formulario de registro.</h1>              
+                        
+                            <label for="nombre"><h4>Nombre:</h4></label>
+                            <input class= "inputs" type = "text" id="nombre" autofocus name="name" placeholder="Nombre"  required>
+                       
+                            <label for ="1Apellido"><h4>Primer apellido:</h4></label>
+                            <input class= "inputs" type ="text" id="1Apellido" name="1apellido" placeholder="Primer apellido" required>
+                        
+                            <label for="2apellido"><h4>Segundo apellido:</h4></label>
+                            <input class= "inputs" id="2apellido" type = "text" name="2apellido" placeholder="Segundo apellido">
+                        
+                            <label for= "telefono"><h4>Teléfono:</h4></label>
+                            <input class= "inputs" id="telefono" type = "number" name="telefono" placeholder="Teléfono" required>
+                        
+                            <label for="correo"><h4>Correo electrónico:</h4></label>
+                            <input class= "inputs" id="correo" type = "email" name="correo" placeholder="Correo electrónico:" required>
+
+                            <label for="fecha"><h4>Fecha de nacimiento:</h4></label>
+                            <input class= "inputs" id="fecha" type = "date" name="nacimiento" placeholder="Fecha de nacimiento">
+                                               
+                            <fieldset>
+                                <legend><h4>Dirección</h4></legend>
+                                <input class= "inputs" type = "text" name="ciudad" placeholder="Ciudad"> <br>
+                                <select>
+                                    <option>Avenida</option>
+                                    <option>Bulevar</option>
+                                    <option>Calle</option>
+                                    <option>Camino</option>
+                                </select>
+                                    <input type = "text" name="calle" placeholder="Dirección"><br>
+                                    <input class= "inputs" type = "number" name="codpostal" placeholder="Código Postal">
+                                
+                            </fieldset>
+
+                            <label for="password"><h4>Contraseña:</h4></label>
+                            <input class= "inputs" id="password" type = "password" name="password" placeholder="Contraseña" required minlength="8" maxlength="14">
+
+                        <!--Aceptacion Terminos y servicios-->
+                            <br>
+                            <label><input type = "checkbox" required> Aceptación del <a href="#" target="_blank" rel="noopener noreferrer"> uso de cookies</a></label>
+                            <br>
+                            <label><input type = "checkbox" required> Aceptación de la <a href="#" target="_blank" rel="noopener noreferrer"> política de privacidad </a></label>
+                        
+
+                        <!--Metodos de pago-->
+                        
+                            <h4>Seleccione su método de pago</h4>
+                            <label><input type = "radio" name="metodoPago" value="Visa" required> Visa</label>
+                            <label><input type = "radio" name="metodoPago" value="Mastercard" required> Mastercard</label>
+                            <label><input type = "radio" name="metodoPago" value="Paypal" required> Paypal</label>
+                        
+                        <!--Botón enviar:-->
+                        <br>
+                        <button class="button" type="submit">Enviar</button>
+                    
+                    </form>
+
+                </div>
+
+                <div class="bienvenido">
+                    <h3>Bienvenido a Ferraver Investments.</h3>
+                </div>
+
+            </div>
+
+
+
+        </main>
+
+    <footer>Trabajo realizado por Juan Ferrando.</footer>    
+    </body>
+
+
+
+</html>

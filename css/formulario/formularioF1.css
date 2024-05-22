@@ -1,0 +1,209 @@
+/*Esta página usará el sistema de posicionamiento GRID, por la cúal no se verán añadidas etiquetas de los posicionamientos Flex ni Float*/
+
+@font-face{                         /*Creación de la fuente que se va a usar en la página del formulario*/
+    font-family: f1regular;
+    src: url('../../font/fuentesF1/formula1regular.ttf') format('truetype');
+}
+html{                               /*Estilos de la página completa, solo contiene la foto del fondo y la fuente de la página*/
+    font-family: f1regular;
+    background-image: url('../../img/formulario/formularioF1/fondo1.jpg');
+    color: white;
+}
+header{                             /*Estilos del encabezado de la página del formulario*/
+    position: relative;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+.titulo1{                           /*Estilo del titulo de la página del formulario*/
+    position: relative;
+    text-decoration: underline #52eedd;
+}
+.titulo1:hover{                     /*Estilo del titulo de la página del formulario cuando el cursor pasa por encima de las letras*/
+    color: #52eedd;
+    text-decoration: underline white;
+}
+.nombre{                            /*Estilo del campo del nombre del formulario de la página*/
+    text-decoration: underline red;
+}
+.nombre:hover{                      /*Estilo del campo del nombre del formulario de la página cuando el cursor pasa por encima de las letras*/
+    color: red;
+    text-decoration: underline white;
+}
+.nombre1{                           /*Estilo de los nombres de los demás campos del formulario de la página*/
+    text-decoration: underline purple;
+}
+.nombre1:hover{                     /*Estilo de los nombres de los demás campos del formulario de la página cuando el cursor del ratón pasa por encima de las letras*/
+    color: purple;
+    text-decoration: underline white;
+}
+.enviar{                            /*Estilo del boton de enviar del formulario de la página*/
+    position: relative;
+    width: 25%;
+    border: 2px dashed black;
+    background-color: white;
+    text-decoration: underline red;
+    text-align: center;
+    padding: 5px;
+    color: black;
+}
+.enviar:hover{                      /*Estilo del botón de Enviar de la página del formulario cuando pasa por encima el cursor del ratón*/
+    border: 2px solid white;
+    background-color: rgb(108, 7, 241);
+    text-decoration: underline black;
+    transition: 0.2 all ease;
+    color: white;
+}
+main{                               /*Estilo del contenido de la página del formulario*/
+    position: relative;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+form{                               /*Estilo del formulario de la página*/
+    position: relative;
+    box-sizing: border-box;
+    border: 2px solid white;
+    padding: 10px;
+    width: 100%;
+    top: 100px;
+}
+footer{                             /*Estilo del pié de página del formulario de inscripción*/
+    position: relative;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    width: 35%;
+    padding: 5px;
+    background-color: greenyellow;
+    text-decoration: underline red;
+    color: black;
+    top: 250px;
+    left: 500px;
+    border: 2px solid black;
+}
+.autor{                                /*Estilo de la clase asignada al nombre del autor*/
+    text-decoration: underline blue;
+    color: black;
+}
+.autor:hover{                           /*Estilo de la clase asignada al nombre del autor cuando el cursor del ratón pasa por encima del nombre*/
+    background-color: purple;
+    color: white;
+    text-decoration: underline lime;
+    transition: 0.2 all ease;
+}
+.navegacion{                        /*Menú con el que se pueden acceder a las demás partes del sitio web*/
+    position: relative;
+    display: grid;
+    align-items: start;
+    justify-items: start;
+    border: 2px solid white;
+    padding: 2px;
+    height: 150px;
+
+}
+.opcion{                            /*Estilos de la primera opción del menú de la página*/
+    position: relative;
+    color: white;
+    border: 2px solid white;
+    background-color: purple;
+    padding: 5px;
+    top: 32px;
+    text-decoration: underline lawngreen;
+}
+.opcion:hover{                      /*Estilos de la primera opción del menú de la página cuando el cursor del ratón pasa por encima del cuadro*/
+    transition: 0.2 all ease;
+    color: black;
+    background-color: lightcoral;
+    text-decoration: underline darkblue;
+}
+.opcion2{                           /*Estilos de la segunda opción del menú de la página*/
+    position: relative;
+    left: 120px;
+    border: 2px solid white;
+    color: white;
+    padding: 5px;
+    background-color: red;
+}
+.opcion2:hover{                     /*Estilos de la segunda opción del menú de la página cuando el cursor del ratón por encima del cuadro*/
+    transition: 0.2 all ease;
+    background-color: blue;
+    text-decoration: underline red;
+}
+.opcion3{                           /*Estilos de la tercera opción del menú de la página*/
+    position: relative;
+    left: 200px;
+    border: 2px solid white;
+    color: black;
+    background-color: greenyellow;
+    bottom: 32px;
+    padding: 5px;
+}
+.opcion3:hover{                     /*Estilos de la tercera opción del menú de la página cuando el cursor del ratón por encima del cuadro*/
+    transition: 0.2 all ease;
+    color: black;
+    background-color: yellow;
+    text-decoration: underline purple;
+    border: 2px solid black;
+}
+.opcion4{                           /*Estilos de la cuarta opción del menú de la página*/
+    position: relative;
+    left: 280px;
+    bottom: 65px;
+    color: white;
+    border: 2px solid white;
+    background-color: blue;
+    padding: 5px;
+}
+.opcion4:hover{
+    transition: 0.2 all ease;
+    color: black;
+    background-color: lightseagreen;
+    text-decoration: underline red;
+}
+.opcion5{                           /*Estilos de la quinta opción del menú de la página*/
+    position: relative;
+    left: 380px;
+    bottom: 98px;
+    color: black;
+    border: 2px solid black;
+    background-color: yellow;
+    padding: 5px;
+}
+.opcion5:hover{
+    transition: 0.2 all ease;
+    background-color: darkblue;
+    color: white;
+    text-decoration: underline lime;
+    border: 2px solid white;
+}
+.opcion6{                           /*Estilos de la sexta opción del menú de la página*/
+    position: relative;
+    left: 510px;
+    bottom: 130px;
+    color: black;
+    background-color: pink;
+    border: 2px solid black;
+    padding: 5px;
+}
+.opcion6:hover{
+    transition: 0.2 all ease;
+    color: black;
+    background-color: lightgrey;
+    text-decoration: underline crimson;
+}
+.opcion7{                           /*Estilos de la septima opción del menú de la página*/
+    position: relative;
+    bottom: 100px;
+    color: black;
+    background-color: salmon;
+    border: 2px solid black;
+    padding: 5px;
+}
+.opcion7:hover{
+    transition: 0.2 all ease;
+    color: white;
+    background-color: black;
+    text-decoration: underline coral;
+    border: 2px solid white;
+}

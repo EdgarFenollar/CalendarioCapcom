@@ -1,0 +1,123 @@
+@font-face {
+    font-family: f1regular;
+    src: url('../../../font/fuentesF1/formula1regular.ttf') format('truetype');
+}
+
+html{
+    font-family: f1regular;
+    background-image: url('../../../img/juego/JuegoF1/fondo1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body{
+    color: white;
+}
+img{
+    position: relative;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+section{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+main{
+    display: grid;
+    position: relative;
+    align-content: center;
+    justify-content: center;
+}
+footer{
+    position: relative;
+    display: grid;
+    align-items: end;
+    justify-content: end;
+}
+/*Etiquetas de las clases y las ids de la página*/
+.cabecera{
+    position: relative;
+    margin-left: 25px;
+}
+.depor:hover{
+    text-decoration: underline red;
+    color: white;
+    background-color: black;
+    transition: 0.4s all ease;
+}
+.victoria{
+    position: relative;
+    width: 35%;
+    border: 2px solid black;
+    box-shadow: 10px 0px 10px 2px rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    left: 350px;
+    bottom: 400px;
+    background-color: rgba(0, 0, 0, 0.579);
+}
+.victoria:hover{
+    transition: 0.4s all ease;
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 10px 2px rgba(0, 0, 0, 0.7);
+}
+.final{
+    position: relative;
+    width: 35%;
+    border: 2px solid black;
+    padding: 5px;
+    box-shadow: 0px 10px 10px 2px rgba(0, 0, 0, 0.7);
+    left: 320px;
+    bottom: 400px;
+    background-color: rgba(0, 0, 0, 0.579);
+}
+.final:hover{
+    box-shadow: 10px 0px 10px 2px rgba(0, 0, 0, 0.7);
+    transition: 0.4s all ease;
+    transform: translateY(-10px);
+}
+.parrafo1{
+    position: relative;
+    width: 35%;
+    border: 2px solid black;
+    padding: 5px;
+    box-shadow: 0px 10px 10px 2px rgba(0, 0, 0, 0.7);
+    left: 350px;
+    bottom: 400px;
+    background-color: rgba(0, 0, 0, 0.579);
+}
+.parrafo1:hover{
+    box-shadow: 10px 0px 10px 2px rgba(0, 0, 0, 0.7);
+    transition: 0.4s all ease;
+    transform: translateY(-10px);
+}
+.mundial{
+    width: 25%;
+    border: 3px solid gold;
+}
+.mundial:hover{
+    transition: 0.4s all ease;
+    transform: translateY(-10px);
+    background-color: gold;
+    box-shadow: 10px 0px 10px 2px rgba(244, 240, 11, 0.7);
+}
+#boton{
+    position: relative;
+    font-size: 30px;
+    border: 3px dashed black;
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+    right: 100px;
+    background-color: gold;
+    bottom: 650px;
+    justify-self: end;
+    color: black;
+}
+#boton:hover{
+    transition: 0.4s all ease;
+    transform: translateY(-10px);
+    background-color: gold;
+    box-shadow: 10px 0px 10px 2px rgba(244, 240, 11, 0.7);
+}

@@ -1,0 +1,98 @@
+h1{
+    text-align: center;
+}
+
+.ImagenPrincipal {
+    float: left;
+    width: 7%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+
+.Texto{
+    padding: 40px;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+.ListaNBA {
+    width: 27%;
+    display: inline-block;
+}
+
+.ListaEuropa{
+    padding-left: 5%;
+    width: 27%;
+    float: left;
+}
+
+.Records{
+    padding-right: 5%;
+    float: right;
+    width: 27%;
+}
+
+h4{
+    text-align: center;
+}
+
+.PoliticaPrivacidad{
+    float: left;
+    width: 33%;
+}
+
+.PoliticaCookies{
+    display: inline-block;
+    width: 33%;
+}
+
+.AvisoLegal{
+    float: right;
+    width: 33%;
+}
+
+.Identificacion{
+    margin-top: 0%;
+    padding-top: 0%;
+    padding-bottom: 1%;
+}
+
+p{
+    text-align: center;
+
+}
+
+aside{
+    text-align: center;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+}
+
+.CVrelacionados{
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 200px;
+}
+
+header{
+    margin-top: 0px;
+    padding-top: 1%;
+    padding-bottom: 2.5%;
+    background-color: rgb(211, 211, 211, 0.3);
+}
+
+.TextoInferior{
+    display: inline-block;
+    margin-left: 3.2%;
+    margin-right: 3.2%;
+}
+
+main{
+    background-color: rgb(211, 211, 211, 0.3);
+    padding-bottom: 8%;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina la pelicula</title>
+    <link rel="stylesheet" href="./../../../css/juego/juegoPelicula/SeleccionDeModo.css">
+</head>
+<body>
+    <header>
+        <h1>Seleccion de modo</h1>
+    </header>
+
+    <main>
+        <!-- Un boton para retroceder a la selección de modo al igual que el contenedor de la imagen, la cual ira cambiando -->
+        <span id="botonSalir" onclick="salir()">Salir</span>
+        <!-- Selección de modos -->
+        <article id="modos">
+            <div id="frase" class="modo" onclick="seleccionFrase()"><h3>Completa la frase</h3></div>
+            <div id="imagen" class="modo" onclick="seleccionImagen()"><h3>Adivina por la imagen</h3></div>
+        </article>
+
+        <!-- Formulario para elegir el contenido que quieres que te aparezca en el juego -->
+        <div> 
+            <form id="contenido">
+                <!-- "checked" sirve para que al entrar en la pagina o refrescarla, de manera predeterminada, estos checkboxs, ya estaran marcados -->
+                <input type="checkbox" value="on" id="pelicula" checked>
+                <label>Aparecerán películas</label>
+                <br>
+                <input type="checkbox" value="on" id="serie">
+                <label>Aparecerán series</label>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>@maelmilvaques</p>
+    </footer>
+
+    <script src="./../../../js/juego/juegoPelicula/JSGeneral.js"></script>
+</body>
+</html>

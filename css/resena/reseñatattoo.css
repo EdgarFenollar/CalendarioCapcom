@@ -1,0 +1,86 @@
+body{
+    background: linear-gradient(90deg, rgb(255, 255, 255) -5%, rgba(0, 0, 0, 0.687) 100%);
+}
+
+h1{
+    color: rgb(0, 0, 0);
+}
+
+header{
+    text-align: center;
+    font-family: fuente1;
+
+}
+
+.caja1{
+    display: grid;
+    gap: 50px;
+    padding: 10px;
+    transition: all ease 0.5s;
+}
+
+
+.caja1:hover{
+    transform: translateY(-30px);
+}
+.reseña{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto; /* Cambiado a auto para que se ajuste al contenido */
+    overflow: hidden;
+   padding: 2%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px;
+    background-color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.reseña p::first-letter{
+    font-size: 200%;
+}
+
+#Prueba{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#Res1{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#R2{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#R3{
+    grid-column: 4;
+    grid-row: 1;
+}
+
+#R4{
+    grid-column: 5;
+    grid-row: 1;
+}
+
+footer{
+    margin-left: 1%;
+    margin-top: 1%;
+   font-size: 30px;
+}
+@font-face{
+    font-family: fuente1;
+    src:url(../../font/reseña/reseñatatuajes/Shadow\ of\ the\ Deads.ttf);
+
+}
+@font-face{
+    font-family: fuente2;
+    src:url(../../font/reseña/reseñatatuajes/Wigglye.ttf);
+
+}
+.caja1 h2{
+    font-family: fuente2;
+    font-size: 300%;
+    text-align: center;
+}

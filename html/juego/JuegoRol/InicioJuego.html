@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="../../../img/juego/JuegoRol/Iconos/LogoPag.jpg"/>
+    <link rel="stylesheet" href="../../../css/juego/JuegoRol/estiloJuegoRol.css"/>
+    <title>Inicio</title>
+  </head>
+
+  <body>
+
+       <!--Musica-->
+    <audio id="musicaFondo" src="../../../musica/juegoRol/canciones/musica_inico.mp3" controls="false"></audio>
+      
+
+    <header>
+      <nav id="barra">
+        <div class="wrapper">
+          <img  id="iconoBarra" src="../../../img/juego/JuegoRol/Iconos/logoER.png" alt="IconoER"/>
+          <img id="logoBarra" src="../../../img/juego/JuegoRol/Iconos/Elden-Ring-Logo-PNG-Photo.png" alt="LogoER">
+          <div id="botonesBarra">
+            <ul class="nav-links">
+                <li><a href="#" onclick="sonidoBoton(); reiniciarInicio()">Reiniciar</a></li>
+                <li><a href="#" onclick="musica(); sonidoBoton()">Musica On/Off</a></li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+
+        <div id="textoInicial">
+            <img class="cenefa" src="../../../img/juego/JuegoRol/Decoraciones/cenefaHojas.png" alt="cenefaHojas">
+            <h3>Las Tierras Intermedias</h3>
+            <div id="parrafos">
+                <p>La Orden Dorada está rota.
+                    Álzate, Sinluz, y que la gracia te guíe para abrazar el poder del Círculo de Elden
+                    y encumbrarte como señor del Círculo en las Tierras Intermedias.<br><br>
+                    Gobernadas por la Reina Márika, la Eterna, el Círculo de Elden,
+                    origen del Árbol Áureo, ha sido destruido.<br><br>
+                    Los descendientes de Márika, todos semidioses, reclamaron los fragmentos del Círculo de Elden
+                    conocidos como Grandes Runas. Fue entonces cuando la demencial corrupción de su renovada fuerza
+                    provocó una guerra: la Devastación.<br><br>
+                    Una guerra que supuso el abandono de la Voluntad Mayor.
+                    Y ahora, la gracia que nos guía recaerá sobre el Sinluz desdeñado por la gracia del oro
+                    y exiliado de las Tierras Intermedias. Tú que has muerto, pero vives, con tu gracia tiempo ha perdida,
+                    recorre la senda hacia las Tierras Intermedias más allá del neblinoso mar para postrarte
+                    ante el Círculo de Elden.<br><br>
+                </p>
+                <p id="senorCirulo">Y conviertete en señor del círculo</p>
+                <img id="laurelInicio" src="../../../img/juego/JuegoRol/Decoraciones/laurel.png" alt="laurel">
+                <p><br>
+                    Antes de sumergirte en la grandiosa aventura que te aguarda,
+                    asegúrate de preparar adecuadamente a tu personaje. 
+                    Rellena la ficha proporcionada con tu nombre y las características que definirán a tu héroe. 
+                    Distribuye tus puntos con cuidado y,
+                    cuando estés listo, presiona el botón "Comenzar la Aventura". Tu destino está a punto de desplegarse,
+                    ¡prepara tu personaje y comienza esta épica travesía!<br>
+                </p>
+            </div>
+            <img class="cenefa" src="../../../img/juego/JuegoRol/Decoraciones/cenefaHojas.png" alt="cenefaHojas">
+        </div>
+
+        <div class="SecFicha" id="botonFicha" onclick="comenzarAventura()">
+            <button id="botonFicha">
+                <p>Comenzar la Aventura</p>
+            </button>
+        </div>
+
+        <div id="ficha">
+
+            <img class="cenefa"  src="../../../img/juego/JuegoRol/Decoraciones/cenefaHojas.png" alt="cenefaHojas">
+
+            <h3>Ficha de Persoanje</h3>
+
+            <div class="SecFicha" id="secNombre">
+                <p>Nombre: </p>
+                <input type="text" id="Nombre" placeholder="Ingresa tu nombre">
+            </div>
+            
+            <div id="Puntuaciones">
+
+                <div class="SecFicha" id="MostrarPuntos">
+                    <p id="Puntos">Puntos disponibles para repartir:</p>
+                    <p id="PuntosDisponibles">10</p>
+                </div>
+
+                <section class="Puntuacion" id="Fuerza">
+                    <div class="atributoFicha" onmouseover="mostrarInformacion(event, 'Representa la potencia fisica, asi como el daño si es tu mayor atributo de daño')" onmouseout="ocultarInformacion()">
+                        <p>Fuerza</p>
+                        <img src="../../../img/juego/JuegoRol/Iconos/fuerza.png" alt="iconoFuerza" class="iconoFicha">
+                    </div>
+                    <img class="MasMenos" src="../../../img/juego/JuegoRol/Iconos/minus.png" alt="botonMenos" onclick="modificarAtributo('Fuerza', 'restar'); sonidoBoton()" >
+                    <p class="valorCaracteristics" id="valorFuerza">0</p>
+                    <img class="MasMenos"  src="../../../img/juego/JuegoRol/Iconos/add.png" alt="botonMas" onclick="modificarAtributo('Fuerza', 'sumar'); sonidoBoton()">
+                </section>
+
+                <section class="Puntuacion" id="Destreza">
+                    <div class="atributoFicha" onmouseover="mostrarInformacion(event, 'Representa agilidad y la coordinacion mano-ojo, muy util para huir')" onmouseout="ocultarInformacion()">
+                        <p>Destreza</p>
+                        <img src="../../../img/juego/JuegoRol/Iconos/destreza.png" alt="iconoDes" class="iconoFicha">
+                    </div>
+                    <img class="MasMenos" src="../../../img/juego/JuegoRol/Iconos/minus.png" alt="botonMenos" onclick="modificarAtributo('Destreza', 'restar'); sonidoBoton()">
+                    <p class="valorCaracteristics" id="valorDestreza">0</p>
+                    <img class="MasMenos"  src="../../../img/juego/JuegoRol/Iconos/add.png" alt="botonMas"  onclick="modificarAtributo('Destreza', 'sumar'); sonidoBoton()">
+                </section>
+
+                <section class="Puntuacion" id="Constitucion">
+                    <div class="atributoFicha" onmouseover="mostrarInformacion(event, 'Representa el aguante fisico, tambien determina los puntos de vida, que sera de 4+Constitucion.')" onmouseout="ocultarInformacion()">
+                        <p>Constitucion</p>
+                        <img src="../../../img/juego/JuegoRol/Iconos/constitucion.png" alt="iconoCon" class="iconoFicha">
+                    </div>
+                    <img class="MasMenos" src="../../../img/juego/JuegoRol/Iconos/minus.png" alt="botonMenos" onclick="modificarAtributo('Constitucion', 'restar')">
+                    <p class="valorCaracteristics" id="valorConstitucion">0</p>
+                    <img class="MasMenos"  src="../../../img/juego/JuegoRol/Iconos/add.png" alt="botonMas"  onclick="modificarAtributo('Constitucion', 'sumar'); sonidoBoton()">
+                </section>
+
+                <section class="Puntuacion" id="Inteligencia">
+                    <div class="atributoFicha" onmouseover="mostrarInformacion(event, 'Representa la inteligencia y la logica, asi como el daño si es tu atributo mayor de daño')" onmouseout="ocultarInformacion()">
+                        <p>Inteligencia</p>
+                    <img src="../../../img/juego/JuegoRol/Iconos/inteligencia.png" alt="iconoInt" class="iconoFicha">
+                    </div>
+                    <img class="MasMenos" src="../../../img/juego/JuegoRol/Iconos/minus.png" alt="botonMenos" onclick="modificarAtributo('Inteligencia', 'restar'); sonidoBoton()">
+                    <p class="valorCaracteristics" id="valorInteligencia">0</p>
+                    <img class="MasMenos"  src="../../../img/juego/JuegoRol/Iconos/add.png" alt="botonMas"  onclick="modificarAtributo('Inteligencia', 'sumar'); sonidoBoton()">
+                </section>
+
+                <section class="Puntuacion" id="Sabiduria">
+                    <div class="atributoFicha" onmouseover="mostrarInformacion(event, 'Representa la perspicacia y la percepcion, muy util contra las trampas')" onmouseout="ocultarInformacion()">
+                        <p>Sabiduria</p>
+                        <img src="../../../img/juego/JuegoRol/Iconos/sabiduria.png" alt="iconoSab" class="iconoFicha">
+                    </div>
+                    <img class="MasMenos" src="../../../img/juego/JuegoRol/Iconos/minus.png" alt="botonMenos" onclick="modificarAtributo('Sabiduria', 'restar'); sonidoBoton()">
+                    <p class="valorCaracteristics" id="valorSabiduria">0</p>
+                    <img class="MasMenos" src="../../../img/juego/JuegoRol/Iconos/add.png" alt="botonMas" onclick="modificarAtributo('Sabiduria', 'sumar'); sonidoBoton()">
+                </section>
+                
+                <section class="Puntuacion" id="Carisma">
+                    <div class="atributoFicha" onmouseover="mostrarInformacion(event, 'Representa la fuerza de personalidady la presencia, no muy util en las Tierras Intermedias')" onmouseout="ocultarInformacion()">
+                        <p>Carisma</p>
+                        <img src="../../../img/juego/JuegoRol/Iconos/carisma.png" alt="iconoCar" class="iconoFicha">
+                    </div>
+                    <img class="MasMenos" src="../../../img/juego/JuegoRol/Iconos/minus.png" alt="botonMenos" onclick="modificarAtributo('Carisma', 'restar'); sonidoBoton()">
+                    <p class="valorCaracteristics" id="valorCarisma">0</p>
+                    <img class="MasMenos" src="../../../img/juego/JuegoRol/Iconos/add.png" alt="botonMas" onclick="modificarAtributo('Carisma', 'sumar'); sonidoBoton()">
+                </section>
+            </div>
+            <img class="cenefa"  src="../../../img/juego/JuegoRol/Decoraciones/cenefaHojas.png" alt="cenefaHojas">
+        </div>
+
+        <div id="tooltip" class="tooltip"></div>
+
+    </main>
+
+    <footer>
+        Lenguaje de Marcas | Omar Llinares
+    </footer>
+
+    <script src="../../../js/juego/juegoRolJavaScript.js"></script>
+    
+  </body>
+
+</html>

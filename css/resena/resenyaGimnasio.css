@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image:url(../../img/formulario/FormularioGimnasio/fondo-gym.jpg);
+    background-repeat: no-repeat;
+    font-size: 1vw;
+    background-size: contain + cover;
+    min-height: 100vh;
+}
+/* Con el contain + cover hago que el fondo se establezca bien estando en pantalla completa como en pantalla modo ventana o reducidad.*/
+
+header{
+    background:linear-gradient(168deg,rgb(19, 83, 187),rgb(104, 104, 209));
+    border:1px black solid;
+    width: 25%;
+    margin: 25px auto;
+    margin-bottom: 200px;
+    border-radius: 7px;
+
+}
+
+header h2{
+    text-align: center;
+    margin: 3px;
+    color: black;
+}
+
+section:hover {
+    transform: scale(1.15);
+    z-index: 1;
+}
+
+section p {
+    font-size: medium;
+    margin: 1px;
+}
+
+section p::first-letter{
+    font-size: 4.5vh;
+
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns:
+    repeat(
+        auto-fit,
+        minmax(150px,1fr)
+    );
+    text-align: center;
+    justify-content: center;
+    grid-gap: 20px;
+}
+
+.suple{
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 2px 2px 4px black;
+    background-color:rgb(165, 52, 52);
+    height: auto;
+    min-width: 150px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    background-color: black;
+    font-size: 2vh;
+}
+
+@media (width > 300px) {
+    .contenedor{
+        grid-template-columns: minmax((200px,1fr) 1fr 1fr)
+}
+}
+/*
+El grid-column y grid-row funcionan básicamente como una tabla de WORD
+
+                columnas
+            X X X X X X X X X X
+            0
+            0
+   filas    0
+            0
+            0
+            0
+
+*/

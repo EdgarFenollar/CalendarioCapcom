@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/juego/juegoInversion.css">
+        <title>Juego de inversión</title>
+
+    </head>
+
+    <body>
+        <header>
+            <div id="titulo">
+                <h1 id="eltitulo">Escuela de inversión</h1>
+            </div>
+        </header>
+
+        <main>
+            <section id="eligeEmpresa">
+                <div id="botonesInfoEmpresa">
+                    <p>Seleccione:</p>
+                    <div>
+                        <button id="empezar" value="0" onclick="muestraInfor('empezar')" >Reglas</button>
+                    </div>
+                    <div>
+                        <button id="e1" value="1" onclick="muestraInfor('e1')">Empresa1</button>
+                    </div>
+                    <div class="e2">
+                        <button id="e2" value="2" onclick="muestraInfor('e2')">Empresa2</button>
+                    </div>
+                    <div class="e3">
+                        <button id="e3" value="3" onclick="muestraInfor('e3')">Empresa3</button>
+                    </div>
+                    <div class="e4">
+                        <button id="e4" value="4" onclick="muestraInfor('e4')">Empresa4</button>
+                    </div>
+                    <div class="e5">
+                        <button id="e5" value="5" onclick="muestraInfor('e5')">Empresa5</button>
+                    </div>
+                </div>
+                <div id="resumenInfoEmpresa">
+                    <p class="posicionaInfor">Reglas:</p>
+                        <ul id="listaReglas">
+                            <li>Se muestra información financiera acerca de 5 empresas.</li>
+                            <li> Su misión será localizar las empresas más infravaloradas por el mercado para generar valor.</li>
+                            <li>Si elige las más sobrevaloradas su rendimiento será menor o incluso podría tener pérdidas.</li>
+                            <li>Deberá comprar al menos 2 empresas, hasta un máximo de 4.</li>
+                            
+                        </ul>
+                    <p class="posicionaInfor">¡Buena suerte!</p>
+                </div>
+            
+            </section>
+
+            <section id="eleccionEmpresa">
+                <div id="carteraNumeros">
+                    <div id="construirCartera">
+                        <div id="TextoConstruirCartera">
+                            <p>Dispone de 1.000€, deberá comprar al menos 2 empresas, máximo 4.</p>
+                        </div>
+                        <div class="seleccionEmpresa">
+                            <label for="eleccion1"> <select id="eleccion1"> 
+                                <option value="1" id="eligeE1">Empresa 1</option>
+                                <option value="2" id="eligeE2">Empresa 2</option>
+                                <option value="3" id="eligeE3">Empresa 3</option>
+                                <option value="4" id="eligeE4">Empresa 4</option>
+                                <option value="5" id="eligeE5">Empresa 5</option>
+                            </select></label>
+                            <label for="eleccion1QEUR">
+                                <input id="eleccion1QEUR" type="number" placeholder="Introduzca cantidad.">
+                            </label>
+                        </div>
+
+                        <div class="seleccionEmpresa">
+                            <label for="eleccion2"> <select id="eleccion2">
+                                <option value="1" id="eligeE1">Empresa 1</option>
+                                <option value="2" id="eligeE2">Empresa 2</option>
+                                <option value="3" id="eligeE3">Empresa 3</option>
+                                <option value="4" id="eligeE4">Empresa 4</option>
+                                <option value="5" id="eligeE5">Empresa 5</option>
+                            </select></label>
+                            <label for="eleccion2QEUR">
+                                <input id="eleccion2QEUR" type="number" placeholder="Introduzca cantidad.">
+                            </label>   
+                        </div>
+
+                        <div id="botones">
+                            <button id="anyadeEmpresa" onclick="anyadeEmpresa()">Añadir empresa</button>
+                            <button id="comprar" onclick="comprar()">¡Comprar!</button>
+                        </div>      
+                    </div>
+                    <div id="resultadoNumero"></div>
+                </div>
+                <div id="resultadoImagen"></div>
+                
+
+            </section>
+        </main>
+        <footer>
+            <p>Trabajo realizado por: Juan.</p>
+          </footer>
+    </body>
+
+    <script src="../../js/juego/jInversion.js"></script>
+    
+</html>

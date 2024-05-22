@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    background: url(../../img/formulario/formularioPokemon/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*Cabecera*/
+header {
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 0%;
+    font-size: 1rem;
+}
+
+header h1 {
+    padding: 20px;
+}
+
+/*Barra de navegación*/
+nav {
+    float: left;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+}
+
+nav img {
+    width: 40px;
+    float: right;
+    margin: 10px;
+    cursor: pointer;
+}
+
+nav img:hover {
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background: #b13a3a;
+}
+
+/* menu desplegable */
+
+nav ul ul {
+    float: none;
+    width: 150px;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    padding: 0px;
+}
+
+nav ul ul a {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    width: 105px;
+}
+
+nav ul ul a:hover {
+    background-color: #b35f5f;
+}
+
+nav ul li:hover>ul {
+    display: block;
+    z-index: 100;
+}
+
+/*footer*/
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    text-align: center;
+    padding: 15px 0px;
+    width: 100%;
+    font-size: x-small;
+    position: relative;
+    bottom: 0%;
+}
+
+/*main*/
+main {
+    width: 100%;
+    color: #fff;
+    clear: both;
+}
+
+article {
+    position: relative;
+    margin: auto;
+    background-color: #886f6f79;
+    backdrop-filter: blur(10px);
+    width: 20em;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+article h2 {
+    text-align: center;
+    margin: 1em auto;
+}
+
+form {
+    border-top: 2px solid white;
+    margin: 10px;
+}
+
+form input {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+    border: 0px;
+    width: 100%;
+    height: 3em;
+    color: white;
+}
+
+form button {
+    color: inherit;
+    background-color:rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 3em;
+    border: 1px solid white;
+    transition: all 0.5s;
+    border-radius: 40px;
+}
+
+form button:hover {
+    background-color: #b13a3a;
+}
+
+form ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#cookies, li input {
+    width: 20%;
+}
+
+form label {
+    margin: 10px 0px;
+    font-size: 1em;
+}

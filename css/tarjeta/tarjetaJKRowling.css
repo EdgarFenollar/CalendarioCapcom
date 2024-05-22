@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.titulo{
+    background-color: rgb(245, 215, 48);
+    border-radius: 5px 5px 5px 5px;
+    border-color: rgb(0, 0, 0);
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.tarjetapresentacion{
+    color: rgb(0, 0, 0);
+}
+
+  
+
+.Joanne{
+    border-radius: 70%;
+    margin-left: 35%;
+}
+
+.textoJoanne{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.boton{
+    margin-left: 45%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.mitad{
+    padding: 20px;
+    margin-top: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: auto;
+    border-radius: 10%;
+    background-color: rgb(197, 180, 25);
+    border-radius: 20px 20px 0px 0px;
+    border-color: 2px solid black;
+}
+
+
+.mitad2{
+    padding: 20px;
+    margin-top: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: auto;
+    border-radius: 10%;
+    background-color: rgb(196, 189, 96);
+    border-radius: 0px 0px 20px 20px;
+    border-color: 2px solid black;
+
+}
+
+
+.footer{
+    background-color: rgb(255, 208, 1);
+    border-radius: 5px 5px 5px 5px ;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+

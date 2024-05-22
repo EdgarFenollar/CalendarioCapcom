@@ -1,0 +1,43 @@
+h1{
+    margin-top: 1%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+main{
+    position:relative;
+}
+
+#Meme1{
+    background-image: url('../../img/samvalentin/SamValentinDani/fondoSamValentin.jpg');
+    float: left;
+    width: 35%;
+    height: 566px;
+    margin-bottom: 85px;
+    margin-left: 10%;
+}
+
+#Meme2{
+    background-image: url('../../img/samvalentin/SamValentinDani/SamLoL.jpg');
+    float: right;
+    width: 35%;
+    height: 650px;
+    margin-right: 10%;
+}
+
+img{
+    position: absolute;
+    left: 175px;
+    margin-top: 15%;
+    width: 7%;
+}
+
+#boton{
+    width: 125px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    margin-left: 40%;
+    margin-top: 1%;
+}

@@ -1,0 +1,148 @@
+body{
+    width: 100%;
+    background: rgb(2, 2, 2);
+    background-image: url("../../img/comparativa/comparativaJuegosMesaMisterio/mainBG.jpg");
+    background-attachment: fixed;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background: black;
+    color: whitesmoke;
+    line-height: 80px;
+    text-align: left;
+    text-indent: 4em;
+}
+
+span{
+    color: rgb(154, 185, 83);
+}
+
+main{
+    background-size: auto;
+    width: 100%;
+    height: 50%;
+    display: grid;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#contents{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 400px;
+    grid-gap: 50px;
+    grid-auto-rows: minmax(px, auto);
+}
+
+
+
+#contenido02{
+    grid-column: 2 / 2;
+    grid-row: 1;
+    display: grid;
+    border-radius: 1em 1em 1em 1em;
+    box-shadow: 2px 2px 10px 2px rgba(154, 185, 83, 0.5);
+    transition: all .3s ease;
+}
+
+#contenido01{
+    grid-column: 1 / 2;
+    grid-row: 1;
+    border-radius: 1em 1em 1em 1em;
+    display: grid;
+    box-shadow: 2px 2px 10px 2px rgba(154, 185, 83, 0.5);
+    transition: all .3s ease;
+}
+
+#contenido02:hover{
+    transform:
+        perspective(550px)
+        rotateX(-2deg)
+        translate(5%)
+        scale(1.1, 1.1);
+}
+
+#contenido02:hover + #contenido01 {
+    transform: 
+        perspective(450px)
+        rotatex(2deg)
+        translate(-5%)
+        scale(0.9, 0.9);
+        filter: brightness(30%);
+}
+
+#contenido01:hover{
+    transform:
+        perspective(550px)
+        rotateX(-2deg)
+        translate(-5%)
+        scale(1.1, 1.1);
+}
+
+#contenido01:hover + #contenido02{
+    transform: 
+        perspective(450px)
+        rotatex(2deg)
+        translate(-5%)
+        scale(0.9, 0.9);
+        filter: brightness(30%);
+}
+
+.datos{
+    display: grid;
+}
+
+section{
+    grid-template-columns: 50px auto;
+    display: grid;
+    grid-gap: 5%;
+    padding-right: 2%;
+    padding-left: 5%;
+    align-items: center;
+}
+
+
+.logo{
+    grid-column: 1 / 2;
+    padding-left: 10px;
+    padding-bottom: 9px;
+}
+
+.text{
+    color: rgb(179, 189, 179);
+    grid-column: 2 / 3;
+    font-size: 23px;
+}
+
+.textspan{
+    color: rgb(183, 206, 183);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+img{
+    border-radius: 1em 1em 0 0;
+    grid-column: 1 / 1;
+    grid-row: 1;
+}
+
+.datos{
+    background-image: url("../../img/comparativa/comparativaJuegosMesaMisterio/contentBG.jpg");
+    width: 400px;
+    height: 500px;
+    border-radius: 0 0 1em 1em;
+    grid-column: 1 / 1;
+    grid-row: 2;
+}
+
+footer{
+    width: 100%;
+    height: 40px;
+    background: rgb(0, 0, 0);
+    text-align: center;
+    line-height: 40px;
+    color: rgb(154, 185, 83);
+}

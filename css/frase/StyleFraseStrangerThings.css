@@ -1,0 +1,121 @@
+body{
+    margin: 0 auto;
+    width: 1200px;
+    background: rgb(0, 0, 0)
+}
+
+header{
+    background: rgb(255, 255, 255);
+    color: black;
+    height: 100px;
+    width: 1200px;
+    margin: 0;
+    text-align: left;
+    line-height: 100px;
+    text-indent: 4.5%;
+}
+
+#title{
+    color: red;
+}
+
+main{
+    margin: 0;
+    background-color: rgb(226, 226, 226);
+    height: 900px;
+    width: 1200px;
+    position: relative;
+}
+
+#box{
+    box-shadow: -3px 4px 8px 0 black;
+    background-color: rgb(255, 255, 255);
+    height: 600px;
+    width: 900px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin: -100px 0 0 -450px;
+}
+
+img{
+    position: absolute;
+    z-index: 2;
+}
+
+#box::before{
+    position: absolute;
+    content:'';
+    height: 600px;
+    width: 890px;
+    border-width: 5px;
+    border-left-style: dotted;
+    border-left-color: black;
+    border-right-style: dotted;
+    border-right-color: red;
+    z-index: 3
+    ;
+}
+
+#box::after{
+    position: absolute;
+    left: 10px;
+    content: '';
+    height: 594px;
+    width: 880px;
+    border-top-style: dashed;
+    border-top-color: rgb(0, 38, 255);
+    border-bottom-style: dashed;
+    border-bottom-color: rgb(60, 255, 0);
+    z-index: 4;
+}
+
+
+/* Las siguientes líneas representan otra manera para hacerlo: */
+
+/*#fakeBox1{
+    height: 200px;
+    width: 900px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -450px;
+    border-left-style: dashed;
+    border-left-color: black;
+    border-right-style: dashed;
+    border-right-color: red;
+    z-index: 2;
+}
+
+#fakeBox2{
+    height: 196px;
+    width: 896px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -445px;
+    border-top-style: dashed;
+    border-top-color: rgb(0, 38, 255);
+    border-bottom-style: dashed;
+    border-bottom-color: rgb(60, 255, 0);
+    z-index: 3;
+}
+*/
+
+
+
+#text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    position: absolute;
+    top: 35%;
+    left: 13%;
+    color: rgb(255, 0, 0);
+    z-index: 5;
+}
+
+footer{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color:rgb(255, 0, 0);
+}

@@ -1,0 +1,116 @@
+@font-face{
+    font-family: fuente1;
+    src:url(../../font/frase/Magnificent\ Nightmare.ttf);
+    
+}
+
+header#titulo{
+    font-family: 'fuente1';
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    display:flex;
+    max-width: 500px;
+    font-size: 36px;
+    background-color: black;
+    margin-top: -18%;
+    margin-left: 32.5%;
+    
+}
+
+
+
+header#titulo::before,
+header#titulo::after{
+    content:'';
+    position:absolute;
+    width: 100%;
+    height: 100%;  
+
+}
+header#titulo::before,
+header#titulo::after{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+
+}
+header#titulo::before {
+    border-top: 5px solid green; 
+    border-bottom: 5px dashed rgb(238, 255, 0);
+    
+    
+}
+
+header#titulo:after{
+    border-left: 5px solid red; 
+    border-right: 5px dotted blue;
+     
+}
+
+.rojo{
+    color: red;
+}
+.verde{
+    color:rgb(173, 131, 228);
+}
+.azul{
+    color: rgb(227, 252, 5);
+
+}
+.amarillo{
+    color:rgb(255, 0, 191);
+}
+.rojo1{
+    color: blue;
+}
+.rojo2{
+    color: rgb(255, 115, 0)
+}
+.espacio{
+    color: transparent;
+    margin-right: 15px;
+}
+
+.rojo3{
+    color: rgb(75, 168, 230);
+}
+
+.rojo4{
+    color: rgb(252, 248, 5);
+}
+.rojo5{
+    color:rgb(40, 62, 161);
+}
+.rojo6{
+    color: white;
+}
+.rojo7{
+    color: rgb(192, 117, 4)
+}
+.rojo8{
+    color:darkgreen
+}
+.rojo9{
+    color:darkred
+}
+.rojo10{
+    color: indigo;
+}
+
+
+.imagen3{
+    margin-left: 30%;
+   
+}
+body{
+    background-color:blueviolet;
+}
+
+footer{
+    margin-left: 95%;
+    margin-top: 18%;
+}

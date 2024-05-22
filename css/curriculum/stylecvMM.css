@@ -1,0 +1,82 @@
+
+body{
+    margin: 3%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+                 'Lucida Sans Unicode', Verdana, sans-serif;
+
+    background-image: url(../../img/curriculum/31256.jpg);
+    background-size: cover;
+    
+}
+
+h1{
+    margin: auto;
+    width: 500px; 
+    border: 2px solid black; 
+    text-align: center;
+    background-color: rgba(169, 169, 169, 0.523);
+}
+
+
+.titulo{
+    margin-left: 230px;
+    background-color: rgba(169, 169, 169, 0.523);
+    border: 2px solid black;
+}
+
+.cabeza {
+    display: flex;
+    background-color: rgba(169, 169, 169, 0.523);
+    border: 2px solid black;
+}
+
+img {
+    width: 200px;
+}
+
+table{
+    margin-left: 30px;
+    background-color: rgba(169, 169, 169, 0.523);
+   
+        background-color: rgba(169, 169, 169, 0.523);
+        border: 2px solid black;    
+}
+
+p {
+    text-justify: auto;  
+    background-color: rgba(169, 169, 169, 0.523);  
+    width: 600px;
+    border: 2px solid black;
+}
+
+
+.bio{
+    background-color: rgba(169, 169, 169, 0.523);
+    border: 2px solid black;
+}
+
+.dato {
+    background-color: rgba(169, 169, 169, 0.523);
+    border: 2px solid black;
+}
+
+
+.list1{
+    float: left;
+    background-color: rgba(169, 169, 169, 0.523);
+    border: 2px solid black;
+}
+
+.list2{
+    float: right;  
+    margin-right: 150px; 
+    background-color: rgba(169, 169, 169, 0.523);
+    border: 2px solid black;
+}
+
+.end{
+    margin-top: 70%;  
+    background-color: rgba(169, 169, 169, 0.523); 
+    border: 2px solid black; 
+}
+

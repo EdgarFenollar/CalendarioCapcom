@@ -1,0 +1,105 @@
+@font-face{
+    font-family: fuente1;
+    src:url(../../font/escala/Shadow\ of\ the\ Deads.ttf)
+}
+
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 50px;
+    font-family:'fuente1'
+    
+}
+
+.alien{
+    height: 200px;
+    width: 200px;
+    
+    
+}
+.enlace-instagram{
+    color:black;
+    text-decoration:none;
+   
+    
+}
+
+.enlace-instagram:hover{
+    color:rgb(183, 0, 255);
+    text-decoration:none;
+}
+
+
+.laura{
+    height: 200px;
+    width: 200px;
+    
+}
+
+.funkyy{
+    height: 200px;
+    width: 200px;
+    
+}
+
+.estilobarras {
+    margin: 5px;
+    display: flex;
+    align-items: center; 
+}
+
+.kk {
+    position: relative;
+    height: 50px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #ffffff, #000000); /
+}
+
+
+.barrasnegro {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    color: rgb(0, 0, 0); 
+}
+
+
+.nombres {
+    color: rgb(0, 0, 0);
+    padding-left: 10px;
+    font-size: 30px;
+}
+
+ 
+
+.caja1 {
+    border: 5px #000000;
+    border-style: solid;
+    background-color: #000000a4;
+    border-radius: 4px;
+    padding: 40px;
+    margin: 40px;
+    margin-right: 300px;
+    margin-left: 300px;
+}
+
+.rene{
+    height: 200px;
+    width: 200px;
+    
+    
+}
+
+footer{
+    margin-left: 16%;
+    margin-top: -1%;
+   font-size: 30px;
+}

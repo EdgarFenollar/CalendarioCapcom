@@ -1,0 +1,217 @@
+*{
+    box-sizing: border-box;   
+    margin:0;
+    border:0;
+}
+
+.eltitulo{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    height: 15vh;
+    width:100vw; 
+    background:rgb(218, 217, 217);
+    background-image: linear-gradient(to right, rgb(0, 255, 255), rgba(255, 0, 0, 0.692),rgb(5, 212, 5));
+    
+}
+
+
+.ark{
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    color:rgb(0, 253, 253);
+    font-size:2em;
+    transition: transform 1.2s ease-in;
+
+}
+
+
+.vs{
+    width:85%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(124, 0, 0);
+    font-size: 2em;
+    
+}
+
+.vs:hover{ 
+    box-shadow: 0px 10px 30px 15px rgba(255, 0, 0, 0.7);
+    font-size:3em;
+    background: rgba(255, 0, 0, 0.7);
+    color:rgb(131, 11, 11);
+    text-shadow: 10px 10px 20px rgb(131, 11, 11);
+}
+
+/*Para dar un mayor efecto de importancia sobre el VS*/
+#elVS{
+    transition: transform 1.8s ease-out;
+}
+#elVS:hover{
+    transform: scale(1.8);
+}
+
+.cobas{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    color:rgb(0, 255, 0);
+    font-size:2em;
+}
+
+
+.container{
+    height: 83.8vh;
+    width: 100vw;
+    display: flex;
+    
+}
+
+.encabezado{
+    display:flex;
+    flex-direction: row;
+    height: 22%;
+    width: 100%;
+    margin-top: 20px;
+   
+}
+
+
+
+/*ARK encabezado*/
+
+#opcionArk{
+    background: linear-gradient(to right, rgb(0,255,255), rgb(26, 245, 125));
+}
+
+.imglogoArk{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.imglogoArk:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 25px 5px rgb(0, 53, 199);
+}
+
+.titArk{
+    font-family:'Times New Roman', Times, serif;
+    font-size:2em;
+    width:80%;
+    display: flex;   
+    align-items: center;
+
+}
+.titArk:hover{
+    background: linear-gradient(to right, rgba(0, 255, 255, 0.705), rgba(1, 153, 153));
+    text-shadow: 20px 5px 10px rgb(2, 85, 117);  
+}
+
+#elArk{
+    transition: transform 2s ease, color 2s ease;
+}
+#elArk:hover{
+    transform: scale(3) translateX(40px);
+    color: rgb(53, 191, 255);
+}
+
+/*Cobas AM encabezado*/
+
+#opcionCobas{
+    max-width: 50%;
+    background: linear-gradient(to right, rgb(26, 245, 125), rgb(5, 212, 5)); 
+}
+
+.imglogoCobas{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;;
+}
+
+.imglogoCobas:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 20px 10px rgb(5, 212, 5);
+}
+.titCobas{
+    font-family:'Times New Roman', Times, serif;
+    font-size:2.2em;
+    width:80%;
+    display: flex;
+    align-items: center;
+    
+}
+.titCobas:hover{
+    background: linear-gradient(to right, rgb(80, 255, 80), rgb(1, 126, 1));
+    text-shadow: 20px 5px 10px rgb(0, 90, 0);
+}
+#elCobas{
+    transition: transform 2s ease, color 2s ease;
+}
+
+#elCobas:hover{
+    transform: scale(2) translateX(75px);
+    color: rgb(10, 100, 22);
+}
+
+/*Modificamos lo que es el texto comparativo (ul) y la imagen de los inversores*/
+
+.cuerpo{
+    display:flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    align-items:end;
+    margin-top: 20px;
+}
+
+.txt{
+    font-size: 20px;
+}
+
+#imgInversor{
+    height: 10em;
+    width: 10em;   
+}
+
+
+
+/*Eliminar el efecto subrayado de los enlaces así como su color lila*/
+#enlace{
+    text-decoration:none;
+    color:inherit;
+    font-weight: bold;
+}
+
+footer{
+    background-color: silver;
+}
+
+/*Para facilitar la visualización en pantallas más pequellas se ocultan ciertos elementos.*/
+@media screen and (max-width:1024px){
+    #imgInversor{
+        display:none;
+    }
+    footer{
+        display:none;
+    }
+}
+
+@media screen and (max-width:768px){
+    .imglogoArk{
+        display:none;
+    }
+    .imglogoCobas{
+        display:none;
+    }
+}
+
+

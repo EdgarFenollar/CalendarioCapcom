@@ -1,0 +1,403 @@
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: HarryPotter;
+    src:url(../../font/curriculum/HARRYP__.TTF);
+}
+
+@font-face{
+    font-family: Dumbledor;
+    src:url(../../font/curriculum/dum1.ttf);
+}
+
+@font-face{
+    font-family: Lumos;
+    src:url(../../font/curriculum/LUMOS.TTF);
+}
+
+/*
+header {
+   /* background-image: url(../../img/Curriculum/header-bg.jpg);
+    border-bottom: 1px solid hsla(0,0%,100%,.1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff4e2;
+    display: none;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Barra 1 */
+header nav.barra1 {
+   /* align-items: center;*/
+    border-bottom: none;
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    padding: 0%;
+    background-image: url(../../img/curriculum/HarryPotter/header-bg.jpg);
+    overflow: hidden;
+}
+
+
+/* Icono WB */
+header nav.barra1 .WB {
+    /*align-items: center;*/
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header nav.barra1 .WB .logo {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    padding: 0 6px;
+    position: relative;
+    transition: background-color .2s;
+}
+
+header nav.barra1 .WB .logo img {
+    width: 21px;
+}
+
+header nav.barra1 .WB .logo img {
+    height: auto;
+    position: relative;
+    width: 30px;
+}
+
+/* Seleccionar Idioma */
+/*
+.idioma {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+}
+*/
+
+.language-selector {
+    display: flex;
+    position: relative;
+    margin-right:  1758px;
+}
+
+button#lenguaje {
+    padding: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+    background-color: transparent;
+    border-color: transparent;
+    color:#fff4e2;
+    font-size: 15px;
+}
+
+.idioma img {
+    width: 30px; 
+   /* height: 30px; */
+    display: inline;
+    margin-right: 0%;
+    /*height: auto;*/
+    margin-top: 20%;
+}
+
+button#lenguaje:hover {
+    color: #efb810;
+}
+
+
+
+/* Redes*/ 
+/*
+.redes {
+    display: flex; 
+    height: auto;
+    width: 10px;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    padding: 0 6px;
+    position: relative;
+    margin-right: 90%;
+}
+
+.logoYou img{
+    width: 40px; 
+    display: inline;
+    margin-right: 5%;
+    margin-top: 20%;
+}
+*/
+
+/* Redes */
+.redes {
+    display: inline;
+
+    /*justify-content: flex-end;
+    align-items: flex-start;
+    margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+}
+
+.logoYou, .logoTwi, .logoInst {
+    display: flex;
+    align-items: flex-start;
+    margin-right: 100px; /* Ajusta el margen entre los logotipos */
+    height: auto; /* Ajusta la altura de los logotipos */
+}
+
+
+
+
+/*Segunda barrita*/
+#segundaBarra.subpage {
+    margin-top: 0;
+}
+
+.subpage {
+    background: rgba(34,34,34,0.75);
+    background-color: rgba(0,0,0,0.1);    
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 50px;
+    min-height: 110px;
+    /*padding: 100px 30px 120px;*/
+    position: relative;
+    float: left;
+}
+
+.subpage2 {
+    background: rgba(34,34,34,0.75);
+    background-color: rgba(0,0,0,0.1);    
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 0px;
+    min-height: 110px;
+    /*padding: 100px 30px 120px;*/
+    position: relative;
+    float: right;
+}
+
+nav.ladoIzquierdo {
+    left: 0;
+}
+
+nav.ladoIzquierdo img.fondoIzquierdo {
+    left: 0;
+    opacity: .2;
+}
+
+nav.ladoIzquierdo img.fondoIzquierdo {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: .2;
+}
+
+img {
+    border-style: none;
+}
+
+nav.ladoDerecho {
+    right: 0;
+}
+
+
+nav.ladoDerecho img.fondoDerecho {
+    right: 0;
+    opacity: .2;
+
+}
+
+nav.ladoDerecho img.fondoDerecho {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: .2;
+}
+
+/*Barras*/
+.nav-bar.right {
+    right: 0;
+    width: 30%;
+    float: right; 
+    margin-top: 100px;
+   
+}
+
+.nav-bar.left {
+    left: 0;
+    width: 30%;
+    float: left;
+    margin-top: 100px;
+    
+}
+
+/*Letras Harry Potter*/
+.nav-bar.center {
+    left: 0;
+    width: 25%;
+    margin-top: 30px;
+    margin-right: 8%;
+    float: right;
+}
+
+/*Esquinas superiores*/
+
+.esquinitaSuperiorIzquierda {
+    left: 0;
+    float: left;
+    width: 10%;
+    height: 10%;
+    margin-top: 0;
+    
+}
+
+section#esquinitaSuperiorDerecha img.esquinitaSuperiorDerecha {
+    position: relative; 
+    float: right; 
+    width: 10%;
+    height: 10%;
+    margin-right: -63%; 
+} 
+
+/*Body*/
+body {
+    background-image: url(../../img/curriculum/HarryPotter/FondoCentral.webp);
+    color: #000000;
+    font-family: sans-serif;  
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0;
+    text-align: left;
+}
+/*Título*/
+.partedearriba {
+    width: 20%;
+    height: 20%;
+    margin-top: 0%;
+    margin-left: 31%;
+}
+
+.textoTitulo{
+    table-layout: auto;
+    font-family: 'Dumbledor';
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    margin-left: 44%;
+    font-size: 40px;
+    height: 100%;
+    margin-top: 0%;
+}
+
+
+
+.partedeabajo {
+    width: 20%;
+    height: 100%;
+    margin-left: 41%;
+}
+
+/* Imagen J.K*/
+.imagenJ\.K{
+    margin-left: 10%;
+    margin-top: 3%;
+    border-radius: 50%; 
+}
+
+.FotoJ.K {
+    position: relative; /* Establece el contexto de posicionamiento */
+}
+  
+.imagenJ\.K{
+    margin-left: 10%;
+    margin-top: 4%;
+    border-radius: 50%; 
+}
+  
+.circuloDorado {
+    position: absolute; 
+    left: 7.4%; 
+    width: 23%; 
+    height: auto;
+    z-index: 1;
+    margin-top: 1%;
+}
+
+/*Texto biografía*/
+
+.Texto{
+    color: white;
+    position: relative;
+}
+
+.marco{
+    width: 900px;
+    margin-left: 33%;
+    margin-top: -400px;
+    height: 700px;
+
+}
+
+h2{
+    position: absolute;
+    top: 20px; 
+    color: white; 
+    padding: 10px; 
+    font-size: 18px; 
+    padding-left: 36%;
+    padding-right: 23%;
+    height: 60%;
+    margin-top: -350px;
+    font-weight: normal;
+}
+
+.marco2{
+    width: 400px;
+    height: 200px;
+    margin-left: 9.5%;
+    margin-top: -1100px;
+}
+
+th{
+    position: absolute;
+    color: white; 
+    padding: 10px; 
+    font-size: 16px; 
+   /* padding-left: 38%;
+    padding-right: 23%;*/
+    margin-left: 195px;
+    margin-top: -190px;
+
+}
+/*Footer*/
+.esquinitaIzquierda{
+    left: 0;
+    float: left;
+    width: 10%;
+    height: 10%;
+    margin-top: -2.5%;
+}
+
+.esquinitaDerecha{
+    right: 0; 
+    float: right; 
+    width: 10%;
+    height: 10%;
+    margin-right: 0%; 
+    margin-top: -2.5%;
+}

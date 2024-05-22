@@ -1,0 +1,180 @@
+@font-face{                     /*Estas lineas crean la fuente de las letras de toda la página web, que en este caso es la fuente que usa la Formula 1 en sus transmisiones y contenido web en general*/
+    font-family: 'formula1';
+    src: url('../../font/dialogo/fuentesF1/formula1regular.ttf') format('truetype');
+}
+html{
+    font-family: formula1;
+}
+body{                           /*Esta etiqueta es la que edita el estilo de todo el cuerpo de la página web, en esta ocasión solo está la foto de fondo*/
+    background-image: url(../../img/dialogo/dialogoF1/fondo1.jfif);
+}
+header{                         /*Este css edita el estilo de la sección del principio/titulo de la página web*/
+    position: relative;
+    width: 35%;
+    left: 500px;
+}
+.nombregp{                      /*Esta serie de lineas hacen referencia al cuadro en naranja que enseña el nombre del piloto, el nombre del gran premio y el año en que transcurrió*/
+    position: relative;
+    border: 2px double black;
+    background-color: orange;
+    padding: 15px;
+    text-align: center;
+}
+.titulopag{                    /*Este es el css del titulo de la página web*/
+    text-align: center;
+    border: 2px dashed black;
+    text-decoration: underline blue;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px 20px 20px 20px;
+}
+main{                           /*Aquí está todo el contenido de la página web*/
+    color: white;
+}
+#radio{                         /*Este ID es el del mensaje de audio de apertura y cerradura de la radio*/
+    position: relative;
+    top: 100px;
+}
+.ingeniero{                     /*Esta serie de lineas, desde la 30 hasta la 41, es el cuadro donde están la foto del ingeniero, el mensaje y el audio de apertura y cerradura de la radio*/
+    position: relative;
+    width: 35%;
+    left: 400px;
+    border: 3px solid white;
+    background-color: black;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.piloto{
+    position: relative;
+    width: 35%;
+    border: 3px solid orange;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: black;
+    color: orange;
+    text-align: right;
+    left: 600px;
+}
+.nombreing{
+    position: relative;
+    left: 60px;
+    bottom: 40px;
+}
+.nombrepil{
+    position: relative;
+    right: 60px;
+    bottom: 40px;
+}
+footer{                                  /*Esta serie de lineas desde la 66 hasta la 75, es el pie de página de la página web de dialogo*/
+    position: relative;
+    border: 2px solid white;
+    background-color: rgb(0, 140, 255);
+    width: 45%;
+    top: 150px;
+    text-align: left;
+    color: white;
+    left: 400px;
+}
+.botoncolores{                          /*Clase del botón para cambiar el color del footer*/
+    position: relative;
+    left: 500px;
+    width: 15%;
+    text-align: center;
+    padding: 10px;
+    top: 30px;
+    background: #2c2c2c;
+    border-radius: 15px;
+    border: 1px solid #333;
+    transition: all ease 0.2s;
+    box-shadow: 0px 5px 10px 0px rgba(255, 0, 0, 0.7);
+}
+.botoncolores:hover{                   /*Acción del botón cuando el cursor se pone encima de el, aspecto decorativo*/
+    transform: translateY(-10px);
+    background-color: white;
+    color: black;
+    box-shadow: 0px 10px 10px 2px rgba(0, 0, 0, 0.7);
+}
+.pie{
+    position: relative;
+    bottom: 10px;
+    padding-left: 15px;
+}
+table {                         /*Esta serie de lineas es la tabla que está después de los mensajes de radio que indica los resultados de Lando Norris esta temporada 2023*/
+    position: relative;
+    top: 120px;
+    width: 40%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 2px solid orange;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: black;
+    color: orange;
+}
+#titulot{
+    text-decoration: underline red;   /*Esta etiqueta en concreto sirve para ponerle subrayado a un parrafo p pero con otros colores, no con el básico del color de la letra*/
+}
+#filauno{
+    text-decoration: underline blue;
+}
+.globo{                                 /*Esta serie de lineas, desde la 102 hasta la linea 113 es el bocadillo de dialogo de la parte del ingeniero*/
+    border-radius: 25px;
+    padding: 12px;
+    background: grey;
+    color: white;
+    padding: 10px;
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    z-index: 1;
+    bottom: 35px;
+    }
+ .globo::after {                        /*Esta serie de lineas, desde la 114 hasta la 126, es el bocadillo de dialogo de la parte del piloto*/
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    background: transparent;
+    width: 0px; height: 0px;
+    border-bottom: 40px solid gray;
+    border-right: 40px solid transparent;
+    border-left: 40px solid transparent;
+    transform: rotate(-30deg);
+    z-index: -1;
+    }
+    .globoder{
+        padding: 12px;
+        background: orange;
+        padding: 10px;
+        color: black;
+        position: relative;
+        width: 65%;
+        margin: 0 auto;
+        z-index: 1;
+        bottom: 35px;
+        }
+     .globoder::after {
+        border: 25px solid orange;
+        content: '';
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+        position: absolute;
+        bottom: -44px;
+        right: 75px;
+        transform: rotate(-12deg);
+        }

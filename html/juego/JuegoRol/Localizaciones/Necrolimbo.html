@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../css/juego/JuegoRol/EstilosLocalizaciones/estiloLocalizacion.css">
+    <title>Castillo</title>
+</head>
+<body onload="cargarAtributosPersonaje();">
+    <!--Musica-->
+    <audio id="musicaFondo" src="../../../../musica/juegoRol/canciones/1-04. Limgrave.mp3" controls="false"></audio>
+      
+    <header>
+        <nav id="barra">
+            <div class="wrapper">
+                <img id="iconoBarra" src="../../../../img/juego/JuegoRol/Iconos/logoER.png" alt="IconoER"/>
+                <img id="logoBarra" src="../../../../img/juego/JuegoRol/Iconos/Elden-Ring-Logo-PNG-Photo.png" alt="LogoER">
+                <div id="botonesBarra">
+                    <ul class="nav-links">
+                        <li><a href="#" onclick="sonidoBoton(); reiniciar()">Reiniciar</a></li>
+                        <li><a href="#" onclick="musica(); sonidoBoton()">Musica On/Off</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="textoYElecciones">
+            <img class="cenefa" src="../../../../img/juego/JuegoRol/Decoraciones/cenefaHojas.png" alt="cenefaHojas">
+            <div class="parrafos">
+                <p>El camino serpenteante te conduce a través de densos bosques y prados ondulantes.
+                    A medida que avanzas, una sensación de inquietud te envuelve,
+                    como si estuvieras siendo observado por ojos invisibles entre las sombras de los árboles.<br>
+                </p>
+                <p>De repente, te encuentras ante un cruce de caminos.
+                    A tu izquierda, un imponente castillo se alza majestuoso en la distancia,
+                    sus torres alcanzando el cielo como dedos de piedra.
+                    A tu derecha, una figura oscura monta un caballo negro,
+                    esperando desafiante frente a un campo de batalla.
+                    Y justo frente a ti, un sereno lago brilla bajo la luz del sol,
+                    sus aguas tranquilas invitándote a la calma..<br>
+                </p>
+                <p>¿Cuál será tu próxima decisión?
+                </p>
+                <p><strong>Ir al castillo:</strong>Explorar los misterios que aguardan dentro de sus muros
+                    ancestrales puede revelar secretos ocultos o peligros mortales.
+                </p>
+                <p><strong>Enfrentarse al caballero</strong>Desafiar al caballero es arriesgado, pero la gloria y la recompensa aguardan
+                    a aquellos lo suficientemente valientes como para enfrentarse a él.
+                </p>
+                <p><strong>Ir al lago:</strong>Sumergirte en las aguas cristalinas del lago puede ofrecerte un merecido
+                    descanso y tal vez incluso una visión renovada de tu camino por delante.
+                </p>
+
+            </div>
+            <img class="cenefa" src="../../../../img/juego/JuegoRol/Decoraciones/cenefaHojas.png" alt="cenefaHojas">
+        </div>
+    
+
+        <div id="opciones">
+            <button class="eleccion" onclick="irAfuerasCastillo()">Ir al castillo</button>
+            <button class="eleccion" onclick="caballero()">Enfrentarse al caballero</button>
+            <button class="eleccion" onclick="lago()">Ir al lago</button>
+        </div>
+
+
+        <div id="infoPersonaje">
+            <img class="cenefa" src="../../../../img/juego/JuegoRol/Decoraciones/cenefaHojas.png" alt="cenefaHojas">
+            <h3>Personaje</h3>
+            <div id="atributos">
+                <p>Nombre: <span id="nombre"></span></p>
+                <p>Fuerza: <span id="fuerza"></span></p>
+                <p>Destreza: <span id="destreza"></span></p>
+                <p>Constitución: <span id="constitucion"></span></p>
+                <p>Inteligencia: <span id="inteligencia"></span></p>
+                <p>Sabiduría: <span id="sabiduria"></span></p>
+                <p>Carisma: <span id="carisma"></span></p>
+                <p>Vida: <span id="vida"></span></p>
+            </div>
+            <img class="cenefa" src="../../../../img/juego/JuegoRol/Decoraciones/cenefaHojas.png" alt="cenefaHojas">
+        </div>
+
+        <div id="muertePersonaje" style="display: none;">
+            <img src="../../../../img/juego/JuegoRol/Fondos/muerte.png" alt="Muerte del personaje">
+        </div>
+        
+    </main>
+
+    <footer>
+        Lenguaje de Marcas | Omar Llinares
+    </footer>
+
+    <script src="../../../../js/juego/juegoRolJavaScript.js"></script>
+
+</body>
+
+</html>

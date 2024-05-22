@@ -1,0 +1,70 @@
+body {
+    background-image: url(../../img/samvalentin/samvalentinSuman/background.jpeg);
+    background-size: cover;
+    background-repeat: initial;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-image: linear-gradient(rgb(85, 235, 47), rgb(242, 239, 34));
+    padding: 20px;
+    text-align: center;
+  }
+
+  footer{
+    background-color: black;
+    text-align: center;
+    padding: 2%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+p{
+    color:white;
+    font-size: 15px;
+    line-height: 1.8;
+}
+  
+#container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+  
+.box {
+    width: 24%;
+    height: 200px;
+    background-color: #f2f2f2;
+    border: 5px solid #000;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
+  
+.box img {
+    max-width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box:hover {
+    box-shadow: 0px 5px 10px 0px #000000;
+    transition: all ease 0.5s;
+}
+
+.box:hover {
+    transform: translateY(-30px);
+    box-shadow: 0px 5px 10px 0px #1ddf51;
+    
+    background-color: rgb(235, 185, 146);
+}
+
+  
+ 
+  

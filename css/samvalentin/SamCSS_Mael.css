@@ -1,0 +1,54 @@
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+}
+
+main{
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    background-color: rgb(117, 117, 117);
+    top: 0;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 3px;
+    word-spacing: 6px;
+}
+
+button{
+    background-image: url(./../../img/samvalentin/samMael/CaraSam.png);
+    background-size: cover;
+    border: none;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#img{
+    border: 1px solid black;
+    width: 600px;
+}
+
+#imagen, #sonido{
+    display: none;
+}
+
+footer{
+    font-weight: bold;
+    background-color: rgb(117, 117, 117);
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}

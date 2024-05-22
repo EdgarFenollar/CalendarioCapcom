@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'Glass Antiqua';
+    src: url(../../font/dialogo/DialogoconWarren/GlassAntiqua-Regular.ttf)
+}
+
+@font-face{
+    font-family: 'Caveat';
+    src: url(../../font/dialogo/DialogoconWarren/Caveat-SemiBold.ttf);
+    font-weight: bold;
+    font-size: bold;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+main{
+    width: 100vw;
+    height: 150vh;
+}
+.container{
+    width:100%;
+    height: 95%;
+    padding:10px;
+
+}
+
+img{
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+
+}
+.dialogo{
+    width:90%;
+    height:200px;
+}
+.Present{
+    width: 40%;
+    display: flex;
+    flex-direction:column;
+    float:left;
+
+}
+
+.bocadilloPresent{
+    border-radius: 5px;
+    background: rgb(78, 169, 255);
+    color: black;
+    font-family: 'Glass Antiqua', Times, serif;
+    font-size: 1.2em;
+    z-index: 1;
+    position: relative;
+    max-width: 75%;
+    left:150px;
+
+}
+
+.bocadilloPresent::after {
+    content:'';
+    position: absolute;
+    bottom: -5px;
+    left:-7px;
+    background: transparent;
+    border-top: 10px solid rgb(78, 169, 255);
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    transform: rotate(150deg);
+
+}
+
+.Warren{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    float:right;
+    margin-top: 50px;
+    
+}
+
+.bocadilloWarren{
+    border-radius: 5px;
+        background: silver;
+        color: black;
+    font-family: 'Caveat', Times, serif;
+    font-size: 1.4em;
+    z-index: 1;
+    position: relative;
+    max-width: 75%;
+    right:60px;
+}
+
+.bocadilloWarren::after {
+    content:'';
+    position: absolute;
+    bottom: -17px;
+    right:5px;
+    background: transparent;
+    border-bottom: 30px solid silver;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    transform: rotate(130deg);
+}
+
+#ImagenWarren1{
+    float:right;
+}
+
+
+@media screen and (max-width:768px){
+    .container{
+        width:100vw;
+        height: 100%;
+        padding:5px;
+    
+    }
+    
+    .dialogo{
+        max-width:97%;
+        height:auto;
+    }
+    
+    img{
+        width:150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .Present{
+        width: 50%;
+        display: flex;
+        flex-direction:column;
+        float:left;
+    }
+    .bocadilloPresent{
+        border-radius: 5px;
+        background: rgb(78, 169, 255);
+        color: black;
+        font-family: 'Glass Antiqua', Times, serif;
+        font-size: 1em;
+        z-index: 1;
+        position: relative;
+        max-width: 55%;
+        left:130px;
+    
+    }
+    
+    .bocadilloPresent::after {
+        content:'';
+        position: absolute;
+        bottom: -5px;
+        left:-7px;
+        background: transparent;
+        border-top: 10px solid rgb(78, 169, 255);
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        transform: rotate(150deg);
+    
+    }
+
+    .Warren{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        float:right;
+        margin-top: 50px;
+        
+    }
+    .bocadilloWarren{
+        border-radius: 5px;
+        background: silver;
+        color: black;
+        font-family: 'Caveat', Times, serif;
+        font-size: 1.1em;
+        z-index: 1;
+        position: relative;
+        max-width: 55%;
+        right:10px;
+    }
+    
+    .bocadilloWarren::after {
+        content:'';
+        position: absolute;
+        bottom: -17px;
+        right:5px;
+        background: transparent;
+        border-bottom: 30px solid silver;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        transform: rotate(130deg);
+    }
+
+}

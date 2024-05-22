@@ -1,0 +1,536 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: HarryPotter;
+    src:url(../../font/escala/HARRYP__.TTF);
+}
+
+@font-face{
+    font-family: Dumbledor;
+    src:url(../../font/escala/dum1.ttf);
+}
+
+@font-face{
+    font-family: Lumos;
+    src:url(../../font/escala/LUMOS.TTF);
+}
+
+/* ---- Barra 1 ---- */
+header nav.barra1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 0;
+    background-image: url(../../img/escala/HarryPotter/header-bg.jpg);
+    overflow: hidden;
+}
+
+/* ---- Icono WB ---- */
+header nav.barra1 .WB {
+    display: flex;
+    align-items: center; 
+    height: 100%;
+    justify-content: space-between;
+}
+
+header nav.barra1 .WB .logo {
+    display: flex;
+    align-items: center; 
+    overflow: hidden;
+    padding: 0 6px;
+    position: relative;
+    transition: background-color .2s;
+    height: 100%;
+}
+
+header nav.barra1 .WB .logo img {
+    width: 30px;
+    height: auto;
+    position: relative;
+}
+
+/* ---- Lenguaje ---- */
+header nav.barra1 .WB .language-selector {
+    display: flex;
+    align-items: center; 
+    margin-left: 10px; 
+}
+
+.language-selector {
+    display: flex;                                             
+    position: relative;
+    margin-right:  79%;
+}
+
+.idioma img {
+    width: 30px;
+    display: inline;
+    margin-right: 0;
+    margin-top: 20%;
+}
+
+button#lenguaje {
+    padding: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+    background-color: transparent;
+    border-color: transparent;
+    color: #fff4e2;
+    font-size: 15px;
+}
+
+button#lenguaje:hover {
+    color: #efb810;
+}
+
+/* ---- Redes ---- */
+.redes {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 8px;
+    margin-right: 5%;
+}
+
+.logo {
+    margin-left: 15px;
+    
+}
+
+
+/* ---- Segunda barrita ---- */
+
+#segundaBarra.subpage {
+    margin-top: 0;
+}
+
+.subpage {
+    background-color: transparent;    
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 50px;
+    min-height: 110px;
+    position: relative;
+    float: left;
+}
+
+.subpage2 {
+    background-color: transparent;    
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 0px;
+    min-height: 110px;
+    position: relative;
+    float: right;
+}
+
+nav.ladoIzquierdo {
+    left: 0;
+}
+
+nav.ladoIzquierdo img.fondoIzquierdo {
+    left: 0;
+    opacity: .2;
+}
+
+nav.ladoIzquierdo img.fondoIzquierdo {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: .2;
+}
+
+img {
+    border-style: none;
+}
+
+nav.ladoDerecho {
+    right: 0;
+}
+
+
+nav.ladoDerecho img.fondoDerecho {
+    right: 0;
+    opacity: .2;
+
+}
+
+nav.ladoDerecho img.fondoDerecho {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: .2;
+}
+
+
+/*--Menú con Desplegables--*/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    font-family: 'Lumos';
+    font-size: 25px;
+    margin-top: 5%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    color: rgba(225,182,93,255);
+}
+
+nav ul li a:hover{
+    color: #ffffff;
+}
+
+/* ---- Desplegables ---- */
+nav ul li.desplegables:hover .submenu {
+    display: block;
+}
+
+nav ul li .submenu {
+    display: none;
+    position: absolute;
+    background-color: rgba(25,30,33,255);
+    z-index: 1;
+}
+
+nav ul li .submenu li {
+    display: block;
+}
+
+nav ul li .submenu li a {
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* --- Segundo menú izquierda --- */
+
+nav ul li.desplegables:hover .submenu-izquierda {
+    display: block;
+}
+
+nav ul li .submenu-izquierda {
+    display: none;
+    position: absolute;
+    background-color: rgba(25,30,33,255);
+    z-index: 1;
+}
+
+nav ul li .submenu-izquierda li {
+    display: block;
+    margin-bottom: 2px;
+}
+
+nav ul li .submenu-izquierda li a {
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ---- Segundo menú derecha ----*/
+
+.ladoDerecho ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ladoDerecho li {
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    font-family: 'Lumos';
+    font-size: 25px;
+    margin-top: 5%;
+    margin-right: 20px; 
+}
+
+.ladoDerecho li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    color: rgba(225, 182, 93, 255);
+}
+
+.ladoDerecho li a:hover {
+    color: #ffffff;
+}
+
+
+nav ul li.desplegables:hover .submenu-derecha {
+    display: block;
+}
+
+nav ul li .submenu-derecha {
+    display: none;
+    position: absolute;
+    background-color: rgba(25,30,33,255);
+    z-index: 1;
+    
+}
+
+nav ul li .submenu-derecha li {
+    display: block;
+    margin: 5px 0;
+}
+
+nav ul li .submenu-derecha li a {
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* ---- Barras doradas ---- */
+.nav-bar.right {
+    right: 0;
+    width: 30%;
+    float: right; 
+    margin-top: 100px;
+    margin-right: -33.5%;
+
+}
+
+.nav-bar.left {
+    left: 0%;
+    width: 30%;
+    float: left;
+    margin-top: -10px;
+}
+
+
+/* ---- Letras Harry Potter ---- */
+.nav-bar.center {
+    left: 0;
+    width: 25%;
+    margin-top: 30px;
+    margin-right: 4.5%;
+    float: right;
+   
+}
+
+/* ---- Esquinas superiores ---- */
+.esquinitaSuperiorIzquierda {
+    left: 0;
+    float: left;
+    width: 10%;
+    height: 10%;
+    margin-top: 0;
+}
+
+section#esquinitaSuperiorDerecha img.esquinitaSuperiorDerecha {
+    position: relative; 
+    float: right; 
+    width: 10%;
+    height: 10%;
+    margin-right: -62.8%; 
+} 
+
+/* ---- Body ---- */
+body {
+    background-image: url(../../img/escala/HarryPotter/FondoCentral.webp);
+    color: #000000;
+    font-family: sans-serif;  
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0;
+    text-align: left;
+}
+/* ---- Título ---- */
+.partedearriba {
+    width: 20%;
+    height: 20%;
+    margin-top: 0%;
+    margin-left: 31%;
+}
+
+.textoTitulo{
+    table-layout: auto;
+    font-family: 'Dumbledor';
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    margin-left: 40%;
+    font-size: 40px;
+    height: 100%;
+    margin-top: 0%;
+}
+
+.partedeabajo {
+    width: 20%;
+    height: 100%;
+    margin-left: 41%;
+}
+
+/* ---- Juego ---- */
+#container{
+    font-size: 40px;
+    color:#ffffff;
+    font-family: 'Dumbledor';
+    background-color: rgba(37,48,51,255);
+    width: 80%; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    margin-top: 3%;
+}
+
+div[data-name="Gryffindor"] {
+    background: linear-gradient(to right, red, yellow); /* Cambia los colores según tu preferencia */
+}
+
+div[data-name="Hufflepuff"] {
+    background: linear-gradient(to right, yellow, black); /* Cambia los colores según tu preferencia */
+}
+
+div[data-name="Ravenclaw"] {
+    background: linear-gradient(to right, blue, gray); /* Cambia los colores según tu preferencia */
+}
+
+div[data-name="Slytherin"] {
+    background: linear-gradient(to right, green, rgb(1, 22, 1)); /* Cambia los colores según tu preferencia */
+}
+/* Botones */
+
+#start-button{
+    margin-left: 40%;
+    padding: 15px 15px 15px 15px;
+    
+}
+
+#yes-button{
+    margin-left: 40%;
+    padding: 15px 15px 15px 15px;
+}
+#no-button{
+    margin-left: 5%;
+    padding: 15px 15px 15px 15px;
+    
+}
+
+#Sombrero{
+    margin-right: 40%;
+    width: 20%;
+    height: 20%;
+}
+
+#questions{
+    display: none;
+}
+
+.chart-wrap.horizontal {
+    --chart-width: 420px;
+    --grid-color: #ffffff;
+    --bar-color: #ff0000;
+    --bar-thickness: 40px;
+    --bar-rounded: 3px;
+    --bar-spacing: 20px;
+
+    width: var(--chart-width);
+    text-align: center;
+    margin: 20px auto;
+}
+
+.chart-wrap .title {
+    font-weight: bold;
+    padding: 1.8em 0;
+    white-space: nowrap;
+}
+
+.chart-wrap.horizontal .grid {
+    transform: rotate(-90deg);
+}
+
+.chart-wrap .grid {
+    margin-left: 50px;
+    position: relative;
+    padding: 5px 0 5px 0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid var(--grid-color);
+}
+
+.chart-wrap .grid::before {
+    font-size: 0.8em;
+    font-weight: bold;
+    content: '0%';
+    position: absolute;
+    left: -0.5em;
+    top: -1.5em;
+}
+
+.chart-wrap .grid::after {
+    font-size: 0.8em;
+    font-weight: bold;
+    content: '100%';
+    position: absolute;
+    right: -1.5em;
+    top: -1.5em;
+}
+
+.chart-wrap.horizontal .grid::before,
+.chart-wrap.horizontal .grid::after {
+    transform: rotate(90deg);
+}
+
+.chart-wrap .bar {
+    width: var(--bar-value);
+    height: var(--bar-thickness);
+    margin: var(--bar-spacing) 0;
+    background-color: var(--bar-color);
+    border-radius: 0 var(--bar-rounded) var(--bar-rounded) 0;
+    transition: width 1s ease;
+}
+
+.chart-wrap .bar:hover {
+    opacity: 0.7;
+}
+
+.chart-wrap .bar::after {
+    content: attr(data-name);
+    margin-left: 100%;
+    padding: 10px;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+#result{
+    display: none;
+}
+
+
+
+/* ----Footer (Esquinas inferiores)----*/
+.esquinitaIzquierda{
+    left: 0;
+    float: left;
+    width: 10%;
+    height: 10%;
+    margin-top: 0%;
+}
+
+.esquinitaDerecha{
+    right: 0; 
+    float: right; 
+    width: 10%;
+    height: 10%;
+    margin-right: 0%; 
+    margin-top: 0%;
+}
+

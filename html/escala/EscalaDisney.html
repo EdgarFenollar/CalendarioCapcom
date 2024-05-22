@@ -1,0 +1,575 @@
+<!-- Siempre va al incio de cada página -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Esto es el tipo de luenguaje que se usa -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../../css/escala/EscalaDisney.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escala Disney</title>
+<!-- Cabecera, titulo de la pestaña que se verá al abrir -->
+</head>
+
+<body>
+    <section id = titulo>
+        <h1>La Psicología del color de los personajes de  Disney</h1>
+    </section>
+
+<!-- Lienzo del grafico-->
+
+<!--Inicio primer gráfico-->
+<section id="grafico1">
+
+    <h2 id="caracteristicas">Adjetivos que representan la personalidad de los personajes</h2>
+        <div class="container">
+            <div class="chart">
+                <canvas id="doughnut" width="200" height="200"></canvas>
+            </div>
+        </div>
+
+    <!--Tabla con adjetivos representativos de los colores-->
+    <table class="adjetivos">
+        <tr>
+            <td id="orange">
+                <ul>
+                    <li>Fascinación</li>
+                    <li>Creatividad</li>
+                    <li>Engaño</li>
+                    <li>Entusiasmo</li>
+                </ul>
+            </td>
+      
+            <td id="yellow">
+                <ul>
+                    <li>Alegría</li>
+                    <li>Felicidad</li>
+                    <li>Intelecto</li>
+                    <li>Energía</li>
+            </ul>
+          </td>
+      
+          <td id="green">
+                <ul>
+                    <li>Seguridad</li>
+                    <li>Resistencia</li>
+                    <li>Sanación</li>
+                    <li>Crecimiento</li>
+                </ul>
+          </td>
+
+          <td id="blue">
+                <ul>
+                    <li>Confianza</li>
+                    <li>Lealtad</li>
+                    <li>Confidencia</li>
+                    <li>Estabilidad</li>
+                </ul>
+          </td>
+      
+        </tr>
+      
+        <tr>
+      
+          <td id="purple">
+                <ul>
+                    <li>Poder</li>
+                    <li>Nobleza</li>
+                    <li>Lujos</li>
+                    <li>Ambición</li>
+                </ul>
+          </td>
+      
+          <td id="white">
+                <ul>
+                    <li>Luz</li>
+                    <li>Bondad</li>
+                    <li>Inocencia</li>
+                    <li>Pureza</li>
+            </ul>
+          </td>
+      
+          <td id="black">
+                <ul>
+                    <li>Elegancia</li>
+                    <li>Formalidad</li>
+                    <li>Muerte</li>
+                    <li>Maldad</li>
+                </ul>
+          </td>
+
+          <td id="red">
+                <ul>
+                    <li>Fortaleza</li>
+                    <li>Energía</li>
+                    <li>Determinación</li>
+                    <li>Pasión</li>
+                </ul>
+          </td>
+      
+        </tr>
+      
+      </table>
+</section>
+<!--Cierre primer gráfico-->
+
+<!--Inicio segundo gráfico-->
+<section id="grafico2">
+    <h2 class="persona">Personajes y Peliculas</h2>
+    
+    <div class="container1">
+        <div class="chart">
+            <canvas id="barchart" width="400" height="400"></canvas>
+        </div>
+    </div>
+
+    <table class="personajes">
+
+        <tr class="perso">
+            <td class="izquierda">
+                <ul>
+                    <li id="Moana"><h4>Moana</h4> 
+                        <p>/ Moana</p></div>
+                        <img id="MoanaImg" src="../../img/escala/Disney/Moana.jpg" alt="Moana">
+                    </li>
+                    <li id="Shere"><h4>Shere Khan</h4> 
+                        <p>/ El libro de la Selva</p>
+                    <img id="ShereImg" src="../../img/escala/Disney/Shere.jpg" alt="Shere Khan">
+                    </li>
+                    <li id="Nemo"><h4>Nemo</h4>
+                        <p>/ Buscando a nemo</p>
+                        <img id="NemoImg" src="../../img/escala/Disney/Nemo.jpg" alt="Nemo">
+                    </li>
+
+                    <li id="Woody"><h4>Woody</h4>
+                        <p>/ Toy Story</p></div>
+                        <img id="WoodyImg" src="../../img/escala/Disney/Woody.jpg" alt="Woody">
+                    </li>
+                    <li id="Walle"><h4>Wall-E</h4>
+                        <p>/ Wall-E</p></div>
+                        <img id="WalleImg" src="../../img/escala/Disney/WallE.jpg" alt="Wall-E">
+                    </li>
+                    <li id="Pocahontas"><h4>Pocahontas</h4>
+                        <p>/ Pocahontas</p></div>
+                        <img id="PocahontasImg" src="../../img/escala/Disney/Pocahontas.jpg" alt="Pocahontas">
+                    </li>
+                    <li id="BlancaNieves"><h4>Blanca Nieves</h4>
+                        <p>/ Blanca Nieves y los Siete Enanitos</p></div>
+                        <img id="BlancaNievesImg" src="../../img/escala/Disney/BlancaNieves.jpg" alt="Blanca Nieves">
+                    </li>
+                    <li id="Bella"><h4>Bella</h4>
+                        <p>/ La Bella y La Bestia</p></div>
+                        <img id="BellaImg" src="../../img/escala/Disney/Bella.jpg" alt="bella">
+                    </li>
+
+                    <li id="PeterPan"><h4>Peter Pan</h4>
+                        <p>/ Peter Pan</p></div>
+                        <img id="PeterImg" src="../../img/escala/Disney/PeterPan.jpg" alt="Peter Pan">
+                    </li>
+                    <li id="Quasimodo"><h4>Quasimodo</h4>
+                        <p>/ El Jorobado de Notre Dame</p></div>
+                        <img id="QuasimodoImg" src="../../img/escala/Disney/Quasimodo.jpg" alt="Quasimodo">
+                    </li>
+                    <li id="Tiana"><h4>Tiana</h4>
+                        <p>/ Tiana y el Sapo</p></div>
+                        <img id="TianaImg" src="../../img/escala/Disney/Tiana.jpg" alt="Tiana">
+                    </li>
+                    <li id="Mulan"><h4>Mulan</h4>
+                        <p>/ Mulan</p></div>
+                        <img id="MulanImg" src="../../img/escala/Disney/Mulan.jpg" alt="Mulan">
+                    </li>
+                    <li id="Ariel"><h4>Ariel</h4>
+                        <p>/ La Sirenita</p></div>
+                        <img id="ArielImg" src="../../img/escala/Disney/PeterPan.jpg" alt="Ariel">
+                    </li>
+
+                    <li id="Sullivan"><h4>James P. Sullivan</h4>
+                        <p>/ Monsters Inc.</p></div>
+                        <img id="SullivanImg" src="../../img/escala/Disney/Sullivan.jpg" alt="Sullivan">
+                    </li>
+                    <li id="Alicia"><h4>Alicia</h4>
+                        <p>/ Alicia en el País de las Maravillas</p></div>
+                        <img id="AlciaImg" src="../../img/escala/Disney/Alicia.jpg" alt="Alicia">
+                    </li>
+                    <li id="Hades"><h4>Hades</h4>
+                        <p>/ Hércules</p></div>
+                        <img id="HadesImg" src="../../img/escala/Disney/Hades.jpg" alt="Hades">
+                    </li>
+                    <li id="Aurora"><h4>Aurora</h4>
+                        <p>/ La Bella Durmiente</p></div>
+                        <img id="AuroraImg" src="../../img/escala/Disney/Aurora.jpg" alt="Aurora">
+                    </li>
+                    <li id="Cenicienta"><h4>Cenicienta</h4>
+                        <p>/ Cenicienta</p></div>
+                        <img id="CenicientaImg" src="../../img/escala/Disney/Cenicienta.jpg" alt="Cenicienta">
+                    </li>
+                    <li id="Elsa"><h4>Elsa</h4>
+                        <p>/ Frozen</p></div>
+                        <img id="ElsaImg" src="../../img/escala/Disney/Elsa.jpg" alt="Elsa">
+                    </li>
+                    <li id="Stitch"><h4>Stitch</h4>
+                        <p>/ Lilo y Stitch</p></div>
+                        <img id="StitchImg" src="../../img/escala/Disney/Stich.jpg" alt="Stitch">
+                    </li>
+                </ul>
+            </td>
+
+            <td class="derecha">
+                <ul>
+                    <li id="Zurg"><h4>Emperador Zurg</h4>
+                    <p>/ Toy Story 2</p></div>
+                    <img id="ZurgImg" src="../../img/escala/Disney/EmperadorZurg.jpg" alt="Emperador Zurg">
+                </li>
+                <li id="ReinaMalvada"><h4>Reina Malvada</h4>
+                    <p>/ Blanca Nieves y los Siete Enanitos</p></div>
+                    <img id="ReinaMalvadaImg" src="../../img/escala/Disney/ReinaMalvada.jpg" alt="Blanca Nieves">
+                </li>
+                <li id="Aladdin"><h4>Aladdin</h4>
+                    <p>/ Aladdin</p></div>
+                    <img id="AladdinImg" src="../../img/escala/Disney/Aladdin.jpg" alt="Aladdin">
+                </li>
+                <li id="Randall"><h4>Randall Boggs</h4>
+                    <p>/ Monster Inc.</p></div>
+                    <img id="RandallImg" src="../../img/escala/Disney/Randall.jpg" alt="Randall">
+                </li>
+                <li id="Malefica"><h4>Maléfica</h4>
+                    <p>/ La Bella Durmiente</p></div>
+                    <img id="MaleficaImg" src="../../img/escala/Disney/Malefica.jpg" alt="Maléfica">
+                </li>
+                <li id="Anna"><h4>Anna</h4>
+                    <p>/ Frozen</p></div>
+                    <img id="AnnaImg" src="../../img/escala/Disney/Anna.jpg" alt="Anna">
+                </li>
+                <li id="Radcliffe"><h4>Gobernador Radcliffe</h4>
+                    <p>/ Pocahontas</p></div>
+                    <img id="RadcliffeImg" src="../../img/escala/Disney/GobernadorRadcliffe.jpg" alt="Radcliffe">
+                </li>
+                <li id="Facilier"><h4>Dr. Facilier</h4>
+                    <p>/ Tiana y el Sapo</p></div>
+                    <img id="FacilierImg" src="../../img/escala/Disney/DrFacilier.jpg" alt="Dr Facilier">
+                </li>
+
+                <li id="Pongo"><h4>Pongo</h4>
+                    <p>/ 101 Dalmatas</p></div>
+                    <img id="PongoImg" src="../../img/escala/Disney/Pongo.jpg" alt="Pongo">
+                </li>
+                <li id="Duquesa"><h4>Duquesa</h4>
+                    <p>/ Aristogatos</p></div>
+                    <img id="DuquesaImg" src="../../img/escala/Disney/Duquesa.jpg" alt="Duquesa">
+                </li>
+
+                <li id="Shan"><h4>Shan Yu</h4>
+                    <p>/ Mulan</p></div>
+                    <img id="ShanImg" src="../../img/escala/Disney/ShauYu.jpg" alt="Shan Yu">
+                </li>
+                <li id="MorDu"><h4>Mor' Du</h4>
+                    <p>/ Valiente</p></div>
+                    <img id="MorduImg" src="../../img/escala/Disney/MorDu.jpg" alt="Mor Du">
+                </li>
+                <li id="Ursula"><h4>Ursula</h4>
+                    <p>/ La Sirenita</p></div>
+                    <img id="UrsulaImg" src="../../img/escala/Disney/Ursula.jpg" alt="Ursula">
+                </li>
+                <li id="Yokai"><h4>Yokai</h4>
+                    <p>/ Grandes Héroes</p></div>
+                    <img id="YokaiImg" src="../../img/escala/Disney/Yokai.jpg" alt="Yokai">
+                </li>
+                <li id="Frollo"><h4>Claude Frollo</h4>
+                    <p>/ El Jorobado de Notre Dame</p></div>
+                    <img id="FrolloImg" src="../../img/escala/Disney/ClaudeFrollo.jpg" alt="Claude Frollo">
+                </li>
+                <li id="Gantu"><h4>Capitán Gantu</h4>
+                    <p>/ Lilo y Stitch</p></div>
+                    <img id="GantuImg" src="../../img/escala/Disney/CapitanGantu.jpg" alt="Capitan Gantu">
+                </li>
+                    
+                <li id="Gothel"><h4>Gothel</h4>
+                    <p>/ Enredados</p></div>
+                    <img id="GothelImg" src="../../img/escala/Disney/Gothel.jpg" alt="Gothel">
+                </li>
+                <li id="Gaston"><h4>Gastón </h4>
+                    <p>/ La Bella y la Bestia</p></div>
+                    <img id="GastonImg" src="../../img/escala/Disney/Gaston.jpg" alt="Gaston">
+                </li>
+                <li id="Jafar"><h4>Jafar</h4>
+                    <p>/ Aladdin</p></div>
+                    <img id="JafarlImg" src="../../img/escala/Disney/Jafar.jpg" alt="Jafar">
+                </li>
+                <li id="Madrastra"><h4>Madrastra</h4>
+                    <p>/ Cenicienta</p></div>
+                    <img id="MadrastralImg" src="../../img/escala/Disney/Madrastra.jpg" alt="Madrastra">
+                </li>
+                <li id="Hook"><h4>Capitán Hook</h4>
+                    <p>/ Peter Pan</p></div>
+                    <img id="HooklImg" src="../../img/escala/Disney/CapitanHook.jpg" alt="Capitan Hook">
+                </li>
+                <li id="TeKa"><h4>Te Ka</h4>
+                    <p>Moana</p></div>
+                    <img id="TekalImg" src="../../img/escala/Disney/TeKa.jpg" alt="Te Ka">
+                </li>
+                <li id="Reina"><h4>Reina de Corazones</h4>
+                    <p>/ Alicia en el País de las Maravillas</p></div>
+                    <img id="ReinalImg" src="../../img/escala/Disney/ReinaCorazones.jpg" alt="Reina de Corazones">
+                </li>
+                <li id="Increible"><h4>Mr. Increíble</h4>
+                    <p>/ Los Increíbles</p></div>
+                    <img id="IncreiblelImg" src="../../img/escala/Disney/MrIncreible.jpg" alt="Mr Increible">
+                </li>
+
+                </ul>
+            </td>
+
+        </tr>
+    </table>
+    <!--<table class="personajes">
+
+        <tr class="perso">
+      
+          <td class="uno">
+            <ul><!--Personajes orange-->
+               <!-- <li id="Moana"><h4>Moana</h4> 
+                    <p>/ Moana</p></div>
+                    <img id="MoanaImg" src="../../img/escala/Disney/Moana.jpg" alt="Moana">
+                </li>
+                <li id="Shere"><h4>Shere Khan</h4> 
+                    <p>/ El libro de la Selva</p>
+                <img id="ShereImg" src="../../img/escala/Disney/Shere.jpg" alt="Shere Khan">
+                </li>
+                <li id="Nemo"><h4>Nemo</h4>
+                    <p>/ Buscando a nemo</p>
+                    <img id="NemoImg" src="../../img/escala/Disney/Nemo.jpg" alt="Nemo">
+                </li>
+
+                
+            </ul>
+          </td>
+      
+          <td class="dos">
+            <ul><!--Personajes yellow-->
+               <!-- <li id="Woody"><h4>Woody</h4>
+                    <p>/ Toy Story</p></div>
+                    <img id="WoodyImg" src="../../img/escala/Disney/Woody.jpg" alt="Woody">
+                </li>
+                <li id="Walle"><h4>Wall-E</h4>
+                    <p>/ Wall-E</p></div>
+                    <img id="WalleImg" src="../../img/escala/Disney/WallE.jpg" alt="Wall-E">
+                </li>
+                <li id="Pocahontas"><h4>Pocahontas</h4>
+                    <p>/ Pocahontas</p></div>
+                    <img id="PocahontasImg" src="../../img/escala/Disney//Pocahontas.jpg" alt="Pocahontas">
+                </li>
+                <li id="BlancaNieves"><h4>Blanca Nieves</h4>
+                    <p>/ Blanca Nieves y los Siete Enanitos</p></div>
+                    <img id="BlancaNievesImg" src="../../img/escala/Disney/BlancaNieves.jpg" alt="Blanca Nieves">
+                </li>
+                <li id="Bella"><h4>Bella</h4>
+                    <p>/ La Bella y La Bestia</p></div>
+                    <img id="BellaImg" src="../../img/escala/Disney/Bella.jpg" alt="bella">
+                </li>
+
+            </ul>
+          </td>
+      
+          <td class="tres"> 
+            <ul><!--Personajes green-->
+             <!--  <li id="PeterPan"><h4>Peter Pan</h4>
+                    <p>/ Peter Pan</p></div>
+                    <img id="PeterImg" src="../../img/escala/Disney/PeterPan.jpg" alt="Peter Pan">
+                </li>
+                <li id="Quasimodo"><h4>Quasimodo</h4>
+                    <p>/ El Jorobado de Notre Dame</p></div>
+                    <img id="QuasimodoImg" src="../../img/escala/Disney/Quasimodo.jpg" alt="Quasimodo">
+                </li>
+                <li id="Tiana"><h4>Tiana</h4>
+                    <p>/ Tiana y el Sapo</p></div>
+                    <img id="TianaImg" src="../../img/escala/Disney/Tiana.jpg" alt="Tiana">
+                </li>
+                <li id="Mulan"><h4>Mulan</h4>
+                    <p>/ Mulan</p></div>
+                    <img id="MulanImg" src="../../img/escala/Disney/Mulan.jpg" alt="Mulan">
+                </li>
+                <li id="Ariel"><h4>Ariel</h4>
+                    <p>/ La Sirenita</p></div>
+                    <img id="ArielImg" src="../../img/escala/Disney/PeterPan.jpg" alt="Ariel">
+                </li>
+                
+            </ul>
+        </td>
+
+          <td class="cuatro">
+            <ul><!--Personajes blue-->
+               <!-- <li id="Sullivan"><h4>James P. Sullivan</h4>
+                    <p>/ Monsters Inc.</p></div>
+                    <img id="SullivanImg" src="../../img/escala/Disney/Sullivan.jpg" alt="Sullivan">
+                </li>
+                <li id="Alicia"><h4>Alicia</h4>
+                    <p>/ Alicia en el País de las Maravillas</p></div>
+                    <img id="AlciaImg" src="../../img/escala/Disney/Alicia.jpg" alt="Alicia">
+                </li>
+                <li id="Hades"><h4>Hades</h4>
+                    <p>/ Hércules</p></div>
+                    <img id="HadesImg" src="../../img/escala/Disney/Hades.jpg" alt="Hades">
+                </li>
+                <li id="Aurora"><h4>Aurora</h4>
+                    <p>/ La Bella Durmiente</p></div>
+                    <img id="AuroraImg" src="../../img/escala/Disney/Aurora.jpg" alt="Aurora">
+                </li>
+                <li id="Cenicienta"><h4>Cenicienta</h4>
+                    <p>/ Cenicienta</p></div>
+                    <img id="CenicientaImg" src="../../img/escala/Disney/Cenicienta.jpg" alt="Cenicienta">
+                </li>
+                <li id="Elsa"><h4>Elsa</h4>
+                    <p>/ Frozen</p></div>
+                    <img id="ElsaImg" src="../../img/escala/Disney/Elsa.jpg" alt="Elsa">
+                </li>
+                <li id="Stitch"><h4>Stitch</h4>
+                    <p>/ Lilo y Stitch</p></div>
+                    <img id="StitchImg" src="../../img/escala/Disney/Stich.jpg" alt="Stitch">
+                </li>
+                
+            </ul>
+          </td>
+      
+        </tr>
+      
+        <tr>
+      
+          <td class="cinco">
+            <ul><!--Personajes purple-->
+                <!--<li id="Zurg"><h4>Emperador Zurg</h4>
+                    <p>/ Toy Story 2</p></div>
+                    <img id="ZurgImg" src="../../img/escala/Disney/EmperadorZurg.jpg" alt="Emperador Zurg">
+                </li>
+                <li id="ReinaMalvada"><h4>Reina Malvada</h4>
+                    <p>/ Blanca Nieves y los Siete Enanitos</p></div>
+                    <img id="ReinaMalvadaImg" src="../../img/escala/Disney/ReinaMalvada.jpg" alt="Blanca Nieves">
+                </li>
+                <li id="Aladdin"><h4>Aladdin</h4>
+                    <p>/ Aladdin</p></div>
+                    <img id="AladdinImg" src="../../img/escala/Disney/Aladdin.jpg" alt="Aladdin">
+                </li>
+                <li id="Randall"><h4>Randall Boggs</h4>
+                    <p>/ Monster Inc.</p></div>
+                    <img id="RandallImg" src="../../img/escala/Disney/Randall.jpg" alt="Randall">
+                </li>
+                <li id="Malefica"><h4>Maléfica</h4>
+                    <p>/ La Bella Durmiente</p></div>
+                    <img id="MaleficaImg" src="../../img/escala/Disney/Malefica.jpg" alt="Maléfica">
+                </li>
+                <li id="Anna"><h4>Anna</h4>
+                    <p>/ Frozen</p></div>
+                    <img id="AnnaImg" src="../../img/escala/Disney/Anna.jpg" alt="Anna">
+                </li>
+                <li id="Radcliffe"><h4>Gobernador Radcliffe</h4>
+                    <p>/ Pocahontas</p></div>
+                    <img id="RadcliffeImg" src="../../img/escala/Disney/GobernadorRadcliffe.jpg" alt="Radcliffe">
+                </li>
+                <li id="Facilier"><h4>Dr. Facilier</h4>
+                    <p>/ Tiana y el Sapo</p></div>
+                    <img id="FacilierImg" src="../../img/escala/Disney/DrFacilier.jpg" alt="Dr Facilier">
+                </li>
+            </ul>
+          </td>
+      
+          <td class="seis">
+            <ul><!--Personajes white-->
+               <!--<li id="Pongo"><h4>Pongo</h4>
+                    <p>/ 101 Dalmatas</p></div>
+                    <img id="PongoImg" src="../../img/escala/Disney/Pongo.jpg" alt="Pongo">
+                </li>
+                <li id="Duquesa"><h4>Duquesa</h4>
+                    <p>/ Aristogatos</p></div>
+                    <img id="DuquesaImg" src="../../img/escala/Disney/Duquesa.jpg" alt="Duquesa">
+                </li>
+            </ul>
+          </td>
+      
+          <td class="siete">
+            <ul><!--Personajes black-->
+               <!--<li id="Shan"><h4>Shan Yu</h4>
+                    <p>/ Mulan</p></div>
+                    <img id="ShanImg" src="../../img/escala/Disney/ShauYu.jpg" alt="Shan Yu">
+                </li>
+                <li id="MorDu"><h4>Mor' Du</h4>
+                    <p>/ Valiente</p></div>
+                    <img id="MorduImg" src="../../img/escala/Disney/MorDu.jpg" alt="Mor Du">
+                </li>
+                <li id="Ursula"><h4>Ursula</h4>
+                    <p>/ La Sirenita</p></div>
+                    <img id="UrsulaImg" src="../../img/escala/Disney/Ursula.jpg" alt="Ursula">
+                </li>
+                <li id="Yokai"><h4>Yokai</h4>
+                    <p>/ Grandes Héroes</p></div>
+                    <img id="YokaiImg" src="../../img/escala/Disney/Yokai.jpg" alt="Yokai">
+                </li>
+                <li id="Frollo"><h4>Claude Frollo</h4>
+                    <p>/ El Jorobado de Notre Dame</p></div>
+                    <img id="FrolloImg" src="../../img/escala/Disney/ClaudeFrollo.jpg" alt="Claude Frollo">
+                </li>
+                <li id="Gantu"><h4>Capitán Gantu</h4>
+                    <p>/ Lilo y Stitch</p></div>
+                    <img id="GantuImg" src="../../img/escala/Disney/CapitanGantu.jpg" alt="Capitan Gantu">
+                </li>
+            </ul>
+          </td>
+
+          <td class="ocho">
+            <ul><!--Personajes red-->
+               <!-- <li id="Gothel"><h4>Gothel</h4>
+                    <p>/ Enredados</p></div>
+                    <img id="GothelImg" src="../../img/escala/Disney/Gothel.jpg" alt="Gothel">
+                </li>
+                <li id="Gaston"><h4>Gastón </h4>
+                    <p>/ La Bella y la Bestia</p></div>
+                    <img id="GastonImg" src="../../img/escala/Disney/Gaston.jpg" alt="Gaston">
+                </li>
+                <li id="Jafar"><h4>Jafar</h4>
+                    <p>/ Aladdin</p></div>
+                    <img id="JafarlImg" src="../../img/escala/Disney/Jafar.jpg" alt="Jafar">
+                </li>
+                <li id="Madrastra"><h4>Madrastra</h4>
+                    <p>/ Cenicienta</p></div>
+                    <img id="MadrastralImg" src="../../img/escala/Disney/Madrastra.jpg" alt="Madrastra">
+                </li>
+                <li id="Hook"><h4>Capitán Hook</h4>
+                    <p>/ Peter Pan</p></div>
+                    <img id="HooklImg" src="../../img/escala/Disney/CapitanHook.jpg" alt="Capitan Hook">
+                </li>
+                <li id="TeKa"><h4>Te Ka</h4>
+                    <p>Moana</p></div>
+                    <img id="TekalImg" src="../../img/escala/Disney/TeKa.jpg" alt="Te Ka">
+                </li>
+                <li id="Reina"><h4>Reina de Corazones</h4>
+                    <p>/ Alicia en el País de las Maravillas</p></div>
+                    <img id="ReinalImg" src="../../img/escala/Disney/ReinaCorazones.jpg" alt="Reina de Corazones">
+                </li>
+                <li id="Increible"><h4>Mr. Increíble</h4>
+                    <p>/ Los Increíbles</p></div>
+                    <img id="IncreiblelImg" src="../../img/escala/Disney/MrIncreible.jpg" alt="Mr Increible">
+                </li>
+            </ul>
+          </td>
+      
+        </tr>
+      
+      </table>-->
+</section>
+ <!--Cierre de section de segundo gráfico-->   
+
+    
+    <!--Script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+
+    <script src="../../js/escala/Disney/EscalaDisney1.js"></script>
+    <script src="../../js/escala/Disney/EscalaDisney2.js"></script>
+
+</body>
+
+
+
+<footer>
+    <img class = "gif" src="../../img/escala/Disney/monster.gif" alt="Mulan"></p>
+    <p class="infoFooter">Toda la información aca relacionada ha sido tomada de diversos portales web 2023</p>
+</footer>
+
+</html>

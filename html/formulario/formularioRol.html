@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/formulario/styleFormularioRol.css">
+    <title>Formulario Rol</title>
+</head>
+
+<body>
+
+
+    <header>
+        <h1>Formulario de Rol</h1>
+    </header>
+
+    <main>
+
+        <form>
+
+            <fieldset>
+
+                <legend>Datos personales</legend>
+
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"><br>
+
+                <label for="apellidos">Apellidos:</label><br>
+                <input type="text" id="apellidos" name="apellidos"><br>
+
+                <label for="telefono">Telefono:</label><br>
+                <input type="tel" id="telefono" name="telefono"><br>
+
+                <label for="email">Correo electonico:</label><br>
+                <input type="email" id="email" name="email"><br>
+
+                <label for="start">Fecha de nacimiento:</label><br>
+                <input type="date" id="start" name="trip-start" value="2018-07-22" min="1920-01-01" max="2024-01-01" /><br>
+
+                <label for="direccion">Direccion:</label><br>
+                <input type="text" id="direccion" name="direccion"><br>
+
+                <label for="cPostal">Codigo Postal:</label><br>
+                <input type="text" id="cPostal" name="cPostal"><br>
+
+            </fieldset>
+
+            <br>
+
+            
+            <fieldset>
+
+                <legend>Sobre el rol</legend>
+
+                <label for="juego">Elije tu juego favorito:</label><br>
+                <select id="juego" name="juego">
+                <option value="d&d">Dungeons & Dragons</option>
+                <option value="vampiro">Vampiro</option>
+                <option value="7Mar">7ºMar</option>
+                <option value="aquelarre">Aquelarre</option>
+                <option value="llamada">La llamada de Cthulu</option>
+                <option value="Kult">Kult</option>
+                <option value="FATE">FATE</option>
+                </select>
+
+
+            </fieldset>
+
+
+            <br>
+            <br>
+
+            <fieldset>
+
+                <legend>Pasos finales</legend>
+
+                <h4>Política de cookies</h4>
+
+                <div id="cookies">
+                    <input type="checkbox" id="cokies" name="cookies" value="cokkies">
+                    <label for="cookies">Acepto el uso de cookies y la politica de privacidad:</label>
+                </div>
+
+                <br>
+
+                <h4>Metodo de pago</h4>
+
+                <div id="pagos">
+                    
+                    <section>
+                        <input type="radio" id="visa" name="metodoPago" value="visa">
+                        <label for="visa">VISA</label><br>
+                    </section>
+                    
+                    <section>
+                        <input type="radio" id="css" name="metodoPago" value="masterCard">
+                        <label for="masterCard">Mastercard</label><br>
+                    </section>
+
+                    <section>
+                        <input type="radio" id="payPal" name="metodoPago" value="payPal">
+                        <label for="payPal">Paypal</label>
+                    </section>
+
+                </div>
+
+                <br>
+                <br>
+
+            </fieldset>
+
+            <button type="submit" value="Enviar">Enviar</button>
+
+          </form> 
+
+    </main>
+
+    <footer>
+        Omar Llinares | Lenguaje de Marcas 2023
+    </footer>
+    
+</body>
+
+</html>

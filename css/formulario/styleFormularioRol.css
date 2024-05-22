@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: lightblue;
+    background: url(../../img/formulario/original.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header{
+    width: 100%;
+    background-color: rgba(11, 10, 10, 0.569);
+    padding: 1%;
+    color: #cec7c7;
+    text-align: center;
+}
+
+form{
+    width: 400px;
+    background: rgba(11, 10, 10, 0.569);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.052);
+    color: #cec7c7;
+    padding: 1%;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    padding: 1%;
+}
+
+input{
+    width: 90%;
+}
+
+button{
+    width: 100%;
+    background-color: rgb(69, 20, 20);
+    color: #cec7c7;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+}
+
+footer{
+    left: 0;
+    width: 100%;
+    padding: 2px;
+    background-color: rgba(11, 10, 10, 0.569);
+    color: #cec7c7;
+    text-align: center;
+}
+
+#juego {
+    margin-bottom: 5px;
+}
+
+#cookies{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+}
+
+
+#cookies label {
+    margin-left: 1px;
+    font-size: small;
+}
+
+#pagos{
+    display: flex;
+    margin: 2%;
+}
+
+#pagos section{
+    margin: 5px;
+}

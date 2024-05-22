@@ -1,0 +1,150 @@
+*{
+    font-family: cursive;
+    font-weight: bold;
+}
+
+/* Para que la pagina solo ocupe toda la pantalla, sin scroll */
+html,body{
+    height: 100%;
+    margin: 0;
+}
+
+/* Fondo de pantalla entre otras cosas */
+body{
+    background-image: url(./../../../img/juego/juegoPelicula/fondo.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center, center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo del titulo con espaciado de letra y palabra, borde y sombreado */
+header{
+    background-color: rgba(255, 255, 255, 0.336);
+    border: 1px solid white;
+    box-shadow: 1px 10px 30px white;
+    top: 0;
+    padding: 10px 50px 10px 50px;
+    text-align: center;
+    letter-spacing: 5px;
+    word-spacing: 8px;
+}
+
+/* Animacion cuando el raton se situa encima */
+header:hover{
+    transform: translateY(-3px);
+    transition-duration: 0.75s;
+}
+/* Animacion de movimiento cuando el raton se quita de encima del titulo */
+header:not(:hover){
+    transform: translateY(3px);
+    transition-duration: 0.75s;
+}
+
+/* Estilo del boton de retroceder */
+#botonSalir{
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.336);
+    /* Fijamos el tamaño de la letra y la posicion en la esquina superior izquierda */
+    position: absolute;
+    font-size: small;
+    /* Hacemos que el cursor cambie cuando nos situemos encima */
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    padding: 10px 20px 10px 20px;
+    letter-spacing: 5px;
+}
+
+/* Estilo y tamaño del main, tambien posicionamos correctamente todo el contenido del main. */
+main{
+    width: 70%;
+    height: 70%;
+    text-align: center;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+/* Quitamos los bordes del input dejando solamente el borde inferior */
+#texto{
+    border: none;
+    background-color: rgba(255, 255, 255, 0.336);
+    border-bottom: 2px solid black;
+    width: 400px;
+    font-size: x-large;
+}
+
+/* Reservamos un espacio para la imagen */
+#imagen{
+    border: 1px solid white;
+    box-shadow: 1px 10px 10px white;
+    height: auto;
+    width: fit-content;
+    align-items: center;
+}
+
+/* Limitamos el tamaño de la imagen a imprimir */
+#img{
+    width: 600px;
+    height: auto;
+}
+
+/* Pequeño texto similar al boton salir, situado en la esquina inferior izquierda */
+#racha{
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.336);
+    position: absolute;
+    font-size: small;
+    bottom: 0;
+    right: 0;
+    padding: 10px 20px 10px 20px;
+    letter-spacing: 5px;
+}
+
+/* Contenedor de las imagenes de las vidas */
+#contenedorVidas{
+    background-color: black;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Tamaño de las vidas */
+.vida{
+    padding: 5px;
+    width: 75px;
+    height: auto;
+}
+
+#comprobar{
+    color: black;
+}
+
+/* Mensaje de perder oculto */
+#perder{
+    color: black;
+    font-weight: bold;
+    display: none;
+    border: 1px solid black;
+    box-shadow: 1px 10px 30px black;
+    padding: 10px 50px 10px 50px;
+}
+
+#salir, #seguir{
+    color: black;
+    border: 1px solid black;
+    margin: 7px;
+    padding: 10px 20px 10px 20px;
+    letter-spacing: 3px;
+    text-align: center;
+    cursor: pointer;
+}

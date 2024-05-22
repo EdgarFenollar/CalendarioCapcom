@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../img/paginaPrincipal/paginaPrincipalPokemon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/paginaPrincipal/estilosPaginaPrincipalPokemon.css">
+    <title>Main Page</title>
+</head>
+
+<body>
+    <header>
+        <img onclick="cambiarImgHeader('-1')" src="../../img/paginaPrincipal/paginaPrincipalPokemon/boton.webp"
+            alt="boton">
+
+        <figure>
+            <img id="imgHeader" src="../../img/paginaPrincipal/paginaPrincipalPokemon/header1.jpg" alt="header">
+        </figure>
+
+        <img onclick="cambiarImgHeader('1')" src="../../img/paginaPrincipal/paginaPrincipalPokemon/boton.webp"
+            alt="boton">
+
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../../html/formulario/formularioPokemon.html" id="logIn">Log In</a></li>
+            <li><a href="./paginaPrincipalPokemon.html">Inicio</a></li>
+            <li><a href="https://www.wikidex.net/wiki/Lista_de_Pokémon">Pokédex</a></li>
+            <li>
+                <a href="#">Otros Trabajos</a>
+                <ul>
+                    <li><a href="../../html/curriculum/CurriculoJunichiMasuda.html">Curriculum</a></li>
+                    <li><a href="../frase/frasesPokemon.html">Frases</a></li>
+                    <li><a href="../escala/EscalaPokemon.html">Escala</a></li>
+                    <li><a href="../dialogo/dialogoPokemon.html">Dialogo</a></li>
+                    <li><a href="../comparativa/comparativaPokemon.html">Comparativa</a></li>
+                </ul>
+            </li>
+        </ul>
+        <img onclick="mostrarTrabajos('more')" id="more" src="../../img/paginaPrincipal/paginaPrincipalPokemon/more.webp"
+            alt="more">
+        <section id="trabajos">
+            <h1>Descubre nuestros juegos</h1>
+            <iframe src="../../html/juego/juegoPokemon.html" frameborder="0"></iframe>
+            <iframe src="../../html/juegoDados/juegoDadosPokemon.html" frameborder="0"></iframe>
+        </section>
+    </nav>
+    <main>
+        <aside id="anuncios">
+            <figure>
+                <figcaption>¡COMPRA YA LOS NUEVOS JUEGOS!</figcaption>
+                <a href="https://www.mediamarkt.es/es/product/_nintendo-switch-pokemon-escarlata-1534316.html">
+                    <img src="../../img/paginaPrincipal/paginaPrincipalPokemon/caratulaPkmnEscarlata.webp"
+                        alt="anuncio">
+                </a>
+                <a href="https://www.mediamarkt.es/es/product/_nintendo-switch-pokemon-purpura-1534317.html">
+                    <img src="../../img/paginaPrincipal/paginaPrincipalPokemon/caratulaPkmnPurpura.webp" alt="anuncio">
+                </a>
+            </figure>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pIPA_EhrY1o?si=apuvv8UFZ3rDxnis"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/eXp7dapo0zQ?si=UruuIVelCBAFBT4E"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <img src="../../img/paginaPrincipal/paginaPrincipalPokemon/posterPelicula.jpg" alt="anuncio">
+        </aside>
+        <article>
+            <h2>¿Qué es Pokémon?</h2>
+            <p>
+                Pokémon (ポケモン) es una franquicia de medios que originalmente comenzó como un videojuego RPG,
+                pero debido a su popularidad ha logrado expandirse a otros medios de entretenimiento como series de
+                televisión, películas, juegos de cartas, ropa, entre otros, convirtiéndose en una marca que es
+                reconocida en el mercado mundial. Las ventas de videojuegos hasta el 1 de diciembre de 2006 habían
+                alcanzado una cantidad de 340 millones de ejemplares (incluyendo la venta de la versión Pikachu de la
+                consola Nintendo 64), logrando ocupar el segundo lugar de las sagas de videojuegos más vendidos de
+                Nintendo. La franquicia celebró su décimo aniversario el 27 de febrero de 2006.
+            </p>
+            <p>
+                La saga de videojuegos es desarrollada por la compañía programadora de software japonesa Game Freak, con
+                personajes creados por Satoshi Tajiri para la empresa de juguetes Creatures Inc., y a su vez distribuida
+                por Nintendo. La misión en estos juegos es capturar y entrenar a los pokémon (criaturas cuya
+                denominación da nombre al juego), que hasta la fecha alcanzan el número de 1025 (1172 incluyendo formas
+                regionales y mecánicas exclusivas procedentes de otras entregas). La posibilidad de intercambiarlos le
+                hizo conseguir una popularidad que se plasmó en un éxito de ventas y la consiguiente aparición de una
+                serie animada, películas y diverso merchandising como peluches, juguetes y cartas.
+            </p>
+            <br>
+            <span>Para más información, consulte la siguiente página:</span>
+            <iframe src="https://es.wikipedia.org/wiki/Pokémon" frameborder="0"></iframe>
+            <h2>El competitivo de Pokémon</h2>
+            <p>
+                El competitivo en Pokémon, por lo general, se refiere a los combates jugador contra jugador que se
+                llevan a cabo utilizando los videojuegos de Pokémon. Los jugadores arman un equipo de Pokémon, el cual
+                debe definirse según un conjunto de reglas concreto, y combaten de la forma en la que lo harían en el
+                juego, o sea, hasta que todos los Pokémon en el equipo de un jugador se hayan debilitado, o también
+                hasta que un jugador se rinda. Se suele realizar estos combates a través de las consolas de los
+                respectivos juegos (por ejemplo, la Nintendo 3DS o la Nintendo Switch) o en línea, a través de
+                simuladores creados por los fans, tales como Pokémon Showdown!.
+            </p>
+            <p>
+                El circuito de campeonatos oficiales para el competitivo de Pokémon se conoce como Campeonato de
+                Videojuegos (VGC, por sus siglas en inglés). The Pokémon Company International lo estableción en el 2009
+                bajo su programa Play! Pokémon. Jugadores de todo el mundo compiten en torneos locales y eliminatorias
+                para ganar premios de dinero en efectivo y becas, así como una invitación al Campeonato Mundial de
+                Videojuegos Pokémon anual; un torneo de esports en el que solo se puede participar con una invitación y
+                que, además de los videojuegos de Pokémon, también incluye al juego de cartas coleccionables Pokémon y a
+                Pokkén Tournament. Todas las partidas del VGC se juegan con el formato de «combate doble», en los que
+                dos Pokémon del equipo de un jugador combaten contra otros dos Pokémon del oponente a la vez. Además,
+                las reglas suelen cambiar cada año para tomar en cuenta los lanzamientos de los juegos nuevos, por lo
+                que, por ejemplo, el Campeonato Mundial de Pokémon del 2022 se jugó en Pokémon Espada y Escudo.
+            </p>
+            <br>
+            <span>Para más información, consulte la siguiente página:</span>
+            <iframe src="https://es.wikipedia.org/wiki/Competitivo_de_Pokémon" frameborder="0"></iframe>
+        </article>
+    </main>
+    <footer>
+        <section id="social-media">
+            <a href="https://twitter.com/Pokemon_ES_ESP">
+                <img src="../../img/paginaPrincipal/paginaPrincipalPokemon/Twitter_X.webp" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/pokemon/?hl=es">
+                <img src="../../img/paginaPrincipal/paginaPrincipalPokemon/instagram.webp" alt="instagram">
+            </a>
+            <a href="https://www.tiktok.com/@pokemon?is_from_webapp=1&sender_device=pc">
+                <img src="../../img/paginaPrincipal/paginaPrincipalPokemon/tiktok.webp" alt="tiktok">
+            </a>
+            <a href="https://www.youtube.com/@PokemonOficialES">
+                <img src="../../img/paginaPrincipal/paginaPrincipalPokemon/youtube.webp" alt="youtube">
+            </a>
+        </section>
+
+        <span>Aitor Agulló Duque</span>
+
+        <!-- contador de visitas -->
+        <section id="contador-visitas">
+            <div id="sfc4s4tu7nygzmy7e61c567pgdm9ectdely"></div>
+            <script type="text/javascript"
+                src="https://counter4.optistats.ovh/private/counter.js?c=4s4tu7nygzmy7e61c567pgdm9ectdely&down=async"
+                async></script>
+        </section>
+    </footer>
+</body>
+<script src="../../js/paginaPrincipal/paginaPrincipalPokemon.js"></script>
+
+</html>

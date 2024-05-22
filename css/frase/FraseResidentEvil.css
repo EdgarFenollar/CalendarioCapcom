@@ -1,0 +1,54 @@
+/*Imagen de fondo de la pagina. */
+body {
+    background-image: url(../../img/frase/FraseResidentEvil/fondoresidentevil.jpg);
+    background-size: cover;
+}
+
+/*Centrado y fondo de color rojo del titulo. */
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 10px;
+    background-color: rgb(255, 0, 17);
+    border-radius: 10px;
+    margin-left: 600px;
+    margin-right: 600px;
+    margin-bottom: 150px;
+    font-family: cursive;
+}
+
+/*Justificar y cambiar la fuente de la frase. */
+.frase {
+    text-align: justify;
+    text-size-adjust: 100;
+    padding: 20px;
+    font-family: cursive;
+}
+
+/*Cambio de fuente del nombre del autor de la frase. */
+.chris {
+    text-align: center;
+    padding: 20px;
+    font-family: fantasy;
+}
+
+/*Colores y bordes de la tabla. */
+table {
+    border-left: 4px;
+    border-left-style: dotted;
+    border-left-color:blue;
+    border-right: 4px;
+    border-right-style:dashed;
+    border-right-color:rgb(0, 255, 13);
+    border-top: 4px;
+    border-top-style:solid;
+    border-top-color:rgb(255, 225, 0);
+    border-bottom: 4px;
+    border-bottom-style:solid;
+    border-bottom-color:rgb(255, 0, 38);
+    background-color: rgba(255, 255, 255, 0.42); 
+    align-self: center;
+    margin-left: 580px;
+    margin-right: 580px;
+    border-collapse:collapse;
+}

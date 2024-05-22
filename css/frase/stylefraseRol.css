@@ -1,0 +1,106 @@
+body{
+    background-color: blanchedalmond;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgb(201, 14, 14);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.400);
+    margin-top: 50px;
+    font-size: xx-large;
+    color: whitesmoke;
+    line-height: 100px;
+}
+
+
+main{
+    display: flex;
+    margin-top: 20px;
+    width: fit-content;
+    height: fit-content;
+    min-width: 90%;
+}
+
+.cajaimg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    height: fit-content;
+    width: 100%;   
+    margin-top: 20px;
+    border-radius: 40px;
+    justify-content: center;
+    background-image: url(https://images.ctfassets.net/swt2dsco9mfe/bSydZcMJDe2SnTWzVoud4/0b80ba116246a0329e79f05b08006c24/dnd_cta_learn_background.jpg?q=70);
+
+}
+
+
+
+.frase{
+    display: flex;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    margin: 10px;
+    font-size: x-large;
+    width: 600px;
+    background-color: rgb(187, 179, 194, 0.3);
+}
+
+.frase::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.frase::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.frase::before {
+    border-top: 5px dotted rgba(196, 41, 41, 0.849); 
+    border-bottom: 5px dotted rgb(251, 5, 5);
+    top: -5px;
+    bottom: 0;
+    right: 0px;
+}
+
+.frase::after {
+  border-right: 5px dashed rgb(18, 214, 249);
+  border-left: 5px dashed rgb(107, 53, 168);
+  top: 0;
+  bottom: 0;
+  right: -5px;
+}
+
+
+.bardo{
+    align-self: self-start;
+}
+
+
+footer{
+    margin-top: 50px;
+    background-color: rgba(51, 47, 47, 0.605);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.400);
+    width: 100%;
+}

@@ -1,0 +1,93 @@
+body{
+    background: rgb(86, 97, 110);
+    font-family: Verdana;
+}
+
+#container{
+    height: 1200px;
+    width: 1300px;
+    margin: 0px auto;
+    background: rgb(66, 70, 75);
+}
+
+header{
+    background: rgb(29, 29, 31);
+    height: 80px;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    line-height: 80px;
+    color: rgb(217, 219, 231);
+}
+
+#intro{
+    height: 720px;
+}
+
+#content{
+    position: relative;
+    float: right;
+    height: 700px;
+    width: 770px;
+    text-align: left;
+    margin-right: 10px;
+    color: rgb(217, 219, 231);
+
+}
+
+#portrait{
+    margin: 0;
+    position: relative;
+    top: 20px;
+}
+
+img:hover{
+    transition: all 0.6s ease;
+    filter: brightness(30%);
+}
+
+#academic_title{
+    background: rgb(29, 29, 31);
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: rgb(217, 219, 231);
+}
+
+#academic_text{
+    margin: 10px;
+    text-align: left;
+    color: rgb(217, 219, 231);
+}
+
+#professional_title{
+    background: rgb(29, 29, 31);
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: rgb(217, 219, 231);
+}
+
+#professional_text{
+    margin: 30px;
+    text-align: left;
+    color: rgb(217, 219, 231);
+}
+
+.title{
+    color: rgb(255, 255, 255);
+}
+
+.translation{
+    font-style: italic;
+    color:rgb(188, 188, 230)
+}
+
+
+#footer{
+    background: rgb(217, 219, 231);
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: rgb(29, 29, 31);
+}

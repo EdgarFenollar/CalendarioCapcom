@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../../css/dados/dadosCarmen.css">
+    <title>Dados</title>
+</head>
+<body>
+    
+    <form class="contenedorRandom">
+        <label>DADO 1</label>
+
+        <select id="numeroDadoRandom1">
+            <option value="1">1 dado</option>
+            <option value="2">2 dados</option>
+            <option value="3">3 dados</option>
+            <option value="4">4 dados</option>
+            <option value="5">5 dados</option>
+            <option value="6">6 dados</option>
+            <option value="7">7 dados</option>
+            <option value="8">8 dados</option>
+            <option value="9">9 dados</option>
+            <option value="10">10 dados</option>
+            <option value="11">11 dados</option>
+            <option value="12">12 dados</option>
+        </select>
+        
+        <button type ="button" id ="botDadoRandom1" onclick="dadoRandom('DadoRandom1')">Tirar dado 1</button>
+        <figure id = "salidaDadoRandom1"></figure>
+    </form>    
+    
+    <form class="contenedorRandom">
+        <label>DADO 2</label>
+
+        <select id="numeroDadoRandom2">
+            <option value="1">1 dado</option>
+            <option value="2">2 dados</option>
+            <option value="3">3 dados</option>
+            <option value="4">4 dados</option>
+            <option value="5">5 dados</option>
+            <option value="6">6 dados</option>
+            <option value="7">7 dados</option>
+            <option value="8">8 dados</option>
+            <option value="9">9 dados</option>
+            <option value="10">10 dados</option>
+            <option value="11">11 dados</option>
+            <option value="12">12 dados</option>
+        </select>
+        
+        <button type ="button" id ="botDadoRandom2" onclick="dadoRandom('DadoRandom2')">Tirar dado 2</button>
+        <figure id = "salidaDadoRandom2"></figure>
+    </form>
+
+    <div class="Winner">
+        <button class="button" id ="botDadoRandom2" onclick="ganador()">El ganador es...</button>
+	</div>
+    
+</body>
+	<script src="../../js/dados/dadosCarmen.js"></script>
+</html>
+
+
+
+

@@ -1,0 +1,85 @@
+
+body {
+    background-color: beige;
+}
+.container {
+
+    position: relative;
+    border: 3px solid;
+    border-top: none;
+    border-right: none;
+    width: 600;
+    height: 382;
+}
+.datos {
+    position: relative;
+    top: 0px;
+    left:-27px;
+    width: 600px;
+    height: 500px;
+    z-index: 100;
+}
+.datos li {
+    position: relative;
+    left: -11px;
+    height: 95px;
+    border-top:solid 1px green;
+
+}
+.datos li ::before {
+    content: "";
+    position: relative;
+    left: -11px;
+    height: 95px;
+}
+.barra_uno {
+    background-image: linear-gradient(red, yellow, green);
+    margin: 10px;
+    padding: 10px;
+    position: absolute;
+    height: 4%;
+    left: 10%;
+    bottom: -10px;
+    z-index: 1100;
+  }
+
+  .barra_dos {
+    background-image: linear-gradient(red, yellow, green);
+        margin: 10px;
+    padding: 10px;
+    position: absolute;
+    height: 11%;
+    left: 24%;
+    bottom: -10px;
+    z-index: 1100;
+  }
+  .barra_tres {
+    background-image: linear-gradient(red, yellow, green);
+    margin: 10px;
+    padding: 10px;
+    position: absolute;
+    height: 94.5%;
+    left: 40%;
+    bottom: -10px;
+    z-index: 1100;
+  }
+  .barra_cuatro {
+    background-image: linear-gradient(red, yellow, green);
+    margin: 10px;
+    padding: 10px;
+    position: absolute;
+    height:60%;
+    left: 55%;
+    bottom: -10px;
+    z-index: 1100;
+  }
+  .barra_cinco {
+    background-image: linear-gradient(red, yellow, green);
+    margin: 10px;
+    padding: 10px;
+    position: absolute;
+    height:45%;
+    left: 72%;
+    bottom: -10px;
+    z-index: 1100;
+  }

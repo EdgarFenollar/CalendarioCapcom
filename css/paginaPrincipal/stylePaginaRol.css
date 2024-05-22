@@ -1,0 +1,455 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: wheat;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	max-height: max-content;
+	background-image: url(../../img/paginaPrincipal/paginaRol/fondoPagina.jpg);
+	background-repeat: no-repeat;
+	background-position: 53%;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #242526;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	color: aliceblue;
+	z-index: 99;
+	margin-bottom: 50px;
+}
+
+#titulo {
+	margin-left: 180px;
+}
+
+ul,
+ol {
+	list-style: none;
+	font-size: 20px;
+	padding: 10px;
+}
+
+.menu {
+	width: 500px;
+	height: 30px;
+}
+
+.menu li a {
+	background-color: #242526;
+	color: aliceblue;
+	text-decoration: none;
+	padding: 10px 15px;
+	display: block;
+	justify-content: space-around;
+}
+
+.menu > li {
+	float: left;
+	text-align: center;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.menu li a:hover {
+	color: red;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.menu li ul {
+	display: none;
+	position: absolute;
+}
+
+.menu li:hover > ul {
+	display: block;
+	width: 250px;
+}
+
+.subMenu {
+	padding: auto;
+}
+
+#btnJuegoRol{
+	background-color: red;
+	border-radius: 5%;
+}
+
+#btnJuegoRol:hover{
+	background-color: rgb(201, 36, 36);
+	color: #242526;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+#imagenDado{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	height: 80px;
+	width: auto;
+}
+
+.container-slider {
+	margin-top: 100px;
+	margin: auto;
+	width: 90%;
+	max-width: 900px;
+	overflow: hidden;
+	box-shadow: 0 0 0 10px rgb(159, 162, 165), 0 15px 50px;
+	position: relative;
+}
+
+.slider {
+	display: flex;
+	width: 500%;
+	height: 500px;
+	margin-left: -100%;
+}
+
+.slider__section {
+	width: 100%;
+}
+
+.slider__img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.slider__btn {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background: rgba(255, 255, 255, 0.7);
+	top: 50%;
+	transform: translatey(-50%);
+	font-size: 30px;
+	font-weight: bold;
+	font-family: monospace;
+	text-align: center;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.slider__btn:hover {
+	background: #fff;
+}
+
+#slider__btn--left {
+	left: 10px;
+}
+
+#slider__btn--right {
+	right: 10px;
+}
+
+main {
+	margin-top: 120px;
+	width: 100%;
+	max-height: max-content;
+	display: flex;
+	flex-direction: column;
+}
+
+#general {
+	margin-top: 50px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	align-items: top;
+	justify-content: space-around;
+}
+
+
+#dragon{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	z-index: 97;
+	top: 550px;
+}
+
+
+#asideIzquierda {
+	width: 25%;
+	float: left;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-height: fit-content;
+	background-color: #242526b4;
+	overflow: hidden;
+}
+
+#anuncioSteam {
+	margin-top: 4%;
+	object-fit: contain;
+	max-width: 100%;
+}
+
+#videosTxt {
+	margin-top: 5%;
+	color: aliceblue;
+	font-size: x-large;
+}
+
+.videosYT {
+	margin-top: 4%;
+	width: 90%;
+	display: block;
+}
+
+section {
+	width: 50%;
+	height: 800px;
+	background-color: #abaeb261;
+}
+
+#asideDerecha {
+	width: 25%;
+	float: right;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height:auto;
+	background-color: #242526b4;
+}
+
+
+.seccion__aside{
+	text-align: center;
+}
+
+.seccion__aside > p{
+	margin-top: 5%;
+	margin-bottom: 5%;
+	color: aliceblue;
+	font-size: x-large;
+}
+
+.frameWeb{
+	width: 100%;
+	height: 500px;
+	border: #242526 5px solid;
+}
+
+#botonMostrar{
+	margin-bottom: 20px;
+	background-color: red;
+	height: 100px;
+	width: 100%;
+	border: #242526 2px solid;
+	color: aliceblue;
+	font-size: large;
+	border-radius: 5%;
+}
+
+#botonMostrar:hover{
+	background-color: rgb(201, 36, 36);
+	color: #242526;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+
+.principal {
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	padding: 40px;
+	row-gap: 15px;
+	align-items: center;
+	justify-content: space-around;
+	height: auto;
+}
+
+#texto1 {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	text-align: justify;
+	font-size: large;
+	color: aliceblue;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 5%;
+}
+
+#texto2 {
+	margin-top: 25px;
+	grid-column-start: 2;
+	grid-column-end: 4;
+	text-align: justify;
+	font-size: large;
+	color: aliceblue;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 5%
+}
+
+.imgTxt {
+	width: 100%;
+	height: auto;
+}
+
+#v{
+	display: flex;
+	align-self: flex-end;
+}
+
+#logosJuegos{
+	margin-top: 25px;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+#formulario {
+	align-items: center;
+	justify-items: center;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	background-color: #242526;
+	width: 60%;
+	margin-bottom: 15px;
+	margin-top: 20px;
+	color: aliceblue;
+}
+
+input{
+	width: 100%;
+}
+
+#formulario > p{
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+	
+
+p > a{
+	color: aliceblue;
+	background-color: red;
+	padding: 2%;
+	text-decoration: none;
+	border-radius: 5%;
+}
+
+p > a:hover{
+	background-color: rgb(201, 36, 36);
+	color: #242526;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+#iframeContainer{
+	display: flex;
+	visibility: hidden;
+	align-self: center;
+	flex-direction: column;
+	position: fixed;
+	z-index: 98;
+	width: 80%;
+	top: 10%;
+}
+
+#miIframe{
+	height: 80vh;
+}
+
+  
+#formulario > h2{
+	color: aliceblue;
+	margin-top: 15px;
+}
+  
+.form__field{
+	width: 100%;
+	margin: 5px;
+}
+
+#botonForm{
+	color: aliceblue;
+	height: 30px;
+	width: 100%;
+	background-color: red;
+	border: 0;
+	font-weight: bold;
+}
+
+#botonForm:hover{
+	background-color: rgb(201, 36, 36);
+	color: #242526;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+#contador{
+	height: 150px;
+	width: 100%;
+	color: black;
+	background-image: url(../../img/paginaPrincipal/paginaRol/Libro\ sin\ Fondo.png);
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	text-decoration: none;
+	height: 250px;
+}
+
+#contador__contenido{
+	margin-top: 50px;
+}
+
+#contador__contenido > h3{
+	margin-bottom: 12px;
+}
+
+
+#contador__contenido > p{
+	margin-top: 55px;
+	font-size: large;
+	font-weight: bold;
+}
+
+
+footer {
+	display: flex;
+	flex-direction: row;
+	background-color: #242526;
+	position: relative;
+	width: 100%;
+	height: fit-content;
+	color: white;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#footerCentro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#textoFooter {
+	font-size: large;
+	margin-bottom: 10px;
+}
+
+#logoFooter {
+	margin-top: 5px;
+	height: 80px;
+	width: auto;
+}

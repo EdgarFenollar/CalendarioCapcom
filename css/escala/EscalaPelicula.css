@@ -1,0 +1,121 @@
+body{
+    background-image: url(../../img/escala/EscalaPelicula/background.jpg);
+    background-size:cover;
+    font-family: url(../../font/escala/EscalaPelicula/Dune_Rise.ttf);
+}
+
+@font-face{
+    font-family:"frase";
+    src:url(../../font/escala/EscalaPelicula/Dune_Rise.ttf);
+}
+h1 {
+    text-align: center;
+    color: rgb(90, 167, 240);
+    text-shadow: 10px;
+    background-color: rgb(240, 235, 230);
+    margin-left: 600px;
+    margin-right: 600px;
+    margin-bottom: 150px;
+    font-family: frase;
+}
+
+.moonlight{
+    height: 200px;
+    width: 150px;
+    padding-left: 60px;
+    font-family: frase;
+    
+}
+
+.getout{
+    height: 200px;
+    width: 150px;
+    padding-left: 15px;
+    font-family: frase;
+    
+}
+
+.paranormalactivity{
+    height: 200px;
+    width: 200px;
+    font-family: frase;
+    
+}
+
+
+.chart {
+    margin: 10px;
+    display: flex;
+    align-items: center; 
+}
+
+.barp {
+    position: relative;
+    height: 30px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); 
+    font-family: frase;
+}
+
+.barr {
+    position: relative;
+    height: 30px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #ee212b, #eb6500, #d09900, #9cc500, #12eb12);
+    font-family: frase;
+}
+
+.barg {
+    position: relative;
+    height: 30px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #212aee, #f500a6, #ff0051, #ff9a00, #e2eb12);
+    font-family: frase;
+}
+
+.bar-label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    color: white; 
+    font-family: frase;
+}
+
+.derecha {
+    align-items: flex-start;
+    font-family: frase;
+}
+
+
+.pj {
+    margin-left: 300px;
+    margin-bottom: 70px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    font-family: frase;
+}
+
+.nstats {
+    color: aliceblue;
+    padding-left: 10px;
+    font-size: 50px;
+    font-family: frase;
+}
+
+
+  
+
+.grafica {
+    border: 15px #e9d7d7;
+    border-style: groove;
+    background-color: #5557546b;
+    border-radius: 90px;
+    padding: 40px;
+    margin: 40px;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-inline-start: 30px;
+    box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;
+}

@@ -1,0 +1,76 @@
+*{
+}
+
+body{
+    background: url(../../img/samvalentin/samOmar/tierraMedia.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    color: rgb(188, 176, 176);
+    font-size: x-large;
+    text-align: center;
+    background-color: rgba(16, 15, 15, 0.668);
+}
+
+.viaje{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background: url(../../img/samvalentin/samOmar/fondo.png) no-repeat;
+    background-size: cover;
+}
+
+
+#Sam{
+    
+}
+
+#Sam :hover{
+    transform: translateX(1200px);
+    transition-duration: 14s;
+}
+
+#Frodo{
+    display: flex;
+    margin-left: 80%;
+}
+
+.memes{
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 25px;
+    column-gap: 2%;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    padding: 1%;
+}
+
+
+
+.CajaMeme{
+    opacity: 0.5;
+    transform: scale(0.9);
+    transition: 0.3s ease-in-out;
+    background-color: rgba(192, 186, 174, 0.8);
+    border: solid 2px rgb(239, 231, 231);
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding: 2px;
+}
+
+.CajaMeme:hover {
+    opacity: 1;
+    transform: scale(1.5);
+    color: #0f0c07;
+}
+
+.imgMeme{
+    width: 200px;
+    height: 200px;
+}

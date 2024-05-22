@@ -1,0 +1,136 @@
+*{
+    font-family: cursive;
+}
+
+html,body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    background-image: url(./../../../img/juego/juegoPelicula/fondo.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center, center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header{
+    background-color: rgba(255, 255, 255, 0.336);
+    border: 1px solid white;
+    box-shadow: 1px 10px 30px white;
+    top: 0;
+    padding: 10px 50px 10px 50px;
+    text-align: center;
+    letter-spacing: 5px;
+    word-spacing: 8px;
+}
+
+header:hover{
+    transform: translateY(-5px);
+    transition-duration: 0.75s;
+}
+header:not(:hover){
+    transform: translateY(5px);
+    transition-duration: 0.75s;
+}
+
+footer{
+    color: white;
+    position: absolute;
+    font-weight: bold;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+main{
+    width: 65%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+/* Estilo del boton de retroceder */
+#botonSalir{
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.336);
+    /* Fijamos el tamaño de la letra y la posicion en la esquina superior izquierda */
+    position: absolute;
+    font-size: small;
+    /* Hacemos que el cursor cambie cuando nos situemos encima */
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    padding: 10px 20px 10px 20px;
+    letter-spacing: 5px;
+}
+
+/* Posicionamiento de los cuadrados de los modos */
+#modos{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-bottom: 70px;
+}
+
+/* Estilo de los cubos de seleccion de modo */
+.modo{
+    background-color: rgba(255, 255, 255, 0.336);
+    width: 20%;
+    height: 200px;
+    border: 3px solid white;
+    border-radius: 10%;
+    font-weight: bold;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    word-spacing: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+/* Leve animacion de cuando el raton  pasa por encima */
+.modo:hover{
+    transform: translateY(-5px);
+    transition-duration: 0.75s;
+}
+.modo:not(:hover){
+    transform: translateY(5px);
+    transition-duration: 0.75s;
+}
+
+form{
+    background-color: rgba(255, 255, 255, 0.336);
+    width: fit-content;
+    border: 1px solid white;
+    border-radius: 10%;
+    box-shadow: 1px 10px 30px white;
+    top: 0;
+    padding: 15px 60px 15px 15px;
+}
+.checkbox-custom {
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+
+}
+
+input{
+    cursor: pointer;
+}
+

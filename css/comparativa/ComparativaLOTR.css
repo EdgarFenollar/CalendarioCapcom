@@ -1,0 +1,101 @@
+*{ /*Fuente del texto de la pagina entera y colos del mismo*/
+    font-family: Verdana;
+    color: white;
+}
+
+header{ /*Posicionamiento del titulo y un color de fondo*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgba(20, 20, 20, 0.40);
+}
+
+h1{ /*Espaciado para darle enfasis al titulo*/
+    word-spacing: 7px;
+    letter-spacing: 1px;
+}
+
+h2{ /*Espaciado para remarcar los subtitulos*/
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
+
+body{ /*Imagen de fondo de la pagina*/
+    background-image: url("../../img/comparativa/comparativaLOTR/FondoMordorComparativa.jpg");
+    background-repeat: no-repeat;
+    background-position: center, center;
+}
+
+main{ /*Posicionamiento de los dos articles para compararlos*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+article{ /*Ajustamos tamaño de los articles, les asignamos un borde, margen, y alinemos el contenido del mismo*/
+    border: solid 2px black;
+    width: 30%;
+    height: 690px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+ul{ /*Interlineado para las listas*/
+    line-height: 200%;
+}
+
+#pelicula1{ /*Le ponemos una imagen de fondo de la pelicula al article, la ajustamos y le bajamos la opacidad. Tambien ponemos sombra, alineamos texto y en negrita*/
+    background-image: url("../../img/comparativa/comparativaLOTR/LasDosTorres.jpg");
+    opacity: 0.65;
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-size: cover;
+    /* Shadow */
+    box-shadow: 0px 5px 50px 0px rgba(2, 10, 10, 0.795);
+    text-align: center;
+    font-weight: bold;
+}
+
+#pelicula1:hover{ /*Animacion de movimiento, aumento de sombreado y cambio de color del mismo*/
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 100px 2px rgba(109, 43, 17, 0.822);
+    transition-duration: 0.75s;
+    opacity: 0.8;
+    font-size: 20px;
+}
+
+#pelicula2{ /*Le ponemos una imagen de fondo de la pelicula al article, la ajustamos y le bajamos la opacidad. Tambien ponemos sombra, alineamos texto y en negrita*/
+    background-image: url("../../img/comparativa/comparativaLOTR/ElRetornoDelRey.jpg");
+    opacity: 0.65;
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-size: cover;
+    /* Shadow */
+    box-shadow: 0px 5px 50px 0px rgba(2, 10, 10, 0.795);
+    text-align: center;
+    font-weight: bold;
+}
+
+#pelicula2:hover{ /*Animacion de movimiento, aumento de sombreado y cambio de color del mismo*/
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 100px 2px rgba(109, 43, 17, 0.822);
+    transition-duration: 0.75s;
+    opacity: 0.8;
+    font-size: 20px;
+}
+
+footer{ /*Colocamos el footer, centramos el texto, y lo ponemos un color de fondo*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(20, 20, 20, 0.60);
+    font-weight: bold;
+}

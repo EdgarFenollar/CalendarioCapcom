@@ -1,0 +1,116 @@
+@font-face {
+  font-family: capcom;
+  src: url(../../font/formulario/Agbalumo-Regular.ttf);
+}
+
+/*Inicio del header*/
+.header {
+    overflow: hidden;
+    background-color: #000000;
+    padding: 20px 10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.header a {
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    transition: all ease 0.5s;
+}
+
+.header a:hover {
+    background-color: #ffac07;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.header a.active {
+    background-color: rgb(246, 223, 46);
+    color: rgb(0, 0, 0);
+}
+
+.header-right {
+    float: right;
+}
+
+
+@media screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .header-right {
+        float: none;
+    }
+}
+
+.header img {
+    height: 50px;
+    float: left;
+}
+
+/*Final del header*/
+
+body {
+    margin: 0;
+    background-image: url(../../img/samvalentin/samvalentinEdgar/fondo.jpg);
+    background-size: cover;
+}
+
+/* Estilos generales del formulario */
+.cuerpo{
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: #000000 solid;
+  padding: 50px;
+  border-radius: 20px;
+  background-color: rgba(226, 165, 43, 0.534);
+  font-family: capcom;
+  box-shadow: 0px 10px 15px 0px #0000003f;
+  transition: all ease 1s;
+  text-align: center;
+}
+
+.cuerpo:hover{
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: rgb(17, 92, 10);
+  box-shadow: 0px 10px 15px 0px #000000;
+  width: 1100px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  transition: all ease 1s;
+  transform: translateY(-20px);
+}
+
+.meme{
+  width: 1000px;
+  border-style: solid;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .cuerpo{
+    width: 300px;
+  }
+  .meme{
+    width: 300px;
+  }
+
+  .cuerpo:hover {
+    width: 400px;
+  }
+}

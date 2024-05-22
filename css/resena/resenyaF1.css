@@ -1,0 +1,355 @@
+/*La página tiene el sistema de posicionamiento Flex, no se usan ni Grid ni Float*/
+
+@font-face{                         /*Creación de la fuente de los textos de la página web*/
+    font-family: formula1regular;
+    src: url('../../font/fuentesF1/formula1regular.ttf') format('truetype');
+}
+html{                                        /*El html de la página, solo contiene de momento la fuente de los textos de la página web*/
+    font-family: formula1regular;
+}
+body{
+    background-image: url('../../img/resenaF1/resenyaF1/fondo.jpg');
+    color: white;
+}
+header{                                      /*Estas líneas son el css del encabezado de la página web*/
+    position: relative;
+    text-decoration: underline #52ff0a;
+}
+.titulo3::first-letter{                     /*Estilo de la primera letra del titulo de la primera reseña*/
+    font-size: 35px;
+    color: #0066CC;
+}
+.titulo4::first-letter{                     /*Estilo de la priemera letra del titulo de la segunda reseña*/
+    font-size: 35px;
+    color: red;
+}
+.titulo5::first-letter{                     /*Estilo de la primera letra del titulo de la tercera reseña */
+    font-size: 35px;
+    color: lightblue;
+}
+.titulo6::first-letter{                     /*Estilo de la primera letra del titulo de la cuarta reseña*/
+    font-size: 35px;
+    color: grey;
+}
+.titulo7::first-letter{                     /*Estilo de la primera letra del titulo de la quinta reseña*/
+    font-size: 35px;
+    color: #00f4ff;
+}
+.detalles1::first-letter{                   /*Estilo de la primera letra de la palabra "Metacritic de la primera reseña"*/
+    font-size: 35px;
+    color: yellow;
+}
+.detalles2::first-letter{                   /*Estilo de la primemra letra de la palabra Metacritic de la segunda reseña*/
+    font-size: 35px;
+    color: yellow;
+}
+.detalles3::first-letter{                   /*Estilo de la primera letra de la palabra Metacritic de la tercera reseña*/
+    font-size: 35px;
+    color: yellow;
+}   
+.detalles4::first-letter{                   /*Estilo de la primera letra de la plabara Metacritic de la cuarta reseña*/
+    font-size: 35px;
+    color: yellow;
+}
+.detalles5::first-letter{                   /*Estilo de la primera letra de la palabra Metacritic de la quinta reseña*/
+    font-size: 35px;
+    color: yellow;
+}
+.titulo1{                                   /*Estas líneas son el estilo del título de la página*/
+    position: relative;
+    left: 450px;
+    width: 35%;
+    padding: 20px;
+    border: 3px dashed white;
+    background-color: rgba(0, 0, 0, 0.568);
+    border-radius: 0px 25px 0px 25px;
+}
+.parrafo1{                                  /*Estas líneas son el estilo de párrafo de debajo del título de la página*/
+    position: relative;
+    left: 450px;
+    width: 35%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.568);
+    border: 3px dashed white;
+    border-radius: 25px 0px 25px 0px;
+}  
+.juego1{                                     /*Estas lineas son del estilo de la primera reseña de la página web*/
+    position: relative;
+    width: 50%;
+    height: 530px;
+    left: 200px;
+    top: 50px;
+    display: flex;
+    border: 3px solid white;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: rgba(0, 0, 0, 0.488);
+}
+.portada1{                                  /*Este es el estilo de la foto de la primera reseña de la página*/
+    position: relative;
+    width: 20%;
+}
+.titulo3{                                   /*Estilos del titulo de la primera reseña de la página*/
+    position: relative;
+    left: 190px;
+    bottom: 200px;
+    padding-left: 15px;
+    text-decoration: underline red;
+}
+.titulo4{                                   /*Estilos del titulo de la segunda reseña de la página*/
+    position: relative;
+    left: 350px;
+    bottom: 200px;
+    padding-left: 15px;
+    text-decoration: underline darkviolet;
+}
+.titulo5{                                   /*Estilos del titulo de la tercera reseña de la página*/
+    position: relative;
+    left: 250px;
+    bottom: 120px;
+    padding-left: 15px;
+    text-decoration: underline red;
+}
+.detalles1{                                 /*Estilos de la valoración de la primera reseña*/
+    position: relative;
+    left: 190px;
+    bottom: 225px;
+    padding-left: 15px;
+    text-decoration: underline yellow;
+}
+.parrafo2{                                  /*Estilos del primer párrafo de la primera reseña*/
+    position: relative;
+    width: 30%;
+    left: 190px;
+    bottom: 235px;
+    padding-left: 15px;
+}
+.parrafo21{                                 /*Estilos del segundo párrafo de la primera reseña*/
+    position: relative;
+    width: 30%;
+    left: 540px;
+    bottom: 400px;
+}
+.lista1{                                    /*Estilos de la lista de la primera reseña de la página*/
+    position: relative;
+    bottom: 400px;
+    padding-right: 10px;
+}
+.lista2{                                    /*Estilos de la lista de la segunda reseña de la página*/
+    position: relative;
+    bottom: 400px;
+}
+.titulolista{                               /*Esta linea de código es el formato del párrafo antes de la lista de las reseñas*/
+    text-decoration: underline 3px purple;
+}
+.titulolista:hover{                         /*Estilo del titulo encima de la lista cuando el cursor del ratón pasa por encima de las letras*/
+    color: purple;
+    text-decoration: underline 3px skyblue;
+}
+.juego2{                                    /*Aquí está el formato de la segunda reseña*/
+    position: relative;
+    width: 52%;
+    left: 200px;
+    height: 720px;
+    top: 100px;
+    border: 3px solid white;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 100px;
+    background-color: rgba(0, 0, 0, 0.488);
+}
+.portada2{                              /*Foto de la segunda reseña*/
+    position: relative;
+    width: 35%;
+}
+.portada3{                              /*Foto de la tercera reseña*/
+    position: relative;
+    width: 24%;
+}
+.p3{                              /*Parrafo de la segunda reseña*/
+    position: relative;
+    width: 30%;
+    left: 350px;
+    bottom: 235px;
+    padding-left: 15px;
+}
+.parrafo22{                             /*Segundo parrafo de la segunda reseña*/
+    position: relative;
+    width: 30%;
+    left: 700px;
+    bottom: 400px;
+    padding-left: 20px;
+}
+.detalles2{                             /*Estilo de la valoración de la segunda reseña de la página*/
+    position: relative;
+    left: 340px;
+    bottom: 225px;
+    padding-left: 15px;
+    text-decoration: underline yellow;
+}
+.juego3{                                /*Estilos de la tercera reseña de la página*/
+    position: relative;
+    width: 52%;
+    left: 200px;
+    height: 720px;
+    top: 100px;
+    display: flex;
+    border: 3px solid white;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 100px;
+    background-color: rgba(0, 0, 0, 0.488);
+    margin-top: 50px;
+}
+.detalles3{                             /*Estilo de la valoración de la segunda reseña de la página*/
+    position: relative;
+    left: 250px;
+    bottom: 140px;
+    padding-left: 15px;
+    text-decoration: underline yellow;
+}
+.parrafo4{                              /*Estilo del primer párrafo de la tercera reseña de la página*/
+    position: relative;
+    width: 30%;
+    left: 250px;
+    bottom: 150px;
+    padding-left: 20px;
+}
+.parrafo33{                             /*Estilo del segundo parrafo de la segunda reseña de la página*/
+    position: relative;
+    width: 30%;
+    left: 650px;
+    bottom: 350px;
+    padding-left: 20px;
+}
+.lista3{                                /*Estilo de la lista de la tercera reseña de la página*/
+    position: relative;
+    bottom: 340px;
+}
+.portada4{                              /*Estilo de la foto de la cuarta reseña de la página*/
+    position: relative;
+    width: 30%;
+}
+.juego4{                                /*Estilos de la cuarta reseña de la página*/
+    position: relative;
+    width: 52%;
+    left: 200px;
+    height: 940px;
+    top: 100px;
+    display: flex;
+    border: 3px solid white;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 100px;
+    background-color: rgba(0, 0, 0, 0.488);
+    margin-top: 50px;
+}
+.titulo6{                               /*Estilo del titulo de la cuarta reseña de la página*/
+    position: relative;
+    left: 300px;
+    bottom: 150px;
+    padding-left: 15px;
+    text-decoration: underline red;
+}
+.detalles4{                             /*Estilo de la valoración de la cuarta reseña de la página*/
+    position: relative;
+    left: 300px;
+    bottom: 160px;
+    padding-left: 15px;
+    text-decoration: underline yellow;
+}
+.parrafo5{                              /*Estilo del primer párrafo de la cuarta reseña de la página*/
+    position: relative;
+    width: 30%;
+    left: 300px;
+    bottom: 180px;
+    padding-left: 20px;
+}
+.parrafo55{                             /*Estilo del segundo párrafo de la cuarta reseña de la página*/
+    position: relative;
+    width: 30%;
+    left: 650px;
+    bottom: 400px;
+    padding-left: 20px;
+}
+.lista4{                                /*Estilo de la lista de la cuarta reseña de la página*/
+    position: relative;
+    bottom: 400px;
+}
+.juego5{                                /*Estilos de la quinta reseña de la página*/
+    position: relative;
+    width: 52%;
+    left: 200px;
+    height: 690px;
+    top: 100px;
+    display: flex;
+    border: 3px solid white;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 100px;
+    background-color: rgba(0, 0, 0, 0.488);
+    margin-top: 50px;
+}
+.portada5{                              /*Estilo de la foto de la quinta reseña de la página*/
+    position: relative;
+    width: 25%;
+}
+.titulo7{                               /*Estilo del titulo de la quinta reseña de la página*/
+    position: relative;
+    left: 250px;
+    bottom: 280px;
+    padding-left: 15px;
+    text-decoration: underline red;
+}
+.detalles5{                             /*Estilo de la valoración de la quinta reseña de la página*/
+    position: relative;
+    left: 250px;
+    bottom: 300px;
+    padding-left: 15px;
+    text-decoration: underline yellow;
+}
+.parrafo6{                              /*Estilo del primer párrafo de la quinta reseña de la página*/
+    position: relative;
+    width: 30%;
+    left: 250px;
+    bottom: 300px;
+    padding-left: 20px;
+}
+.parrafo66{                             /*Estilo del segundo párrafo de la quinta reseña de la página*/
+    position: relative;
+    width: 30%;
+    left: 650px;
+    bottom: 550px;
+    padding-left: 20px;
+}
+.lista5{                                /*Estilo de la lista de la quinta reseña de la página*/
+    position: relative;
+    bottom: 400px;
+}
+footer{                                 /*Estilos del pie de página*/
+    position: relative;
+}
+.finalpagina{                           /*Estilos de la clase del final de la página*/
+    position: relative;
+    width: 35%;
+    padding: 20px;
+    left: 450px;
+    top: 150px;
+    border: 3px dashed white;
+    border-radius: 25px 25px 25px 25px;
+    background-color: #7d2181;
+}
+.autor{                                 /*Estilo del nombre del autor de la página (yo)*/
+    text-decoration: underline red;
+}
+.autor:hover{                           /*Estilo del nombre del autor de la página cuando el cursor del ratón está encima de el*/
+    color: black;
+    background-color: yellow;
+    text-decoration: underline 3px lime;
+    transition: all ease 0.2s;
+}

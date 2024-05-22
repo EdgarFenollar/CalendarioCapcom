@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type ="text/css" href="../../css/escala/EscalaFormula1.css">
+        <title>Rendimientos de la temporada de Fomrula 1</title>
+    </head>
+    <body>
+        <script src="../../js/escala/escalaF1/scriptF1.js"></script>
+        <header>
+            <h1 class="titulo3">Rendimientos de los equipos de la Formula 1 en la temporada 2023</h1>
+            <form id="menu1">
+                <label>Elije un equipo</label>
+                <select id="opciones" name="opciones">
+                    <option id="red">RedBull</option>
+                    <option id="fer">Ferrari</option>
+                    <option id="mer">Mercedes</option>
+                    <option id="ast">Aston Martin</option>
+                    <option id="mcl">Mclaren</option>
+                    <option id="alp">Alpine</option>
+                    <option id="wil">Williams</option>
+                    <option id="has">Haas</option>
+                    <option id="alf">Alfa Romeo</option>
+                    <option id="alph">Alpha Tauri</option>
+                </select>
+            </form>
+        </header>
+        <main>
+            <div id="parrilla">
+                <h2>RedBull</h2><img class="logored" src="../../img/escala/escalaF1/logored.webp"><button class="botonred" onclick="pilotosred('Max Verstappen, Checo Perez');">Pilotos de RedBull</button>
+                <div class="redbull">
+                    <div class="rendred">
+                        <p>1º 623 pts</p><img  class="flechared" src="../../img/escala/escalaF1/flechaverde1.webp">
+                    </div>
+                </div>
+                <p class="parrafored"><b><u>RedBull</u></b> es el equipo que mas ha conseguido mejorar el coche, la temporada pasada ya tenían un cohete 
+                    que han aprovechado de muy buena manera esta temporada, has conseguido por el momento un porcentaje de podios casi perfecto
+                    con un cohete sobre ruedas, todo apunta a que serán campeones de constructores
+                </p>
+
+                <h2 class="merc">Mercedes</h2><img class="logomerc" src="../../img/escala/escalaF1/logomerc.jfif"><button class="botonmerc" onclick="pilotosmerc('Lewis Hamilton, George Russell');">Pilotos de Mercedes</button>
+                <div class="mercedes">
+                    <div class="redmerc">
+                        <p>2º 305 pts</p><img class="flechamerc" src="../../img/escala/escalaF1/flechaverde1.webp">
+                    </div>
+                </div>
+                <p class="parrafomerc"><b><u>Mercedes</u></b> la temporada pasada no consiguieron muchos exitos, solo una pole 
+                y 1 victoria, no es a lo que acostumbran pero año nuevo mejoras nuevas y parece que les funciona a los alemanes
+                1 pole de su estrella Lewis Hamilton en Hungria les hace gritar ante los grandes, ¿conseguirán ese segundo puesto
+                en constructores?</p>
+
+                <h2 class="fer">Ferrari</h2><img class="logofer" src="../../img/escala/escalaF1/logofer.jpg"><button class="botonfer" onclick="pilotosfer('Charles Leclerc, Carlos Sainz');">Pilotos de Ferrari</button>
+                <div class="ferrari">
+                    <div class="redfer">
+                        <p>3º 285 pts</p><img class="flechafer" src="../../img/escala/escalaF1/flechaverde1.webp">
+                    </div>
+                </div>
+                <p class="parrafofer"><b><u>Ferrari</u></b> hace 12 meses ilusionaron con las mejoras que toda la Italia motorista 
+                necesitaba, no consiguieron mas que 5 victorias y 5 poles, esta temporada solo hemos tenido una pole y victoria del
+                magistral Carlos Sainz, que nos regaló los 2 ejemplos mas claros de talento en el deporte, la velocidad del <i>cabalino rampante</i>
+                en el templo de la velocidad (Monza) y la calma en la tormenta de Singapur durante 70 vueltas de infarto, esperemos que sigan así</p>
+
+
+                <h2 class="ast">Aston Martin</h2><img class="logoast" src="../../img/escala/escalaF1/logoast.jfif"><button class="botonast" onclick="pilotosast('Fernando Alonso, Lance Stroll');">Pilotos de Aston Martin</button>
+                <div class="astonmartin">
+                    <div class="redast">
+                        <p>4º 221 pts</p><img class="flechaast" src="../../img/escala/escalaF1/flechaverde1.webp">
+                    </div>
+                </div>
+                <p class="parrafoast"><b><u>Aston Martin</u></b> acabaron de los últimos en sus dos primeras temporadas en el gran circo
+                de la Formula 1, pero esta temporada con la llegada del rejuvenecido Fernando Alonso han conseguido un 100% de finales en
+                el top 10 en clasificaciones y 7 podios, junto al de Sebastan Vettel en 2021 suman un total de 8 podios en los libros de la 
+                historia del equipo britanico, ¿llegarán las victorias?</p>
+
+                <h2 class="mcl">McLaren</h2><img class="logomcl" src="../../img/escala/escalaF1/logomcl.jfif"><button class="botonmcl" onclick="pilotosmcl('Lando Norris, Oscar Piastri');">Pilotos de Mclaren</button>
+                <div class="mclaren">
+                    <div class="redmcl">
+                        <p>5º 172 pts</p><img class="flechamcl" src="../../img/escala/escalaF1/flechaverde1.webp">
+                    </div>
+                </div>
+                <p class="parrafomcl"><b><u>McLaren</u></b> tuvo un invierno bastante positivo, consiguieron el fichaje
+                del prometedor campeón de Formula 2, Oscar Piastri y pese que no empezaron bien, los 2 pilotos han regalado
+                recitales de conducción, con 6 podios entre el britanico y el australiano se posicionan como candidatos a 
+                retomar ese tercer puesto en constructores que les dió Carlos Sainz en esa terrible epoca pandemica
+                ¿Lo conseguirán?</p>
+
+                <h2 class="uno">Alpine</h2><img class="logoalp" src="../../img/escala/escalaF1/logoalp.jfif"><button class="botonalp" onclick="pilotosalp('Esteban Ocon, Pierre Gasly');">Pilotos de Alpine</button>
+                <div class="alpine">
+                    <div class="redalp">
+                        <p>6º 84 pts</p><img class="flechaalp" src="../../img/escala/escalaF1/flecharoja1.webp">
+                    </div>
+                </div>
+                <p class="parrafoalp"><b><u>Alpine</u></b> llegaron a la temporada 2023 muy justos y con muy mal ambiente internamente
+                pero sus pilotos, ambos franceses, han conseguido darle al equipo galo 2 podios, 1 cada piloto, no han mejorado mucho pero
+                sus fans esperan ver a Pierre Gasly o a Esteban Ocon repitiendo victorias, ¿Llegarán tan alto?</p>
+
+                <h2 class="uno">Williams</h2><img class="logowil" src="../../img/escala/escalaF1/logowil.jfif"><button class="botonwil" onclick="pilotoswil('Alex Albon, Logan Sargeant');">Pilotos de Williams</button>
+                <div class="williams">
+                    <div class="redwil">
+                        <p>7º 21 pts</p><img class="flechawil" src="../../img/escala/escalaF1/flecharoja1.webp">
+                    </div>
+                </div>
+                <p class="parrafowil"><b><u>Williams</u></b> siempre tuvo fama de ser de los mejores aunque estén sumidos en un
+                pozo, eso no ha evitado que Alex Albon y Logan Sargeant consigan puntos y muy buenas carreras con maquinaria 
+                muy inferior al rendimiento real en pista, ¿Es esto una premonición de una resurrecnión?</p>
+               
+                <h2 class="uno">Haas</h2><img class="logohaas" src="../../img/escala/escalaF1/logohaas.jfif"><button class="botonhaas" onclick="pilotoshaas('Kevin Magnussen, Nico Hülkenberg');">Pilotos de Haas</button>
+                <div class="haas">
+                    <div class="redhaas">
+                        <p>8º 12 pts</p><img class="flechahaas" src="../../img/escala/escalaF1/flecharoja1.webp">
+                    </div>
+                </div>
+                <p class="parrafohaas"><b><u>Haas</u></b> sigue buscando el escalón que les propulse a los podios y a las victorias,
+                aunque no haya tenido suerte con el coche y sus pilotos, muy pocos puntos y carreras algo mediocres pero siguen en la
+                palestra para salir del fondo de la parrilla, ¿Dentro de pronto veremos a un <i>midfielder</i>?</p>
+
+                <h2 class="alf">Alfa Romeo</h2><img class="logoalf" src="../../img/escala/escalaF1/logoalf.jfif"><button class="botonalf" onclick="pilotosalf('Valtteri Bottas, Guanyu Zhou');">Pilotos de Alfa Romeo</button>
+                <div class="alfaromeo">
+                    <div class="redalf">
+                        <p>9º 10pts</p><img class="flechaalf" src="../../img/escala/escalaF1/flecharoja1.webp">
+                    </div>
+                </div>
+                <p class="parrafoalf"><b><u>Alfa Romeo</u></b> desde que decidió volver en 2018 no ha tenido grandes actuaciones
+                solo algunos top5 y top 6, aunque aposten por jovenes estrellas, necesitan mejorarse, nos encantaría ver al frio 
+                Valtteri en el podio otra vez, pero será difícil</p>
+               
+                <h2 class="alph">Alpha Tauri</h2><img class="logoalph" src="../../img/escala/escalaF1/logoalph.jfif"><button class="botonalph" onclick="pilotosalph('Liam Lawson, Yuki Tsunoda');">Pilotos de Alpha Tauri</button>
+                <div class="alphatauri">
+                    <div class="redalph">
+                        <p>10º 5 pts</p><img class="flechaalph" src="../../img/escala/escalaF1/flecharoja1.webp">
+                    </div>
+                </div>
+                <p class="parrafoalph"><b><u>Alpha Tauri</u></b> no ha sido nunca un equipo top, pero siendo el representante
+                de la escuela de desarrollo de RedBull, apuestan por sus jovenes promesas para que se vean si merecen el sitio
+                en el <i>equipo A</i> o si se quedan en el <i>equipo B</i>, que buena estrategia, ¿no?</p>
+
+            </div>
+        </main>
+    </body>
+
+    <!--De la línea 12 a la línea 26 empieza el menú desplegable con la etiqueta form
+    este menú se puede ver justo encima del nombre RedBull subrayado en rojo-->
+
+    <!--De la línea 28 a la línea 138 empieza el main que es todo el contenido de la página
+    que contiene las barras con el degradado y los cuadros explicando el rendimiento de los
+    equipos durante la temporada-->
+
+    <!--De la línea 35 a la 137 empieza la serie de divs que tienen las barras, imagenes, parrafos
+    y las flechas que pueden ser verdes, si has hecho buena temporada o por el contrario rojas
+    Dentro de las barras tenemos la puntuación de los equipos durante la temporada, la lingutud de las
+    barras dependen de los puntos que tengas, por eso RedBull tiene la barra mas larga y AlphaTauri
+    la mas corta-->
+
+    <!--La estructura de divs del main es para poder crear las barras de los equipos y poder añadir
+    dentro de ellas los elementos como el texto y la imagen de la flecha y poder editarlas sin afectar
+    a toda la estructura de la barra, así la creación de las barras es mas fácil y no hace falta editar
+    tanto-->
+
+</html>

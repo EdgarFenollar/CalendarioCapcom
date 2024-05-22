@@ -1,0 +1,75 @@
+body{
+    width: 100%;
+    background: rgb(92, 69, 69);
+    background-image: url("../../img/comparativa/mainBG.jpg");
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background: black;
+    color: rgb(3, 73, 3);
+    line-height: 80px;
+    text-indent: 4em;
+}
+
+main{
+    display: grid;
+    justify-content: center;
+}
+
+article{
+    background: rgba(11, 36, 2, 0.377);
+    border-radius: 2em;
+    width: 450px;
+    display: grid;
+    grid-template-columns: 450px;
+    margin-top: 20%;
+}
+
+#contenedor{
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 50%;
+    border-radius: 50%;
+    margin-left: 23%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    transition: 0.3s;
+}
+
+img:hover{
+    transform: scale(1.5);
+}
+
+section{
+    background: white;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    display: grid;
+}
+
+p{
+    padding: 1em;
+    padding-left: 2em;
+}
+
+button{
+    width: 100px;
+    height: 20px;
+    margin-left: 40%;
+    margin-bottom: 2%;
+}
+
+footer{
+    width: 100%;
+    height: 35px;
+    background: black;
+    text-align: center;
+    line-height: 35px;
+    color: rgb(3, 73, 3);;
+    margin-top: 10%;
+}

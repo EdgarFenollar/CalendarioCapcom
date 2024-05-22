@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina la pelicula</title>
+    <link rel="stylesheet" href="./../../../css/juego/juegoPelicula/Pelicula.css">
+</head>
+<body>
+    <!-- Titulo -->
+    <header id="header"><h1>Adivina la pelicula</h1></header>
+
+    <!-- Main -->
+    <main id="main">
+        <!-- Un boton para retroceder a la selección de modo al igual que el contenedor de la imagen, la cual ira cambiando -->
+        <span id="botonSalir" onclick="salir()">Salir</span>
+        <div id="imagen">
+            <img src="./../../../img/juego/juegoPelicula/avatar1.jpg" id="img">
+        </div>
+
+        <!-- Input en el que se intenta adivinar la pelicula -->
+        <div>
+            <span>Pelicula: <input id="texto" type="text"> </span> <br>
+            <button type="button" id="comprobar" onclick="comprobar()">Comprobar</button>
+        </div>
+
+        <!-- Imagenes de los corazones (vidas) -->
+        <div id="contenedorVidas">
+            <img class="vida" src="./../../../img/juego/juegoPelicula/vida.jpg">
+            <img class="vida" src="./../../../img/juego/juegoPelicula/vida.jpg">
+            <img class="vida" src="./../../../img/juego/juegoPelicula/vida.jpg">
+        </div>
+
+        <!-- Pequeño texto que te muestra la cantidad de aciertos seguidos que llevas -->
+        <span id="racha">Racha de aciertos: 0</span>
+    </main>
+
+    <!-- Mensaje de derrota que se muestra cuando la cantidad de vidas llega a 0 -->
+    <div id="perder">
+        Has perdido. Deseas reiniciar?
+        <div>
+            <button onclick="salir()" id="salir">Salir</button>
+            <button onclick="reiniciar()" id="seguir">Reiniciar</button>
+        </div>
+    </div>
+
+    <script src="./../../../js/juego/juegoPelicula/JSPelicula.js"></script>
+</body>
+</html>

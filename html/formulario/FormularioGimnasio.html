@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    
+    <title>FormularioGimnasio.html</title>
+
+    <link rel="stylesheet" type="text/css" href="../../css/formulario/FormularioGimnasio.css">
+    <link rel="icon" type="img/ico" href="../../img/dialogo/DialogoGimnasio/mancuernaFav.jfif">
+
+</head>
+
+<body>
+
+    <header>
+
+        <!--Como ya tiene el título por si decirlo dentro del formulario, no veo necesario añadirlo arriba, a mi parecer quedaría feo. Pero igual añado el heaeder-->
+
+    </header>
+
+
+    <main class="centrar">
+
+        <article class="primer-cuadro">
+            
+                <form>
+
+                        <h2>Formulario</h2>
+                                               
+                                <!--Nombre-->
+                            <div class="input_box">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" name="nombre"  id="nombre" pattern="[A-Za-z]+" placeholder="Nombre" required>
+                            </div>
+
+                                <!--Apellido-->
+                            <div class="input_box">
+                                <label for="apellido">Apellidos</label>
+                                <input type="text" name="apellido"  id="apellido" pattern="[A-Za-z-space]+" placeholder="Apellido" required>
+                            </div>
+
+                                <!--Teléfono-->
+                            <div class="input_box">
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" name="telefono" id="telefono" pattern="[0-9]{9}" placeholder="Teléfono" maxlength="9"  required> 
+                            </div>
+
+                               <!--Email-->
+                               <div class="input_box">
+                                <label for="email">Email</label>              <!--Lo saqué de chatGPT,el rango del correo-->
+                                <input type="email" name="email" id="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="Email" required> 
+                            </div>
+
+                                <!--Fecha de nacimiento-->
+                            <div class="input_box">
+                                <label for="fecha">Fecha de nacimineto</label>
+                                <input type="date" name="fecha" id="fecha" required> 
+                            </div>
+
+                                <!--Dirección-->
+                            <div class="input_box">
+                                <label for="direccion">Dirección</label>
+                                <input type="text" name="direccion" id="direccion" placeholder="Dirección" maxlength="125" required> 
+                            </div>
+
+                              <!--Código postal-->
+                            <div class="input_box">
+                                <label for="codigoPostal">Código postal</label>
+                                <input type="text" name="codigoPostal" id="codigoPostal" placeholder="Código postal" maxlength="5" required> 
+                            </div>
+
+                                <!--Cookies y términos-->
+                            <div class="input_box">
+                                <input type="checkbox" name="cookies" id="cookies">
+                                <label for="cookies">¿Aceptar el uso de Cookies?</label>
+                            </div>
+
+
+                              <br>
+
+                                <!--Tipos de pagos-->
+                            <div class="input_pago">
+
+                                <input type="radio" name="forma_pago">
+                                <label>Visa</label>
+
+                                <input type="radio" name="forma_pago">
+                                <label>Mastercard</label>
+
+                                <input type="radio" name="forma_pago">
+                                <label>Paypal</label>
+
+                            </div>
+
+                            <button type="submit" class="boton">Registrar</button>
+
+                </form>
+
+        </article>
+
+    </main>
+
+    <footer>
+
+        <!--No pongo ningún texto porqué creo que no pega de cierta forma poner contenido en el footer en un formulario.-->
+
+    </footer>
+
+</body>
+
+</html>

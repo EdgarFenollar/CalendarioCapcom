@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/dados/styleJuegoDados.css">
+    <title>Juego de Dados</title>
+</head>
+
+<body>
+
+    <header>
+
+        <img id="imagenDado" src="../../img/paginaPrincipal/paginaRol/logos/logoDado20.png" alt="logoDadoRol"
+            width="80px">
+
+        <div id="redesSociales">
+            <a href="https://www.instagram.com/" target="_blank"><img
+                    src="../../img/paginaPrincipal/paginaRol/logos/icons8-instagram-48.png" alt="instagram"
+                    width="50px"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img
+                    src="../../img/paginaPrincipal/paginaRol/logos/icons8-facebook-48.png" alt="faceBook"
+                    width="50px"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img
+                    src="../../img/paginaPrincipal/paginaRol/logos/icons8-youtube-play-48.png" alt="youtube"
+                    width="50px"></a>
+        </div>
+
+        <p id="titulo">
+        <h1>
+            CLUB DE ROL
+        </h1>
+        </p>
+
+        <div id="menuDiv">
+            <ul class="menu">
+                <li><a href="../paginaPrincipal/paginaRol.html">Inicio</a></li>
+                <li><a href="">Paginas</a>
+                    <ul class="subMenu">
+                        <li><a href="../../html/curriculum/CVMatthewMercer.html" target="_blank">Curriculum</a></li>
+                        <li><a href="../../html/escala/EscalaRol.html" target="_blank">Personajes (Escala)</a></li>
+                        <li><a href="../../html/frase/FraseBardo.html" target="_blank">Bardo (Frase)</a></li>
+                        <li><a href="../../html/dialogo/DialogoRolHoguera.html" target="_blank">Dialogo</a>
+                        <li><a href="../../html/comparativa/ComparativaRol.html" target="_blank">Comparativa D&D y Vampiro</a>
+                        <li><a href="../../html/resena/ResenaRol.html" target="_blank">Reseña Arcane</a>
+                    </ul>
+                <li><a id="btnJuegoDasos" href="../../html/dados/juegoDados.html">Juego Dados</a>
+                <li><a id="btnJuegoRol" href="../../html/juego/JuegoRol/InicioJuego.html">Juego Rol</a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div id="container" onload="diceRoll()">
+
+            <h1>Lanzador de dado</h1>
+
+            <img class="d20" src="../../img/dados/CarasDados/d2020.png" width="80%">
+
+            <p id="resultado"></p>
+
+	    </div>
+
+	    <div id="containerBtn">
+		    <button id="botonLanzar" type="button" onclick="clickRoll()">Lanzar</button>
+	    </div>
+	
+    </main>
+
+    <footer>
+        Lenguaje de Marcas | Omar Llinares
+    </footer>
+
+    <script src="../../js/dados/dadosJS.js"></script>
+</body>
+</html>

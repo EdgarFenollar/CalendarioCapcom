@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../css/calendario/calendarioCapcom.css">
+    <link rel="icon" type="image/x-icon" href="../../img/dialogo/dialogoResidentEvil/faviconresidentevil.ico">
+    <link rel='stylesheet' href='https://unpkg.com/js-year-calendar@latest/dist/js-year-calendar.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel='stylesheet'
+        href='https://unpkg.com/bootstrap-datepicker@1.8.0/dist/css/bootstrap-datepicker.standalone.min.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <title>Calendario Capcom</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav">
+            <img class="logo" src="../../img/paginaPrincipal/ImgPaginaPrincipalCapcom/Capcom_logo_icon.jpg">
+            <div class="nav-left">
+                <a class="principal" href="../paginaPrincipal/paginaPricipalCapcom.html">🏠</a>
+                <div class="desplegable">
+                    <button class="dropbtn">Comparativa
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="desplegable-content">
+                        <a target="_blank" href="../comparativa/ComparativaResidentEvil.html">Comparativa Resident
+                            Evil</a>
+                        <a target="_blank" href="../comparativa/comparativaToyStory.html">Comparativa Toy Story</a>
+                        <a target="_blank" href="../comparativa/comparativatattoo.html">Comparativa Tatto</a>
+                        <a target="_blank" href="../comparativa/comparativaMTG.html">Comparativa MTG</a>
+                        <a target="_blank" href="../comparativa/ComparativaInversión.html">Comparativa Inversión</a>
+                    </div>
+                </div>
+                <div class="desplegable">
+                    <button class="dropbtn">Reseña
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="desplegable-content">
+                        <a target="_blank" href="../resena/ResenaCapcom.html">Reseña Capcom</a>
+                        <a target="_blank" href="../resena/resenyaPokemon.html">Reseña Pokemon</a>
+                        <a target="_blank" href="../resena/reseñaNightCrawler.html">Reseña Night Crawler</a>
+                        <a target="_blank" href="../resena/reseñaSpidermanMultiverso.html">Reseña Siderman
+                            Multiverso</a>
+                        <a target="_blank" href="../resena/reseñaMTG.html">Reseña MTG</a>
+                    </div>
+                </div>
+                <div class="desplegable">
+                    <button class="dropbtn">Diálogo
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="desplegable-content">
+                        <a target="_blank" href="../dialogo/dialogoResidentEvil.html">Diálogo Resident Evil</a>
+                        <a target="_blank" href="../dialogo/DialogoCine.html">Dialogo Cine</a>
+                        <a target="_blank" href="../dialogo/dialogoIronGiant.html">Dialogo Iron Giant</a>
+                        <a target="_blank" href="../dialogo/DialogoconWarren.html">Dialogo Warren</a>
+                        <a target="_blank" href="../dialogo/dialogo_luka.html">Dialogo Luka</a>
+                    </div>
+                </div>
+                <div class="desplegable">
+                    <button class="dropbtn">Frase
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="desplegable-content">
+                        <a target="_blank" href="../frase/FraseResidentEvil.html">Frase Resident Evil</a>
+                        <a target="_blank" href="../frase/FraseCinematografia.html">Frase Cinematografia</a>
+                        <a target="_blank" href="../frase/FraseBardo.html">Frase Bardo</a>
+                        <a target="_blank" href="../frase/FraseJoker.html">Frase Joker</a>
+                        <a target="_blank" href="../frase/fraseHarryPotter.html">Frase Harry Potter</a>
+                    </div>
+                </div>
+                <div class="desplegable">
+                    <button class="dropbtn">Currículum
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="desplegable-content">
+                        <a target="_blank" href="../curriculum/CurriculoEthanWinters.html">Currículum Ethan Winters</a>
+                        <a target="_blank" href="../curriculum/curriculumWaltDisney.html">Curriculum Walt Disney</a>
+                        <a target="_blank" href="../curriculum/CurriculoJunichiMasuda.html">Curriculum Junichi
+                            Masuda</a>
+                        <a target="_blank" href="../curriculum/CurriculumKevinLevrone.html">Curriculum Levrone</a>
+                        <a target="_blank" href="../curriculum/curriculumHarryPotter.html">Curriculum Harry Potter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <h1>Calendario</h1>
+    </header>
+    <main>
+        <div id="calendar"></div>
+
+        <div class="modal fade" id="event-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Evento</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="hidden" name="event-index">
+                        <form class="form-horizontal">
+                            <div class="form-group row">
+                                <label for="event-name" class="col-sm-4 control-label">Nombre</label>
+                                <div class="col-sm-8">
+                                    <input id="event-name" name="event-name" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="event-location" class="col-sm-4 control-label">Localizacion</label>
+                                <div class="col-sm-8">
+                                    <input id="event-location" name="event-location" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="min-date" class="col-sm-4 control-label">Fechas</label>
+                                <div class="col-sm-8">
+                                    <div class="input-group input-daterange" data-provide="datepicker">
+                                        <input id="min-date" name="event-start-date" type="text" class="form-control">
+                                        <div class="input-group-prepend input-group-append">
+                                            <div class="input-group-text">hasta</div>
+                                        </div>
+                                        <input name="event-end-date" type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary" id="save-event">
+                            Guardar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="context-menu">
+        </div>
+    </main>
+    <footer>
+        <p>Capcom 2024 © edgarfenollarcanto@gmail.com</p>
+    </footer>
+</body>
+<script src='https://unpkg.com/js-year-calendar@latest/dist/js-year-calendar.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://unpkg.com/popper.js@1.14.7/dist/umd/popper.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js'></script>
+<script src="../../js/calendario/calendarioCapcom.js"></script>
+</html>

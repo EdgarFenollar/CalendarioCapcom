@@ -1,0 +1,30 @@
+/* Body y otras cosas  */
+body{
+    font-family: sans-serif;   
+   background: linear-gradient(180deg, 
+   rgb(172, 7, 103) 40%,
+    rgb(93, 13, 174) 100%);
+    min-height: 100vh; 
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(172, 7, 103);
+  }
+
+.fondito{
+    display: flex;
+    flex-direction: column;
+    /*align-items: center; <---- Con esta linea
+    quitada la pagina resulta mas graciosa porque
+    se ve la cara en grande jajajajjajajajaj*/
+}
+
+footer {
+    background-color:  rgb(93, 13, 174);
+    color: yellow;
+    text-align: center;
+    font-size: x-small;
+}

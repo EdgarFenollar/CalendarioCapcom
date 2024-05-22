@@ -1,0 +1,54 @@
+h1{
+    text-align: center;
+    font-size: 500%;
+    margin-left: 600px;
+    margin-right: 600px;
+    margin-bottom: 150px;
+    display: flex;
+    font-family: fuente1;
+}
+.caja1{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 60px;
+    padding-bottom: 40px;
+}
+
+
+.meme{
+    box-shadow: rgb(0, 0, 0) 10px 10px 10px;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: rgba(240, 224, 238, 0.959);
+    transition: all ease 0.5s;
+    width: 10%;
+    margin-bottom: 10px;
+}
+
+#m3 img{
+    max-width: 100%;
+}
+#m2 img{
+    width: 100%;
+}
+
+#m1 img{
+    width: 100%;
+}
+
+@font-face {
+    font-family:fuente1 ;
+    src: url(../../font/samvalentin/Komigo3D-Regular.ttf);
+}
+
+footer{
+    font-family: fuente1;
+    font-weight: 800;
+}

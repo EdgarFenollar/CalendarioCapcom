@@ -1,0 +1,1122 @@
+/*Esto es para resetear los estilos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Fuentes*/
+@font-face {
+    font-family: disney;
+    src: url(../../font/escala/Disney/Walter.ttf);
+}
+
+@font-face {
+    font-family: Quicksand_book;
+    src: url(../../font/escala/Disney/Quicksand_Book.otf);
+}
+
+@font-face {
+    font-family: Disneyland;
+    src: url(../../font/escala/Disney/Disneyland.otf);
+}
+
+/*Color de fondo de la página*/
+/*Apariencia del cuadro dentro del fondo*/
+body{
+    background:linear-gradient(to left, #191970, #4169E1);
+
+    /*width: 95%;
+    display:flex;
+    align-items:flex-start;
+    justify-content: center;
+    min-height: 100vh;
+    margin-top: 10%;*/
+}
+
+#titulo{
+    font-family: Quicksand_book;
+    color: white;
+    font-size: x-large;
+    font-weight: bolder;
+    margin-top: 5%;  
+    margin-left: 25%;    
+}
+
+#grafico1{
+    display:inline-block;
+    margin-left: 20%;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;*/
+    
+}
+/*Titulo del primer gráfico*/
+#caracteristicas{
+    font-family: Quicksand_book;
+    color: white;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 40%;
+    margin-block: center;
+    /*font-weight: bolder;
+    margin-left: 30%;
+    margin-top: 15%;
+    margin-bottom: -5%;*/
+   
+}
+
+/*posicion de los graficos relativo al otro*/
+.container{
+    width: 50%;
+    margin-left: 40%;
+    margin-top: 10%;
+
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;*/
+}
+
+/*Caracteristicas tabla*/
+.adjetivos{
+    border: 1px solid black;
+    font-family: Quicksand_book;
+    margin-left: 38%;
+    margin-top: 2%;
+}
+
+
+/*Caracteristicas de la lista*/
+ul{
+    list-style: none;
+}
+
+/*Colores por celda*/
+.adjetivos #orange{
+    background-color: orange;   
+}
+
+.adjetivos #yellow{
+    background-color: yellow;
+}
+
+.adjetivos #green{
+    background-color: green;
+}
+
+.adjetivos #blue{
+    background-color: blue;
+    color: white;
+}
+
+
+.adjetivos #purple{
+    background-color: purple;
+    color: white;
+}
+
+.adjetivos #white{
+    background-color: white;
+}
+
+.adjetivos #black{
+    background-color: black;
+    color: white;
+}
+
+.adjetivos #red{
+    background-color: red;
+}
+
+/*Propiedades segunda gráfica*/
+#grafico2{
+    display:inline-block;
+    margin-left: 5%;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;*/
+    
+}
+/*Titulo del psegundo gráfico*/
+.persona{
+    font-family: Quicksand_book;
+    color: white;
+    align-items: center;
+    margin-top: 10%;
+    margin-block: center;
+    margin-left: 35%;
+    /*font-weight: bolder;
+    margin-left: 30%;
+    margin-top: 15%;
+    margin-bottom: -5%;*/
+   
+}
+
+
+
+/*Caracteristicas tabla*/
+.personajes{
+    /*border: 1px solid black;*/
+    border-radius: 5px;
+    font-family: Quicksand_book;
+    font-weight: bold; 
+    margin-bottom: 15%;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    /*margin-left: 17%;*/
+    margin: auto;
+    
+}
+.perso{
+    /*background-color: white;*/
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/*.uno{
+    background-color: #F9EFE1;
+    border-radius: 5px;
+}
+
+.dos{
+    background-color: #FFFFDE;
+    border-radius: 5px;
+}
+
+.tres{
+    background-color: #DFFFDE;
+    border-radius: 5px;
+}
+
+.cuatro{
+    background-color: #DEEEFF;
+    border-radius: 5px;
+}
+
+.cinco{
+    background-color: #ECDEFF;
+    border-radius: 5px;
+}
+
+.seis{
+    background-color: #E8E8E8;
+    border-radius: 5px;
+}
+
+.siete{
+    background-color: #BFBFBF;
+    border-radius: 5px;
+}
+
+.ocho{
+    background-color: #FFE0DE;
+    border-radius: 5px;
+}*/
+.container1{
+    width: 35%;
+    margin-left: 30%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;*/
+}
+
+/*p{
+    color: gray;
+    margin-left: 5%;
+}
+
+/*Inicio personajes orange*/
+#Moana{
+    background-color: rgb(250,125,1);
+    /*width: 10%;*/
+    /*border: 1px solid white;*/
+    display: flex;
+}
+#MoanaImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 30%;
+}
+
+#Moana >p{
+    color: #575151;
+    margin-left: 5%;
+}
+
+#Shere{
+    background-color: rgb(223,131,39);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#ShereImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-right: 10%;
+   
+}
+
+#Shere >p{
+    color: #575151;
+    margin-left: 5%;
+}
+
+#Nemo{
+    background-color: rgb(218,145,32);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#NemoImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-right: 10%;
+}
+
+#Nemo >p{
+    color: #575151;
+    margin-left: 5%;
+}
+/*Cierre persoanajes orange*/
+
+/*Inicio personajes yellow*/
+#Woody{
+    background-color: rgb(255,239,0);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#WoodyImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Woody >p{
+    color: #575151;
+    margin-left: 5%;
+}
+
+#Walle{
+    background-color: rgb(228,217,37);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#WalleImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Walle >p{
+    color: #575151;
+    margin-left: 5%;
+}
+#Pocahontas{
+    background-color: rgb(229,219,60);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#PocahontasImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 10%;
+}
+
+#Pocahontas >p{
+    color: #575151;
+    margin-left: 5%;
+}
+
+#BlancaNieves{
+    background-color: rgb(231,223,95);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#BlancaNievesImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 10%;
+}
+
+#BlancaNieves >p{
+    color: #575151;
+    margin-left: 5%;
+}
+
+#Bella{
+    background-color: rgb(244,238,154);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#BellaImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Bella >p{
+    color: #575151;
+    margin-left: 5%;
+}
+/*Cierre personajes yellow*/
+
+/*Inicio personajes green*/
+#PeterPan{
+    background-color: rgb(53,115,7);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#PeterImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#PeterPan >p{
+    color: #575151;
+    margin-left: 5%;
+}
+
+#Quasimodo{
+    background-color: rgb(69,133,20);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#QuasimodoImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Quasimodo >p{
+    color: #575151;
+    margin-left: 5%;
+}
+
+#Tiana{
+    background-color: rgb(129,164,103);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#TianaImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Tiana >p{
+    color: #575151;
+    margin-left: 5%;
+}
+
+#Mulan{
+    background-color: rgb(138,199,92);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#MulanImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Mulan >p{
+    color: #575151;
+    margin-left: 5%;
+}
+
+#Ariel{
+    background-color: rgb(127,230,170);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#ArielImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Ariel >p{
+    color: #575151;
+    margin-left: 5%;
+}
+/*Cierre personajes green*/
+
+/*Inicio personajes blue*/
+#Sullivan{
+    background-color: rgb(123,186,190);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#SullivanImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Sullivan >p{
+    color: #575151;
+    margin-left: 5%;
+}
+
+#Alicia{
+    background-color: rgb(37,167,196);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#AlciaImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Alicia >p{
+    color: #575151;
+    margin-left: 5%;
+}
+
+#Hades{
+    background-color: rgb(120,199,216);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#HadesImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Hades >p{
+    color: #575151;
+    margin-left: 5%;
+}
+
+#Aurora{
+    background-color: rgb(113,136,203);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#AuroraImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Aurora >p{
+    color: #575151;
+    margin-left: 5%;
+}
+
+#Cenicienta{
+    background-color: rgb(176,189,228);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#CenicientaImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Cenicienta >p{
+    color: #575151;
+    margin-left: 5%;
+}
+
+#Elsa{
+    background-color: rgb(135,160,233);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#ElsaImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Elsa >p{
+    color: #575151;
+    margin-left: 5%;
+}
+
+#Stitch{
+    background-color: rgb(107,75,228);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#StitchImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Stitch >p{
+    color: white;
+    margin-left: 5%;
+}
+/*Cierre personajes blue*/
+
+/*Inicio personajes purple*/
+#Zurg{
+    background-color: rgb(130,75,228);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#ZurgImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Zurg >p{
+    color: whitesmoke;
+    margin-left: 5%;
+}
+
+#ReinaMalvada{
+    background-color: rgb(78,4,132);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#ReinaMalvadaImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#ReinaMalvada >p{
+    color: whitesmoke;
+    margin-left: 5%;
+}
+
+#Aladdin{
+    background-color:rgb(104,29,157);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#AladdinImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Aladdin >p{
+    color: whitesmoke;
+    margin-left: 5%;
+}
+
+#Randall{
+    background-color: rgb(164,117,199);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#RandallImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Randall >p{
+    color: whitesmoke;
+    margin-left: 5%;
+}
+
+#Malefica{
+    background-color: rgb(171,46,161);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#MaleficaImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Malefica >p{
+    color: whitesmoke;
+    margin-left: 5%;
+}
+
+#Anna{
+    background-color: rgb(175,12,163);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#AnnaImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Anna >p{
+    color: whitesmoke;
+    margin-left: 5%;
+}
+
+#Radcliffe{
+    background-color: rgb(124,0,115);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#RadcliffeImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Radcliffe >p{
+    color: whitesmoke;
+    margin-left: 5%;
+}
+
+#Facilier{
+    background-color: rgb(86,0,79);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#FacilierImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Facilier >p{
+    color: whitesmoke;
+    margin-left: 5%;
+}
+/*Cierre personajes purple*/
+
+/*Inicio personajes white*/
+#Pongo{
+    background-color:  rgb(255,255,255);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#PongoImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Pongo >p{
+    color: #575151;
+    margin-left: 5%;
+}
+#Duquesa{
+    background-color:  rgb(255,255,255);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#DuquesaImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Duquesa >p{
+    color: #575151;
+    margin-left: 5%;
+}
+/*Cierre personajes white*/
+
+/*Inicio personajes black*/
+#Shan{
+    background-color: rgb(7,2,30);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#ShanImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Shan >h4{
+    color: white;
+}
+
+#Shan >p{
+    color: #575151;
+    margin-left: 5%;
+}
+
+#MorDu{
+    background-color: rgb(30,2,18);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#MorduImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#MorDu >h4{
+    color: white;
+}
+
+#MorDu >p{
+    color: #575151;
+    margin-left: 5%;
+}
+
+#Ursula{
+    background-color: rgb(46,6,44);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#UrsulaImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Ursula >h4{
+    color: white;
+}
+
+#Ursula >p{
+    color: #575151;
+    margin-left: 5%;
+}
+
+#Yokai{
+    background-color: rgb(30,2,18);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#YokaiImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Yokai >h4{
+    color: white;
+}
+
+#Yokai >p{
+    color: #575151;
+    margin-left: 5%;
+}
+
+#Frollo{
+    background-color: rgb(30,2,18);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#FrolloImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Frollo >h4{
+    color: white;
+}
+
+#Frollo >p{
+    color: #575151;
+    margin-left: 5%;
+}
+
+#Gantu{
+    background-color: rgb(34,28,33);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#GantuImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Gantu >h4{
+    color: white;
+}
+
+#Gantu >p{
+    color: #575151;
+    margin-left: 5%;
+}
+
+/*Cierre personajes black*/
+
+/*Inicio personajes red*/
+#Gothel{
+    background-color: rgb(67,15,9);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#GothelImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Gaston{
+    background-color: rgb(199,21,0);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#GastonImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Jafar{
+    background-color: rgb(145,51,40);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#JafarlImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Madrastra{
+    background-color: rgb(174,56,42);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#MadrastralImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Hook{
+    background-color: rgb(145,51,40);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#HooklImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#TeKa{
+    background-color: rgb(199,21,0);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#TekalImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Reina{
+    background-color: rgb(206,51,33);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#ReinalImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#Increible{
+    background-color:rgb(228,74,56);
+    /*border: 1px solid white;*/
+    display: flex;
+}
+
+#IncreiblelImg{
+    width: 10%;
+    height:10%;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+}
+/*Cierre personajes red*/
+
+
+/*Apariencia detras de cada grafico*/
+.chart{
+    padding: 2rem;
+    border: 1px solid #f49131;
+    border-radius: 1rem;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
+}
+
+
+
+/*Contenido*/
+.content{
+    width: 50%;
+    margin: 0 auto;
+    
+}
+
+/*Footer*/
+footer{
+    background-color: white  ;
+    height: 30%;
+    margin-bottom: 15px;
+    width: 90%;
+    margin-left: 5%;
+    
+    }
+    
+    
+    /*GIF dentro del footer*/
+    .gif{
+        padding: 10px; 
+        margin: 5px; 
+        width: 130px; 
+        display: block;
+        margin-left: 85%;
+    }
+    
+    .infoFooter{
+        font-size: medium;
+        margin-left: 30%;
+        margin-top: 10px;
+        
+    }
+    
+    @media(max-width:1024px){
+        .plugin{
+            flex-direction: row;
+            justify-content: center;
+        }
+    }

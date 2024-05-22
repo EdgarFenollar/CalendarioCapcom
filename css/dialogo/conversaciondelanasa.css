@@ -1,0 +1,132 @@
+/* Cosas principales */
+
+body {
+  background-color: rgb(255, 165, 0);
+    font-family: Helvetica, sans-serif;
+}
+
+section{
+    margin: 6px 0px;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+footer {
+    background-color: rgba(0,0,0,0.9);
+    color: #fff;
+    text-align: center;
+    padding: 15px 0px;
+    width: 100%;
+    font-size: x-small;
+}
+
+
+/* ID's */
+
+ #fondo{
+     width: 100%;
+     position: relative;
+     z-index: 1;
+ }
+
+
+/* CLASES */
+
+.elfondo{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .elfondo img{
+     width: 25%;
+ }
+
+ .fondito{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     position: absolute;
+     z-index: 2;
+
+}
+
+.sec1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: relative;
+    margin-right: 50%;
+}
+
+.sec2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: relative;
+    margin-left: 50%;
+}
+
+.sec1 img, .sec2 img {
+    border-radius: 100%;
+    border: 2px solid black;
+    width: 15%;
+    height: 15%;
+}
+
+section p{
+    margin: 8%;
+    max-width: 80%;
+    width: 100%;
+}
+
+.boc2{
+    text-align: right;
+}
+
+.boc1{
+    background-color: #224b29;
+    color: white;
+    border-radius: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    font-family: rs_elon; /* <----- fuentesNASA */
+}
+
+.boc2{
+    background-color: rgb(36, 77, 90);
+    color: white;
+    border-radius: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+    font-family: ps_nasa; /* <----- fuentesNASA */
+}
+
+/* FUENTES */
+@font-face {
+    font-family: ps_nasa ;
+    src: url(../../font/dialogo/fuentesNASA/PoorStory-Regular.ttf);
+}
+@font-face {
+    font-family: rs_elon ;
+    src: url(../../font/dialogo/fuentesNASA/RubikScribble-Regular.ttf);
+}

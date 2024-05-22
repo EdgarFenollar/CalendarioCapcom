@@ -1,0 +1,251 @@
+body{
+    background-color: grey;
+}
+
+
+h1{
+    background-color: brown;
+    color: rgb(224, 205, 205);
+    text-align: center;
+    padding: 8px;
+    border: solid black;
+    margin-left:15px;
+    margin-right:15px;
+    color: whitesmoke;
+}
+
+
+.H{
+    width: 13%;
+    margin-bottom: 70px;
+    margin-top: 27px;
+}
+
+
+.hipertrofia{
+    background-color: rgb(26, 115, 188);
+    margin: 20px;
+    padding: 30px;
+    border: 2px solid rgb(21, 15, 17);
+}
+
+
+.hipert{
+    float: right;
+    margin-right: 80%;
+    margin-top: 150px;
+    font-size: 40px;
+}
+
+
+.cualidade:not(:last-child){
+    margin-bottom: 30px;
+}
+
+
+.rangos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+
+.barra {
+    position: relative;
+    border: 3.5px solid rgb(129, 15, 15);
+    border-radius: 20px;
+}
+
+
+.barra div {
+    position: relative;
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background: linear-gradient(250deg,rgb(84, 3, 75), rgb(213, 128, 210));
+}
+
+
+#rep1_4barra {
+    animation: rep1_4barra 3s forwards;
+}
+
+@keyframes rep1_4barra {
+    100%{
+        width: 45%;
+    }
+}
+
+
+#rep6_15barra {
+    animation: rep6_15barra 3s forwards;
+}
+
+
+@keyframes rep6_15barra {
+    100%{
+        width: 90%;
+    }
+}
+
+
+#rep20_30barra {
+    animation: rep20_30barra 3s forwards;
+}
+
+
+@keyframes rep20_30barra {
+    100%{
+        width: 30%;
+    }
+}
+
+
+.F {
+    width: 10%;
+    margin-bottom: 70px;
+    margin-top: 30px;
+}
+
+
+.fuer {
+    float: right;
+    margin-right: 75%;
+    margin-top: 120px;
+    font-size: 40px;
+}
+
+
+.fuerza {
+    background: rgb(190, 23, 23);
+    padding: 30px;
+    margin: 20px;
+    border: 2px solid black;
+} 
+
+
+.barra1 {
+    position: relative;
+    border: 3.5px solid rgb(129, 15, 15);
+    border-radius: 20px;
+}
+
+
+.barra1 div {
+    position: relative;
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background: linear-gradient(450deg,rgb(169, 162, 219), rgb(2, 51, 115));
+}
+
+
+#rep1_4barra1 {
+    animation: rep1_4barra1 3s forwards;
+}
+
+
+@keyframes rep1_4barra1 {
+    100%{
+        width: 90%;
+    }
+}
+
+
+#rep6_15barra1 {
+    animation: rep6_15barra1 3s forwards;
+}
+
+@keyframes rep6_15barra1 {
+    100%{
+        width: 45%;
+    }
+}
+
+
+#rep20_30barra1 {
+    animation: rep20_30barra1 3s forwards;
+}
+
+
+@keyframes rep20_30barra1 {
+    100%{
+        width: 20%;
+    }
+}
+
+
+.R {
+    width: 10%;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+
+.resist {
+    float: right;
+    margin-right: 80%;
+    margin-top: 150px;
+    font-size: 40px;
+}
+
+
+.resistencia {
+    background: rgb(168, 39, 165);
+    padding: 30px;
+    margin: 20px;
+    border: 2px solid black;
+} 
+
+
+.barra2 {
+    position: relative;
+    border: 3.5px solid rgb(129, 15, 15);
+    border-radius: 20px;
+}
+
+
+.barra2 div {
+    position: relative;
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background: linear-gradient(450deg,rgb(130, 206, 113), rgb(3, 86, 8));
+}
+
+
+#rep1_4barra2 {
+    animation: rep1_4barra2 2s forwards;
+}
+
+
+@keyframes rep1_4barra2 {
+    100%{
+        width: 15%;
+    }
+}
+
+
+#rep6_15barra2 {
+    animation: rep6_15barra2 2s forwards;
+}
+
+
+@keyframes rep6_15barra2 {
+    100%{
+        width: 55%;
+    }
+}
+
+
+#rep20_30barra2 {
+    animation: rep20_30barra2 2s forwards;
+}
+
+
+@keyframes rep20_30barra2 {
+    100%{
+        width: 95%;
+    }
+}

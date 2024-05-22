@@ -1,0 +1,316 @@
+
+h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    background-color: whitesmoke;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+
+
+    
+}
+
+.inversor{
+    display:flex;
+    align-items: center;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(102, 0, 133));
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(134, 134, 134);
+}
+
+
+/* Esto es por si quiero ponerle un tamaño fijo a imgs.*/
+.imagenWarren{
+    width: 300px;
+    height: 250px;
+}
+
+
+/*.container img{
+    flex:1;
+
+}*/
+
+.contenido{
+    display: grid;
+    grid-template-rows: 1fr, 1fr;
+    float:right;
+    margin:1px;
+    
+    
+}
+
+#rentabWarren{
+    width:240px;
+    background: linear-gradient(to right, green, gold);
+    height: 35px;
+    /*text-align:center;*/
+    align-items: center;
+    display:flex;
+    justify-content: center;
+
+    
+}
+
+#añosWarren{
+    width:320px;
+    background: linear-gradient(to right, rgb(50, 50, 255), silver);
+    height: 35px;
+    margin: auto;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+
+}
+
+#rentabGreenblatt{
+    width:300px;
+    background: linear-gradient(to right, green, gold);
+    height: 35px;
+    /*text-align:center;*/
+    align-items: center;
+    display:flex;
+    justify-content: center;
+
+    
+}
+
+#añosGreenblatt{
+    width:170px;
+    background: linear-gradient(to right, rgb(50, 50, 255), silver);
+    height: 35px;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+
+}
+
+#rentabSoros{
+    width:200px;
+    background: linear-gradient(to right, green, gold);
+    height: 35px;
+    /*text-align:center;*/
+    align-items: center;
+    display:flex;
+    justify-content: center;
+
+    
+}
+
+#añosSoros{
+    width:400px;
+    background: linear-gradient(to right, rgb(50, 50, 255), silver);
+    height: 35px;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+
+}
+
+#rentabLynch{
+    width:290px;
+    background: linear-gradient(to right, green, gold);
+    height: 35px;
+    /*text-align:center;*/
+    align-items: center;
+    display:flex;
+    justify-content: center;
+
+    
+}
+
+#añosLynch{
+    width:130px;
+    background: linear-gradient(to right, rgb(50, 50, 255), silver);
+    height: 35px;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+
+}
+
+#rentabGraham{
+    width:170px;
+    background: linear-gradient(to right, green, gold);
+    height: 35px;
+    /*text-align:center;*/
+    align-items: center;
+    display:flex;
+    justify-content: center;
+
+    
+}
+
+#añosGraham{
+    width:300px;
+    background: linear-gradient(to right, rgb(50, 50, 255), silver);
+    height: 35px;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+
+}
+
+/*ARK (Cathie Wood) para la rentabilidad negativa.*/
+
+
+.Ark{
+    display:flex;
+    align-items: center;
+
+}
+
+#rentabArk{
+    width:670px;
+    background: linear-gradient(to left, red, black);
+    height: 35px;
+    /*text-align:center;*/
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    margin-left: 1px;
+
+    
+}
+
+.img-{
+    float:left;
+}
+
+/*Parte de rentabilidad SP500 y texto:*/
+.container2{
+    display: flex;
+    width: 100vw;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 20px;
+    background: whitesmoke;
+}
+
+.texto{
+
+    width:45%;
+    padding-right: 2px;
+
+}
+    /*Enlace introducido dentro del gráfico, quitamos subrayado y color lila*/
+
+#macrotrend{
+    display:flex;
+    width: 55%;
+    text-decoration: none;
+    color: black;
+}
+
+
+.gráfico{
+    display:flex;
+    width: 55%;
+    border-left: 3px;
+}
+
+.ejeY{
+    display:flex;
+    flex-direction: column;
+
+}
+
+.porcentaje{
+    height:40px;
+    text-align: center;
+}
+
+
+.year{
+
+    text-align: center;
+}
+
+.barra{
+    height:240px;
+    width:50px;
+    display:flex;
+    flex-direction: column;
+    border:1px solid whitesmoke;
+    
+}
+
+
+
+.barra17{
+    top:95px;
+    height:145px;
+    background:linear-gradient(to right, green, gold); 
+    text-align: center;
+    position: relative;
+
+}
+
+.barra18{
+    height:45px;
+    top:255px;
+    background:linear-gradient(to right, rgb(243, 129, 129), red); 
+    text-align: center;
+    position: relative;
+}
+
+.barra19{
+    top:20px;
+    height:220px;
+    background:linear-gradient(to right, green, gold); 
+    text-align: center;
+    position: relative;
+
+}
+
+.barra20{
+    top:110px;
+    height:130px;
+    background:linear-gradient(to right, green, gold); 
+    text-align: center;
+    position: relative;
+
+}
+
+.barra21{
+    top:35px;
+    height:205px;
+    background:linear-gradient(to right, green, gold); 
+    text-align: center;
+    position: relative;
+
+}
+
+.barra22{
+    height:150px;
+    top:255px;
+    background:linear-gradient(to right, rgb(243, 129, 129), red); 
+    text-align: center;
+    position:relative;
+
+}
+
+/*Vamos a dar estilo al texto del container 2*/
+
+h2{
+    
+    font-size: 25px;
+    text-transform: uppercase;
+    background:linear-gradient(to right, rgb(147, 147, 147), whitesmoke);
+}
+
+h3{
+    text-decoration: underline;
+}
+
+strong{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: red;
+
+}

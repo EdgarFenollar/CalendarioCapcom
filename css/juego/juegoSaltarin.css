@@ -1,0 +1,512 @@
+/* CARACTERÍSTICAS FUNDAMENTALES: BODY, FOOTER, ANIMACIONES... */
+#bd {
+    background-image: url('../../img/juego/juegoSaltarin_Hilo/tierra.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    overflow-y: hidden;
+    transition: background-image 1s ease-in-out;
+}
+
+footer {
+    background-color: #333;
+    color: #5570ea;
+    padding: 5px;
+    text-align: center;
+    margin-top: 35vh;
+}
+
+
+.deAstronauta {
+    display: flex;
+    justify-content: center;
+    margin-top: 596px;
+    animation: saltarTierra 0.75s ease-in 1s 1 normal both;
+}
+
+.deAstronauta2{
+    display: flex;
+    justify-content: center;
+    margin-top: 596px;
+    animation: saltarMarte 1.5s ease-in 1s 1 normal both;
+}
+
+.deAstronauta3{
+    display: flex;
+    justify-content: center;
+    margin-top: 596px;
+    animation: saltarJupiter 0.33s ease-in 1s 1 normal both;
+}
+
+.deAstronauta4{
+    display: flex;
+    justify-content: center;
+    margin-top: 596px;
+    animation: saltarSaturno 0.67s ease-in 1s 1 normal both;
+}
+
+.deAstronauta5{
+    display: flex;
+    justify-content: center;
+    margin-top: 596px;
+    animation: saltarNeptuno 0.67s ease-in 1s 1 normal both;
+}
+
+.deAstronauta6{
+    display: flex;
+    justify-content: center;
+    margin-top: 596px;
+    animation: saltarVenus 0.9s ease-in 1s 1 normal both;
+}
+
+.deAstronauta7{
+    display: flex;
+    justify-content: center;
+    margin-top: 596px;
+    animation: saltarMercurio 1.5s ease-in 1s 1 normal both;
+}
+
+@keyframes saltarMercurio {
+    0% {
+        transform: translateY(30px);
+
+    }
+
+    50% {
+        transform: translateY(-433px);
+
+    }
+
+    100% {
+        transform: translateY(30px);
+
+    }
+}
+
+
+
+@keyframes saltarVenus {
+    0% {
+        transform: translateY(30px);
+
+    }
+
+    50% {
+        transform: translateY(-200px);
+
+    }
+
+    100% {
+        transform: translateY(30px);
+
+    }
+}
+
+
+
+
+@keyframes saltarNeptuno {
+    0% {
+        transform: translateY(30px);
+
+    }
+
+    50% {
+        transform: translateY(-123px);
+
+    }
+
+    100% {
+        transform: translateY(30px);
+
+    }
+}
+
+
+
+
+
+@keyframes saltarSaturno {
+    0% {
+        transform: translateY(30px);
+
+    }
+
+    50% {
+        transform: translateY(-123px);
+
+    }
+
+    100% {
+        transform: translateY(30px);
+
+    }
+}
+
+
+
+@keyframes saltarJupiter {
+    0% {
+        transform: translateY(30px);
+
+    }
+
+    50% {
+        transform: translateY(-53px);
+
+    }
+
+    100% {
+        transform: translateY(30px);
+
+    }
+}
+
+
+@keyframes saltarMarte {
+    0% {
+        transform: translateY(30px);
+
+    }
+
+    50% {
+        transform: translateY(-433px);
+
+    }
+
+    100% {
+        transform: translateY(30px);
+
+    }
+}
+
+
+@keyframes saltarTierra {
+    0% {
+        transform: translateY(30px);
+        /* Posición inicial */
+    }
+
+    50% {
+        transform: translateY(-167px);
+        /* Altura máxima del salto (la mitad del tiempo total) */
+    }
+
+    100% {
+        transform: translateY(30px);
+        /* Regreso a la posición inicial */
+    }
+}
+
+
+
+
+
+/* Primer DIV */
+#cuadro {
+    display: flex;
+    width: 33.33%;
+    background: linear-gradient(to right, rgb(3, 29, 36), rgb(24, 98, 236));
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 3.33%;
+    margin-top: -30.55%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#texto1 {
+    color: white;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 1.5s ease;
+}
+
+#texto2 {
+    color: white;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*poder ajustar el tema de la opacidad aqui*/
+}
+
+#texto2 H1 {
+    display: flex;
+    font-size: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#marcador {
+    display: flex;
+    margin-top: -500px;
+    font-family: candal;
+    flex-direction: column;
+
+}
+
+
+#cuadro H1 {
+    font-size: 50px;
+    font-family: punt;
+    text-align: center;
+    margin-bottom: 500px;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: -500px;
+    margin-right: 50px;
+    font-family: candal;
+}
+
+li {
+    padding-left: 28px;
+    background-image: url('../../img/juego/juegoSaltarin_Hilo/rocket.png');
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.digitos {
+    width: 90%;
+    background: #2d6409;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(20, 200, 255);
+
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
+.boton {
+    width: 100%;
+    background: #6738e9;
+    padding: 15px;
+    color: whitesmoke;
+    margin-top: 18px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.boton2 {
+    width: 100%;
+    background: #6738e9;
+    padding: 15px;
+    color: whitesmoke;
+    margin-top: 18px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+#cuadro:hover {
+    scale: 1.1;
+    box-shadow: 15px 2px #000000;
+    transition: 1.5s;
+}
+
+
+
+
+
+
+/* Segundo DIV */
+#div2 {
+    background-color: #5570ea;
+    margin-top: -535px;
+    margin-left: 76%;
+    max-width: 15%;
+
+    border-radius: 10px;
+    transition: 1.33s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#div2:hover {
+    background-color: rgb(222, 42, 117);
+    width: 75%;
+}
+
+#div2 h1,
+h2 {
+    font-family: punt;
+}
+
+.resultado {
+    color: #000000;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 120px;
+    padding: 30px;
+    background: #5570ea;
+    border-radius: 10px;
+    box-shadow: 10px 5px;
+}
+
+
+
+
+
+/* Imágenes y textos */
+#Bocata {
+    position: absolute;
+    top: 54%;
+    left: 58%;
+    transform: translate(-50%, -80%);
+    /* Para centrar el elemento */
+    visibility: hidden;
+}
+
+#ruler {
+    position: absolute;
+    top: 48%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    /* Para centrar el elemento */
+}
+
+.Texto {
+    color: yellow;
+    position: relative;
+    margin-top: -188px;
+    margin-left: 82px;
+}
+
+#laBase {
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Para centrar el elemento */
+}
+
+
+
+
+/* Títulos planetas */
+#pMarte {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#pMarte H1 {
+    font-size: 90px;
+    font-family: punt;
+    text-align: center;
+    color: springgreen
+}
+
+
+
+#pJupiter {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#pJupiter H1 {
+    font-size: 90px;
+    font-family: punt;
+    text-align: center;
+    color: springgreen
+}
+
+
+#pSaturno {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#pSaturno H1 {
+    font-size: 90px;
+    font-family: punt;
+    text-align: center;
+    color: springgreen
+}
+
+
+#pNeptuno {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#pNeptuno H1 {
+    font-size: 90px;
+    font-family: punt;
+    text-align: center;
+    color: springgreen
+}
+
+
+#pVenus {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#pVenus H1 {
+    font-size: 90px;
+    font-family: punt;
+    text-align: center;
+    color: springgreen
+}
+
+
+#pMercurio {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#pMercurio H1 {
+    font-size: 90px;
+    font-family: punt;
+    text-align: center;
+    color: springgreen
+}
+
+#sp {
+    display: block;
+}
+
+
+
+/* Fuentes */
+@font-face {
+    font-family: punt;
+    src: url(../../font/fuenteJuegoAstronauta/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: candal;
+    src: url(../../font/fuenteJuegoAstronauta/Candal-Regular.ttf);
+}

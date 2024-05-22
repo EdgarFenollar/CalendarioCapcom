@@ -1,0 +1,210 @@
+body{
+    background-color:silver;
+  }
+
+  
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.container .frases{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 400px;
+    width: 50%;
+    height: 50%;
+}
+
+.frase1{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    background-color: rgb(158, 192, 230);
+    margin-right:10px;
+    margin-top: 20px;
+    margin-right:10px;
+    margin-bottom:20px;
+    margin-left:10px;
+
+}
+
+.frase1::before,
+.frase1::after{
+    content:'';
+    position:absolute;
+    width: 100%;
+    height: 100%;  
+}
+
+.frase1::before { 
+    border-top: 5px dotted black; 
+    border-bottom: 5px dotted rgb(30, 255, 0);
+}
+.frase1::after{
+
+    border-right: 5px dashed rgb(238, 255, 0);
+    border-left: 5px dashed blue;
+    top: 0;
+    bottom: 0;
+}
+
+
+.frase2{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    background-color: rgb(83, 140, 204);
+    margin-right:10px;
+    margin-top: 20px;
+    margin-right:10px;
+    margin-bottom:20px;
+    margin-left:10px;
+
+}
+
+.frase2::before,
+.frase2::after{
+    content:'';
+    position:absolute;
+    width: 100%;
+    height: 100%;  
+}
+
+/*establecer bordes*/
+.frase2::before { 
+    border-top: 5px dotted rgba(30, 255, 0); 
+    border-bottom: 5px dotted black;
+}
+.frase2::after{
+
+    border-right: 5px dashed blue;
+    border-left: 5px solid yellow;
+    top: 0;
+    bottom: 0;
+}
+
+.frase3{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    background-color: rgb(0, 91, 196);
+    margin-right:10px;
+    margin-top: 20px;
+    margin-right:10px;
+    margin-bottom:20px;
+    margin-left:10px;
+
+}
+
+.frase3::before,
+.frase3::after{
+    content:'';
+    position:absolute;
+    width: 100%;
+    height: 100%;  
+}
+
+.frase3::before { 
+    border-top: 5px dotted rgba(30, 255, 0); 
+    border-bottom: 5px dashed rgb(0, 217, 255);
+}
+.frase3::after{
+    border-right: 5px groove rgb(255, 0, 0);
+    border-left: 5px dotted yellow;
+    top: 0;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+.container .imagen{
+    width: 50%;
+    height: 50%;
+    float: right;
+}
+/* adaptar la imagen al contenedor*/
+img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    
+}
+
+.imagen{
+    float:right;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    display:flex;
+    background-color: rgb(83, 140, 204);
+    margin:10px;
+
+}
+
+.imagen::before,
+.imagen::after{
+    content:'';
+    position:absolute;
+    width: 100%;
+    height: 100%;  
+}
+
+.imagen::before { 
+    border-top: 5px dotted rgba(30, 255, 0); 
+    border-bottom: 5px dotted red;
+}
+.imagen::after{
+
+    border-right: 5px dashed blue;
+    border-left: 5px solid yellow;
+    top: 0;
+    bottom: 0;
+}
+
+/*Editar textos*/
+
+h1{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 60px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.frase1txt{
+    font-size:27px;
+    color:rgb(83, 11, 11)
+}
+
+h2{
+    font-size:35px;
+    color:rgb(1, 1, 29);
+    font-family:'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    text-decoration:underline;
+}
+
+.frase2txt{
+    font-size:24px;
+    color: rgb(1, 1, 29);
+    
+}
+
+.frase3txt{
+    font-size: 28px;
+    color: rgb(152, 199, 253)
+}

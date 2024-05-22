@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de dados</title>
+    <link rel="stylesheet" href="./../../css/dados/dadosMael.css">
+</head>
+<body>
+    <!-- Titulo -->
+    <header><h2>Duelo de dados</h2></header>
+
+
+    <div id="selectorDePersonaje">
+        <h2>¡Elije a tu personaje!</h2>
+        <div class="contenedorPersonajes">
+            <img class="seleccionJugador" src="./../../img/dados/cine/legolas.jpg" onclick="cargar('./../../img/dados/cine/legolas.jpg')">
+            <img class="seleccionJugador" src="./../../img/dados/cine/frodo.jpg" onclick="cargar('./../../img/dados/cine/frodo.jpg')">
+            <img class="seleccionJugador" src="./../../img/dados/cine/aragorn.jpg" onclick="cargar('./../../img/dados/cine/aragorn.jpg')">
+            <img class="seleccionJugador" src="./../../img/dados/cine/gimli.jpg" onclick="cargar('./../../img/dados/cine/gimli.jpg')">
+            <img class="seleccionJugador" src="./../../img/dados/cine/gandalf.jpg" onclick="cargar('./../../img/dados/cine/gandalf.jpg')">
+            <img class="seleccionJugador" src="./../../img/dados/cine/sauron.jpg" onclick="cargar('./../../img/dados/cine/sauron.jpg')">
+        </div>
+    </div>
+
+    
+    <main id="main">
+        <!-- Marcador -->
+        <div id="marcador">0 vs 0</div>
+
+        <!-- Contenedor de dados -->
+        <div id="contenedorDados">
+            <section id="dadosP1" class="dados">
+                <img class="dadosJugador1" src="./../IMG/d1.png">
+                <img class="dadosJugador1" src="./../IMG/d1.png">
+                <img class="dadosJugador1" src="./../IMG/d1.png">
+                <img class="dadosJugador1" src="./../IMG/d1.png">
+                <img class="dadosJugador1" src="./../IMG/d1.png">
+                <img class="dadosJugador1" src="./../IMG/d1.png">
+                <img class="dadosJugador1" src="./../IMG/d1.png">
+                <img class="dadosJugador1" src="./../IMG/d1.png">
+                <img class="dadosJugador1" src="./../IMG/d1.png">
+                <img class="dadosJugador1" src="./../IMG/d1.png">
+            </section>
+            <section id="dadosP2">
+                <img class="dadosJugador2" src="./../IMG/d1.png">
+                <img class="dadosJugador2" src="./../IMG/d1.png">
+                <img class="dadosJugador2" src="./../IMG/d1.png">
+                <img class="dadosJugador2" src="./../IMG/d1.png">
+                <img class="dadosJugador2" src="./../IMG/d1.png">
+                <img class="dadosJugador2" src="./../IMG/d1.png">
+                <img class="dadosJugador2" src="./../IMG/d1.png">
+                <img class="dadosJugador2" src="./../IMG/d1.png">
+                <img class="dadosJugador2" src="./../IMG/d1.png">
+                <img class="dadosJugador2" src="./../IMG/d1.png">
+            </section>
+        </div>
+
+        <!-- Resultado de la tirada -->
+        <div>
+            <p id="Resultados">0 - 0</p>
+            <p id="ganadorTirada"></p>
+        </div>
+
+        <!-- Interfaz inferior de los jugadores -->
+        <div id="interfaz">
+            
+            <img id="imagenJugador" class="imagenJugador" src="./../../img/dados/cine/legolas.jpg">
+
+            <select id="player1">
+                <option value="1">1 dado</option>
+                <option value="2">2 dados</option>
+                <option value="3">3 dados</option>
+                <option value="4">4 dados</option>
+                <option value="5">5 dados</option>
+                <option value="6">6 dados</option>
+                <option value="7">7 dados</option>
+                <option value="8">8 dados</option>
+                <option value="9">9 dados</option>
+                <option value="10">10 dados</option>
+            </select>
+        
+            <button id="boton" type="button">TIRADAS RESTANTES: 3</button>
+
+            <select id="player2">
+                <option value="1">1 dado</option>
+                <option value="2">2 dados</option>
+                <option value="3">3 dados</option>
+                <option value="4">4 dados</option>
+                <option value="5">5 dados</option>
+                <option value="6">6 dados</option>
+                <option value="7">7 dados</option>
+                <option value="8">8 dados</option>
+                <option value="9">9 dados</option>
+                <option value="10">10 dados</option>
+            </select>
+
+            <img id="imagenEnemigo" class="imagenJugador" src="./../../img/dados/cine/ogro.jpg">
+        </div>
+
+    </main>
+    
+    <div id="ganador">
+        <h1>Ganador: </h1>
+        <img id="imagenFinal" class="imagenJugador" src="./../../img/dados/cine/legolas.jpg">
+
+    </div>
+
+    <footer>
+        @maelmilvaques
+    </footer>
+
+    <script src="./../../js/dados/dadosMael.js"></script>
+</body>
+</html>

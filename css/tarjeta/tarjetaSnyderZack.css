@@ -1,0 +1,82 @@
+@font-face {
+    font-family: frase;
+    src: url(../../font/tarjetaSnyderZack/ExcelsiorComicsRegular-xE6m.otf);
+
+}
+
+body{
+    background-color: aquamarine;
+}
+
+h1{
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+.contendor {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 60;
+    padding-bottom: 40px;
+    font-family: frase;
+}
+
+.zack{
+    border-radius: 10%;
+    max-width: 70%;
+    height: auto;
+    padding-bottom: 2%;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-style: solid;
+    border-radius: 14px;
+    margin-left:60px;
+    margin-top: 20px;
+    background-color: black;
+}
+
+.text{
+    border-style: solid;
+    border-radius: 14px;
+    margin-left: 80px;
+    margin-top: 20px;
+
+}
+
+
+.contenedor>div {
+    width: 50%;
+    background-image: linear-gradient(to radial-gradient orange, blue);
+    border-radius: 10%;
+    border: 15px #e9d7d7;
+    border-style: solid;
+    background-color: #f016666b;
+    border-radius: 90px;
+    margin-right: 500px;
+    margin-left: 500px;
+    margin-inline-start: 30px;
+    box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;
+    font-family: frase;
+}
+
+
+.form-group{
+    margin-left: 80px;
+}
+
+.zack {
+    box-shadow: 0px 5px 10px 0px #000000;
+    transition: all ease 0.5s;
+
+}
+
+.zack:hover {
+    transform: translateY(-30px);
+    box-shadow: 0px 5px 10px 0px #df7229;
+    
+    background-color: rgb(38, 24, 243);
+}
+
+

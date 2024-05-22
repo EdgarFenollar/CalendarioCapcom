@@ -1,0 +1,76 @@
+body{
+    background:linear-gradient(45deg, blueviolet, lightgreen);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+header{
+    text-align: center;
+    color:#fff;
+    text-shadow: 0 10px 15px rgba(0,0,0,.2);
+    font-size: 20px;
+}
+
+p{
+    text-transform: uppercase;
+    text-shadow: white 2px 1px 4px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    text-shadow: none;
+}
+
+.game_container{
+    border: solid green;
+    display: flex;
+    height: 70vh;
+}
+
+.player{
+    border: solid red;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultados{
+    width: 120%;
+    border: solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_dados{
+    border: solid yellowgreen;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 4px;
+    column-gap: 4px;
+    justify-content: center;
+}
+
+#container_dados1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 4px;
+    column-gap: 4px;
+}
+
+.dado{
+    width: 47%;
+    border: solid black 2px;
+}
+

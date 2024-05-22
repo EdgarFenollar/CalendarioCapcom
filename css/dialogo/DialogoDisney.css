@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Fuentes*/
+@font-face {
+    font-family: disney;
+    src: url(../../font/dialogo/Disney/Walter.ttf);
+}
+
+@font-face {
+    font-family: Quicksand_book;
+    src: url(../../font/dialogo/Disney/Quicksand_Book.otf);
+}
+
+@font-face {
+    font-family: Disneyland;
+    src: url(../../font/dialogo/Disney/Disneyland.otf);
+}
+
+@font-face {
+    font-family: Comic_Book;
+    src: url(../../font/dialogo/Disney/Comic\ Book.otf);
+}
+
+/*Color de fondo de la página*/
+body{
+    background:linear-gradient(to left, #191970, #4169E1);
+    width: 95%;
+}
+
+
+/* Section Bocadillos Genio */
+.p{
+    margin-left: 70%;
+    margin-top: 1%;
+    padding: 1%;
+    text-align: center;
+    position: relative;
+    border-radius: 8px 8px 8px 8px;
+    width: 20%;
+    background: #fae741;
+    opacity: 0.9;
+    border-color: #fae741;
+    box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+}
+.p:after{
+    content: "";
+    position: absolute;
+    top: 100%;
+   left: 80%;
+   border-top: 20px solid #e1d779;
+   border-top-color: inherit;
+   border-left: 20px solid transparent;
+   border-right: 20px solid transparent;
+}
+.genio{
+    width: 22%;
+    height: 22%;
+    margin-left: 70%;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.genio1{
+    width: 22%;
+    height: 22%;
+    margin-left: 70%;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.genio2{
+    width: 22%;
+    height: 22%;
+    margin-left: 70%;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.genio3{
+    width: 22%;
+    height: 22%;
+    margin-left: 70%;
+    border-radius: 8px 8px 8px 8px;
+}
+
+/* Section Bocadillos Aladdin */
+.p1 {
+    
+    position: relative;
+    margin-left: 10%;
+    margin-top: 1%;
+    text-align: center center;
+    padding: 2%;
+    width: 20%;
+    background: #e413dd;
+    opacity: 0.9;
+    border-radius: 50%;
+    box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+}
+.p1:after {
+    border: 25px solid #e413dd;
+    content: "";
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    bottom: -44px;
+    right: 60%;
+    transform: rotate(10deg);
+}
+
+.aladdin{
+    width: 22%;
+    height: 22%;
+    margin-left: 5%;
+    border-radius: 150px;
+}
+
+.aladdin1{
+    width: 22%;
+    height: 22%;
+    margin-left: 5%;
+    border-radius: 150px;
+}
+
+.aladdin2{
+    width: 22%;
+    height: 22%;
+    margin-left: 5%;
+    border-radius: 150px;
+}
+/* Letra inicio Genio */
+P.p:first-letter { 
+    font-size: 150%; 
+    color: #19858d; font-weight: bold; 
+}
+/* Letra inicio Aladdin */
+P.p1:first-letter { 
+    font-size: 150%; 
+    color: #5e0592; font-weight: bold; 
+}
+
+/* Caracteristicas del contenido del parrafo */
+P{
+    color: rgb(14, 14, 14);
+    font-weight: bold;
+    position: absolute;
+    text-align: center; 
+    margin-top: 12%;
+    font-size: 100%;
+}
+
+/* Footer */
+footer{
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 5%;
+    
+}
+
+/* Responsive */
+
+@media only screen and (min-width:320px) and (max-width:480px){
+    body{
+        display: block;
+        }
+    .p{
+        margin-top: 5%;
+        margin-left: 45%;
+        width: 50%;
+        font-size: small; 
+        position: relative;
+        }
+ 
+    .p:after{
+             width: auto;
+             top: 98%;
+             left: 50%;
+             }  
+    .p1{
+        margin-left: 4%;
+        width: 50%; 
+        font-size: 60%; 
+        position: relative;
+        
+        }
+    .p1:after{
+              width: auto;
+              }
+    footer{
+font-size: 40%;
+margin-bottom: 0;
+          }
+}
+
+    
+@media only screen and (min-width:1050px) and (max-width:1680px){
+   body{
+        display: block;
+        }
+    .p{
+        margin-top: 10%;
+        margin-left: 70%;
+        width: 20%;
+        font-size: medium; 
+        position: relative;
+        }
+ 
+    .p:after{
+             width: auto;
+             top: 98%;
+             left: 70%;
+             }  
+    .p1{
+        margin-left: 4%;
+        width: 20%; 
+        font-size: medium; 
+        position: relative;
+        
+        }
+    .p1:after{
+              width: auto;
+              }
+    footer{
+font-size: 100%;
+margin-bottom: 0;
+          }
+}
+
+  

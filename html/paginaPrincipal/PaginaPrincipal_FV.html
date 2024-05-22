@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal de la Formula 1</title>
+    <link rel="stylesheet" href="../../css/PaginaPrincipal/PaginaPrincipal.css"> <!--Llamada a la hoja de estilos de la página principal-->
+</head>
+<body>
+    <header>
+        <h1 class="cabecera">Formula 1, el sitio oficial</h1>
+        <nav class="seccionCabecera"> 
+            <select id="menu" onchange="redirigir(this.value)"> <!--Menu desplegable de la página principal-->
+                <option value="../curriculum/CurriculumFernandoAlonso.html">Curriculum</option>
+                <option value="../frase/FrasesFormula1.html">Frases</option>
+                <option value="../Escala/EscalaFormula1.html">Escala</option>
+                <option value="../dialogo/DialogoF1.html">Dialogo</option>
+                <option value="../reseña/reseñaF1.html">Reseñas</option>
+                <option value="../formulario/formularioF1.html">Formulario de registro</option>
+            </select>
+            <section id="redes"> <!--Logos de las redes de la página principal-->
+                <a href="https://www.instagram.com/f1/" class="enlace1"><img class="ig" src="../../img/PaginaPrincipal/PP_F1/ig.jpg"></a>
+                <a href="https://twitter.com/F1" class="enlace1"><img class="x" src="../../img/PaginaPrincipal/PP_F1/x.jfif"></a>
+                <a href="https://www.youtube.com/@Formula1" class="enlace1"><img class="yt" src="../../img/PaginaPrincipal/PP_F1/yt.jpg"></a>
+            </section>
+        </nav>
+        <div class="slid-contenedor"> <!--Silder de fotos del main de la página principal-->
+            <div class="slider">
+                <div class="slide1"><img src="../../img/PaginaPrincipal/PP_F1/alfa.jpg" class="slide"></div>
+                <div class="slide2"><img src="../../img/PaginaPrincipal/PP_F1/mcl.jpg" class="slide"></div>
+                <div class="slide3"><img src="../../img/PaginaPrincipal/PP_F1/haas.jpg" class="slide"></div>
+                <div class="slide4"><img src="../../img/PaginaPrincipal/PP_F1/merc.jpg" class="slide"></div>
+                <div class="slide5"><img src="../../img/PaginaPrincipal/PP_F1/pias.jpg" class="slide"></div>
+            </div>
+            <button class="botonAntes">&lt;</button>
+            <button class="botonDespues">&gt;</button>
+        </div>
+    </header>
+    <div id="contenedor">
+        <aside>
+            <!--Auncios de la página principal-->
+            <article id="anuncio1"> <!--Primer Anuncio de la página principal-->
+                <p class="TitAnuncio">F1 24 prepara su lanzamiento con un trailer bastante prematuro</p>
+                
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/NnyCWsA6KSI?si=3o9Xwf8X4Ct-BOS2" title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                
+                <a href="https://www.xbox.com/es-ES/games/store/pack-de-iniciacion-de-reserva-de-f1-24/9MV4DG9C51JH"><b class="enlace">RESERVALO YA</b></a>
+            </article>
+            <article id="anuncio2"><!--Segundo Anuncio de la página principal-->
+                <img class="foto1" src="../../img/PaginaPrincipal/PP_F1/camisetas.avif">
+                <p class="TitAnuncio">Merchandising oficila del Gran Premio de China disponible desde el inicio del Fin de semana, 
+                    <a href="https://f1store2.formula1.com/es/formula-1-merchandise/t-10764465+z-9628754-784327122?query=UNLEASH%20THE%20DRAGON&_ref=p-SRP:m-SIDE_NAV"><b class="enlace">¡OBTENLO YA!</b></a></p>
+            </article>
+        </aside>
+        <main>
+            <section id="section1"> <!--Primera seccion del main de la página principal-->
+                <h4 class="titulo1"><b class="verst">Max Verstappen</b> rompe su racha de 43 victorias y <b class="carlos">Carlos Sainz</b> demuestra porque lo llaman <em>"El matador"</em> por toda <em class="it">It</em><em class="al">al</em><em class="ia">ia</em></h4>
+                <img id="podio" src="../../img/PaginaPrincipal/PP_F1/podio.jfif">
+                <p class="parrafo1">Este pasado Gran Premio de Australia vimos algo que por 2 años seguidos nos ha parecido insolito, Max Verstappen después de 43 carreras seguidas sin abandonar tuvo que retirar su RedBull mediante
+                    un fallo de los frenos traseros. </p>
+                <p class="parrafo1">Desde el inicio de la carrera el <em>"Holandés volador"</em> tuvo muchos problemas para quedarse por delante de la flecha Italiana del Ferrari del matador <b class="carlos">Carlos Sainz</b>,
+                    quien lo adelantó en la segunda vuelta y no miró hacia atrás hasta que vió hondear la bandera de cuadros, mientras que <b class="verst">Verstappen</b> tuvo que entrar en la calle de boxes al final de esa misma vuelta y ver la carrera
+                    de su compañero de equipo desde el pitwall con el jefe de la escudería, <b class="verst">Christian Horner</b>. </p>
+                <h4 class="titulo1">China vuelve al calendario después de 5 años de ausencia del panorama del motor</h4>
+                <p class="parrafo1">Nos encontramos en un nuevo fin de semana de Gran Premio en este recorrido por todo el mundo, en esta ocasión revisitamos en continente asiatico
+                    para recorrer la distancia del <em>Shanghai International Circuit</em> en el Gran Premio de China, quien por culpa de la pandemia por el Covid 19 abandonó el calendario
+                    de la Formula 1 junto a Vietnam aunque después de haber hablado con la directiva de la FIA ha acordado firmar de nuevo con el gran circo y disfrutaremos de un
+                    nuevo Gran Premio de China, veremos que nos depara este gran circuito y estos grandes pilotos.
+                </p>
+            </section>
+
+            <section id="secDerecha"> <!--Sección del"Aside" de la derecha de la página principal-->
+                <section class="paginas">
+                    <iframe id="fotoDer1" src="../../img/PaginaPrincipal/PP_F1/fotoDer1.jpg"></iframe>
+                    <iframe id="fotoDer2" src="../../img/PaginaPrincipal/PP_F1/fotoDer2.jpg"></iframe>
+                    <iframe id="fotoDer3" src="../../img/PaginaPrincipal/PP_F1/fotoDer3.jpg"></iframe>
+                    <iframe id="fotoDer4" src="../../img/PaginaPrincipal/PP_F1/fotoDer4.jpg"></iframe>
+                </section>
+                <!--Acceso al formulario de Registro de la página de Formula 1-->
+                <div id="contendor-asideDer">
+                    <a href="../../html/formulario/formularioF1.html" class="enlace"><button class="register">Registrate ahora!</button></a>
+                </div>
+
+                <div class="counter-container">
+                    <p class="counter">0</p>
+                    <p class="counter-label">Visitas</p>
+                  </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p class="pie">Página creada por <em class="autor">Fran Vidal</em></p><!--Final de la página principal--> 
+    </footer>
+</body>
+<script src="../../js/PaginaPrincipal/index.js"></script> <!--Llamada al Script de JavaScript de la página principal-->
+<!--Esta página es el cúlmen del proyecto del sitio web de la Formula 1, que empezó en Septiembre-->
+</html>

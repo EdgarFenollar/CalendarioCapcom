@@ -1,0 +1,545 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+body{
+  background-color: #27282c;
+  min-width: 800px;
+}
+
+header {
+    background-color: #27282c;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    border-bottom:solid 2px #000000 ;
+}
+
+header .items{
+   display: flex;
+   flex-direction: row;
+   margin-left: 10px;
+   gap: 50px;
+}
+
+.items a {
+    margin-right: 15px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px 50px;
+    background: white;
+    letter-spacing: 0.1em;
+    transition: 1s;
+    font-size: 0.85em;
+}
+
+ .items  a:hover{
+    background: var(--clr);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--clr);
+    transition: 0.5s;
+    color: var(--clr);
+}
+
+.items a:before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #27282c;
+}
+
+
+.items a span{
+    position: relative;
+    z-index: 1;/*Orden de posicionamiento*/
+}
+
+.items a i{
+  position: absolute;
+  inset: 0;/*https://developer.mozilla.org/en-US/docs/Web/CSS/inset*/
+  display: block;
+}
+
+.items a i::before{/*Con esto editamos la parte de arriba del botón.*/
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 10px;
+  height: 4px;
+  background: #2a272c;
+  transform: translateX(-50%) skewX(325deg);/*Hacer que el borse superior en vez de recto '|' se vea '/' en diagonal.*/
+  transition: 0.5s;
+}
+
+header .wrapper{
+    float: right;
+    display: inline-flex; /*Pone todos los elementos en forma de linea.*/
+    margin-right: 25px;
+}
+
+/*El código de redes sociales es reciclado de otro trabajo.*/
+
+header .wrapper .icon{
+  margin: 0 5px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+header .wrapper .icon span{
+    display: block;
+    height: 60px;
+    width: 60px;
+    background: #413f3f;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+header .wrapper .icon span i{
+    line-height: 60px;
+    font-size: 25px;
+}
+
+header .wrapper .icon .tooltip{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background: #fff;
+    color: #fff;
+    padding: 10px 18px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 25px;
+    opacity: 0;
+    pointer-events: none;/*La explicación básica de este es que al mantener el ratón encima de la red social , este muestra el nombre, si este no es none, el texto quedaría estático*/
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+header .wrapper .icon:hover .tooltip{
+    top: -70px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+header .icon .tooltip:before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%) rotate(45deg);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+/*Para relizar el carrusel con imagenes usaremos PEXELS es una web con imágenes sin derecho de autor.*/
+.container-slide{
+  width: 100%;
+  background-color: blue;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+}
+
+.container-slide img {
+  width: 25%;
+  height: 300px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.wrapper .icon:hover span{
+    color: #fff;
+}
+
+header  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip{
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+}
+
+header .wrapper .facebook:hover span,
+header .wrapper .facebook:hover .tooltip,
+header .wrapper .facebook:hover .tooltip:before{
+    background: #3B5999;
+}
+
+header .wrapper .twitter:hover span,
+header .wrapper .twitter:hover .tooltip,
+header .wrapper .twitter:hover .tooltip:before{
+    background: #46C1F6;/*Controlamos los colores de los hover de las redes sociales.*/
+}
+
+header .wrapper .instagram:hover span,
+header .wrapper .instagram:hover .tooltip,
+header .wrapper .instagram:hover .tooltip:before{
+    background: #e1306c;
+}
+
+header .wrapper .github:hover span,
+header .wrapper .github:hover .tooltip,
+header .wrapper .github:hover .tooltip:before{
+    background: #333;
+}
+
+header .wrapper .youtube:hover span,
+header .wrapper .youtube:hover .tooltip,
+header .wrapper .youtube:hover .tooltip:before{
+    background: #DE463B;
+}
+
+.container-carousel {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  background-color: #e0e0e0;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+  border-radius: 15px;
+  overflow: hidden;
+  margin-top: 5%;
+  margin-left: 37.5%;
+}
+
+.carruseles {
+  width: 1000%;
+  height: 100%;
+  display: flex;
+
+}
+
+.slide-section {
+  width: calc(100% / 10);
+  height: 100%;
+}
+
+.slide-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.btn-left,
+.btn-right {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #ffffff81;
+  transform: translate(0,-50%);
+  transition: .3s ease;
+  user-select: none;/*Es para que no salga los botones hasta que el usario tengo el marcador del ratón encima.*/
+}
+
+.btn-left:hover,
+.btn-right:hover {
+  background-color: #333333d4;
+  color: #fff;
+}
+
+.btn-left {
+  left: 10px;
+}
+
+.btn-right {
+  right: 10px;
+}
+
+.contenedor-main{
+  width: 100%;
+  height: 1000px;
+  background-color: #27282c;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+.contenedor-main aside{
+  width: 25%;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23504e54' fill-opacity='0.21' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  height: 800px;
+  display: flex;
+  align-items: center;
+}
+
+.contenedor-main .aside-1{
+  border-top-left-radius: 25px;
+  border-left: 2px solid rgb(199, 198, 198);
+  border-top: 2px solid rgb(199, 198, 198);
+  border-bottom: 2px solid rgb(199, 198, 198);
+  box-shadow: inset 0 0 1px rgb(199, 112, 195), 0 0 6px rgb(199, 112, 195);
+  border-bottom-left-radius: 25px;
+}
+/*Estos dos elementos de border-top y bottom-(lado)-radius,son bastante interesantes, no sabia que tenia tantas opciones.*/
+.contenedor-main .aside-2{
+  border-top-right-radius: 25px;
+  border-right: 2px solid rgb(199, 198, 198);
+  border-top: 2px solid rgb(199, 198, 198);
+  border-bottom: 2px solid rgb(199, 198, 198);
+  box-shadow: inset 0 0 1px rgb(199, 112, 195), 0 0 6px rgb(199, 112, 195);
+  border-bottom-right-radius: 25px;
+}
+
+.contenedor-main .section-intermedio{
+  width: 33%;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23504e54' fill-opacity='0.21' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  border-top: 2px solid rgb(199, 198, 198);
+  border-bottom: 2px solid rgb(199, 198, 198);
+  box-shadow: inset 0 0 1px rgb(199, 112, 195), 0 0 6px rgb(199, 112, 195);
+  height: 800px;
+}
+
+.contenedor-main aside .contenedor-sections{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+  text-align: center;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23504e54' fill-opacity='0.21' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  border:  1.5px solid black;
+  height: 750px;
+  border-radius: 25px;
+}
+
+.contenedor-main aside .contenedor-sections section{
+  width: 90%;
+  height: 210px;
+  background-color: #DE463B;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 1.5px white solid;
+  transition: 1s;
+}
+
+.contenedor-main aside .contenedor-sections section:hover{
+  transform: scale(1.075);
+}
+
+.contenedor-main aside .contenedor-sections .section-3{
+  background-image: url("../../img/paginaPrincipal/paginaPrincipalGym/anuncio-2.jpg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.contenedor-main aside .contenedor-sections .section-4{
+  background-image: url("../../img/paginaPrincipal/paginaPrincipalGym/anuncio-1.jpg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.contenedor-main aside .contenedor-sections .section-5{
+  background-image: url("../../img/paginaPrincipal/paginaPrincipalGym/formulario-img.jpg");
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.contenedor-main aside .contenedor-sections .section-5 a {
+  margin-right: 15px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  padding: 10px 50px;
+  background: white;
+  letter-spacing: 0.1em;
+  transition: 1s;
+  font-size: 0.85em;
+  margin-bottom: 150px;
+}
+
+.contenedor-main aside .contenedor-sections .section-5 a:hover{
+  background: var(--clr);
+  letter-spacing: 0.25em;
+  box-shadow: 0 0 35px var(--clr);
+  transition: 0.5s;
+  color: var(--clr);
+}
+
+.contenedor-main aside .contenedor-sections .section-5 a:before{
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #27282c;
+}
+
+
+.contenedor-main aside .contenedor-sections .section-5 a span{
+  position: relative;
+  z-index: 1;
+}
+
+.contenedor-main aside .contenedor-sections .section-5 a i{
+position: absolute;
+inset: 0;
+display: block;
+}
+
+.contenedor-main aside .contenedor-sections .section-5 a i::before{
+content: '';
+position: absolute;
+top: 0;
+left: 80%;
+width: 10px;
+height: 4px;
+background: #2a272c;
+transform: translateX(-50%) skewX(325deg);
+transition: 0.5s;
+}
+
+.contenedor-main aside .contenedor-sections .section-4 a {
+  margin-right: 15px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  padding: 7px 25px;
+  background: white;
+  letter-spacing: 0.1em;
+  transition: 1s;
+  font-size: 0.85em;
+}
+
+.contenedor-main aside .contenedor-sections .section-4 a:hover{
+  background: var(--clr);
+  letter-spacing: 0.25em;
+  box-shadow: 0 0 35px var(--clr);
+  transition: 0.5s;
+  color: var(--clr);
+}
+
+.contenedor-main aside .contenedor-sections .section-4 a:before{
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #27282c;
+}
+
+.contenedor-main aside .contenedor-sections .section-4 a span{
+  position: relative;
+  z-index: 1;
+}
+
+.contenedor-main aside .contenedor-sections .section-4 a i{
+position: absolute;
+inset: 0;
+display: block;
+}
+
+.contenedor-main aside .contenedor-sections .section-4 a i::before{
+content: '';
+position: absolute;
+top: 0;
+left: 80%;
+width: 10px;
+height: 4px;
+background: #2a272c;
+transform: translateX(-50%) skewX(325deg);
+transition: 0.5s;
+}
+
+.contenedor-main aside .contenedor-sections .section-3 a {
+  margin-right: 15px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  padding: 7px 25px;
+  background: white;
+  letter-spacing: 0.1em;
+  transition: 1s;
+  font-size: 0.85em;
+}
+
+.contenedor-main aside .contenedor-sections .section-3 a:hover{
+  background: var(--clr);
+  letter-spacing: 0.25em;
+  box-shadow: 0 0 35px var(--clr);
+  transition: 0.5s;
+  color: var(--clr);
+}
+
+.contenedor-main aside .contenedor-sections .section-3 a:before{
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #27282c;
+}
+
+.contenedor-main aside .contenedor-sections .section-3 a span{
+  position: relative;
+  z-index: 1;
+}
+
+.contenedor-main aside .contenedor-sections .section-3 a i{
+position: absolute;
+inset: 0;
+display: block;
+}
+
+.contenedor-main aside .contenedor-sections .section-3 a i::before{
+content: '';
+position: absolute;
+top: 0;
+left: 80%;
+width: 10px;
+height: 4px;
+background: #2a272c;
+transform: translateX(-50%) skewX(325deg);
+transition: 0.5s;
+}
+
+.contenedor-main aside .contenedor-sections iframe{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 1.5px white solid;
+  transition: 1s;
+  width: 90%;
+  height: 210px;
+}
+
+footer .content-footer{
+  width: 100%;
+  height: 200px;
+  background-color: rgb(63, 62, 62);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+footer .content-footer a{
+  margin-right: 40px;
+}
+
+footer .content-footer p{
+  margin-left: 40px;
+}

@@ -1,0 +1,93 @@
+  svg {
+    position: fixed;
+    z-index: -1;
+  }
+
+  .text--line {
+    font-size: 0.5em;
+    font: 2em/1 Arial;
+  }
+
+  .text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 7% 20%;
+    stroke-width: 3px;
+    font: 2em/1 Arial;
+    animation: stroke-offset 6s ease-in;
+  }
+
+  .text-copy:nth-child(1) {
+    stroke: violet;
+    stroke-dashoffset: 7%;
+  }
+
+  .text-copy:nth-child(2) {
+    stroke: purple;
+    stroke-dashoffset: 14%;
+  }
+
+  .text-copy:nth-child(3) {
+    stroke: violet;
+    stroke-dashoffset: 21%;
+  }
+
+  .text-copy:nth-child(4) {
+    stroke: purple;
+    stroke-dashoffset: 28%;
+  }
+
+  .text-copy:nth-child(5) {
+    stroke: violet;
+    stroke-dashoffset: 35%;
+  }
+
+  @keyframes stroke-offset {
+    50% {
+      stroke-dashoffset: 35%;
+      stroke-dasharray: 0 70.5%;
+    }
+  }
+
+  body {
+    background-image: url(../../../img/juego/juegoCapcom/principal.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #titulo_principal {
+    padding-top: 100px;
+    text-align: center;
+    color: aliceblue;
+  }
+
+  main{
+    padding-top: 300px;
+    text-align: center;
+  }
+
+  button{
+    width: 200px;
+    height: 70px;
+    color: #ffffff;
+    background-color: purple;
+    border-radius: 10px;
+    border-style: solid;
+    margin-top: 50px;
+    transition: all ease 0.5s;
+  }
+
+  button:hover{
+    transform: translateY(-10px);
+    color: purple;
+    background-color: violet;
+  }
+
+  #salir{
+    background-color: grey;
+    color: black;
+    width: 100px;
+    height: 45px;
+  }
+
+  

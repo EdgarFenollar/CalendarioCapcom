@@ -1,0 +1,250 @@
+<html>
+  <head>
+  
+    <meta charset="UTF-8">
+    <title>Juego Carmen</title>
+    <link rel="icon" href="../../img/formulario/HarryPotter/harry-potter-2.png"/> 
+    <link rel="stylesheet" href="../../css/juego/juegoCarmen.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="../../img/juego/favicon.png" type="image/png" />
+
+    
+    <title>Juego Harry Potter</title>
+  </head>
+
+  <body>
+    <div class="player">
+      <button class="play" onclick="document.getElementById('player').play()">
+        <i class="fas fa-play"></i>
+      </button>
+      <button class="pause" onclick="document.getElementById('player').pause()">
+        <i class="fas fa-pause"></i>
+      </button>
+      <button class="goback">
+        <a href="../../html/juego/inicioCarmen.html"><i class="fas fa-home"></i></a>
+      </button>
+    </div>
+    <audio autoplay loop id="player" src="../../audio/juego/home.mp3"></audio>
+
+    <div id="quizzie">
+      <h1>Prueba del sombrero seleccionador de Hogwarts</h1>
+      <ul class="quiz-step step1 current">
+        <li class="question">
+          <div class="question-wrap">
+            <h2>
+              Pregunta #1: Hay un perro de tres cabezas entre tú y tu mejor amigo, ¿qué haces?
+            </h2>
+          </div>
+        </li>
+        <li class="quiz-answer low-value" data-quizIndex="2">
+          <div class="answer-wrap">
+            <p class="answer-text">
+              Intento enfrentarme al perro yo mismo, distrayendo su vista de mi amigo.
+            </p>
+          </div>
+        </li>
+        <li class="quiz-answer high-value" data-quizIndex="4">
+          <div class="answer-wrap">
+            <p class="answer-text">
+              Utilizo mis excepcionales habilidades de vuelo con escoba para pasar del perro dejando a mi amigo desesperado.
+            </p>
+          </div>
+        </li>
+      </ul>
+      <ul class="quiz-step step2">
+        <li class="question">
+          <div class="question-wrap">
+            <h2>
+              Pregunta #2: Te encuentras frente a una misteriosa puerta cerrada ¿qué haces?
+            </h2>
+          </div>
+        </li>
+        <li class="quiz-answer low-value" data-quizIndex="2">
+          <div class="answer-wrap">
+            <p class="answer-text">
+              Deja la puerta en paz y actúa como si no existiera.     
+            </p>
+          </div>
+        </li>
+        <li class="quiz-answer high-value" data-quizIndex="4">
+          <div class="answer-wrap">
+            <p class="answer-text">
+              Vuelve más tarde cuando no haya nadie cerca y trata de encontrar el camino.
+            </p>
+          </div>
+        </li>
+      </ul>
+      <ul class="quiz-step step3">
+        <li class="question">
+          <div class="question-wrap">
+            <h2>Pregunta #3: ¿Dónde preferirías trabajar?</h2>
+          </div>
+        </li>
+        <li class="quiz-answer low-value" data-quizIndex="2">
+          <div class="answer-wrap">
+            <p class="answer-text">En una biblioteca cálida y seca.</p>
+          </div>
+        </li>
+        <li class="quiz-answer high-value" data-quizIndex="4">
+          <div class="answer-wrap">
+            <p class="answer-text">Solo en una mazmorra fría y oscura.</p>
+          </div>
+        </li>
+      </ul>
+      <ul class="quiz-step step4">
+        <li class="question">
+          <div class="question-wrap">
+            <h2>
+              Pregunta #4: Si tuvieras que elegir una poción para usar con el resto de tu vida, ¿cuál sería?
+            </h2>
+          </div>
+        </li>
+        <li class="quiz-answer low-value" data-quizIndex="2">
+          <div class="answer-wrap">
+            <p class="answer-text">
+              Elixir to Induce Euphoria - una poción que induce una sensación de
+              felicidad inexplicable e irracional en el bebedor.
+            </p>
+          </div>
+        </li>
+        <li class="quiz-answer high-value" data-quizIndex="4">
+          <div class="answer-wrap">
+            <p class="answer-text">
+              Forgetfulness Potion - una poción que hace que quien la toma se vuelva demasiado
+              olvidadizo.
+            </p>
+          </div>
+        </li>
+      </ul>
+      <ul class="quiz-step step5">
+        <li class="question">
+          <div class="question-wrap">
+            <h2>
+              Pregunta #5: Tienes un examen importante mañana, ¿cómo te preparas?            </h2>
+          </div>
+        </li>
+        <li class="quiz-answer low-value" data-quizIndex="2">
+          <div class="answer-wrap">
+            <p class="answer-text">Estudias mucho y no duermes nada.</p>
+          </div>
+        </li>
+        <li class="quiz-answer high-value" data-quizIndex="4">
+          <div class="answer-wrap">
+            <p class="answer-text">No haces nada</p>
+          </div>
+        </li>
+      </ul>
+      <ul class="quiz-step step6">
+        <li class="question">
+          <div class="question-wrap">
+            <h2>
+              Pregunta #6: Mientras compras en el Callejón Diagon, te das cuenta de que te cobraron menos al comprar una varita mágica de Ollivanders. ¿Qué haces?
+            </h2>
+          </div>
+        </li>
+        <li class="quiz-answer low-value" data-quizIndex="2">
+          <div class="answer-wrap">
+            <p class="answer-text">
+              Vuelves con Ollivanders y dale la diferencia al Sr. Garrick.            </p>
+          </div>
+        </li>
+        <li class="quiz-answer high-value" data-quizIndex="4">
+          <div class="answer-wrap">
+            <p class="answer-text">
+              Te lo quedas y lo utilizas para Bertie Bott's Beans.
+            </p>
+          </div>
+        </li>
+      </ul>
+      <ul class="quiz-step step7">
+        <li class="question">
+          <div class="question-wrap">
+            <h2>
+              Pregunta #7: Elija una de las siguientes mascotas como compañera:            </h2>
+          </div>
+        </li>
+        <li class="quiz-answer low-value" data-quizIndex="2">
+          <div class="answer-wrap">
+            <p class="answer-text">Un búho - ave de rapiña.</p>
+          </div>
+        </li>
+        <li class="quiz-answer high-value" data-quizIndex="4">
+          <div class="answer-wrap">
+            <p class="answer-text">
+              Un gato: una criatura domesticada tanto para magos como para muggles.            </p>
+          </div>
+        </li>
+      </ul>
+      <ul class="quiz-step step8">
+        <li class="question">
+          <div class="question-wrap">
+            <h2>
+              Pregunta #8: Si pudieras traer recuerdos con un solo olor, ¿cuál sería?
+            </h2>
+          </div>
+        </li>
+        <li class="quiz-answer low-value" data-quizIndex="2">
+          <div class="answer-wrap">
+            <p class="answer-text">
+              El olor de una deliciosa pizza grande de pepperoni.
+            </p>
+          </div>
+        </li>
+        <li class="quiz-answer high-value" data-quizIndex="4">
+          <div class="answer-wrap">
+            <p class="answer-text">El olor pútrido de los pies sudorosos.</p>
+          </div>
+        </li>
+      </ul>
+      <ul class="quiz-step step9">
+        <li class="question">
+          <div class="question-wrap">
+            <h2>
+              Pregunta #9: Tu amigo cercano está retenido por mortífagos en el calabozo del sótano de la mansión Malfoy. Tú:
+            </h2>
+          </div>
+        </li>
+        <li class="quiz-answer low-value" data-quizIndex="2">
+          <div class="answer-wrap">
+            <p class="answer-text">
+              Reúne al ejército de Dumbledore y prepárate para abrirte camino a través de la mazmorra.
+            </p>
+          </div>
+        </li>
+        <li class="quiz-answer high-value" data-quizIndex="4">
+          <div class="answer-wrap">
+            <p class="answer-text">
+              Deja a tu amigo ser devorado por los Mortífagos.            
+            </p>
+          </div>
+        </li>
+      </ul>
+      <ul class="quiz-step step10">
+        <li class="question">
+          <div class="question-wrap">
+            <h2>Pregunta #10: Severus Snape: ¿Amigo o enemigo?</h2>
+          </div>
+        </li>
+        <li class="quiz-answer low-value" data-quizIndex="2">
+          <div class="answer-wrap">
+            <p class="answer-text">Enemigo: A Snape siempre le ha disgustado Harry.</p>
+          </div>
+        </li>
+        <li class="quiz-answer high-value" data-quizIndex="4">
+          <div class="answer-wrap">
+            <p class="answer-text">
+              Amigo: Dumbledore no tenía dudas de que Snape era confiable.
+            </p>
+          </div>
+        </li>
+      </ul>
+      <ul id="results">
+        <li class="results-inner">
+          <p>Y el resultado es: </p>
+          <p class="desc"></p>
+        </li>
+      </ul>
+    </div>
+    <script src="../../js/juego/juegoCarmen.js"></script>
+  </body>
+</html>

@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+audio {
+    display: none;
+}
+  
+header {
+    position: fixed; /* Para mantener el header en la parte superior */
+    top: 0;
+    width: 100%;
+    background-color: #242526;
+    z-index: 99; /* Para asegurarse de que el header esté en la parte superior */
+}
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+    width: 100%;
+    height: 87vh;
+    margin-top: 70px;
+    padding-top: 20px;
+    background-image: url(../../../../img/juego/JuegoRol/Fondos/godrick.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+#contenidoPrincipal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    background: #242526;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+  
+nav .wrapper{
+    position: relative;
+    max-width: 1300px;
+    padding: 0px 30px;
+    height: 70px;
+    line-height: 70px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+  
+.wrapper .nav-links{
+    display: inline-flex;
+    list-style-type: none; 
+}
+  
+.nav-links li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+  
+.nav-links li a:hover{
+    background: #3A3B3C;
+}
+
+#iconoBarra{
+    height: 80px;
+}
+
+#logoBarra{
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+  margin-left: 150px;
+}
+  
+footer{
+    color: aliceblue;
+    background-color: #242526;
+    height: fit-content;
+    padding: 1%;
+    text-align: center;
+}
+
+#textoYElecciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    width: 30%;
+    height: 50vh;
+    margin-top: 5px;
+    background-color: #ced5dd89;
+}
+
+#opciones{
+    margin-top: 250px;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+.cenefa{
+    width: 100%;
+}
+  
+.parrafos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: justify;
+    padding: 2%;
+}
+
+#infoPersonaje{
+    width: 200px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ced5dd89;
+}
+
+h3{
+    align-self: center;
+}
+
+p{
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.eleccion {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 40px;
+    background: linear-gradient(to right,#bf953f,#fcf6ba,#b38728,#fbf5b7,#aa771c);
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: rgb(121, 103, 3);
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition-duration: 3s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.144);
+    background-size: 200% 200%;
+    font-size: x-large;
+}
+  
+.eleccion path{
+    fill: rgb(121, 103, 3);
+}
+
+#muertePersonaje {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    z-index: 9999; /* Asegura que esté por encima de todos los demás elementos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#muertePersonaje img {
+    max-width: 100%; /* Ajusta el tamaño de la imagen según necesites */
+    max-height: 100%;
+}
+
+#mensajeVic {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    z-index: 9999; /* Asegura que esté por encima de todos los demás elementos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mensajeVic img {
+    max-width: 100%; /* Ajusta el tamaño de la imagen según necesites */
+    max-height: 100%;
+}
+
+
+#rendirse {
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    margin-top: 5px;
+    background-color: #ced5dd89;
+}
+
+#morirse {
+    margin: auto;
+}
+
+#videoContainer {
+    margin-top: 15px;
+    margin-left: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Opcional: asegura que el contenedor ocupe toda la altura de la ventana */
+}
+
+#video{
+    border: #aa771c 4px solid;
+}
+
+#barraVidaGodrick {
+    width: 200; /* Ancho de la barra de vida */
+    height: 20px; /* Altura de la barra de vida */
+    background-color: #ddd; /* Color de fondo de la barra de vida */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-bottom: 20px;
+}
+
+#vidaGodrick {
+    text-align: center;
+    height: 100%;
+    background-color: #a3472d; /* Color de la barra de vida */
+    border-radius: 5px; /* Bordes redondeados */
+}

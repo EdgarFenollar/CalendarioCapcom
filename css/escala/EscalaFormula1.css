@@ -1,0 +1,488 @@
+body{
+    font-family: Verdana;           /* El tipo de letra de toda la página, header incluido*/
+    background-image: url(../../img/escala/escalaF1/fondo.jpg);      /* Imagen de fondo de la página*/
+}
+header{
+    width: 35%;                     /* Tamaño del titulo de la página */
+    text-align: justify;            /* El texto del titulo está justificado */
+    position: relative;             /* Etiqueta para que el cuadro del titulo se mueva */
+    left: 500px;                    /* El titulo se alinea 500px hacia la izquierda para que quede centrado */
+    text-decoration: underline red;     /* El subrayado en rojo del h2 */
+}
+form{
+    position: relative;             /* El menú desplegable se puede mover por el header gracias a que la posición del mismo es relativa*/
+    right: 400px;                   /* Era necesario alinearla 400px a la derecha, esa es la funcionalidad de esta etiqueta*/
+}
+#opciones{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*El tipo de letra del menú desplegable*/
+    border-radius: 20px 20px 20px 20px; /* Esta etiqueta sirve para redondear los bordes, en este caso los bordes del menú desplegable están completamente redondeados*/
+}
+/* El color de fondo de las opciones del menú desplegable, son los colores de los equipos*/
+#red{
+    background-color: #1f104f; /* Es el color de fondo de la opción del menú desplegable*/
+    color: white;              /* El color de las letras, es blanco ya que el fondo es oscuro*/
+}
+#fer{
+    background-color: red; /* Es el color de fondo de la opción del menú desplegable*/
+}
+#mer{
+    background-color: #03BFB5; /* Es el color de fondo de la opción del menú desplegable*/
+    color: white;              /* El color de la letra ya que el fondo es oscuro*/
+}
+#ast{
+    background-color: #2e4c46; /* Es el color de fondo de la opción del menú desplegable*/
+    color: white;              /* Es el color de las letras del menú desplegable ya que el fondo es oscuro*/
+}
+#mcl{
+    background-color: orange;   /* Es el color de fondo de la opción del menú desplegable*/
+}
+#alp{
+    background-color: #2173B8;  /* Es el color de fondo de la opción del menú desplegable*/
+    color: white;               /*Es el color de las letras de la opción del menú desplegable, ya que el fondo es oscuro*/
+}
+#wil{
+    background-color: #4c6b8a;  /* Es el color de fondo de la opción del menú desplegable*/
+    color: white;               /*Es el color de las letras de la opción del menú desplegable, ya que el fondo es oscuro*/
+}
+#has{
+    background-color: #c39717;  /* Es el color de fondo de la opción del menú desplegable*/
+}
+#alf{
+    background-color: rgba(102, 4, 4, 0.575); /* El color de fondo de esta opción del menú que es algo transparente o que transparenta un poco, por eso se ve distinto a los demás*/
+}
+#alph{
+    background-color: #0b2564;  /* Es el color de fondo de la opción del menú desplegable*/
+    color: white;               /*Es el color de las letras de la opción del menú desplegable, ya que el fondo es oscuro*/
+}
+#parrilla{
+    position: relative;             /* Todo el div de la página se mueve con esta etiqueta */
+    left: 80px;                     /* Orientado 80px a la izquierda */
+}
+.redbull{
+    width: 55%;                     /* Ancho de la primera fila 50% dado a que son los primeros y los que mejor rendimiento tienen */
+    background:#1f104f;           /* Color del fondo del recuadro */
+    background: linear-gradient(to right, #1f104f, #ffff7a); /* Degradado con la etiqueta gradient */
+    padding: 5px;                   /* Separación dentro del cuadrado */
+    border: 1px solid #000;       /* Borde color negro y de 1 píxel de grosor */
+    color: white;                 /* Color de los numeros/letras dentro del cuadrado. Es blanco dado al color de fondo oscuro*/
+    font-family: Arial;             /* La fuente de los numeros/letras dentro de las barras*/
+}
+.flechared{
+    position: relative;             /* La flecha se puede mover por la barra gracias a que su posición es relativa */
+    left: 350px;                    /* La flecha está orientada 350px a la izquierda */
+    width: 10%;                     /* El tamaño de la imagen de la felcha es del 10% */
+    bottom: 25px;                   /* Para que la flecha esté centrada está subida del fondo 25px */
+}
+.logored{
+    position: relative;            /* La foto se ha movido gracias a que su posición es relativa */
+    width: 5%;                     /* El tamaño de la foto es de un 5% */
+    left: 135px;                   /* Está orientada a 135px a la izquierda */
+    bottom: 55px;                  /* Tambien tiene un poco de orientación hacia arriba, unos 55px */
+}
+
+.rendred{
+    position: relative;             /* El contenido de la barra tiene libre movimiento ya que es relativo */
+}
+.parrafored{
+    position: relative;            /* El parrafo se ha movido gracias a que su posición es relativa */
+    width: 35%;                    /* El tamaño del parrafo es de un 35% */
+    float: right;                  /* El objeto flotante está orientado a la derecha de la página */
+    bottom: 100px;                 /* Tambien tiene un poco de orientación hacia arriba, unos 100px */
+    right: 20px;                   /* Para que no se pegue tanto al borde derecho, tiene unos pixeles de separación, unos 20px */
+    border: 2px solid black;     /* El borde tiene es estilo solid con 2px de grosor y de color negro */
+    background-color: rgba(0, 0, 0, 0.37); /* El fondo casi transparente del cuadro donde está el parrafo */
+    color: white;                /* El color de las letras ya que el fondo es oscuro */
+    padding: 8px;                  /* La separación del texto con los bordes del recuadro es de 8px */
+}
+
+.flechamerc{
+    position: relative;            /* La flecha se puede mover por la barra gracias a que su posición es relativa */
+    left: 350px;                   /* La flecha está orientada 350px a la izquierda */                   
+    width: 15%;                    /* El tamaño de la flecha es del 15% */
+    bottom: 25px;                  /* Para que la flecha esté centrada está subida del fondo 25px */
+}
+.parrafomerc{
+    position: relative;             /* El parrafo se ha movido gracias a que su posición es relativa */
+    width: 35%;                     /* El tamaño del parrafo es de un 35% */
+    float: right;                   /* El objeto flotante está orientado a la derecha de la página */
+    bottom: 80px;                   /* Tambien tiene un poco de orientación hacia arriba, unos 80px */
+    right: 25px;                    /* Para que no se pegue tanto al borde derecho, tiene unos pixeles de separación, unos 20px */
+    padding: 8px;                   /* Es la separación del texto dentro del cuadro */
+    border: 2px solid black;      /* El borde tiene es estilo solid con 2px de grosor y de color negro */
+    background-color: rgba(255, 255, 255, 0.418);  /* El fondo casi transparente del cuadro donde está el parrafo */
+}
+.logomerc{
+    position: relative;             /* El parrafo se ha movido gracias a que su posición es relativa */
+    width: 5%;                      /* El tamaño de la foto es de un 5% */
+    left: 135px;                    /* Está orientada a 135px a la izquierda */
+    bottom: 40px;                   /* Tambien tiene un poco de orientación hacia arriba, unos 40px */
+}
+.merc{
+    position: relative;             /* El parrafo se ha movido gracias a que su posición es relativa */
+    top: 20px;                      /* Ha sido alineada algo hacia abajo con esta etiqueta, 20px */
+}
+.mercedes{
+    position: relative;             /* El parrafo se ha movido gracias a que su posición es relativa */
+    width: 35%;                     /* Ancho de la segunda fila es de 35% porque hay mucha distancia entre ellos */
+    top: 20px;                      /* Ha sido alineada algo hacia abajo con esta etiqueta, 20px */
+    background: #03BFB5;          /* Color del fondo del recuadro */
+    background: linear-gradient(to right, #03BFB5, #949398); /* Degradado con la etiqueta gradient */
+    padding: 5px;                   /* Separación dentro del cuadrado */
+    border: 1px solid #000;       /* Borde color negro y de 1 píxel de grosor */
+    color: white;                 /* Color de los numeros/letras dentro del cuadrado. Es blanco dado al color de fondo oscuro*/
+    font-family: Arial;             /* La fuente de los numeros/letras dentro de las barras*/
+}
+
+.flechafer{
+    position: relative;             /* La posición de la flecha es relativa, eso quiere decir, que la imagen se puede mover libremente */
+    left: 250px;                    /* La imagen de la flecha está orientada 250px a la izquierda */
+    width: 15%;                     /* El tamaño de la flecha es de un 15% */
+    bottom: 25px;                   /* La imagen de la flecha está orientada 25px por encima del fondo de la barra */
+}
+.parrafofer{
+    position: relative;             /* El parrafo se ha movido gracias a que su posición es relativa */
+    width: 35%;                     /* El tamaño del parrafo es de un 35% */  
+    bottom: 80px;                   /* Tambien tiene un poco de orientación hacia arriba, unos 80px */
+    right: 20px;                    /* Para que no se pegue tanto al borde derecho, tiene unos pixeles de separación, unos 20px */
+    float: right;                   /* El objeto flotante está orientado a la derecha de la página */
+    padding: 8px;                   /* Es la separación del texto dentro del cuadro */
+    border: 2px solid black;      /* El borde tiene es estilo solid con 2px de grosor y de color negro */
+    background-color: rgba(245, 71, 71, 0.452);  /* El fondo casi transparente del cuadro donde está el parrafo */
+}
+.fer{
+    position: relative;             /* El parrafo se ha movido gracias a que su posición es relativa */
+    top: 75px;                      /* Ha sido alineada algo hacia abajo con esta etiqueta, 75px */
+}
+.logofer{
+    position: relative;             /* El parrafo se ha movido gracias a que su posición es relativa */
+    width: 5%;                      /* El tamaño del ancho de la foto es de un 5% */
+    height: 5%;                     /* El tamaño del alto de la foto es de un 5% */
+    left: 135px;                    /* Está orientada a 135px a la izquierda */
+    bottom: 25px;                   /* Tambien tiene un poco de orientación hacia arriba, unos 80px */
+}
+.ferrari{
+    position: relative;             /* El parrafo se ha movido gracias a que su posición es relativa */
+    width: 28%;                     /* Ancho de la tercera linea es de 28% porque no hay demasiada distancia entre ellos */
+    background: #ed0115;          /* Color del fondo del recuadro */
+    background: linear-gradient(to right, #ed0115, #ffff7a); /* Degradado con la etiqueta gradient */
+    padding: 5px;                   /* Separación dentro del cuadrado de 5px */
+    border: 1px solid #000;       /* Borde color negro y de 1 píxel de grosor */
+    color: white;                 /* Color de los numeros/letras dentro del cuadrado. Es blanco dado al color de fondo oscuro*/
+    font-family: Arial;             /* La fuente de los numeros/letras dentro de las barras*/
+    top: 75px;                      /* Ha sido alineada algo hacia abajo con esta etiqueta, 75px */
+}
+
+.ast{
+    position: relative;             /* El parrafo se ha movido gracias a que su posición es relativa */
+    top: 185px;                     /* Ha sido alineada algo hacia abajo con esta etiqueta, 185px */
+    color: white;                 /* El color de las letras dentro de la barra, al ser un color oscuro el fondo, las letras son blancas*/
+}
+.logoast{
+    position: relative;             /* El parrafo se ha movido gracias a que su posición es relativa */
+    width: 5%;                      /* El tamaño del ancho de la foto es de un 5% */
+    left: 180px;                    /* Está orientada a 180px a la izquierda */
+    top: 135px;                     /* Ha sido alineada algo hacia abajo con esta etiqueta, 135px */
+}
+.parrafoast{
+    position: relative;            /* El parrafo se ha movido gracias a que su posición es relativa */
+    width: 35%;                    /* El tamaño del parrafo es de un 35% */ 
+    float: right;                  /* El objeto flotante está orientado a la derecha de la página */
+    top: 45px;                     /* Ha sido alineada algo hacia abajo con esta etiqueta, 45px */
+    border: 2px solid black;     /* El borde tiene es estilo solid con 2px de grosor y de color negro */
+    background-color: rgba(7, 82, 7, 0.534);   /* El fondo casi transparente del cuadro donde está el parrafo */
+    color: white;                /* El color de las letras dentro del parrafo ya que el fondo es oscuro */
+    padding: 8px;                  /* Separación dentro del cuadrado de 5px */
+    right: 25px;
+}
+.flechaast{
+    position: relative;             /* La posición de la flecha es relativa, es decir, que se puede mover libremente por la página */
+    width: 25%;                     /* El tamaño de la imagen de la flecha es de un 25% */
+    left: 160px;                    /* La imagen de la flecha está orientada 160px a la izquierda */
+    bottom: 25px;
+}
+.astonmartin{
+    position: relative;            /* El parrafo se ha movido gracias a que su posición es relativa */
+    width: 19%;                    /* El tamaño es de 19% ya que no hay tanta distancia pero es notable */
+    background: #2e4c46;         /* Color del fondo del recuadro */
+    background: linear-gradient(to right, #2e4c46,#95c99c ); /* Degradado con la etiqueta gradient */
+    padding: 5px;                  /* Separación dentro del cuadrado */
+    border: 1px solid #000;      /* Borde color negro y de 1 píxel de grosor */
+    color: white;                /* Color de los numeros/letras dentro del cuadrado. Es blanco dado al color de fondo oscuro*/
+    font-family: Arial;            /* La fuente de los numeros/letras dentro de las barras*/
+    top: 185px;                    /* Ha sido alineada algo hacia abajo con esta etiqueta, 185px */
+}
+
+.flechamcl{
+    position: relative;             /* El elemento de la flecha tiene movimiento libre gracias a que su posición en la página es relativa*/
+    left: 150px;                    /* La orientación de la flecha dentro de la barra ha sido desplazada 150px a la izquierda*/
+    width: 25%;                     /* El tamaño de la imágen de la flecha es de un 25%*/
+    bottom: 25px;                   /* Para que la flecha se quede completamente alineada ha sido subida 25px gracias a esta etiqueta*/
+}
+.mcl{
+    position: relative;            /* El parrafo se ha movido gracias a que su posición es relativa */
+    top: 230px;                    /* Ha sido alineada algo hacia abajo con esta etiqueta, 230px */
+    color: white;                /* El color de los numeros/letras dentro de la barra ya que el fondo es de colores oscuros */
+}
+.logomcl{
+    position: relative;            /* El parrafo se ha movido gracias a que su posición es relativa */
+    width: 5%;                     /* El tamaño del ancho de la foto es de un 5% */
+    left: 150px;                   /* Está orientada a 150px a la izquierda */
+    top: 170px;                    /* Ha sido alineada algo hacia abajo con esta etiqueta, 170px */
+}
+.parrafomcl{
+    position: relative;            /* El parrafo se ha movido gracias a que su posición es relativa */
+    width: 35%;                    /* El tamaño del parrafo es de un 35% */
+    padding: 8px;                  /* Separación dentro del cuadrado de 5px */
+    top: 60px;                     /* Ha sido alineada algo hacia abajo con esta etiqueta, 60px */
+    right: 25px;                   /* Para que no se pegue tanto al borde derecho, tiene unos pixeles de separación, unos 20px */
+    clear: both;
+    float: right;                  /* El objeto flotante está orientado a la derecha de la página */
+    border: 2px solid black;     /* El borde tiene es estilo solid con 2px de grosor y de color negro */
+    background-color: rgba(241, 184, 77, 0.575);  /* Fondo de color naranja casi transparente */
+}
+.mclaren{
+    position: relative;            /* El parrafo se ha movido gracias a que su posición es relativa */
+    width: 14%;                    /* Ancho de la quinta linea es del 14% porque está cerca del de delante */
+    background: #ffa500;         /* Color del fondo del recuadro */
+    background: linear-gradient(to right, #ffa500, rgb(133, 130, 130)); /* Degradado con la etiqueta gradient */
+    padding: 5px;                  /* Separación dentro del cuadrado */
+    border: 1px solid #000;      /* Borde color negro y de 1 píxel de grosor */
+    font-family: Arial;            /* La fuente de los numeros/letras dentro de las barras*/
+    top: 230px;                    /* Ha sido alineada algo hacia abajo con esta etiqueta, 170px */
+}
+
+.flechaalp{
+    position: relative;
+    left: 120px;
+    width: 60%;
+    bottom: 25px;
+}
+.logoalp{
+    position: relative;            /* El parrafo se ha movido gracias a que su posición es relativa */
+    width: 5%;                     /* El tamaño del ancho de la foto es de un 5% */
+    left: 100px;                   /* Está orientada a 100px a la izquierda */
+    top: 250px;                    /* Ha sido alineada algo hacia abajo con esta etiqueta, 250px */
+}
+.parrafoalp{
+    position: relative;             /* El parrafo se ha movido gracias a que su posición es relativa */
+    width: 35%;                     /* El tamaño del parrafo es de un 35% */
+    padding: 8px;                   /* Separación dentro del cuadrado de 5px */
+    float: right;                   /* El objeto flotante está orientado a la derecha de la página */
+    border: 2px solid black;      /* El borde tiene es estilo solid con 2px de grosor y de color negro */
+    background-color: rgba(8, 187, 247, 0.5);  /* El color del fondo casi transparente de color azul */
+    top: 150px;                     /* Ha sido alineada algo hacia abajo con esta etiqueta, 150px */
+    right: 25px;
+}
+.alpine{
+    position: relative;             /* El parrafo se ha movido gracias a que su posición es relativa */
+    width: 6%;                      /* Ancho de la sexta linea es del 6% porque a partir de aquí han bajado de las 3 cifras, hay algo de distancia, no mucha pero si una considerable */
+    background: #2173B8;          /* Color del fondo del recuadro */
+    background: linear-gradient(to right, #2173B8, rgb(202, 163, 202));  /* Degradado con la etiqueta gradient */
+    padding: 5px;                   /* Separación dentro del cuadrado de 5px */
+    border: 1px solid #000;       /* Borde color negro y de 1 píxel de grosor */
+    color: white;                 /* Color de los numeros/letras dentro del cuadrado. Es blanco dado al color de fondo oscuro*/
+    font-family: Arial;             /* La fuente de los numeros/letras dentro de las barras*/
+    top: 290px;                     /* Ha sido alineada algo hacia abajo con esta etiqueta, 290px */
+}
+
+.flechawil{
+    position: relative;
+    left: 100px;
+    width: 90%;
+    bottom: 25px;
+}
+.logowil{
+    position: relative;             /* El parrafo se ha movido gracias a que su posición es relativa */
+    width: 5%;                      /* El tamaño del ancho de la foto es de un 5% */
+    left: 150px;                    /* Está orientada a 150px a la izquierda */
+    top: 250px;                     /* Ha sido alineada algo hacia abajo con esta etiqueta, 250px */
+}
+.parrafowil{
+    position: relative;             /* El parrafo se ha movido gracias a que su posición es relativa */
+    width: 35%;                     /* El tamaño del parrafo es de un 35% */
+    float: right;                   /* El objeto flotante está orientado a la derecha de la página */
+    padding: 8px;                   /* Separación dentro del cuadrado de 8px */
+    border: 2px solid black;      /* El borde tiene es estilo solid con 2px de grosor y de color negro */
+    background-color: rgba(0, 0, 139, 0.459);  /* El color del fondo azul oscuro casi transparente */
+    top: 150px;                     /* Ha sido alineada algo hacia abajo con esta etiqueta, 150px */
+    right: 25px;
+}
+.williams{
+    position: relative;             /* El parrafo se ha movido gracias a que su posición es relativa */
+    width: 4%;                      /* Ancho de la septima fila es de un 4% porque la distancia entre el de delante y este es bastante pequeña */
+    background: #4c6b8a;          /* Color del fondo del recuadro */
+    background: linear-gradient(to right, #4c6b8a, white);  /* Degradado con la etiqueta gradient */
+    padding: 5px;                   /* Separación dentro del cuadrado */
+    border: 1px solid #000;       /* Borde color negro y de 1 píxel de grosor */
+    font-family: Arial;             /* La fuente de los numeros/letras dentro de las barras*/
+    top: 290px;                     /* Ha sido alineada algo hacia abajo con esta etiqueta, 290px */
+}
+
+.flechahaas{
+    position: relative;
+    left: 100px;
+    width: 125%;
+    bottom: 25px;
+}
+.logohaas{
+    position: relative;             /* El parrafo se ha movido gracias a que su posición es relativa */
+    width: 2%;                      /* El ancho del logo es de 2% ya que la foto es bastante grande y tenía que ajustarla para que quedase cuadrada */
+    left: 90px;                     /* Está orientada a 90px a la izquierda */
+    top: 250px;                     /* Ha sido alineada algo hacia abajo con esta etiqueta, 250px */
+}
+.parrafohaas{
+    position: relative;             /* El parrafo se ha movido gracias a que su posición es relativa */
+    width: 35%;                     /* El tamaño del parrafo es de un 35% */
+    float: right;                   /* El objeto flotante está orientado a la derecha de la página */
+    padding: 8px;                   /* Separación dentro del cuadrado de 8px */
+    border: 2px solid black;      /* El borde tiene es estilo solid con 2px de grosor y de color negro */
+    background-color: rgba(94, 80, 3, 0.664); /* Es el color de fondo del parrafo dorado oscuro casi transparente */
+    top: 150px;                     /* Ha sido alineada algo hacia abajo con esta etiqueta, 150px */
+    right: 25px;                    /* Para que no se pegue tanto al borde derecho, tiene unos pixeles de separación, unos 25px */
+}
+.haas{
+    position: relative;             /* El parrafo se ha movido gracias a que su posición es relativa */
+    width: 3%;                      /* Ancho de la octava linea es de 3% porque está casi pegado, se aprecia poco la diferencia de puntos entre los 2 */
+    background: #000000;          /* Color del fondo del recuadro */
+    background: linear-gradient(to right, #000000, #c39717); /* Degradado con la etiqueta gradient */
+    padding: 5px;                   /* Separación dentro del cuadrado */
+    border: 1px solid #000;       /* Borde color negro y de 1 píxel de grosor */
+    color: white;                 /* Color de los numeros/letras dentro del cuadrado. Es blanco dado al color de fondo oscuro*/
+    font-family: Arial;             /* La fuente de los numeros/letras dentro de las barras*/
+    top: 290px;                     /* Ha sido alineada algo hacia abajo con esta etiqueta, 290px */
+}
+
+.flechaalf{
+    position: relative;
+    left: 100px;
+    width: 130%;
+    bottom: 25px;
+}
+.alf{
+    position: relative;             /* El parrafo se ha movido gracias a que su posición es relativa */
+    top: 290px;                     /* Ha sido alineada algo hacia abajo con esta etiqueta, 290px */
+    color: white;                 /* El color del nombre que justo está situado en una de las partes mas oscuras del fondo de la página */
+}
+.parrafoalf{
+    position: relative;             /* El parrafo se ha movido gracias a que su posición es relativa */
+    width: 35%;                     /* El tamaño del parrafo es de un 35% */
+    float: right;                   /* El objeto flotante está orientado a la derecha de la página */
+    padding: 8px;                   /* Separación dentro del cuadrado de 8px */
+    border: 2px solid black;      /* El borde tiene es estilo solid con 2px de grosor y de color negro */
+    background-color: rgba(102, 4, 4, 0.575); /* El color del fondo que es rojo granate oscuro casi transparente */
+    top: 150px;                     /* Ha sido alineada algo hacia abajo con esta etiqueta, 150px */
+    right: 25px;                    /* Para que no se pegue tanto al borde derecho, tiene unos pixeles de separación, unos 25px */
+}
+.logoalf{
+    position: relative;             /* El parrafo se ha movido gracias a que su posición es relativa */
+    width: 5%;                      /* El tamaño del ancho de la foto es de un 5% */
+    left: 180px;                    /* Está orientada a 180px a la izquierda */
+    top: 250px;                     /* Ha sido alineada algo hacia abajo con esta etiqueta, 250px */
+}
+.alfaromeo{
+    position: relative;             /* El parrafo se ha movido gracias a que su posición es relativa */
+    width: 3%;                      /* Ancho de la novena linea es de 3% porque es casi la misma distancia, no se aprecia, por eso he mantenido el mismo tamaño */
+    background: #480001;          /* Color del fondo del recuadro */
+    background: linear-gradient(to right, #480001, white); /* Degradado con la etiqueta gradient */
+    padding: 5px;                   /* Separación dentro del cuadrado */
+    border: 1px solid #000;       /* Borde color negro y de 1 píxel de grosor */
+    color: white;                 /* Color de los numeros/letras dentro del cuadrado. Es blanco dado al color de fondo oscuro*/
+    font-family: Arial;             /* La fuente de los numeros/letras dentro de las barras*/
+    top: 290px;                     /* Ha sido alineada algo hacia abajo con esta etiqueta, 290px */
+}
+
+.flechaalph{
+    position: relative;
+    left: 85px;
+    width: 220%;
+    bottom: 25px;
+}
+.alph{
+    position: relative;             /* El parrafo se ha movido gracias a que su posición es relativa */
+    top: 290px;                     /* Ha sido alineada algo hacia abajo con esta etiqueta, 290px */
+    color: white;                 /* El color del nombre porque pasa por una de las partes mas oscuras del fondo de la página */
+}
+.parrafoalph{
+    position: relative;             /* El parrafo se ha movido gracias a que su posición es relativa */
+    width: 35%;                     /* El tamaño del parrafo es de un 35% */
+    float: right;                   /* El objeto flotante está orientado a la derecha de la página */
+    padding: 8px;                   /* Separación dentro del cuadrado de 8px */
+    border: 2px solid black;      /* El borde tiene es estilo solid con 2px de grosor y de color negro */
+    background-color: rgba(38, 42, 77, 0.575); /* El color del fondo del parrafo que es azul muy oscuro casi transparente */
+    top: 150px;                     /* Ha sido alineada algo hacia abajo con esta etiqueta, 150px */
+    right: 25px;                    /* Para que no se pegue tanto al borde derecho, tiene unos pixeles de separación, unos 25px */
+}
+.logoalph{
+    position: relative;             /* El parrafo se ha movido gracias a que su posición es relativa */
+    width: 5%;                      /* El tamaño del ancho de la foto es de un 5% */
+    left: 180px;                    /* Está orientada a 180px a la izquierda */
+    top: 250px;                     /* Ha sido alineada algo hacia abajo con esta etiqueta, 250px */
+}
+.alphatauri{
+    position: relative;             /* El parrafo se ha movido gracias a que su posición es relativa */
+    width: 2%;                      /* Ancho de la decima linea es de un 2% porque tienen demasiados pocos puntos, es pequeña la diferencia pero al tener tan poco su barra es del minimo */
+    background: #0b2564;          /* Color del fondo del recuadro */
+    background: linear-gradient(to right, #0b2564, white); /* Degradado con la etiqueta gradient */
+    padding: 5px;                   /* Separación dentro del cuadrado */
+    border: 1px solid #000;       /* Borde color negro y de 1 píxel de grosor */
+    color: white;                 /* Color de los numeros/letras dentro del cuadrado. Es blanco dado al color de fondo oscuro*/
+    font-family: Arial;             /* La fuente de los numeros/letras dentro de las barras*/
+    top: 290px;                     /* Ha sido alineada algo hacia abajo con esta etiqueta, 290px */
+}
+
+.uno{
+    position: relative;             /* El parrafo se ha movido gracias a que su posición es relativa */
+    top: 290px;                     /* Ha sido alineada algo hacia abajo con esta etiqueta, 290px */
+    color: white;                 /* El color de algunos nombres que pasan por la parte mas oscura del fondo de la página*/
+}
+
+.botonred{
+    position: relative;
+    left: 150px;
+    bottom: 65px;
+}
+.botonmerc{
+    position: relative;
+    left: 150px;
+    bottom: 65px;
+}
+.botonfer{
+    position: relative;
+    left: 150px;
+    bottom: 65px;
+}
+.botonast{
+    position: relative;
+    left: 200px;
+    top: 100px;
+}
+.botonmcl{
+    position: relative;
+    left: 200px;
+    top: 150px;
+}
+.botonalp{
+    position: relative;
+    left: 150px;
+    top: 230px;
+}
+.botonwil{
+    position: relative;
+    left: 150px;
+    top: 230px;
+}
+.botonhaas{
+    position: relative;
+    left: 120px;
+    top: 250px;
+}
+.botonalf{
+    position: relative;
+    left: 200px;
+    top: 230px;
+}
+.botonalph{
+    position: relative;
+    left: 200px;
+    top: 230px;
+}

@@ -1,0 +1,327 @@
+@font-face {
+    font-family: residentevil;
+    src: url(../../font/dialogo/fuenteresidentevil.ttf);
+}
+
+body {
+    background-image: url(../../img/dialogo/dialogoResidentEvil/fondoresidentevil.webp);
+    background-repeat: no-repeat;
+    margin: 0;
+    background-size: cover;
+    
+}
+
+/*Header*/
+
+.whatsapp-header {
+    background-color: rgb(51, 59, 56);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+}
+
+.perfil img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: solid #1e2221;
+    background-color: #1e2221;
+    margin-right: 15px;
+}
+
+.info-perfil {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-perfil h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.info-perfil p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.acciones-header {
+    font-size: 24px;
+}
+
+.iconos {
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+/*Fin Header*/
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+
+.leon {
+    color: white;
+}
+
+.imgleon{
+    width: 100px;
+    height: 100px;
+    border: solid #1e2221;
+    border-radius: 100px;
+    background-color: #1e2221;
+}
+
+.imgclaire{
+    width: 100px;
+    height: 100px;
+    border: solid #2a6b50;
+    border-radius: 100px;
+    background-color: #2a6b50;
+}
+
+.claire {
+    text-align: right;
+    color: white;
+}
+
+.dleon {
+    flex-basis: 60%;
+    padding-bottom: 1em;
+}
+
+.dleon, .dclaire{
+    display: flex;
+    align-items: center;
+}
+
+.dclaire {
+
+    margin-left: 30%;
+    padding-bottom: 1em;
+}
+
+.dleona {
+    flex-basis: 60%;
+    padding-bottom: 1em;
+    margin-top: 3em;
+}
+
+.dleona, .dclairea{
+    display: flex;
+    align-items: center;
+}
+
+.dclairea {
+
+    margin-left: 30%;
+    padding-bottom: 1em;
+    margin-bottom: 7em;
+}
+
+.tleon{
+    display:inline-block;
+}
+
+.caja-dialogo-claire {
+    position: relative;
+    background-color: #2a6b50;
+    border-radius: 50px;
+    padding: 8px;
+    max-width: 300px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.text-dialogo-claire::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: -20px;
+    border-width: 12px;
+    border-style: solid;
+    border-color: transparent #2a6b50 transparent transparent;
+}
+
+.texto-dialogo-claire::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: -20px;
+    border-width: 12px;
+    border-style: solid;
+    border-color: transparent transparent transparent #2a6b50;
+}
+
+.caja-dialogo-leon {
+    position:relative;
+    background-color: #1e2221;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 300px;
+    text-align: left;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.text-dialogo-leon::before {
+    content: "";
+    position: absolute;
+    top:10px;
+    left: -20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #1e2221;
+}
+
+.texto-dialogo-leon::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #1e2221 transparent transparent ;
+}
+
+/*Footer*/
+.footer-mensaje {
+    background-color: rgb(51, 59, 56);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.caja-mensaje {
+    flex: 1;
+    margin-right: 30px;
+}
+
+.mensaje {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+}
+
+.boton-de-enviar {
+    background-color: #2a6b50;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    margin-right: 20px;
+}
+
+.boton-de-enviar:hover {
+    background-color: #075e54;
+}
+
+@media screen and (max-width: 320px) {
+    .caja-dialogo-leon {
+        max-width: 100%;
+        max-height: 50px;
+        font-size: 15px;
+    }
+
+    .imgleon{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .imgclaire{
+        width: 50px;
+        height: 50px;
+    }
+
+    .columna {
+        flex: 0 0 80%;
+        margin: 10px 0;
+        font-size: 10px;
+    }
+
+    .imgcont {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+
+    .iconos {
+        font-size: 20px;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+
+    .dclairea {
+
+        margin-left: 5%;
+        margin-right: 2%;
+    }
+
+    .dclaire {
+
+        margin-left: 5%;
+        margin-right: 2%;
+    }
+
+    .dleon {
+        
+        flex-basis: 100%;
+        margin-right: 5%;
+        margin-left: 2%;
+    }
+
+    .dleona {
+        flex-basis: 100%;
+        margin-right: 5%;
+        margin-left: 2%;
+    }
+
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    #extra1, #extra2{
+        padding-bottom: 40px;
+    }
+
+    .whatsapp-header {
+        margin-bottom: -20px;
+    }
+}
+/*
+*{
+    border: 2px red solid;
+}
+*/

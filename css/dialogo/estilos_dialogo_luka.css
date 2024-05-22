@@ -1,0 +1,261 @@
+    /*Se asignan las propiedades al header*/
+    header{ 
+        background-color: #220049; /*Se asigna el color de fondo*/
+        height: 80px; /*Se asigna la altura*/
+        margin: 1%; /*Se en % el tamaño del margen*/
+    }
+
+    /*Se asignan las propiedades a la clase .Logo es decir a la imagen con el logo de la NBA de la izquierda del menú */
+    .Logo{
+        float: left; /*Coloca el elemento seleccionado a la izquierda*/
+        padding: 0.5%; /*Determina el ancho del padding general*/
+        padding-left: 2%; /*Determina el ancho del padding izquierdo*/
+    }
+
+    /*Se asignan las propiedades del ul del menú */
+    #menu ul {
+        list-style:none; /*Elimina la viñeta predeterminada de las listas*/
+        margin:0; /*Elimina el ancho del margen*/
+        padding:1%; /*Determina el ancho del padding general*/
+        padding-right: 2%; /*Determina el ancho del padding derecho*/
+        float: right; /*Coloca el elemento seleccionado a la derecha*/
+    }
+   
+    /*Se asignan las propiedades del ul y del li del menú */
+    #menu ul a {
+        display:block; /*Coloca los diferentes elementos en linea*/
+        color:#fff; /*Determina el color del texto */
+        text-decoration:none; /*Elimina la linea de debajo de los textos con enlace*/
+        font-size:15px; /*Establece el tamaño de las fuentes*/
+        padding:10px; /*Determina el ancho del padding general*/
+        font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; /*Determina las diferentes opciones de tipografia*/
+        text-transform:uppercase; /*Convierte el texto en mayuscula*/
+        letter-spacing:1px; /*Asigna el espaciado de las letras*/
+    }
+   
+    /*Se asignan las propiedades del ul y del li del menú */
+    #menu ul li {
+        background-color:#220049cc; /*Se asigna el color de fondo*/
+        position:relative;
+        float:left; /*Coloca el elemento seleccionado a la izquierda*/
+        margin:0; /*Elimina el ancho del margen*/
+        padding:0; /*Elimina el ancho del padding general*/
+    }
+   
+    /*Se asignan las propiedades del hover a los elementos del menú*/
+    #menu ul li:hover {
+        background-color:#c45dff; /*Se asigna el color de fondo*/
+    }
+
+    /*Se asignan las propiedades del ul dentro del ul padre de los elementos del menú*/
+    #menu ul ul {
+        display:none; /*No se respeto el espacio del elemento, sirve para ocultar las diferentes opciones de escalas*/
+        position:absolute; /**/
+        top:100%; /*Posiciona el elemento en la parte superior*/
+        left:0; /*Posiciona el elemento en la parte izquierda*/
+        background-color:#eee; /*Se asigna el color de fondo*/
+        padding:0; /*Elimina el ancho del padding general*/
+    }
+   
+    /*Se asignan las propiedades del li dentro del ul hijo de los elementos del menú*/
+    #menu ul ul li {
+        width:150px; /*Asigna el ancho de las diferentes opciones de escalas que hay*/
+    }
+   
+    /*Se asignan valores para los enlaces hijos del ul padre*/
+    #menu ul ul a {
+        line-height:120%; /*Asigna la distancia entre las diferentes frases es decir al alto*/
+        padding:10px 15px; /*Asigna el ancho del padding de la parte superior e inferior y de la derecha e izquierda*/
+    }
+   
+    /*Se asignan los valores al ul hijo que aparece al hacer hover sobre el ul padre*/
+    #menu ul li:hover > ul {
+        display:block; /*Coloca los elementos a los que hace referencia en bloque*/
+    }
+
+    /*Asigna los valores al cuerpo de la página*/
+    body{
+        background-color: rgb(0, 0, 0); /*Se asigna el color de fondo*/
+        min-width: 800px;
+    }
+
+    /*Asigna los valores al pie de página*/
+    footer{
+        margin-top: 45px; /*Asigna un margen superior de 45px*/
+        background-color: black; /*Se asigna el color de fondo*/
+        color: white; /*Asigna el color blanco para el texto del footer*/
+        text-align: center; /*Alinea el texto centrado dentro del footer*/
+        padding: 0.5%; /*Elimina el ancho del padding general*/
+        width: 100%; /*Asigna un tamaño del 100%*/
+        margin-left: 0px; /*Elimina el margen izquierdo*/
+    }
+
+    /*Asigna los valores valores de clase Politica de privacidad*/
+    .PoliticaPrivacidad{
+        float: left; /*Coloca el elemento seleccionado a la izquierda*/
+        width: 33%; /*Asigna un ancho del 33%*/
+    }
+
+    /*Asigna los valores de la clase Politica de cookies*/
+    .PoliticaCookies{
+        display: inline-block;
+        width: 33%; /*Asigna un ancho del 33%*/
+    }
+
+    /*Asigna los valores de la clase Aviso Legal*/
+    .AvisoLegal{
+        float: right; /*Coloca el elemento seleccionado a la derecha*/
+        width: 33%;
+    }
+
+    /*Asigna los valores de la seccion main*/
+    main{
+        width: 100%; /*Asigna un ancho del 100%*/
+        margin: 0 auto; /*Se utiliza para centrar el elemento horizontalmente*/
+        display: flex;
+        justify-content: center; 
+    }
+
+    /*Asigna los valores de la clase contenedor*/
+    .contenedor{    
+        width: 80%; /*Asigna un ancho del 80%*/
+    }
+
+    /*Asigna los valores de la seccion pregunta*/
+    .pregunta{
+        display: flex; /*Permmite definir la clase como contenedor flexible en bloque*/
+        justify-content: right; /*Alinea el contenido a la derecha*/
+        flex-direction: row; /*Indica como se colocan los elementos en el contenedor flexible*/
+    }
+
+    /*Asigna los valores de la seccion contornopregunta*/
+    .contornopregunta{
+        background-color: #220049; /*Se asigna el color de fondo*/
+        position: relative; /*El elemento se coloca según el flujo normal del documento*/
+        border-style: solid; /*Establece el estilo de las lineas del borde*/
+        border-color:rgb(255, 0, 242); /*Asigna el color del borde*/
+        border-width: 2px; /*Asigna el ancho del borde*/
+        margin-top: 45px; /*Asigna un margen superior de 45px*/
+        margin-right: 15px; /*Asigna un margen derecho de 15px*/                      
+        border-radius: 1em; /*Redondea el borde de las esquinas*/              
+        padding-left: 1.5em; /*Se establece un relleno izquierdo de 1,5em*/              
+        padding-right: 1.5em; /*Se establece un relleno derecho de 1,5em*/    
+        height: 50%; /*Asigna una altura del 50%*/
+
+    /*crea un pseudo-elemento que es el último hijo del elemento seleccionado, en este caso la "flecha" que separa la imagen del texto*/
+    ::after{
+        content: ""; /*Asigna el valor que se representa en las propiedades de abajo en este caso representa la flecha*/
+        position: absolute; /*El elemento se eliminara del flujo del documento y se determinara su posicion con las siguientes propiedades*/
+        right: -15px; /*Determina en px la posicion teniendo en cuenta la distancia del borde derecho del contenedor*/
+        top: 45%; /*Determina en % la posicion teniendo en cuenta la distancia del borde superior del contenedor*/
+        border-style: solid;/*Establece el estilo de las lineas del borde*/
+        border-width: 0 15px 15px 0; /*Representa el ancho de los 4 bordes por separado*/
+        border-color: #220049 transparent; /*Se asigna el color del borde*/
+        z-index: 1; /*Sirve para indicar que elemento se tiene que posicionar por encima cuando hay dos elementos en la misma posicion*/
+      }
+
+    /*crea un pseudo-elemento que es el primer hijo del elemento seleccionado, en este caso la sombra que al estar debajo de la flecha y de tamaño superior visualizaremos como el borde*/
+    ::before{
+        content: ""; /*Asigna el valor que se representa en las propiedades de abajo en este caso representa la flecha mas grande que se ve visualmente como el borde*/
+        position: absolute; /*El elemento se eliminara del flujo del documento y se determinara su posicion con las siguientes propiedades*/
+        right: -20px; /*Determina en px la posicion teniendo en cuenta la distancia del borde derecho del contenedor*/
+        top: 43%; /*Determina en % la posicion teniendo en cuenta la distancia del borde superior del contenedor*/
+        border-style: solid; /*Establece el estilo de las lineas del borde*/
+        border-width: 0 18px 18px 0; /*Representa el ancho de los 4 bordes por separado*/
+        border-color: rgb(255, 0, 242) transparent; /*Se asigna el color del borde*/
+        z-index: 0; /*Sirve para indicar que elemento se tiene que posicionar por encima cuando hay dos elementos en la misma posicion*/
+    }
+    }
+
+
+    /*Se asignan los valores al id de entrevistador que en este caso hacen referencia a la imagen del entrevistador*/
+    #entrevistador{
+        display: flex; /*Permmite definir la clase como contenedor flexible en bloque*/
+        border-radius: 50%; /*Redondea las esquinas en un 50%*/
+        width: 20%; /*Asigna un ancho del 20%*/
+        max-width: 150px; /*Asigna un ancho maximo de 150px*/
+        min-width: 75px; /*Asigna un ancho minimo de 75px*/
+        height: 20%; /*Asigna una altura del*/
+        margin-top: 10px; /*Asigna un margen superior de 10px*/
+        margin-bottom: 10px; /*Asigna un margen inferior de 10px*/
+        margin-right: 10px; /*Asigna un margen derecho de 10px*/
+    }   
+
+    /*Se asignan los valores a la clase .respuesta que hace referencia a la seccion que incluye el contorno de la respuesta, el texto y la imagen*/
+    .respuesta{
+        display: flex; /*Permmite definir la clase como contenedor flexible en bloque*/
+    }  
+
+    /**/
+    .contornorespuesta{
+        background-color: #220049; /*Se asigna el color de fondo*/
+        border-style: dashed; /*Establece el estilo de las lineas del borde*/
+        border-color: rgb(255, 0, 242); /*Asigna el color del borde*/
+        border-width: 4px; /*Asigna el ancho del borde*/
+        position: relative; /*El elemento se coloca según el flujo normal del documento*/
+        margin-top: 40px; /*Asigna un margen superior de 40px*/
+        margin-left: 30px; /*Asigna un margen izquierdo de 15px*/ 
+        padding-left: 1.5em; /*Asigna un relleno izquierdo de 1,5em*/
+        padding-right: 1.5em; /*Asigna un relleno derecho de 1,5em*/
+        height: 50%; /*Asigna un alto de un 50%*/
+
+    /*crea un pseudo-elemento que es el primer hijo del elemento seleccionado, en este caso la sombra que al estar debajo de la flecha y de tamaño superior visualizaremos como el borde*/
+    ::before{
+        content: ''; /*Asigna el valor que se representa en las propiedades de abajo en este caso representa la flecha*/
+        position: absolute; /*El elemento se eliminara del flujo del documento y se determinara su posicion con las siguientes propiedades*/
+        left:  -15px; /*Determina en px la posicion teniendo en cuenta la distancia del borde izquierdo del contenedor*/
+        top: 50%; /*Determina en % la posicion teniendo en cuenta la distancia del borde superior del contenedor*/
+        border-style: solid; /*Establece el estilo de las lineas del borde*/
+        border-width: 0 0 15px 15px; /*Representa el ancho de los 4 bordes por separado*/
+        border-color: #220049 transparent; /*Se asigna el color del borde*/
+        z-index: 1; /*Sirve para indicar que elemento se tiene que posicionar por encima cuando hay dos elementos en la misma posicion*/
+    }
+
+    /*crea un pseudo-elemento que es el último hijo del elemento seleccionado, en este caso la "flecha" que separa la imagen del texto*/
+    ::after{
+        content: ""; /*Asigna el valor que se representa en las propiedades de abajo en este caso representa la flecha mas grande que se ve visualmente como el borde*/
+        position: absolute; /*El elemento se eliminara del flujo del documento y se determinara su posicion con las siguientes propiedades*/
+        left: -22px; /*Determina en px la posicion teniendo en cuenta la distancia del borde izquierdo del contenedor*/
+        top: 38%; /*Determina en % la posicion teniendo en cuenta la distancia del borde izquierdo del contenedor*/
+        border-style: solid; /*Establece el estilo de las lineas del borde*/
+        border-width: 0 0 25px 22px ; /*Representa el ancho de los 4 bordes por separado*/
+        border-color: rgb(255, 0, 242) transparent; /*Se asigna el color del borde*/
+        z-index: 0; /*Sirve para indicar que elemento se tiene que posicionar por encima cuando hay dos elementos en la misma posicion*/
+    }
+    }
+
+    /*Se asignan los valores al id luka que hace referencia a la img*/
+    #luka{
+        border-radius: 50%; /*Redondea las esquinas en un 50%*/
+        width: 20%; /*Asigna un ancho de un 20%*/
+        max-width: 150px; /*Asigna un ancho maximo de 150px*/
+        min-width: 75px; /*Asigna un ancho minimo de 75px*/
+        height: 20%; /*Asigna una altura del 20%*/
+        display: inline-block; /*Alinea en linea los diferentes elementos*/
+        margin-top: 5px; /*Asigna un ancho del margen superior de 5px*/
+        margin-bottom: 5px; /*Asigna un ancho del margen inferior de 5px*/
+        margin-left: 10px; /*Asigna un ancho del margen izquierdo de 10px*/
+    }
+
+    /*Se asignan los valores a la clase .texto que incluyen los textos tanto de preguntas*/
+    .textoPregunta{
+        font-family: fuente1;
+        text-align: center; /*Alinea el texto al centro*/
+        color: rgb(255, 255, 255); /*Asigna el color del texto*/
+    }
+
+    .textoRespuesta{
+        font-family: fuente2;
+        text-align: center; /*Alinea el texto al centro*/
+        color: rgb(255, 255, 255); /*Asigna el color del texto*/
+    }
+
+    @font-face {
+        font-family: fuente1;
+        src: url(../../font/dialogo/Beyonders.ttf);
+    }
+    
+    @font-face {
+        font-family: fuente2;
+        src: url(../../font/dialogo/varsity_regular.ttf);
+    }

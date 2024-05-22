@@ -1,0 +1,241 @@
+body{
+    background-color: black;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+.habilidades{
+    width: 35%;
+    margin: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    float: left;
+}
+
+.contenedor{
+    width: 100%;
+    background-color: rgb(208, 204, 204);
+    border-radius: 4rem;
+}
+
+.porcentaje{
+    text-align: right;
+    padding: 10px;
+    color: white;
+    font-weight: white;
+}
+
+.hab1{
+    background: linear-gradient(to right, rgb(65, 0, 0), rgb(255, 0, 0)); 
+    animation: hab1 2s forwards;
+    border-radius: 4rem;
+}
+
+.hab2{
+    background: linear-gradient(to right, rgb(34, 0, 44), rgb(140, 0, 255)); 
+    animation: hab2 2s forwards;
+    border-radius: 4rem;
+}
+
+.hab3{
+    background: linear-gradient(to right, rgb(15, 65, 0), rgb(56, 197, 0)); 
+    animation: hab3 2s forwards;
+    border-radius: 4rem;
+}
+
+.hab4{
+    background: linear-gradient(to right, rgb(59, 65, 0), rgb(217, 255, 0)); 
+    animation: hab4 2s forwards;
+    border-radius: 4rem;
+}
+
+@keyframes hab1{
+    0%{
+        width: 0;
+    }
+
+    100%{
+        width:60%;
+    }
+}
+
+@keyframes hab2{
+    0%{
+        width: 0;
+    }
+
+    100%{
+        width:75%;
+    }
+}
+
+@keyframes hab3{
+    0%{
+        width: 0;
+    }
+
+    100%{
+        width:50%;
+    }
+}
+
+@keyframes hab4{
+    0%{
+        width: 0;
+    }
+
+    100%{
+        width:90%;
+    }
+}
+
+.habilidades1{
+    width: 35%;
+    margin: auto;
+    padding-right: 10%;
+    float: right;
+}
+
+.contenedor1{
+    width: 100%;
+    background-color: rgb(208, 204, 204);
+    border-radius: 4rem;
+}
+
+.porcentaje1{
+    text-align: right;
+    padding: 10px;
+    color: white;
+    font-weight: white;
+}
+
+.hab5{
+    background: linear-gradient(to right, rgb(0, 57, 65), rgb(0, 168, 197)); 
+    animation: hab5 2s forwards;
+    border-radius: 4rem;
+}
+
+.hab6{
+    background: linear-gradient(to right, rgb(65, 0, 54), rgb(191, 0, 197)); 
+    animation: hab6 2s forwards;
+    border-radius: 4rem;
+}
+
+.hab7{
+    background: linear-gradient(to right, rgb(20, 0, 65), rgb(20, 0, 197)); 
+    animation: hab4 2s forwards;
+    border-radius: 4rem;
+}
+
+.hab8{
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(80, 80, 80)); 
+    animation: hab8 2s forwards;
+    border-radius: 4rem;
+}
+
+@keyframes hab5{
+    0%{
+        width: 0;
+    }
+
+    100%{
+        width:70%;
+    }
+}
+
+@keyframes hab6{
+    0%{
+        width: 0;
+    }
+
+    100%{
+        width:35%;
+    }
+}
+
+@keyframes hab7{
+    0%{
+        width: 0;
+    }
+
+    100%{
+        width:85%;
+    }
+}
+
+@keyframes hab8{
+    0%{
+        width: 0;
+    }
+
+    100%{
+        width:40%;
+    }
+}
+
+main{
+    height: 470px;
+    
+}
+
+.PoliticaPrivacidad{
+    float: left;
+    width: 33%;
+}
+
+.PoliticaCookies{
+    display: inline-block;
+    width: 33%;
+}
+
+.AvisoLegal{
+    float: right;
+    width: 33%;
+}
+
+.Identificacion{
+    margin-top: 0%;
+    padding-top: 0%;
+    padding-bottom: 1%;
+}
+
+p{
+    text-align: center;
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+table{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+}
+
+table td{
+    width: 7.5%;
+}
+
+.Equipo{
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.Nombre{
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+h4{
+    color: white;
+}
+
+td{
+    color: white;
+}

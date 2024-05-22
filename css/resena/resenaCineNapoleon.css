@@ -1,0 +1,118 @@
+*{ /*Fuente del texto de la pagina entera y colos del mismo*/
+    font-family: serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+*::after, *be{
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../../img/resena/resenaCineNapoleon/FondoNapoleonOpcion1.jpg");
+    background-repeat: repeat;
+    background-position: center, center;
+    background-size: cover;
+    min-height: 98vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    border: 3px solid black;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.3);
+    word-spacing: 9px;
+    letter-spacing: 2px;
+}
+main{
+    border: 3px solid black;
+    min-height: 650px;
+    width:fit-content;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(128, 128, 128, 0.3);
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    grid-row-gap: 50px;
+    grid-column-gap: 25px;
+}
+div{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    font-size: 22px;
+    line-height: 150%;
+}
+div::first-letter{
+    font-size: 45px;
+    float: left;
+    font-weight: bold;
+}
+
+section{
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(39, 39, 39, 0.5);
+    align-items: center;
+}
+section:hover{ /*Animacion de movimiento, aumento de sombreado y cambio de color del mismo*/
+    transform: translateY(-10px);
+    background-color: rgba(25, 25, 25, 0.8);
+    box-shadow: 0px 0px 100px 25px rgba(15, 15, 15, 0.692);
+    transition-duration: 0.75s;
+}
+
+footer{
+    border: 3px solid black;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+
+@media (max-width: 1152px) {
+    div{
+        font-size: 20px;
+    }
+    div::first-letter{
+        font-size: 30px;
+    }
+    body{
+        height: 100vh;
+    }
+    main{
+        grid-row-gap: 30px;
+        grid-column-gap: 20px;
+        grid-template-columns: repeat(2,3fr);
+        height: fit-content;
+    }
+}
+
+@media (max-width: 800px) {
+    div{
+        font-size: 15px;
+    }
+    div::first-letter{
+        font-size: 25px;
+    }
+    body{
+        height: 100vh;
+    }
+    main{
+        grid-row-gap: 30px;
+        grid-column-gap: 20px;
+        grid-template-columns: repeat(2,3fr);
+        height: fit-content;
+    }
+}

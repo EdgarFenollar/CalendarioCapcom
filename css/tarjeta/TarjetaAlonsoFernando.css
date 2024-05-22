@@ -1,0 +1,110 @@
+body{
+    font-family: Arial; 
+    background-color: rgb(50, 151, 50);
+}
+.principal1{
+    position: relative;
+    width: 35%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px 20px 0px 0px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    left: 550px;
+    background-color: rgba(252, 60, 53, 0.542);
+    border-bottom: none;
+}
+.principal2{
+    position: relative;
+    width: 35%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 0px 0px 20px 20px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    left: 550px;
+    background-color: rgb(169, 250, 7);
+    border-top: none;
+}
+.titulo1{
+    position: relative;
+    border: 3px solid black;
+    background-color: skyblue;
+    text-align: center;
+    width: 70%;
+}
+.titulo2{
+    border: 2px solid black;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    width: 70%;
+}
+img{
+    position: relative;
+    width: 70%;
+    border-radius: 70%;
+}
+img:hover{
+    width: 90%;
+    transition: 0.2 all ease;
+}
+header{
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.nombre1{
+    text-decoration: underline blue;
+}
+.nombre1:hover{
+    color: white;
+    text-decoration: yellow;
+    background-color: black;
+}
+.boton1{
+    width: 50%;
+    position: relative;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid black;
+    background-color: lime;
+    text-decoration: underline black;
+}
+.boton1:hover{
+    text-decoration: underline yellow;
+    color: black;
+    background-color: green;
+}
+.botones{
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+footer{
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    right: 50px;
+}
+.pie{
+    border: 2px dashed yellow;
+    background-color: purple;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+.autor{
+    text-decoration: underline red;
+}
+.autor:hover{
+    text-decoration: underline 3px lightcoral;
+    color: black;
+    background-color: white;
+}

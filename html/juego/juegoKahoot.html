@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/juego/juegoKahoot.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.0/dist/sweetalert2.all.min.js"></script> <!--Es una librería que al finalizar todo los cuestionarios, este mostrará la puntuación final.-->
+    <title>GGB</title>
+    
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="container">
+            <div class="puntaje" id="puntaje"></div>
+            <div class="encabezado">
+                <div class="categoria" id="categoria">
+                </div>
+                <div class="numero" id="numero"></div>
+                <div class="pregunta" id="pregunta">
+                </div>
+                <img src="#" class="foto" id="foto"> <!--Es donde van a situarse todas las imágenes de nuestra base de datos.-->
+            </div>
+            <div class="soluciones">
+                <div class="btn" id="btn1" onclick="oprimir_btn(0)"></div>
+                <div class="btn" id="btn2" onclick="oprimir_btn(1)"></div>
+                <div class="btn" id="btn3" onclick="oprimir_btn(2)"></div>
+                <div class="btn" id="btn4" onclick="oprimir_btn(3)"></div>
+            </div>
+            <script src="../../js/juego/juegoKahoot.js"></script>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+
+    
+</body>
+
+</html>

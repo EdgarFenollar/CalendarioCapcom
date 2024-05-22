@@ -1,0 +1,143 @@
+* {
+
+}
+
+body {
+    background: linear-gradient(rgb(69, 69, 234), rgb(244, 4, 244));
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-color: rgb(248, 248, 248);
+    width: 100%;
+    height: auto;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    opacity: 60%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 25px;
+    column-gap: 2%;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    padding: 1%;
+}
+
+@media screen and (max-width: 500px) {
+    body{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header{
+        width: 50%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 25px;
+        column-gap: 2%;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        padding: 1%;
+    }
+
+    section{
+        opacity: 0.5;
+        transition: 0.3s ease-in-out;
+        background-color: rgba(192, 186, 174, 0.8);
+        border: solid 2px rgb(239, 231, 231);
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        padding: 2px;
+    }
+    
+    section:hover {
+        opacity: 1;
+        color: #0f0c07;
+    }
+    
+    
+    section:hover p {
+        color: black;
+    }
+    
+}
+
+section{
+    opacity: 0.5;
+    transform: scale(0.9);
+    transition: 0.3s ease-in-out;
+    background-color: rgba(192, 186, 174, 0.8);
+    border: solid 2px rgb(239, 231, 231);
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding: 2px;
+}
+
+section:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    color: #0f0c07;
+}
+
+
+section:hover p {
+    color: black;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    margin-top: 20px;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(248, 248, 248);
+    opacity: 60%;
+    color: rgb(12, 13, 13);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h4{
+    color: #0f0c07;
+    font-size: x-large;
+    margin:0
+}
+
+p{
+    font-size: large;
+    margin: 2%;
+    color: transparent;
+
+}
+
+p::first-letter {
+    font-size: xx-large;
+}
+
+
+.imgResena{
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    border-radius: 5%;
+    border: 1px solid rgb(239, 231, 231);
+}

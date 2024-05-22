@@ -1,0 +1,217 @@
+*{
+    font-family: Verdana;
+}
+
+body{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    /*justify-content: space-between;*/
+    background-image: url("../../img/dialogo/DialogoCine/FondoInterstellar.jpg");
+    color: white;
+    min-width: 600px;
+    max-width: 1980px;
+}
+
+main{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    height: 740px;
+    border: solid 3px rgba(255, 187, 0, 0.61);
+    background-color: rgba(20, 20, 20, 0.507);
+}
+
+header{ 
+    display: flex;
+    text-align: center;
+    color: white;
+    border: solid 3px rgba(255, 187, 0, 0.61);
+    background-color: rgba(20, 20, 20, 0.842);
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bocadillo-globo1{
+    border-radius: 25px;
+       padding: 12px;
+       background: rgba(20, 20, 20);
+       color: white;
+    padding: 10px;
+    position: relative;
+    top: 216px;
+    left: 180px;
+    margin: 0 auto;
+    z-index: 1;
+    font-weight: bold;
+}
+.bocadillo-globo1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 800px;
+    background: transparent;
+    width: 0px; height: 0px;
+    border-bottom: 40px solid rgba(20, 20, 20);
+    border-right: 40px solid transparent;
+    border-left: 40px solid transparent;
+    transform: rotate(-110deg);
+    z-index: -1;
+}
+
+.bocadillo-cuadrado1{
+    padding: 12px;
+    background: rgb(255, 255, 255);
+    color: black;
+    position: relative;
+    padding: 10px;
+    right: 120px;
+    top: 136px;
+    margin: 0 auto;
+    z-index: 1;
+    font-weight: bold;
+}
+.bocadillo-cuadrado1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background: transparent;
+    width: 0px; height: 0px;
+    border-bottom: 40px solid rgba(255, 255, 255);
+    border-right: 40px solid transparent;
+    border-left: 40px solid transparent;
+    transform: rotate(110deg);
+    z-index: -1;
+}
+
+.bocadillo-globo2{
+    border-radius: 25px;
+       padding: 12px;
+       background: rgba(20, 20, 20);
+       color: white;
+    padding: 10px;
+    position: relative;
+    top: 66px;
+    left: 295px;
+    margin: 0 auto;
+    z-index: 1;
+    font-weight: bold;
+}
+.bocadillo-globo2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 550px;
+    background: transparent;
+    width: 0px; height: 0px;
+    border-bottom: 40px solid rgba(20, 20, 20);
+    border-right: 40px solid transparent;
+    border-left: 40px solid transparent;
+    transform: rotate(-110deg);
+    z-index: -1;
+}
+
+.bocadillo-cuadrado2{
+    padding: 12px;
+    background: rgba(255, 255, 255);
+    color: black;
+    padding: 10px;
+    position: relative;
+    right: 530px;
+    bottom: 4px;
+    margin: 0 auto;
+    z-index: 1;
+    font-weight: bold;
+}
+.bocadillo-cuadrado2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background: transparent;
+    width: 0px; height: 0px;
+    border-bottom: 40px solid rgba(255, 255, 255);
+    border-right: 40px solid transparent;
+    border-left: 40px solid transparent;
+    transform: rotate(110deg);
+    z-index: -1;
+}
+.bocadillo-globo3{
+    border-radius: 25px;
+       padding: 12px;
+       background: rgba(20, 20, 20);
+       color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 94px;
+    left: 90px;
+    width: 70%;
+    margin: 0 auto;
+    z-index: 1;
+    font-weight: bold;
+}
+.bocadillo-globo3::after {
+    content: '';
+    position: absolute;
+    left: 950px;
+    bottom: 0;
+    background: transparent;
+    width: 0px; height: 0px;
+    border-bottom: 40px solid rgba(20, 20, 20);
+    border-right: 40px solid transparent;
+    border-left: 40px solid transparent;
+    transform: rotate(-110deg);
+    z-index: -1;
+}
+
+#imgAutor1-1{
+    position: relative;
+    top: 126px;
+    left: 1360px;
+    width: 5%;
+    margin: 10px;
+    border-radius: 10%;
+}
+
+#imgAutor1-2{
+    position: relative;
+    left: 1360px;
+    bottom: 24px;
+    width: 5%;
+    margin: 10px;
+    border-radius: 10%;
+}
+
+#imgAutor1-3{
+    position: relative;
+    left: 1360px;
+    bottom: 214px;
+    width: 5%;
+    margin: 10px;
+    border-radius: 10%;
+}
+
+#imgAutor2-1{
+    position: relative;
+    top: 46px;
+    width: 6%;
+    margin: 10px;
+    border-radius: 10%;
+}
+
+#imgAutor2-2{
+    position: relative;
+    bottom: 94px;
+    width: 6%;
+    margin: 10px;
+    border-radius: 10%;
+}
+
+/* A la conversarcion: Flex column, Space between, justify content: center */
+/* Align items: center (Centra el contenido al centro de la dirección contraria*/
+/* justiy content (Centra el contenido en la dirección principal*/
+/* display-flex */

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../css/juego/juegoSaltarin.css">
+</head>
+
+<body id="bd">
+  <div id="ruler">
+    <img id="regla" src="../../img/juego/juegoSaltarin_Hilo/rul.png" width=82%>
+  </div>
+
+<!-- T E X T O S -->
+
+
+  <div id="pMarte">
+    <h1>
+      M A R T E
+    </h1>
+  </div>
+
+  <div id = "pJupiter">
+    <h1>
+      J U P I T E R
+    </h1>
+  </div>
+
+
+  <div id = "pSaturno">
+    <h1>
+      S A T U R N O
+    </h1>
+  </div>
+
+  <div id = "pNeptuno">
+    <h1>
+      N E P T U N O
+    </h1>
+  </div>
+
+  <div id = "pVenus">
+    <h1>
+      V E N U S
+    </h1>
+  </div>
+
+  <div id = "pMercurio">
+    <h1>
+      M E R C U R I O
+    </h1>
+  </div>
+
+<!-- D I V S  E  I M Á G E N E S -->
+
+  <div id="Bocata">
+    <img src="../../img/juego/juegoSaltarin_Hilo/bocadillo.png" alt="Bocadillo" width="300px" heigth="1px">
+
+    <p class="Texto">¡Hola!<br>
+      Yo soy Antonio.
+    </p>
+  </div>
+
+  <div class="deAstronauta">
+    <img src="../../img/juego/juegoSaltarin_Hilo/astronauta.png" widhth="200" height="150">
+  </div>
+
+  <div id="laBase">
+    <img src="../../img/juego/juegoSaltarin_Hilo/base.png" widhth="200" height="150">
+  </div>
+
+
+  <div id="cuadro">
+    <div id="texto1">
+      <H1><u> R E G L A S</u></H1>
+      <div id="ulReglas">
+        <h2>
+          <ul>
+            <li>El astronauta saltará en cada ronda,
+              y tú debes decidir una altura a la que
+              crees que va a llegar en cada planeta</li>
+            <br>
+            <li>El margen de fallo es de 5cm</li>
+            <br>
+            <li>1 ACIERTO = 1 PUNTOS</li>
+            <br>
+            <li>1 FALLO = -0.5 PUNTOS</li>
+            <br>
+            <li>Ganas con 3 puntos o más</li>
+            <br>
+          </ul>
+          <a class="boton" href="#" onclick="aceptar()">¡ENTENDIDO!</a>
+        </h2>
+      </div>
+    </div>
+
+    <div id="texto2">
+      <H1><u> D I S T A N C I A</u></H1>
+      <br>
+      <div id="marcador">
+        <h2>Escoge una distancia </h2>
+        <br><br><br><br><br>
+        <input class="digitos" type="number" name="d1" id="d1" placeholder="Ingresa los centrímetros">
+        <br><br><br><br>
+        <a class="boton2" href="#" onclick="saltoMarte()">¡QUÉ SALTE!</a>
+        <br>
+        <a class="boton2" href="#" onclick="siguientePlaneta()">Siguiente planeta</a>
+      </div>
+      
+    </div>
+  </div>
+
+      <div id="div2">
+      <H1>PUNTUACIÓN ACTUAL:</H1>
+      <br>
+      <div class="resultado">
+        <p id="puntuar"></p>
+    </div>
+      <br>
+
+      <H2>El salto ha sido de :</H2>
+      <br>
+      <div class="resultado">
+        <p id="elSalto"></p>
+    </div>
+      <br><br>
+  </div>
+  <script src='../../js/juego/juegoSaltarin.js'></script>
+  </main>
+</body>
+</html>

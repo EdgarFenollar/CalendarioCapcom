@@ -1,0 +1,117 @@
+@font-face{
+    font-family: formula1regular;
+    src: url('../../font/fuentesF1/formula1regular.ttf') format('truetype');
+}
+html{                               /*Esta línea de código especifica el css de toda la página, en este caso solo tiene la fuente de los textos de esta*/
+    font-family: formula1regular;
+}
+body{
+    background-image: url('../../img/comparativa/comparativaF1/fondo.jpg');
+    background-size: 100%;
+    color: white;
+}
+header{                 /*Estas líneas de código son para el título, en este caso solo se le cambia el estilo del posicionamiento*/
+    position: relative;
+}
+.titulo1{               /*Estas líneas de código sirven para dar el formato del titlo de la página*/
+    position: relative;
+    border: 2px solid white;
+    text-align: center;
+    background-color: black;
+    width: 50%;
+    padding: 20px;
+    left: 400px;
+}
+.parrafo1{              /*Estas líneas de código sirven para dar el formato al párrafo justo debajo del título de la página*/
+    position: relative;
+    border: 2px solid white;
+    background-color: black;
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    left: 400px;
+}
+main{                   /*Esta línea de código sirve para dar el formato a todo el contenido de la página, en este caso solo se altera el posicionamiento de los objetos del contenido de la página*/
+    position: relative;
+}
+footer{                 /*Estas líneas de css sirven para darle formato al final de la página que es un parrafo con recuadro*/
+    position: relative;
+    left: 400px;
+    top: 200px;
+    width: 45%;
+    border: 3px solid black;
+    border-radius: 30px 30px 30px 30px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.lista1{                /*Este apartado en el css, sirve para editar el estilo de la primera lista de la página*/
+    position: relative;
+    width: 35%;
+    margin-left: 20px;
+    border: 5px double blue;
+    padding: 20px;
+    background-color: rgba(0, 0, 255, 0.296);
+}
+.lista2{                /*Este apartado de la página en el css sirve para darle formato a la segunda lista de la página de comparativas*/
+    position: relative;
+    width: 35%;
+    border: 5px double red;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    float: right;
+    clear: both;
+    margin-right: 20px;
+    background-color: rgba(255, 0, 0, 0.407);
+}
+.titulolista{           /*Estas líneas sirven para darle formato a los titulos de las listas de la página*/
+    text-decoration: underline lightgreen;
+    font-weight: bold;
+}
+.titulofila{            /*Estas líneas sirven para darle formato a los títulos de las filas de la primera lista de la página*/
+    text-decoration: underline lightyellow;
+    text-align: center;
+}
+.titulofila2{           /*Estas líneas sirven para darle el formato a los títulos de las filas de la segunda tabla de la página*/
+    text-decoration: underline lightyellow;
+    text-align: center;
+}
+.logos1{                /*Estas líneas sirven para darle el formato al logo de la segunda lista de la página*/
+    position: relative;
+    width: 25%;
+    left: 350px;
+    bottom: 40px;
+}
+.logos2{                /*Estas lineas en el código sirven para dar formato a los logos 2 y 3*/
+    position: relative;             
+    width: 15%;
+    left: 350px;
+    bottom: 40px;
+}
+.logos{                 /*Estas líneas sirven para darle el formato a la imágen de todos los logos de la Formula 1 a través de los años*/
+    position: relative;
+    width: 28%;
+    float: right;
+    clear: both;
+    margin-right: 40px;
+    margin-top: 40px;
+}
+.nombre{                /*Estas líneas sirven para darle el formato al nombre del autor, el mío*/
+    color: white;
+    text-decoration: underline blue;
+    transition: all ease 0.2s;
+}
+.nombre:hover{          /*Estas líneas hacen que cuando pases con el cursor por encima del nombre cambien de color tanto el nombre como el subrayado*/
+    color: black;
+    text-decoration: underline red;
+}
+.deporte{               /*Aquí le doy el formato a la palabra Formula 1*/
+    color: red;
+}
+.deporte:hover{         /*Con estas líneas hago el mismo efecto que con el nombre para que se resalten los cambios cuando el cursor del ratón pasen por encima*/
+    background-color: white;
+    text-decoration: underline red;
+    transition: all ease 0.2s;
+}

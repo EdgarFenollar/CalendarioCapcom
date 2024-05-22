@@ -1,0 +1,63 @@
+h1 { 
+    color:rgb(255, 255, 255);
+    font-size: 350%;
+}
+
+/*Cambiar tamaño imagen y añadirle borde*/
+.imgethan {
+    width: 250px;
+    height: 250px;
+    align-self: center;
+    border: 5px solid black;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+}
+
+/*Fondo curriculum*/
+main {
+    color: aliceblue;
+    padding: 10%;
+    font-size: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*Eliminar bordes blancos*/
+body, footer, header {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    display: flex;
+    float: right;
+}
+
+/*Alinear y centrar el footer*/
+.ufooter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: aliceblue;
+}
+
+body {
+    background-image: url("../../img/curriculum/fondoethanwinters.jpg");
+    background-size: cover;
+}
+
+/*Cambiar el color de los enlaces a gris*/
+a {
+    color: gray;
+}
+
+.bio {
+    text-align: justify;
+}

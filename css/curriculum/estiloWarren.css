@@ -1,0 +1,26 @@
+body{
+  background-color:silver;
+  /* dudo con este otro color rgb(255, 228, 159) */
+}
+
+h1{
+  font-size: 75px;
+  font-family:'Franklin Gothic Medium', Arial, sans-serif
+}
+
+h4{
+  color:green;
+}
+
+.foto-warren{
+  width: 250px;
+  border-radius: 150px;
+  
+}
+
+#logo-berkshire{
+  border-radius: 60px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgba(0, 0, 255, 0.705);
+}

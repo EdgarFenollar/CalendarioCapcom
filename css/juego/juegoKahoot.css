@@ -1,0 +1,77 @@
+body{
+    padding: 0;
+    margin: 0px 0px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #100f10;
+    font-size: 125%;
+    font-family: calibri;
+    background-image: url("../../img/juego/fondoKahoot.jpg");
+}
+
+.container{
+    width: 98vw;
+    height: 98vh;
+    display: inline-flex; /*Es para que me deje centrar con align items el contenedor*/
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.numero{
+    position: absolute;
+    opacity:0.3;
+    top: 10px;
+    right: 10px;
+  }
+
+.puntaje{
+    padding:10px;
+    color:white;
+}
+
+.encabezado{
+    width: 70%;
+    min-width: 350px;
+    background-color: white;
+    padding: 7.5px;
+    max-width: 700px;
+}
+
+.categoria{
+    opacity: 0.4;
+    text-align: left;/*Si hacemos float left haremos que se ponga al mismo nivel que la pregunta.*/
+}
+
+.pregunta{
+    padding: 10px;
+}
+
+.foto{
+    height: 175px;
+    width: 100%;
+    object-fit: cover;/*Definimos la forma que tienen que adaptarse las fotos*/
+    background-color: white;
+}
+
+.soluciones{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);/*Con lo aprendido de clase, mi idea principal era hacerlo con display flex y columnas, pero se me me ocurrió mejor usar el display grid y separarlo por dos columnas mejor.*/
+    grid-gap: 10px;
+    width: 60%;
+    max-width: 575px;
+}
+
+.btn{
+    background-color: white;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: all 0.5s;
+}

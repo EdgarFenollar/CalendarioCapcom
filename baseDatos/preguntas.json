@@ -1,0 +1,179 @@
+[
+    {
+        "categoria": "Ejercicios",
+        "pregunta": "¿Este ejercicio, a que cabeza del bíceps enfoca más?",
+        "solucion": "La cabeza corta.",
+        "error1": "La cabeza larga.",
+        "error2": "La cabeza media.",
+        "error3": "La 3 cabezas.",
+        "foto": "../../img/juego/juegoKahoot/curlPredicador.webp",
+        "objectFit": "scale-down"
+    },
+    {
+        "categoria": "Ejercicios",
+        "pregunta": "Uno de los ejercicios para enfocarte más en la fuerza de los triceps es:",
+        "solucion": "Fondos.",
+        "error1": "Pullover.",
+        "error2": "Press francés.",
+        "error3": "Press de triceps con cuerda."   
+    },
+    {
+        "categoria": "Ejercicios",
+        "pregunta": "¿Es mejor press plano que press inclinado?",
+        "solucion": "Depende de tus metas.",
+        "error1": "Si.",
+        "error2": "No.",
+        "error3": "Press declinado es mejor",
+        "foto": "../../img/juego/juegoKahoot/pressBanca.webp",
+        "objectFit": "scale-down"
+    },
+    {
+        "categoria": "Ejercicios",
+        "pregunta": "¿Cuál de estos ejercicios son para tríceps?",
+        "solucion": "Todos.",
+        "error1": "Press banca con cierre cerrado.",
+        "error2": "Fondos.",
+        "error3": "Press francés."
+    },
+    {
+        "categoria": "Ejercicios",
+        "pregunta": "Para trabajar la aducción del pecho hacemos:",
+        "solucion": "Aperturas.",
+        "error1": "Press inclinado.",
+        "error2": "Press plano.",
+        "error3": "Ninguno."
+    },
+    {
+        "categoria": "Ejercicios",
+        "pregunta": "Los remos,con agarre cerrado van enfocados más para la:",
+        "solucion": "Amplitud.",
+        "error1": "Densidad.",
+        "error2": "Ambas.",
+        "error3": "Ninguno.",
+        "foto": "../../img/juego/juegoKahoot/remoCerrado.webp",
+        "objectFit": "scale-down"
+    },
+    {
+        "categoria": "Ejercicios",
+        "pregunta": "La máquina hacka se enfoca más en los:",
+        "solucion": "Cuádriceps.",
+        "error1": "Femorales.",
+        "error2": "Gemelos.",
+        "error3": "Dedos.",
+        "foto": "../../img/juego/juegoKahoot/sentadillaHack.gif",
+        "objectFit": "scale-down"
+    },
+    {
+        "categoria": "Ejercicios",
+        "pregunta": "¿Qué enfoca más el press francés?",
+        "solucion": "Cabeza larga.",
+        "error1": "Cabeza media.",
+        "error2": "Cabeza corta.",
+        "error3": "Las 3.",
+        "foto": "../../img/juego/juegoKahoot/pressFrances.webp",
+        "objectFit": "scale-down"
+    },
+    {
+        "categoria": "Ejercicios",
+        "pregunta": "Elevación de gemelo sentado enfoca mas en:",
+        "solucion": "Soleo.",
+        "error1": "Gemelo.",
+        "error2": "Cuádriceps.",
+        "error3": "femoral.",
+        "foto": "../../img/juego/juegoKahoot/elevacionGemelo.webp",
+        "objectFit": "scale-down"
+    },
+    {
+        "categoria": "Suplementación",
+        "pregunta": "¿Qué es la creatina?",
+        "solucion": "Ácido orgánico nitrogenado que se encuentra en los músculos y células nerviosas.",
+        "error1": "Un tipo de proteina.",
+        "error2": "Una comida.",
+        "error3": "Un invento del gobierno.",
+        "foto": "../../img/juego/juegoKahoot/creatina.webp",
+        "objectFit": "scale-down"
+    },
+    {
+        "categoria": "Suplementación",
+        "pregunta": "¿Es necesario la proteina en polvo como tal?",
+        "solucion": "No, depende de tus requerimientos calóricos necesarios.",
+        "error1": "Si.",
+        "error2": "Siempre.",
+        "error3": "No sirve para nada.",
+        "foto": "../../img/juego/juegoKahoot/proteinaIsolate.webp",
+        "objectFit": "scale-down"
+    },
+    {
+        "categoria": "Suplementación",
+        "pregunta": "¿Como se llaman las pastillas que aumentan la hormona del sueño?",
+        "solucion": "Melatonina.",
+        "error1": "Magnesio.",
+        "error2": "Aswaghanda.",
+        "error3": "Creatina."
+    },
+    {
+        "categoria": "Suplementación",
+        "pregunta": "¿Es bueno excederse con el consumo de vitaminas?",
+        "solucion": "No, puede provocar un fallo renal.",
+        "error1": "No, puede provocar un fallo cardiaco.",
+        "error2": "No afecta en nada.",
+        "error3": "No,incluso es recomendado."
+    },
+    {
+        "categoria": "Suplementación",
+        "pregunta": "¿El exceso de creatina puede provocar problemas a la salud?",
+        "solucion": "No se sabe con exactitud con los estudios realizados pero es mejor no excederse con algo.",
+        "error1": "Si, es incluso mortal.",
+        "error2": "No, no ocurre nada.",
+        "error3": "Es bueno excederse."
+    },
+    {
+        "categoria": "Suplementación",
+        "pregunta": "¿La suplementación piensas es que necesaria , para mejorar físicamente?",
+        "solucion": "No.",
+        "error1": "Obvio.",
+        "error2": "Una persona con suplementación mejora más que una sin usar.",
+        "error3": "Es mejor el físico de una persona que no usa."
+    },
+    {
+        "categoria": "Suplementación",
+        "pregunta": "¿Es necesario tomar la suplementación a ciertas horas?",
+        "solucion": "Es recomendable leer el prospecto ya que algunos se disuelven mejor después de comer y otras son por dosis diaria.",
+        "error1": "No , no afecta nada en tomar la suplementación a cualquier hora.",
+        "error2": "Si, siempre es mejor tomarla por las mañanas.",
+        "error3": "Si, siempre es mejor tomarla por las noches."
+    },
+    {
+        "categoria": "Suplementación",
+        "pregunta": "¿Es bueno tomar cafeina como suplmentación?",
+        "solucion": "Solo en casos de que quieras realizar un buen entrenamiento y el cuerpo se sienta fatigado.",
+        "error1": "No, la cafeina no aporta nada al cuerpo.",
+        "error2": "Nunca.",
+        "error3": "Si, siempre es recomendable tomar varias pastillas de cafeina."
+    },
+    {
+        "categoria": "Suplementación",
+        "pregunta": "¿El magnesio en que ayuda?",
+        "solucion": "Recuperación de la masa muscular, ayudando en la absorción de las proteinas.",
+        "error1": "Influye en la energía del cuerpo.",
+        "error2": "Te aporta mas fuerza y vitalidad.",
+        "error3": "En poca cosa."
+    },
+    {
+        "categoria": "Suplementación",
+        "pregunta": "Llamamos a los aceites de pescados que son saludables para nuestro organismo como:",
+        "solucion": "Omega 3.",
+        "error1": "mk667.",
+        "error2": "Magnesio.",
+        "error3": "Aswaghanda."
+    },
+    {
+        "categoria": "Broma",
+        "pregunta": "¡IVÁN APRUEBAME PORFAVOR!",
+        "solucion": "Si",
+        "error1": "No",
+        "error2": "Puede",
+        "error3": "A julio campeón."
+    }
+    
+]

@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    
+}
+
+header{
+    width: 100vw;
+    height: 10vh;
+    background-color: aqua;
+    display: grid;
+    place-items: center;
+}
+
+h1{
+    font-size: 3em;
+    font-style: italic;
+}
+
+body{
+    background-color: aquamarine;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.container{
+    width: 100%;
+    height: 90%;
+    display:flex;
+    
+}
+
+.paraimagen{
+    border: solid black 2px;
+    height:30%;
+    width:30%;        
+}
+
+.WarrenBuffet{
+    border: solid black 2px;
+    border-radius: 50%;
+    width:80%;
+    height: 100%;
+}
+.WarrenBuffet:hover{
+    box-shadow: 5px 10px 10px 15px blue;
+}
+.paratexto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: solid black 2px;
+    padding-top: 20px;
+    background-color: azure;
+}
+

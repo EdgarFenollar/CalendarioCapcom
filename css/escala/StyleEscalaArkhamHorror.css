@@ -1,0 +1,222 @@
+*{
+    border-color: black;
+    border: 2px;
+}
+body{
+    background: grey;
+    width: 1200px;
+    margin: 0% auto;
+}
+
+header{
+    background: rgb(29, 29, 29);
+    color: rgb(255, 252, 249);
+    height: 100px;
+    width: 100%;
+    text-align: left;
+    line-height: 150px;
+    text-indent: 4.5%;
+    border-bottom: dashed black;
+}
+
+#heroes{
+    color: rgb(139, 74, 74);
+}
+
+main{
+    background: rgb(221, 221, 221);
+    height: 800px;
+    width: 100%;
+    min-height: 500px;
+    float: left;
+    border-right: black;
+}
+
+.card_container{
+    display: grid;
+    grid-template-columns: 550px 550px;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    justify-items: center;
+    align-items: center;
+
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.562);
+    position: relative;
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+    margin: 40px;
+    margin-bottom: 20px;
+    background-image: url("..\..\img\escala\prueba.jpg");
+    background-color: antiquewhite;
+}
+
+.cardBG{
+    border-radius: 10px;
+    position: absolute;
+}
+
+.title{
+    border-radius: 10px 10px 0 0;
+    background: rgba(36, 35, 35, 0.205);
+    height: 30px;
+    color: rgb(32, 29, 29);
+    display: flex;              /*necesario para dejar el texto centrado*/
+    align-items:center;         /*necesario para dejar el texto centrado*/
+    justify-content: center;    /*necesario para dejar el texto centrado*/
+    position: absolute;
+    width: 500px;
+}
+
+.rol {
+    border-radius: 0 0 10px 10px;
+    background: rgba(14, 14, 14, 0.116);
+    height:  20px;
+    color: black;
+    text-align: center;
+    line-height: 19px;
+    position: absolute;
+    top: 86.5%;
+    width: 500px;
+
+}
+.fotoHeroe{
+    border-radius: 0 0 10px 0;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    float: right;
+    position: absolute;
+    right: 0%;
+    top: 30px;
+    z-index: 1;
+}
+
+.chartContainer{
+    width: 250px;
+    height: 250px;
+    float: left;
+    position: absolute;
+    top: 30px;
+}
+
+.chartBase {
+    position: absolute;
+    bottom: 38px;
+    left: 38px;
+    z-index: 2;
+}
+#chart_Dexter {
+    float: left;
+    width: 175px;
+    height: 175px;
+    bottom: 38px;
+    left: 38px;
+                      /*influencia,   salud,   cordura, saber, observación, fuerza, voluntad*/
+    clip-path: polygon(113px 80px, 108px 43px, 34.5% 15%, 30% 44%, 42% 56%, 50% 60%, 58% 56%);
+    background: rgb(252,245,69);
+    background: radial-gradient(circle, rgba(245, 255, 105, 0.514) 10%, rgba(0, 255, 55, 0.473) 20%, rgb(0, 0, 255) 100%);
+    position: absolute;
+    margin: 0 auto;
+    z-index: 3;
+}
+#chart_Norman{
+    float: left;
+    width: 175px;
+    height: 175px;
+    bottom: 38px;
+    left: 38px;
+                      /*influencia,   salud,   cordura,   saber, observacion, fuerza, voluntad*/
+    clip-path: polygon(55% 49%, 108px 43px, 34.5% 15%, 35% 44%, 38% 59%, 50% 60%, 67% 62%);
+    background: rgb(252,245,69);
+    background: radial-gradient(circle, rgba(245, 255, 105, 0.514) 10%, rgba(0, 255, 55, 0.473) 20%, rgb(0, 0, 255) 100%);
+    position: absolute;
+    margin: 0 auto;
+    z-index: 3;
+}
+#chart_Jenny{
+    float: left;
+    width: 175px;
+    height: 175px;
+    bottom: 38px;
+    left: 38px;
+                    /*influencia, salud,  cordura,  saber, observacion, fuerza, voluntad*/
+    clip-path: polygon(70% 43%, 66% 15%, 39% 25%, 45% 49%, 42% 56%, 50% 65%, 62.5% 59.5%);
+    background: rgb(252,245,69);
+    background: radial-gradient(circle, rgba(245, 255, 105, 0.514) 10%, rgba(0, 255, 55, 0.473) 20%, rgb(0, 0, 255) 100%);
+    position: absolute;
+    margin: 0 auto;
+    z-index: 3;
+}
+#chart_Michael{
+    float: left;
+    width: 175px;
+    height: 175px;
+    bottom: 38px;
+    left: 38px;
+                    /*influencia, salud,  cordura,  saber, observacion, fuerza, voluntad*/
+    clip-path: polygon(113px 80px, 68% 10%, 41% 30%, 40% 49%, 46% 53%, 50% 70%, 62.5% 59.5%);
+    background: rgb(252,245,69);
+    background: radial-gradient(circle, rgba(245, 255, 105, 0.514) 10%, rgba(0, 255, 55, 0.473) 20%, rgb(0, 0, 255) 100%);
+    position: absolute;
+    margin: 0 auto;
+    z-index: 3;
+}
+
+.cordura{
+    position: absolute;
+    top: 0px;
+    left: 58px;
+    z-index: 4;
+}
+
+.salud{
+    position: absolute;
+    top: 0px;
+    right: 58px;
+    z-index: 5;
+}
+
+.influencia{
+    position: absolute;
+    top: 75px;
+    right: 0px;
+    z-index: 6;
+}
+
+.observacion{
+    position: absolute;
+    bottom: 43px;
+    left: 18px;
+    z-index: 4;
+}
+
+.saber{
+    position: absolute;
+    top: 75px;
+    left: 0px;
+    z-index: 4;
+}
+
+.voluntad{
+    position: absolute;
+    bottom: 43px;
+    right: 18px;
+    z-index: 4;
+}
+
+.fuerza{
+    position: absolute;
+    bottom: 0px;
+    left: 105px;
+    z-index: 4;
+}
+
+footer{
+    background: rgb(29, 29, 29);
+    color: rgb(255, 252, 249);
+    text-align: center;
+    width: 100%;
+}

@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Fuentes*/
+@font-face {
+    font-family: disney;
+    src: url(../../font/comparativa/ComparativaDisney/Walter.ttf);
+}
+
+@font-face {
+    font-family: Quicksand_book;
+    src: url(../../font/comparativa/ComparativaDisney/Quicksand_Book.otf);
+}
+
+@font-face {
+    font-family: Mulan;
+    src: url(../../font/comparativa/ComparativaDisney/Mulan.otf);
+}
+
+/*Color de fondo de la página*/
+body{
+    background:linear-gradient(to left, #191970, #4169E1);
+    width: 95%;
+}
+
+/* Titulo */
+h2{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    font-family: Mulan;
+    font-size:50px;
+    color: #bab523;
+}
+
+h3{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    color: rgb(43, 30, 30); 
+    font-family: Mulan;
+    font-size:30px;
+    font-weight: bold;
+    
+}
+
+.mulan1{
+    width: 30%; 
+    padding: 2%; 
+    border: 3px solid rgb(234, 227, 227);
+    border-radius: 0px 100px 0px 100px;
+    background-color: #A0CB7D;
+    font-family: Quicksand_book;
+    opacity: 0.8;
+    margin-bottom: 1%;
+    margin-left: 10%;
+    display: inline-block;
+}
+
+.foto{
+    padding: 10px; 
+    margin: 10px; 
+    border: 1px solid black; 
+    width: 250px; 
+    margin-left: 20%;
+    background:linear-gradient(to right, rgb(0, 0, 9),rgb(233, 233, 246));
+}
+
+.mulan ol li{
+    margin-left: 2%;
+        
+
+    font-size:15px;
+       
+}
+
+/*Footer*/
+footer{
+    background-color: white  ;
+    height: 60%;
+    margin-bottom: 15px;
+    width: 90%;
+    margin-left: 5%;
+    
+    }
+    
+    
+    /*GIF dentro del footer*/
+    .gif{
+        padding: 10px; 
+        margin: 5px; 
+        width: 130px; 
+        display: block;
+        margin-left: 85%;
+    }
+    
+    .infoFooter{
+        font-size: medium;
+        margin-left: 30%;
+        margin-top: 10px;
+        
+    }

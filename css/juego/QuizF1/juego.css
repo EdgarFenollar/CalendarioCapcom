@@ -1,0 +1,77 @@
+@font-face{
+    font-family: 'formula1';
+    src: url('../../../font/fuentesF1/formula1regular.ttf') format('truetype');
+}
+
+html{
+    font-family: formula1;
+}
+
+body{
+    background-image: url('../../../img/juego/JuegoF1/fondo1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+main{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    position: relative;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+header{
+    position: relative;
+    width: 35%;
+    left: 500px;
+}
+
+
+/*Etiquetas de clases y IDs*/
+.link{
+    color: black;
+}
+.inicio{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.fondo{
+    position: relative;
+    align-content: center;
+    justify-content: center;
+}
+
+.boton{
+    position: relative;
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+}
+.boton:hover{
+    position: relative;
+    transition: 0.4s all ease;
+    box-shadow: 0px 10px 10px 2px rgba(0, 0, 0, 0.7);
+    transform: translateY(10px);
+}
+.autor:hover{
+    text-decoration: underline red;
+    font-size: 40px;
+    transition: 0.4s all ease;
+}
+.subtitulo{
+    position: relative;
+    font-size: 20px;
+}

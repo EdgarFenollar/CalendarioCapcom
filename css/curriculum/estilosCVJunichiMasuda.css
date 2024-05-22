@@ -1,0 +1,84 @@
+/*Aitor Agulló Duque*/
+
+/*Pokeball inicio*/
+
+#pokeball {
+    background-image: url(../../img/curriculum/CVJunichiMasuda/PokeballCerrada.jpg); 
+    background-repeat: no-repeat; 
+    background-size: 400px; 
+    padding: 200px; 
+    width: 0px; 
+    height: 0px; 
+    background-position: center; 
+    margin: auto; 
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+#pokeball:hover {
+    background-image: url(../../img/curriculum/CVJunichiMasuda/PokeballAbierta.jpg); 
+    background-repeat: no-repeat;
+}
+
+.fondo {
+    background-image: none;
+    background-color: #000000;
+}
+
+/*Curriculo Junichi Masuda*/
+
+body {
+    margin: 30px; 
+    background-image: url(../../img/curriculum/CVJunichiMasuda/fondo.jpg);
+}
+
+h1 {
+    color: #ffffff; 
+    text-align: center; 
+    padding: 30px; 
+    background-color: rgb(34, 131, 196); 
+    border: solid black 2px; 
+    width: 400px;
+}
+
+#academico {
+    margin: auto;
+    padding: 30px;
+    background-color: rgb(246, 248, 111); 
+    color: #000000; 
+    border: solid black 1px; 
+    width: 350px; 
+    position: absolute;
+    top: 325px; 
+    left: 600px;
+}
+
+#profesional {
+    background-color: rgb(250, 74, 74); 
+    color: #000000; 
+    border: solid black 1px; 
+    margin: 30px 0px 0px 0px;
+    width: 600px;
+    padding: 10px;
+}
+
+#biografia {
+    background-color: rgb(87, 240, 87);
+    color: #000000;
+    border: solid black 1px;
+    margin: 10px 0px 0px 0px;
+    padding: 10px;
+}
+
+.juegos {
+    position: absolute;
+    top: 20px;
+    left: 600px;
+}
+
+em {
+    background-color: #ffffff75;
+}

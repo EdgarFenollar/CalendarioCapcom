@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completa la frase</title>
+    <link rel="stylesheet" href="./../../../css/juego/juegoPelicula/FraseCSS.css">
+</head>
+<body>
+    <header id="header"><h1>Completa la frase</h1></header>
+    <main id="main">
+        <span id="botonSalir" onclick="salir()">Salir</span>
+        <div id="imagen">
+            <img src="" id="img">
+        </div>
+        <!-- Input en el que se intenta adivinar la frase -->
+        <div>
+            <span id="fraseIncompleta"></span><input id="texto" type="text">. <br>
+            <button type="button" id="comprobar" onclick="comprobar()">Comprobar</button>
+        </div>
+
+        <!-- Imagenes de los corazones (vidas) -->
+        <div id="contenedorVidas">
+            <img class="vida" src="./../../../img/juego/juegoPelicula/vida.jpg">
+            <img class="vida" src="./../../../img/juego/juegoPelicula/vida.jpg">
+            <img class="vida" src="./../../../img/juego/juegoPelicula/vida.jpg">
+        </div>
+
+        <!-- Pequeño texto que te muestra la cantidad de aciertos seguidos que llevas -->
+        <span id="racha">Racha de aciertos: 0</span>
+    </main>
+    
+    <!-- Mensaje de derrota que se muestra cuando la cantidad de vidas llega a 0 -->
+    <div id="perder">
+        Has perdido. Deseas reiniciar?
+        <div>
+            <button onclick="salir()" id="salir">Salir</button>
+            <button onclick="reiniciar()" id="seguir">Reiniciar</button>
+        </div>
+    </div>
+
+    <script src="./../../../js/juego/juegoPelicula/JSFrase.js"></script>
+</body>
+</html>

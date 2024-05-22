@@ -1,0 +1,133 @@
+/*Esto es para resetear los estilos*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Fuentes*/
+@font-face {
+    font-family: disney;
+    src: url(../../font/frase/Disney/Walter.ttf);
+}
+
+@font-face {
+    font-family: Quicksand_book;
+    src: url(../../font/frase/Disney/Quicksand_Book.otf);
+}
+
+/*Color de fondo de la página*/
+body{
+    background:linear-gradient(to left, #191970, #4169E1);
+    width: 95%;
+}
+
+/*Imagen central*/
+.mulan{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 10%;
+    border: 3px solid #953C4E;
+    border-radius: 0px 30px 0px 30px;
+    box-shadow: inset 0 -3em 3em rgb(56, 54, 50),   0 0  0 0px rgb(255,255,255),
+      0.3em 0.3em 1em rgb(56, 54, 50);  
+  }
+
+/*Frase*/
+.frase{
+    width: 50%; 
+    height: 100px;
+    margin-left: 25%;
+    padding: 0.5%;
+    margin-top: 1%;
+    margin-bottom: 30%;
+    position: relative;
+    border-radius: 0px 0px 0px 15px;
+    background: linear-gradient(to left, #59BEB1,#67AEB5,#6EA6B7,#7BAEBE);
+    opacity: 0.9;
+    box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+}
+
+.frase p{
+    text-align:center ;
+    margin-top: 5%;
+    font-size: 20px;
+    color: #6e0a26;
+    font-style: italic ;
+    font-family: Quicksand_book;
+    font-weight: bolder;
+    
+}
+
+.frase:after{
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: -1%;
+    left: 0;
+    border-style: dotted;
+    border-color: bisque;
+    border-bottom: 0px solid transparent;
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    z-index: 1;
+ }
+
+ .frase:before{
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0;
+    border-style: dashed;
+    border-color: bisque;
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 0px solid transparent;
+    z-index: 1;
+    
+ }
+ /*Termina propiedades frase*/
+
+ /*Control audio*/
+
+ .audio{
+    margin-top: -28%;
+    margin-bottom: 10%;
+    margin-left: 40%;
+ }
+
+/*Footer*/
+footer{
+    background-color: white  ;
+    height: 60%;
+    margin-bottom: 15px;
+    width: 90%;
+    margin-left: 5%;
+    
+    }
+    
+    
+    /*GIF dentro del footer*/
+    .gif{
+        padding: 10px; 
+        margin: 5px; 
+        width: 130px; 
+        display: block;
+        margin-left: 85%;
+    }
+    
+    .infoFooter{
+        font-size: medium;
+        margin-left: 30%;
+        margin-top: 10px;
+        
+    }
+    
+    @media(max-width:1024px){
+        .plugin{
+            flex-direction: row;
+            justify-content: center;
+        }
+    }

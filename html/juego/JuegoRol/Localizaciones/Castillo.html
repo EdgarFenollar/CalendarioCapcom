@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../css/juego/JuegoRol/EstilosLocalizaciones/estiloLocalizacion.css">
+    <title>Castillo</title>
+</head>
+<body onload="cargarAtributosPersonaje(); cambiarCastillo()">
+    <!--Musica-->
+    <audio id="musicaFondo" src="../../../../musica/juegoRol/canciones/07. Stormveil Castle.mp3" controls="false"></audio>
+      
+    <header>
+        <nav id="barra">
+            <div class="wrapper">
+                <img id="iconoBarra" src="../../../../img/juego/JuegoRol/Iconos/logoER.png" alt="IconoER"/>
+                <img id="logoBarra" src="../../../../img/juego/JuegoRol/Iconos/Elden-Ring-Logo-PNG-Photo.png" alt="LogoER">
+                <div id="botonesBarra">
+                    <ul class="nav-links">
+                        <li><a href="#" onclick="sonidoBoton(); reiniciar()">Reiniciar</a></li>
+                        <li><a href="#" onclick="musica(); sonidoBoton()">Musica On/Off</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="textoYElecciones">
+            <img class="cenefa" src="../../../../img/juego/JuegoRol/Decoraciones/cenefaHojas.png" alt="cenefaHojas">
+            <div class="parrafos">
+                <p>Has llegado al imponente Castillo de Velo Tormentoso,
+                    una fortalezamajestuosa que se alza sobre un escarpado acantilado.
+                    El aire está cargado de tensión mientras te adentras en sus sombrías estancias,
+                    sintiendo la presencia acechante de Grodrick, el señor de estas tierras.</p>
+                <p>Las antorchas parpadean en las paredes de piedra,
+                    proyectando sombras danzantes que parecen susurrar tu nombre. 
+                    El silencio es sobrecogedor, interrumpido solo por el eco de tus propios pasos
+                    mientras avanzas por los pasillos laberínticos del castillo.</p>
+                <p>Tu corazón late con fuerza en tu pecho, consciente de que cada paso te acerca más al inevitable enfrentamiento con Grodrick,
+                    un ser temido y poderoso que ha dominado estas tierras con mano de hierro desde la Devastacion.</p>
+                <p>¡El destino de las Tierras Intermedias está en tus manos!
+                    ¿Serás capaz de derrotar a Grodrick y obtener la primera de las runas que necesitas para reforjar el Circulo de Elden?</p>
+            </div>
+            <img class="cenefa" src="../../../../img/juego/JuegoRol/Decoraciones/cenefaHojas.png" alt="cenefaHojas">
+        </div>
+    
+
+        <div id="opciones2">
+            <button class="eleccion" id="botonIrPorGodrick" onclick="irGodrick()">Ir a por Godrik el Injertado</button>
+        </div>
+
+
+        <div id="infoPersonaje">
+            <img class="cenefa" src="../../../../img/juego/JuegoRol/Decoraciones/cenefaHojas.png" alt="cenefaHojas">
+            <h3>Personaje</h3>
+            <div id="atributos">
+                <p>Nombre: <span id="nombre"></span></p>
+                <p>Fuerza: <span id="fuerza"></span></p>
+                <p>Destreza: <span id="destreza"></span></p>
+                <p>Constitución: <span id="constitucion"></span></p>
+                <p>Inteligencia: <span id="inteligencia"></span></p>
+                <p>Sabiduría: <span id="sabiduria"></span></p>
+                <p>Carisma: <span id="carisma"></span></p>
+                <p>Vida: <span id="vida"></span></p>
+            </div>
+            <img class="cenefa" src="../../../../img/juego/JuegoRol/Decoraciones/cenefaHojas.png" alt="cenefaHojas">
+        </div>
+
+        <div id="muertePersonaje" style="display: none;">
+            <img src="../../../../img/juego/JuegoRol/Fondos/muerte.png" alt="Muerte del personaje">
+        </div>
+        
+
+        <div id="rendirse" style="display: none;">
+                <img class="cenefa" src="../../../../img/juego/JuegoRol/Decoraciones/cenefaHojas.png" alt="cenefaHojas">
+                <div class="parrafos">
+                  No has tenido el valor de enfrentarte a Godrick el injertado, y visto que no tienes salida no tienes mas opcion que rendierte ante su poder.
+                  <br>
+                  El injertado te coje y con su hacha acaba con tu vida...
+                  <br>
+                  Solamente para sumar tus extremidades a las suyas y asi convertir tu cobardia en fortaleza. 
+                </div>
+                <button class="eleccion" id="morirse" onclick="morir()">Abandonar</button>
+                <img class="cenefa" src="../../../../img/juego/JuegoRol/Decoraciones/cenefaHojas.png" alt="cenefaHojas">
+        </div>
+        
+
+    </main>
+
+    <footer>
+        Lenguaje de Marcas | Omar Llinares
+    </footer>
+
+    <script src="../../../../js/juego/juegoRolJavaScript.js"></script>
+
+</body>
+
+</html>

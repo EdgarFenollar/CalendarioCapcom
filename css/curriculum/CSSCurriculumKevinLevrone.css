@@ -1,0 +1,38 @@
+ body {
+    background-image:url("https://static.vecteezy.com/system/resources/previews/002/212/154/non_2x/silhouette-bodybuilder-fitness-hand-weight-dumbbells-stencil-drawing-vector.jpg");
+}
+        
+h1 {
+    text-align: center;
+    background-color: grey;
+    border:solid;
+}
+        
+ul {
+    border: solid;
+    border-color:grey;
+    background-color: gainsboro;
+    margin:0px 545px 0px 0px;
+}
+
+
+#p1 {
+    float: right;
+}
+
+
+#p2 {
+    margin:25px 0px 0px 0px
+}
+
+#p3 {     
+    border: solid;
+    border-color: grey;
+    background-color: gainsboro;
+    margin:0px 545px 0px 0px
+}
+
+body p,h3 {
+    background-color: grey;
+    width: 80px;
+}
